@@ -33,7 +33,7 @@ Esta execução remota usa o caminho CI documentado, sem modificar guard, PID ou
 
 ## Confiança e escopo
 
-Confiança alta nos comandos registrados, nos hashes e na ausência de nova análise local. A explicação da falha por namespace/virtualização continua inferida, sem diagnóstico conclusivo do provedor. O suporte oficial de Actions é documental; a compatibilidade concreta deste repositório só será provada por execução real.
+Confiança alta nos comandos registrados, nos hashes e na ausência de nova análise local. A explicação da falha por namespace/virtualização continua inferida, sem diagnóstico conclusivo do provedor. O suporte oficial de Actions é documental; a compatibilidade concreta deste repositório foi comprovada nos runs acima, dentro do escopo estático delimitado.
 
 Fontes oficiais inspecionadas no checkout REA de commit `0b1af48a3718ae3d2cfd83aa21cd7ca88f3a6629` (licença MIT; autoria morluto):
 

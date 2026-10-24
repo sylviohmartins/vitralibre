@@ -1,0 +1,36 @@
+{
+  "site_version": {
+    "id": "appgprj_6adbdfaa73a8819185604820179369ff~appgver_ce178baab5dc81918205095ecec79898",
+    "project_id": "appgprj_6adbdfaa73a8819185604820179369ff",
+    "version_number": 3,
+    "source": {
+      "commit_sha": "ee98ed9b7ceb3fb6befeababf99c8aacb9a90023"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000004e94820eb08024dbdcf02b98",
+      "content_hash": "sha256:c79a581f9593e9ca5b0e16fe2599f070ab9d6184a14b13457ecde575ba3164e1",
+      "size_bytes": 358400,
+      "file_count": 23
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6adc548097bc8191863404becd5968c1",
+    "project_id": "appgprj_6adbdfaa73a8819185604820179369ff",
+    "title": "VitraLibre",
+    "version_id": "appgprj_6adbdfaa73a8819185604820179369ff~appgver_ce178baab5dc81918205095ecec79898",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://vitralibre.sylviohmartins.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6adbdfaa73a8819185604820179369ff",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-24T06:47:36.637396+00:00"
+  },
+  "github_code_commit": "cf28d5507a8b8366aa9f16afa4a42d14c91ce561",
+  "validation": "36 tests/lint/checkJs/build passed; visual revalidation blocked, see STATUS.md"
+}

@@ -27,7 +27,7 @@ REA6.7.0: instalação/MCP207 ferramentas; guard de processos local preservado. 
 
 ## Publicação
 
-Plataforma pública:https://vitralibre.milkycalf3.chatgpt.site . Código MIT:https://github.com/sylviohmartins/vitralibre . Primeira importação323 arquivos conferida por SHA e CI24 testes aprovada, registrada em `evidence/github-publication.json`. Esta retomada publica um novo checkpoint de código/evidências; os IDs e o resultado da publicação são registrados separadamente após resposta real do provedor.
+Plataforma pública:https://vitralibre.sylviohmartins.chatgpt.site . Código MIT:https://github.com/sylviohmartins/vitralibre . Primeira importação323 arquivos conferida por SHA e CI24 testes aprovada, registrada em `evidence/github-publication.json`. Esta retomada publicou a versão3, fonte Sites `ee98ed9b7ceb3fb6befeababf99c8aacb9a90023`, com status succeeded. O provedor retornou o endereço atual acima. Código/evidências no GitHub no commit `cf28d5507a8b8366aa9f16afa4a42d14c91ce561`; resposta real em `evidence/resume-publication.json`. CI do código atual aprovada:https://github.com/sylviohmartins/vitralibre/actions/runs/40071641939 ,36 testes/0 falhas, lint/checkJs/build, Impeccable e auditoria de dependências0 vulnerabilidades. REA do código atualizado também aprovado no run40071641946; passo de terceiros corretamente skipped. Evidência em `evidence/resume-ci.json`.
 
 ## Impedimentos e aceitação pendente
 
