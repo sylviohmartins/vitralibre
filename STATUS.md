@@ -18,8 +18,8 @@ Data: 23/10/2026, America/Sao_Paulo. Versão 0.1.0 experimental.
 
 ## Publicação e distribuição
 - Publicação pública confirmada pela resposta nativa: https://vitralibre.milkycalf3.chatgpt.site — status succeeded, versão1, commit96f3f2f9ef276822c86e411d58c0a886e3e7961f. Evidência em evidence/deployment.json. O navegador não foi reaberto para contornar o bloqueio; a verificação de publicação é a confirmação do provedor.
-- Repositório público criado pelo proprietário e confirmado pela integração: https://github.com/sylviohmartins/vitralibre . Permissão de push confirmada; importação em andamento nesta atualização. O bloqueio anterior de criação foi superado pelo proprietário. CI remoto deve ser confirmado após envio.
-- Código licenciado MIT, dependências/avisos preservados e CI configurada. Nenhum pipeline remoto GitHub foi executado. ZIP pronto para importação quando gerado; não afirmar GitHub/Pages existente.
+- Repositório público criado pelo proprietário e confirmado pela integração: https://github.com/sylviohmartins/vitralibre . Código enviado ao main no commit c5561db8349a23bc035237f3ec0c37cf84ee2cd2. Integridade dos323 arquivos conferida por SHA, sem diferenças. CI remota40047480096 concluída com sucesso:24 testes, lint/checkJs/build, Impeccable e auditoria de dependências. Evidência:evidence/github-publication.json.
+- Código licenciado MIT, dependências/avisos preservados e CI configurada. CI GitHub executada com sucesso:https://github.com/sylviohmartins/vitralibre/actions/runs/40047480096 . ZIP pronto para importação quando gerado; não afirmar GitHub/Pages existente.
 
 ## Pendências de aceitação
 - Browser após refinamento, viewports320/375/390/768/1024/1440 e intermediários, foco nativo/teclado completo, mobile físico, baixo desempenho/rede lenta, imagens ausentes e catálogos grandes renderizados, antes/depois em arquivos, Lighthouse/Core Web Vitals e acessibilidade integral não concluídos.
@@ -28,7 +28,7 @@ Data: 23/10/2026, America/Sao_Paulo. Versão 0.1.0 experimental.
 - Catálogo independente requer JavaScript para exploração. Imagens próprias/raster incorporadas funcionam sem rede; URLs externas continuam dependentes de rede. Não há service worker/offline instalável nem sincronização/merge de alterações exatamente simultâneas entre abas.
 - P1/P2 backend/multiusuário/pedidos/pagamento/estoque/analytics não implementados. Não há landing separada nem editor drag-and-drop/undo-redo. Busca de marca pública preliminar sem liberação jurídica registral.
 
-Próxima ação: reabrir navegador após limite, executar matriz visual/teclado do editor e vitrines nos dois temas, registrar capturas, autenticar GitHub e criar vitralibre; executar CI remoto e homologar somente após os gates pendentes.
+Próxima ação: reabrir navegador após limite, executar matriz visual/teclado do editor e vitrines nos dois temas, registrar capturas, aprofundar os fluxos autenticados dos fornecedores quando os impedimentos forem resolvidos; homologar somente após os gates pendentes. GitHub e CI já foram concluídos nesta atualização.
 
 ## Cobertura exigida pelo proprietário
 A garantia de exploração integral de todos os produtos/repositórios e incorporação de suas funções não está atendida. COVERAGE.md e as matrizes44×42 explicitam o estado sem converter anúncios em testes ou recursos planejados em implementados.

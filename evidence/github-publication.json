@@ -1,0 +1,81 @@
+{
+  "repository": "https://github.com/sylviohmartins/vitralibre",
+  "code_commit": "c5561db8349a23bc035237f3ec0c37cf84ee2cd2",
+  "tree": "90723fd7d5fbd8a1ae92b0cf162df4538d50bcb7",
+  "file_integrity": {
+    "expectedFiles": 323,
+    "actualFiles": 323,
+    "mismatches": [],
+    "extras": [],
+    "truncated": false
+  },
+  "ci": {
+    "url": "https://github.com/sylviohmartins/vitralibre/actions/runs/40047480096",
+    "status": "completed",
+    "conclusion": "success",
+    "tests": 24,
+    "passed": 24,
+    "failed": 0,
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npm ci --ignore-scripts",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npm run verify",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npx --yes impeccable@4.7.0 detect --json src/ > impeccable-ci.json",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npm audit --omit=dev --audit-level=high",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/setup-node@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "reference_coverage": {
+    "vendors": 44,
+    "criteria": 42,
+    "relations": 1848,
+    "submitted_accounts": 0,
+    "activated_accounts": 0,
+    "confirmed_logins": 0,
+    "full_parity_confirmed": false
+  }
+}
