@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-23T22:30:20.777792+00:00",
+  "command": [
+    "/workspace/scratch/5807a3cd216e/rea-audit/installed/node_modules/.bin/rea",
+    "mcp",
+    "doctor",
+    "--json"
+  ],
+  "exit_code": 1
+}

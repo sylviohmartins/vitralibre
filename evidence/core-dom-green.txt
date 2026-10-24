@@ -1,0 +1,26 @@
+✔ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.829221ms)
+✔ rejeita esquema, tipos, limites e relações inválidos (1.438153ms)
+✔ converte valores brasileiros sem arredondamento ou ambiguidade (13.339283ms)
+✔ filtra nomes e descrições sem acentos, descendentes e disponibilidade (1.091331ms)
+✔ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.359691ms)
+✔ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.561619ms)
+✔ escapa HTML inclusive aspas (0.213154ms)
+✔ JSON faz roundtrip e limita entrada antes de analisar (0.464796ms)
+✔ salva e recupera o último catálogo íntegro pelo backup (1.666911ms)
+✔ falha de quota preserva versão anterior e informa falha (0.46701ms)
+✔ leitura bloqueada ou dados inválidos retornam aviso sem lançar (0.210752ms)
+✔ HTML público é autocontido, preserva dados e neutraliza fechamento de script (1.207863ms)
+✔ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.21644ms)
+✔ lê armazenamento legado sem apagar a cópia anterior (0.164914ms)
+✔ avisa quando somente o armazenamento legado está corrompido (0.17638ms)
+✔ exporta ilustração própria real com gradiente e filtro de referência local (10.755434ms)
+✔ rejeita referências externas ou conteúdo ativo no mapa de ilustrações (0.386501ms)
+✔ catálogo HTML executa pesquisa, filtros, detalhes e compartilhamento sem recursos do editor (487.750018ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 608.166144

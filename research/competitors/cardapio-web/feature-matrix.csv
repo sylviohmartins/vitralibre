@@ -1,0 +1,26 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Cardápio Web,catalogo,D,"Cardápio para delivery, mesa, balcão e totem anunciado",https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,variantes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,imagens,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,branding,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,whatsapp,D,Extensão e chatbot em Delivery/Premium; disparos anunciados,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,pedidos,D,Delivery e mesas conforme plano; caixa e balcão em todos na central,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,pagamento,D,"Online em Delivery/Premium, não Mesas na tabela",https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,estoque,D,Estoque simples em todos os planos da central,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,multiusuario,D,Gestão de usuários em todos os planos da central,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,integracoes,D,Integrações com marketplaces e MCP anunciados no institucional,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,analytics,D,Funil de vendas e avaliações anunciados,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

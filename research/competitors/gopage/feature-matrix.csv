@@ -1,0 +1,26 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Gopage,catalogo,D,Produtos ilimitados; 1 catálogo no Básico e até 3 no Premium,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,busca,O,Busca executada na demo; resultados por Caderno,https://modelodepapelaria.gopage.bio/,2026-10-23T22:35:45.113042+00:00,não
+Gopage,filtros,O,Faixa de preço e filtros por atributo visíveis; aplicação dos filtros não testada,https://modelodepapelaria.gopage.bio/,2026-10-23T22:35:45.113042+00:00,não
+Gopage,variantes,D,Variações de tamanho e cor anunciadas,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,imagens,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,disponibilidade,O,Demo identifica produtos indisponíveis,https://modelodepapelaria.gopage.bio/,2026-10-23T22:35:45.113042+00:00,não
+Gopage,branding,D,Cores e logotipo próprios anunciados,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,qr,D,Gerador de QR Code,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,dominio,D,Domínio próprio anunciado,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,whatsapp,D,Pedidos e contato pelo WhatsApp,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,pedidos,D,"PDV, gestão de pedidos e estoque anunciados",https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,pagamento,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,estoque,D,Gestão de estoque anunciada,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,multiusuario,D,2 vendedores no Básico; 10 no Premium,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,pdf,D,Catálogo e orçamento em PDF,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,integracoes,D,"Bling, Correios e provedores de frete; Mercado Pago no Premium",https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,analytics,D,"Relatórios, Analytics e Tag Manager anunciados",https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

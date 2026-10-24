@@ -1,0 +1,26 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Kicatálogo,catalogo,D,20 produtos e hierarquia limitada no gratuito,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,categorias,O,Categorias e links observados na demo,https://demo2.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,subcategorias,D,2 no gratuito; 10 no VIP anunciadas,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,busca,O,Campo de busca observado; busca não submetida,https://demo2.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,variantes,O,Detalhe público apresenta P/M/G e seleção obrigatória,https://demo2.kicatalogo.com/produto/74,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,imagens,O,Foto no produto e links de galeria observados,https://demo2.kicatalogo.com/produto/74,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,disponibilidade,O,Lista pública marca item sem estoque,https://demo2.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,branding,D,Logotipo e cores próprios anunciados,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,whatsapp,D,Pedidos ilimitados WhatsApp anunciados,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,pedidos,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,pagamento,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,estoque,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,multiusuario,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,analytics,D,"Analytics, Pixel e Clarity listados; acesso no plano exige confirmar indicadores visuais",https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

@@ -1,0 +1,15 @@
+{
+  "id": "appgdep_6adbff139cd88191878bb74f4d46d56d",
+  "project_id": "appgprj_6adbdfaa73a8819185604820179369ff",
+  "title": "VitraLibre",
+  "version_id": "appgprj_6adbdfaa73a8819185604820179369ff~appgver_1a3dfa34906c8191b7a0366dd24b52c8",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://vitralibre.milkycalf3.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6adbdfaa73a8819185604820179369ff",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-24T00:43:15.130536+00:00"
+}

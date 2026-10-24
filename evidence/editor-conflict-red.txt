@@ -1,0 +1,30 @@
+✖ editor real mantém CRUD, filtros, validação, tema e QR no armazenamento (1200.469953ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8160.434087
+
+✖ failing tests:
+
+test at tests/editor.test.mjs:8:1
+✖ editor real mantém CRUD, filtros, validação, tema e QR no armazenamento (1200.469953ms)
+  AssertionError [ERR_ASSERTION]: uma aba antiga não pode sobrescrever a nova
+  + actual - expected
+  
+  + 'Negócio de teste'
+  - 'Alterado na outra aba'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/editor.test.mjs:38:9)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'Negócio de teste',
+    expected: 'Alterado na outra aba',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

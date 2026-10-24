@@ -1,0 +1,9 @@
+fornecedor,estado_avaliacao,estado_cadastro,ativacao_confirmada,login_confirmado,url,evidencia_impedimento
+Tagme LiveMenu,não iniciado,não iniciado,não,não,https://tagme.com.br/planos,Rota comercial documentada; teste autônomo não localizado nas fontes consultadas
+Gopage,bloqueado,não iniciado,não,não,https://painel.gopage.bio/new/catalog/dados-da-pagina,Formulário observado; WhatsApp/nome/e-mail/senha; aceitação termos no envio; browserAuth não cria contas
+Goomer,bloqueado,não iniciado,não,não,https://cadastro.goomer.com.br/?step=1,Formulário observado e-mail/senha; termos e contato comercial; browserAuth não cria contas
+Meloja,bloqueado,não iniciado,não,não,https://app.meloja.com.br/,Cloudflare hard block observado e permaneceu após 1 recarga; não contornado
+Cardápio Web,não iniciado,não iniciado,não,não,https://cardapioweb.com/,Formulário de contato documentado com WhatsApp e faturamento; não submetido
+Kyte,bloqueado,não iniciado,não,não,https://pos.auth.kyteapp.com/pt-br/signup,"Signup observado Google/e-mail/Apple, termos; browserAuth não cria contas"
+Stoqui,bloqueado,não iniciado,não,não,https://app.stoqui.com.br/auth/onboarding,Onboarding e Pular executados; sem dados cadastrais ou credenciais; browserAuth não cria contas
+Kicatálogo,bloqueado,não iniciado,não,não,https://www.kicatalogo.com/cadastrar/,Etapa Geral observada com etapa Usuário indicada; nenhum campo enviado; browserAuth não cria contas

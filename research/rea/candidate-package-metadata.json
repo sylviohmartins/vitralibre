@@ -1,0 +1,55 @@
+{
+  "@fission-ai/openspec": {
+    "exit_code": 0,
+    "metadata": {
+      "version": "1.14.3",
+      "license": "MIT",
+      "engines": {
+        "node": ">=20.19.0"
+      },
+      "repository": {
+        "url": "git+https://github.com/Fission-AI/OpenSpec.git",
+        "type": "git"
+      }
+    },
+    "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+  },
+  "@playwright/mcp": {
+    "exit_code": 0,
+    "metadata": {
+      "version": "0.0.83",
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=18"
+      },
+      "repository": {
+        "url": "git+https://github.com/microsoft/playwright-mcp.git",
+        "type": "git"
+      }
+    },
+    "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+  },
+  "chrome-devtools-mcp": {
+    "exit_code": 0,
+    "metadata": {
+      "version": "1.12.0",
+      "license": "Apache-2.0",
+      "engines": {
+        "node": "^20.19.0 || ^22.12.0 || >=23"
+      },
+      "repository": {
+        "url": "git+https://github.com/ChromeDevTools/chrome-devtools-mcp.git",
+        "type": "git"
+      }
+    },
+    "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+  },
+  "ui-ux-pro-max-cli": {
+    "exit_code": 0,
+    "metadata": {
+      "version": "2.15.0",
+      "license": "MIT"
+    },
+    "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+  }
+}

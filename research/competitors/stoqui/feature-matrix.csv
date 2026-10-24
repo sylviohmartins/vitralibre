@@ -1,0 +1,26 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Stoqui,catalogo,D,50 produtos e catálogo no gratuito,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,variantes,D,Variações anunciadas no menu de recursos; plano específico não atribuído,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,imagens,D,1 foto por produto no gratuito,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,branding,D,Personalização avançada no Pro,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,whatsapp,D,Checkout rápido WhatsApp no Pro,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,pedidos,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,pagamento,D,Pix no gratuito; condições de operação/gateway não testadas,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,estoque,D,Controle de estoque no gratuito,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,multiusuario,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,analytics,D,Vendas/lucratividade e fluxo de caixa no Pro,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

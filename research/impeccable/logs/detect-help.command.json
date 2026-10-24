@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-23T22:44:36.161092+00:00",
+  "command": [
+    "/workspace/scratch/5807a3cd216e/impeccable-audit/installed/node_modules/.bin/impeccable",
+    "detect",
+    "--help"
+  ],
+  "cwd": "/workspace/sites/vitrine-aberta",
+  "exit_code": 0
+}

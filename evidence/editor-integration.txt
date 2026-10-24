@@ -1,0 +1,29 @@
+✖ editor real mantém CRUD, filtros, validação, tema e QR no armazenamento (1043.124485ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7710.434043
+
+✖ failing tests:
+
+test at tests/editor.test.mjs:8:1
+✖ editor real mantém CRUD, filtros, validação, tema e QR no armazenamento (1043.124485ms)
+  AssertionError [ERR_ASSERTION]: [{"id":"aria-prohibited-attr","impact":"serious","nodes":[["#qr-code"]]}]
+  
+  1 !== 0
+  
+      at a11y (file:///workspace/sites/vitrine-aberta/tests/editor.test.mjs:14:114)
+      at async TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/editor.test.mjs:34:81)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

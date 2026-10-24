@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-23T22:29:58.445825+00:00",
+  "command": [
+    "/workspace/scratch/5807a3cd216e/rea-audit/installed/node_modules/.bin/rea",
+    "analyze-javascript-application",
+    "--help"
+  ],
+  "exit_code": 0
+}

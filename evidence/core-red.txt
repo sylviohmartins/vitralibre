@@ -1,0 +1,307 @@
+✖ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.64554ms)
+✔ rejeita esquema, tipos, limites e relações inválidos (2.330661ms)
+✖ converte valores brasileiros sem arredondamento ou ambiguidade (0.258893ms)
+✖ filtra nomes e descrições sem acentos, descendentes e disponibilidade (0.240685ms)
+✖ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.355946ms)
+✖ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.251482ms)
+✖ escapa HTML inclusive aspas (0.163291ms)
+✖ JSON faz roundtrip e limita entrada antes de analisar (0.139226ms)
+✖ salva e recupera o último catálogo íntegro pelo backup (0.21648ms)
+✖ falha de quota preserva versão anterior e informa falha (0.253034ms)
+✖ leitura bloqueada ou dados inválidos retornam aviso sem lançar (0.221226ms)
+✖ HTML público é autocontido, preserva dados e neutraliza fechamento de script (0.191342ms)
+✖ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.140107ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 1
+ℹ fail 12
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 113.765404
+
+✖ failing tests:
+
+test at tests/core.test.mjs:9:1
+✖ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.64554ms)
+  AssertionError [ERR_ASSERTION]: validateCatalog deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:9:145)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:11:1
+✖ converte valores brasileiros sem arredondamento ou ambiguidade (0.258893ms)
+  AssertionError [ERR_ASSERTION]: parsePrice deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:11:226)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:12:1
+✖ filtra nomes e descrições sem acentos, descendentes e disponibilidade (0.240685ms)
+  AssertionError [ERR_ASSERTION]: filterProducts deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:12:118)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:13:1
+✖ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.355946ms)
+  AssertionError [ERR_ASSERTION]: deleteCategory deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:13:262)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:14:1
+✖ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.251482ms)
+  AssertionError [ERR_ASSERTION]: safeImage deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:14:244)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:15:1
+✖ escapa HTML inclusive aspas (0.163291ms)
+  AssertionError [ERR_ASSERTION]: escapeHtml deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:15:53)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:16:1
+✖ JSON faz roundtrip e limita entrada antes de analisar (0.139226ms)
+  AssertionError [ERR_ASSERTION]: importCatalog deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:16:102)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:17:1
+✖ salva e recupera o último catálogo íntegro pelo backup (0.21648ms)
+  AssertionError [ERR_ASSERTION]: saveCatalog deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:17:120)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:18:1
+✖ falha de quota preserva versão anterior e informa falha (0.253034ms)
+  AssertionError [ERR_ASSERTION]: saveCatalog deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:18:86)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:19:1
+✖ leitura bloqueada ou dados inválidos retornam aviso sem lançar (0.221226ms)
+  AssertionError [ERR_ASSERTION]: loadCatalog deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at api (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:6:32)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:19:89)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:20:1
+✖ HTML público é autocontido, preserva dados e neutraliza fechamento de script (0.191342ms)
+  AssertionError [ERR_ASSERTION]: exportCatalogHtml deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:20:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:21:1
+✖ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.140107ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:21:102)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,2 @@
+# Segurança
+Não abra issue pública com credenciais ou dados de clientes. Use o canal privado de segurança do mantenedor/repositório quando disponível. Não há SLA de suporte. A versão 0.1 é experimental: núcleo local, sem autenticação, API, checkout ou isolamento multi-tenant. Dados ficam neste navegador; faça backups JSON. URLs externas de imagens revelam acesso ao provedor e dependem de sua disponibilidade. Imagens SVG externas/importadas não são aceitas no upload. Não use CDN para scripts, não embuta tokens no catálogo. Consulte docs/security.md.

@@ -1,0 +1,2 @@
+# Contribuir
+Use Node 24. Execute npm ci --ignore-scripts e npm run verify. Proponha mudança pequena, com critério de aceite e teste que capture o comportamento. Para erros, inclua dados fictícios e ambiente. Preserve schema versionado, exportações antigas e acessibilidade. Não inclua credenciais, dados privados ou ativos de concorrentes. Mudanças incompatíveis no schema precisam de migração e nova versão. Consulte specs/design.md e ROADMAP.md.

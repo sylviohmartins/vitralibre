@@ -1,0 +1,7 @@
+{
+  "name": "inspect_web_network_capture",
+  "arguments": {
+    "capture_path": "/workspace/sites/vitrine-aberta/research/rea/fixture/local-http.har",
+    "format": "har"
+  }
+}

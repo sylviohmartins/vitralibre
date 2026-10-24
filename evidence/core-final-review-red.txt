@@ -1,0 +1,101 @@
+✔ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.445464ms)
+✔ rejeita esquema, tipos, limites e relações inválidos (1.143979ms)
+✔ converte valores brasileiros sem arredondamento ou ambiguidade (14.095421ms)
+✔ filtra nomes e descrições sem acentos, descendentes e disponibilidade (1.125862ms)
+✔ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.822565ms)
+✔ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.694014ms)
+✔ escapa HTML inclusive aspas (0.232273ms)
+✔ JSON faz roundtrip e limita entrada antes de analisar (1.310595ms)
+✔ salva e recupera o último catálogo íntegro pelo backup (0.641106ms)
+✔ falha de quota preserva versão anterior e informa falha (0.444767ms)
+✔ leitura bloqueada ou dados inválidos retornam aviso sem lançar (0.263309ms)
+✔ HTML público é autocontido, preserva dados e neutraliza fechamento de script (1.340409ms)
+✔ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.17596ms)
+✔ lê armazenamento legado sem apagar a cópia anterior (0.194237ms)
+✔ avisa quando somente o armazenamento legado está corrompido (0.116943ms)
+✔ exporta ilustração própria real com gradiente e filtro de referência local (15.319383ms)
+✔ rejeita referências externas ou conteúdo ativo no mapa de ilustrações (0.493198ms)
+✔ catálogo HTML executa pesquisa, filtros, detalhes e compartilhamento sem recursos do editor (475.160308ms)
+✖ rejeita catálogo agregado acima de 10 MiB antes de aceitar uma mutação (61.246743ms)
+✖ catálogo aceito próximo ao limite continua exportável em JSON sem inflação de indentação (119.099206ms)
+✖ URL pública Unicode é normalizada para hostname punycode e caminho ASCII antes do QR (1.451212ms)
+✖ HTML público preserva licença MIT integral para redistribuição independente (3.485816ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 18
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 790.372924
+
+✖ failing tests:
+
+test at tests/core.test.mjs:28:1
+✖ rejeita catálogo agregado acima de 10 MiB antes de aceitar uma mutação (61.246743ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:28:320)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /10 MB/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:29:1
+✖ catálogo aceito próximo ao limite continua exportável em JSON sem inflação de indentação (119.099206ms)
+  Error: O arquivo ultrapassa o limite de 10 MB.
+      at fail (file:///workspace/sites/vitrine-aberta/src/core.js:12:35)
+      at checkSize (file:///workspace/sites/vitrine-aberta/src/core.js:128:101)
+      at serializeCatalog (file:///workspace/sites/vitrine-aberta/src/core.js:131:106)
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:29:630)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/core.test.mjs:30:1
+✖ URL pública Unicode é normalizada para hostname punycode e caminho ASCII antes do QR (1.451212ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'https://exemplo.ação/ação/東京/😀?busca=café#seção'
+  - 'https://exemplo.xn--ao-siap/a%C3%A7%C3%A3o/%E6%9D%B1%E4%BA%AC/%F0%9F%98%80?busca=caf%C3%A9#se%C3%A7%C3%A3o'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:30:270)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'https://exemplo.ação/ação/東京/😀?busca=café#seção',
+    expected: 'https://exemplo.xn--ao-siap/a%C3%A7%C3%A3o/%E6%9D%B1%E4%BA%AC/%F0%9F%98%80?busca=caf%C3%A9#se%C3%A7%C3%A3o',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:31:1
+✖ HTML público preserva licença MIT integral para redistribuição independente (3.485816ms)
+  AssertionError [ERR_ASSERTION]: Licença deve acompanhar a fonte do HTML
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:31:344)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

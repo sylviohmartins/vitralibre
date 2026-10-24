@@ -1,0 +1,26 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Goomer,catalogo,D,Cardápio delivery com foto e descrição no gratuito,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,variantes,D,Opcionais personalizáveis,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,imagens,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,branding,D,Identidade visual personalizada no Básico,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,qr,D,Produto QR Code separado; adicional Básico R$ 70/mês na página consultada,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,whatsapp,D,Pedidos WhatsApp no gratuito,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,pedidos,D,Gestor e status em plano pago,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,pagamento,D,Pagamento online no Básico; métodos exibidos na página de produto não provam disponibilidade grátis,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,estoque,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,multiusuario,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,integracoes,D,Integração ao PDV e logística no Integrar,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,analytics,D,Relatórios de pedidos no Básico,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

@@ -1,0 +1,72 @@
+✔ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.683666ms)
+✔ rejeita esquema, tipos, limites e relações inválidos (1.5312ms)
+✔ converte valores brasileiros sem arredondamento ou ambiguidade (14.151282ms)
+✔ filtra nomes e descrições sem acentos, descendentes e disponibilidade (1.060476ms)
+✔ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.487249ms)
+✔ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.46703ms)
+✔ escapa HTML inclusive aspas (0.323618ms)
+✔ JSON faz roundtrip e limita entrada antes de analisar (0.556412ms)
+✔ salva e recupera o último catálogo íntegro pelo backup (0.700524ms)
+✔ falha de quota preserva versão anterior e informa falha (0.658332ms)
+✔ leitura bloqueada ou dados inválidos retornam aviso sem lançar (0.326507ms)
+✔ HTML público é autocontido, preserva dados e neutraliza fechamento de script (1.417993ms)
+✔ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.355585ms)
+✔ lê armazenamento legado sem apagar a cópia anterior (0.25052ms)
+✖ avisa quando somente o armazenamento legado está corrompido (4.543308ms)
+✖ exporta ilustração própria real com gradiente e filtro de referência local (9.707682ms)
+✔ rejeita referências externas ou conteúdo ativo no mapa de ilustrações (0.687875ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 15
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 121.049371
+
+✖ failing tests:
+
+test at tests/core.test.mjs:24:1
+✖ avisa quando somente o armazenamento legado está corrompido (4.543308ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(result.error)
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:24:207)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:25:1
+✖ exporta ilustração própria real com gradiente e filtro de referência local (9.707682ms)
+  AssertionError [ERR_ASSERTION]: Got unwanted exception.
+  Actual message: "Ilustração própria inválida."
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:25:293)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: Error: Ilustração própria inválida.
+        at svgData (file:///workspace/sites/vitrine-aberta/src/export.js:69:199)
+        at embed (file:///workspace/sites/vitrine-aberta/src/export.js:82:12)
+        at Module.exportCatalogHtml (file:///workspace/sites/vitrine-aberta/src/export.js:84:88)
+        at file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:25:314
+        at getActual (node:assert:611:5)
+        at strict.doesNotThrow (node:assert:779:32)
+        at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:25:293)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    expected: undefined,
+    operator: 'doesNotThrow',
+    diff: 'simple'
+  }

@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-23T22:32:09.058443+00:00",
+  "repository": "https://github.com/morluto/rea",
+  "inspected_main_commit": "0b1af48a3718ae3d2cfd83aa21cd7ca88f3a6629",
+  "installed_package": "rea-agents",
+  "installed_version": "6.7.0",
+  "installed_engines": {
+    "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
+  },
+  "node": "v24.19.0",
+  "npm": "11.9.0",
+  "license": "MIT",
+  "tarball_sha256": "20958a66dba1a011e50a486beb9463a343128ed368c984f94065362c13f51f90",
+  "tarball_integrity": "sha512-yhIx2ioJYYT1C/tONfYeitC6LhnKmCh+ZwRUOgYuhSc733lGhkkt73zhug9WmLgxoMdKuqIYGCoBfD4fXkOhFw==",
+  "install_scripts": "disabled with --ignore-scripts",
+  "install_command": "npm install --prefix ./installed --ignore-scripts --no-audit --no-fund --save-exact ./rea-agents-6.7.0.tgz",
+  "browser_started_by_REA": false,
+  "global_agent_configuration_modified": false,
+  "process_uid": 0,
+  "privilege_escalation_requested": false,
+  "sudo_used": false
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tgz
+.superpowers/
+.openai/*.local*
+.env*
+
+.agents/skills/impeccable/scripts/bin/
+impeccable-ci.json

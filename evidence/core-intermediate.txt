@@ -1,0 +1,69 @@
+✔ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.397013ms)
+✔ rejeita esquema, tipos, limites e relações inválidos (1.289905ms)
+✔ converte valores brasileiros sem arredondamento ou ambiguidade (19.190078ms)
+✔ filtra nomes e descrições sem acentos, descendentes e disponibilidade (1.313199ms)
+✔ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.530964ms)
+✔ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.496764ms)
+✔ escapa HTML inclusive aspas (0.17647ms)
+✔ JSON faz roundtrip e limita entrada antes de analisar (0.532196ms)
+✔ salva e recupera o último catálogo íntegro pelo backup (0.593516ms)
+✔ falha de quota preserva versão anterior e informa falha (0.361313ms)
+✔ leitura bloqueada ou dados inválidos retornam aviso sem lançar (1.012645ms)
+✖ HTML público é autocontido, preserva dados e neutraliza fechamento de script (1.104641ms)
+✖ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.308285ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 11
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 124.957613
+
+✖ failing tests:
+
+test at tests/core.test.mjs:20:1
+✖ HTML público é autocontido, preserva dados e neutraliza fechamento de script (1.104641ms)
+  AssertionError [ERR_ASSERTION]: exportCatalogHtml deve existir
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:20:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/core.test.mjs:21:1
+✖ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.308285ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/core.test.mjs:21:102)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

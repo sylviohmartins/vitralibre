@@ -1,0 +1,42 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {JSDOM,VirtualConsole} from 'jsdom';
+import qr from 'qrcode-generator';
+import jsQR from 'jsqr';
+import axe from 'axe-core';
+
+test('editor real mantém CRUD, filtros, validação, tema e QR no armazenamento',async()=>{
+ const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',error=>errors.push(error.message));
+ const dom=new JSDOM('<!doctype html><html lang="pt-BR"><head><title>VitraLibre</title></head><body><div id="app"></div><div id="toast" role="status"></div></body></html>',{url:'https://example.test/vitralibre/',pretendToBeVisual:true,virtualConsole:vc,runScripts:'outside-only'});
+ const w=dom.window;w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};w.HTMLDialogElement.prototype.close=function(){this.open=false;};w.HTMLElement.prototype.scrollIntoView=function(){};
+ for(const [name,value] of Object.entries({window:w,document:w.document,navigator:w.navigator,FormData:w.FormData,FileReader:w.FileReader,XMLSerializer:w.XMLSerializer,confirm:()=>true,qrcode:qr}))Object.defineProperty(globalThis,name,{value,configurable:true,writable:true});
+ w.qrcode=qr;w.eval(axe.source);
+ const a11y=async()=>{const result=await w.axe.run(w.document,{rules:{'color-contrast':{enabled:false}}});assert.equal(result.violations.length,0,JSON.stringify(result.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}))));};
+ await import('../src/app.js');
+ const $=s=>w.document.querySelector(s);
+ const click=s=>$(s).click();
+ const fill=(s,value)=>{$(s).value=value;$(s).dispatchEvent(new w.Event('input',{bubbles:true}));};
+ const submit=s=>$(s).dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+ const saved=()=>JSON.parse(w.localStorage.getItem('vitralibre-v1'));
+ assert.equal(w.document.querySelectorAll('.product-card').length,8);await a11y();click('[data-action="toggle-scheme"]');assert.equal(w.document.documentElement.dataset.editorScheme,'dark');await a11y();assert.equal(saved().products.length,8);click('[data-action="toggle-scheme"]');
+ fill('#search','limao');assert.equal(w.document.querySelectorAll('.product-card').length,2);
+ fill('#search','');click('[data-action="add-product"]');
+ fill('#product-form [name="name"]','Café de teste');fill('#product-form [name="description"]','Produto fictício para validação');fill('#product-form [name="price"]','-1');submit('#product-form');
+ assert.equal($('#editor-dialog').open,true);assert.ok($('#product-form .form-error').textContent.length>0);assert.equal(saved().products.length,8);
+ fill('#product-form [name="price"]','1.234,56');click('[data-action="add-variant"]');fill('[name="variantName"]','Grande');fill('[name="variantPrice"]','1.250,00');submit('#product-form');
+ assert.equal(saved().products.length,9);assert.equal(saved().products.at(-1).priceCents,123456);assert.deepEqual(saved().products.at(-1).variants,[{name:'Grande',priceCents:125000}]);
+ const added=saved().products.at(-1).id;click(`[data-action="toggle-product"][data-id="${added}"]`);assert.equal(saved().products.at(-1).available,false);
+ click('[data-tab="appearance"]');fill('#settings-form [name="name"]','Negócio de teste');$('#settings-form [value="terracotta"]').checked=true;submit('#settings-form');assert.equal(saved().theme,'terracotta');assert.equal(saved().products.length,9);assert.equal(saved().name,'Negócio de teste');
+ click('[data-tab="publish"]');fill('[name="publicUrl"]','javascript:alert(1)');submit('#public-url-form');assert.equal(saved().publicUrl,'');assert.ok($('#public-url-form .form-error').textContent.length>0);
+ fill('[name="publicUrl"]','https://example.org/catalogo.html');submit('#public-url-form');assert.equal(saved().publicUrl,'https://example.org/catalogo.html');assert.ok($('#qr-code svg'));
+ const svg=$('#qr-code svg'),size=Number(svg.getAttribute('viewBox').split(' ')[2]);const pixels=new Uint8ClampedArray(size*size*4).fill(255);
+ for(const match of svg.querySelector('path').getAttribute('d').matchAll(/M(\d+),(\d+)l(\d+),0 0,(\d+)/g)){const [,x,y,width,height]=match.map(Number);for(let j=y;j<y+height;j++)for(let i=x;i<x+width;i++){const offset=(j*size+i)*4;pixels[offset]=pixels[offset+1]=pixels[offset+2]=0;}}
+ assert.equal(jsQR(pixels,size,size)?.data,'https://example.org/catalogo.html');await a11y();
+ click('[data-tab="catalog"]');click(`[data-action="edit-product"][data-id="${added}"]`);click('[data-action="delete-product"]');assert.equal(saved().products.length,8);
+ const external={...saved(),name:'Alterado na outra aba'};w.localStorage.setItem('vitralibre-v1',JSON.stringify(external));
+ click('[data-action="toggle-product"]');
+ assert.equal(saved().name,'Alterado na outra aba','uma aba antiga não pode sobrescrever a nova');
+ assert.ok($('#conflict-note'));
+ assert.deepEqual(errors,[]);
+ dom.window.close();
+});

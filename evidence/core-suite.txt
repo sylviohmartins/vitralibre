@@ -1,0 +1,32 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vitralibre@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.927465ms)
+✔ rejeita esquema, tipos, limites e relações inválidos (1.119523ms)
+✔ converte valores brasileiros sem arredondamento ou ambiguidade (13.659581ms)
+✔ filtra nomes e descrições sem acentos, descendentes e disponibilidade (0.993036ms)
+✔ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.390777ms)
+✔ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.635749ms)
+✔ escapa HTML inclusive aspas (0.211302ms)
+✔ JSON faz roundtrip e limita entrada antes de analisar (0.688537ms)
+✔ salva e recupera o último catálogo íntegro pelo backup (1.543039ms)
+✔ falha de quota preserva versão anterior e informa falha (0.355815ms)
+✔ leitura bloqueada ou dados inválidos retornam aviso sem lançar (0.159075ms)
+✔ HTML público é autocontido, preserva dados e neutraliza fechamento de script (1.17864ms)
+✔ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.200386ms)
+✔ lê armazenamento legado sem apagar a cópia anterior (0.1624ms)
+✔ avisa quando somente o armazenamento legado está corrompido (0.140467ms)
+✔ exporta ilustração própria real com gradiente e filtro de referência local (11.307013ms)
+✔ rejeita referências externas ou conteúdo ativo no mapa de ilustrações (0.326552ms)
+✔ catálogo HTML executa pesquisa, filtros, detalhes e compartilhamento sem recursos do editor (430.453108ms)
+✔ QR encoder preserves HTTPS URL and yields a scalable SVG (6.817685ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 548.813043

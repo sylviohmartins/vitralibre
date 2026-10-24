@@ -1,0 +1,201 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Tagme LiveMenu,catalogo,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,variantes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,imagens,D,Fotos e galeria gerenciada no painel,https://tagme.com.br/produtos/menu-digital | https://tagme.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,disponibilidade,D,Atualização de preço e disponibilidade anunciada para mesas e unidades,https://tagme.com.br/produtos/menu-digital | https://tagme.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,branding,D,Banners customizados no plano Menu,https://tagme.com.br/produtos/menu-digital | https://tagme.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,idiomas,D,"Português, inglês, espanhol e outros anunciados",https://tagme.com.br/produtos/menu-digital | https://tagme.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,restricoes,D,"Tags de vegetarianismo, glúten e alergênicos",https://tagme.com.br/produtos/menu-digital | https://tagme.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,qr,D,NFC/QR Code sem instalação de app,https://tagme.com.br/produtos/menu-digital | https://tagme.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,whatsapp,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,pedidos,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,pagamento,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,estoque,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,multiusuario,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,integracoes,D,"Google Business, busca e Maps",https://tagme.com.br/produtos/menu-digital | https://tagme.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,analytics,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Tagme LiveMenu,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,catalogo,D,Produtos ilimitados; 1 catálogo no Básico e até 3 no Premium,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,busca,O,Busca executada na demo; resultados por Caderno,https://modelodepapelaria.gopage.bio/,2026-10-23T22:35:45.113042+00:00,não
+Gopage,filtros,O,Faixa de preço e filtros por atributo visíveis; aplicação dos filtros não testada,https://modelodepapelaria.gopage.bio/,2026-10-23T22:35:45.113042+00:00,não
+Gopage,variantes,D,Variações de tamanho e cor anunciadas,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,imagens,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,disponibilidade,O,Demo identifica produtos indisponíveis,https://modelodepapelaria.gopage.bio/,2026-10-23T22:35:45.113042+00:00,não
+Gopage,branding,D,Cores e logotipo próprios anunciados,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,qr,D,Gerador de QR Code,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,dominio,D,Domínio próprio anunciado,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,whatsapp,D,Pedidos e contato pelo WhatsApp,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,pedidos,D,"PDV, gestão de pedidos e estoque anunciados",https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,pagamento,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,estoque,D,Gestão de estoque anunciada,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,multiusuario,D,2 vendedores no Básico; 10 no Premium,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,pdf,D,Catálogo e orçamento em PDF,https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,integracoes,D,"Bling, Correios e provedores de frete; Mercado Pago no Premium",https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,analytics,D,"Relatórios, Analytics e Tag Manager anunciados",https://gopage.bio/ | https://gopage.bio/planos,2026-10-23T22:35:45.113042+00:00,não
+Gopage,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Gopage,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,catalogo,D,Cardápio delivery com foto e descrição no gratuito,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,variantes,D,Opcionais personalizáveis,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,imagens,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,branding,D,Identidade visual personalizada no Básico,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,qr,D,Produto QR Code separado; adicional Básico R$ 70/mês na página consultada,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,whatsapp,D,Pedidos WhatsApp no gratuito,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,pedidos,D,Gestor e status em plano pago,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,pagamento,D,Pagamento online no Básico; métodos exibidos na página de produto não provam disponibilidade grátis,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,estoque,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,multiusuario,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,integracoes,D,Integração ao PDV e logística no Integrar,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,analytics,D,Relatórios de pedidos no Básico,https://goomer.com.br/planos | https://goomer.com.br/cardapio-digital-delivery,2026-10-23T22:35:45.113042+00:00,não
+Goomer,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Goomer,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,catalogo,D,Modo catálogo no gratuito; 50 produtos e visitas ilimitadas,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,variantes,D,Variações no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,imagens,D,Pro anuncia até 15 imagens por produto,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,branding,D,Visual personalizável no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,dominio,D,Domínio próprio a partir de Starter,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,whatsapp,D,Pedir produto e botão WhatsApp no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,pedidos,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,pagamento,D,Checkout Pix/cartão/boleto no Starter,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,estoque,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,multiusuario,D,Pro anuncia até 10 administradores e permissões,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,lote,D,Alterações em massa no Pro,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,analytics,D,Contador de visitas no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,catalogo,D,"Cardápio para delivery, mesa, balcão e totem anunciado",https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,variantes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,imagens,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,branding,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,whatsapp,D,Extensão e chatbot em Delivery/Premium; disparos anunciados,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,pedidos,D,Delivery e mesas conforme plano; caixa e balcão em todos na central,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,pagamento,D,"Online em Delivery/Premium, não Mesas na tabela",https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,estoque,D,Estoque simples em todos os planos da central,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,multiusuario,D,Gestão de usuários em todos os planos da central,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,integracoes,D,Integrações com marketplaces e MCP anunciados no institucional,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,analytics,D,Funil de vendas e avaliações anunciados,https://cardapioweb.com/ | https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Cardápio Web,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,catalogo,D,FREE e catálogo documentados; planos pagos adicionam pedidos e gestão,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,variantes,D,Tabela indica 1 variação PRO e 2 GROW/PRIME; FREE não atribuído a partir de ícones ausentes no texto,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,imagens,D,Tabela: 1 foto FREE; 7 por produto nos pagos,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,branding,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,whatsapp,D,Integração WhatsApp no PRO,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,pedidos,D,Catálogo com pedidos online no PRO,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,pagamento,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,estoque,D,Controle de estoque no PRO,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,multiusuario,D,Tabela: 1 FREE; 3 PRO; 10 GROW; ilimitados PRIME,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,lote,D,Importação em massa no GROW documentada em página específica,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,analytics,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,catalogo,D,50 produtos e catálogo no gratuito,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,variantes,D,Variações anunciadas no menu de recursos; plano específico não atribuído,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,imagens,D,1 foto por produto no gratuito,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,branding,D,Personalização avançada no Pro,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,whatsapp,D,Checkout rápido WhatsApp no Pro,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,pedidos,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,pagamento,D,Pix no gratuito; condições de operação/gateway não testadas,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,estoque,D,Controle de estoque no gratuito,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,multiusuario,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,analytics,D,Vendas/lucratividade e fluxo de caixa no Pro,https://www.stoqui.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Stoqui,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,catalogo,D,20 produtos e hierarquia limitada no gratuito,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,categorias,O,Categorias e links observados na demo,https://demo2.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,subcategorias,D,2 no gratuito; 10 no VIP anunciadas,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,busca,O,Campo de busca observado; busca não submetida,https://demo2.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,variantes,O,Detalhe público apresenta P/M/G e seleção obrigatória,https://demo2.kicatalogo.com/produto/74,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,imagens,O,Foto no produto e links de galeria observados,https://demo2.kicatalogo.com/produto/74,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,disponibilidade,O,Lista pública marca item sem estoque,https://demo2.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,branding,D,Logotipo e cores próprios anunciados,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,whatsapp,D,Pedidos ilimitados WhatsApp anunciados,https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,pedidos,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,pagamento,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,estoque,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,multiusuario,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,lote,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,analytics,D,"Analytics, Pixel e Clarity listados; acesso no plano exige confirmar indicadores visuais",https://www.kicatalogo.com/,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kicatálogo,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

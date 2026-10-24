@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-23T22:46:06.171130+00:00",
+  "installer_reported_path": "/workspace/.agents/skills/impeccable",
+  "final_project_skill_path": "/workspace/sites/vitrine-aberta/.agents/skills/impeccable",
+  "operation": "move only newly installed impeccable skill to requested project",
+  "engine_sha256": "a890a5b4b7d9d79ec54aa74612b5e924e5f5b422600a25fde8bcbda11b031787",
+  "engine_bytes": 21339792,
+  "hook_manifests_installed": false,
+  "package_json_modified": false
+}

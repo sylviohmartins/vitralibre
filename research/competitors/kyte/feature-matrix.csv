@@ -1,0 +1,26 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Kyte,catalogo,D,FREE e catálogo documentados; planos pagos adicionam pedidos e gestão,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,variantes,D,Tabela indica 1 variação PRO e 2 GROW/PRIME; FREE não atribuído a partir de ícones ausentes no texto,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,imagens,D,Tabela: 1 foto FREE; 7 por produto nos pagos,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,branding,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,dominio,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,whatsapp,D,Integração WhatsApp no PRO,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,pedidos,D,Catálogo com pedidos online no PRO,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,pagamento,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,estoque,D,Controle de estoque no PRO,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,multiusuario,D,Tabela: 1 FREE; 3 PRO; 10 GROW; ilimitados PRIME,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,lote,D,Importação em massa no GROW documentada em página específica,https://www.kyteapp.com/pt/planos | https://www.kyte.com.br/plano-grow,2026-10-23T22:35:45.113042+00:00,não
+Kyte,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,analytics,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Kyte,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

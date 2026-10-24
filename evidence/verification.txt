@@ -1,0 +1,54 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vitralibre@0.1.0 verify
+> npm run lint && npm run typecheck && npm test && npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vitralibre@0.1.0 lint
+> node scripts/check.mjs
+
+Lint estrutural: 8 módulos com sintaxe válida; sem padrões de credenciais.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vitralibre@0.1.0 typecheck
+> tsc --allowJs --checkJs --noEmit --target es2022 --module nodenext --moduleResolution nodenext src/core.js src/export.js
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vitralibre@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ normaliza o catálogo sem campos desconhecidos ou referências compartilhadas (1.459294ms)
+✔ rejeita esquema, tipos, limites e relações inválidos (2.549985ms)
+✔ converte valores brasileiros sem arredondamento ou ambiguidade (12.977592ms)
+✔ filtra nomes e descrições sem acentos, descendentes e disponibilidade (1.01607ms)
+✔ protege exclusão de categorias usadas ou com filhas sem mutar entrada (0.456013ms)
+✔ aceita somente imagens remotas, raster base64 e ilustrações próprias (0.430816ms)
+✔ escapa HTML inclusive aspas (0.33161ms)
+✔ JSON faz roundtrip e limita entrada antes de analisar (0.496493ms)
+✔ salva e recupera o último catálogo íntegro pelo backup (1.528377ms)
+✔ falha de quota preserva versão anterior e informa falha (0.384809ms)
+✔ leitura bloqueada ou dados inválidos retornam aviso sem lançar (0.192604ms)
+✔ HTML público é autocontido, preserva dados e neutraliza fechamento de script (1.285058ms)
+✔ exportação rejeita ilustração própria ausente em vez de gerar referência quebrada (0.178554ms)
+✔ lê armazenamento legado sem apagar a cópia anterior (0.188588ms)
+✔ avisa quando somente o armazenamento legado está corrompido (0.185965ms)
+✔ exporta ilustração própria real com gradiente e filtro de referência local (9.10246ms)
+✔ rejeita referências externas ou conteúdo ativo no mapa de ilustrações (0.308976ms)
+✔ catálogo HTML executa pesquisa, filtros, detalhes e compartilhamento sem recursos do editor (475.683837ms)
+✔ editor real mantém CRUD, filtros, validação, tema e QR no armazenamento (1140.664701ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8083.699386
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> vitralibre@0.1.0 build
+> node scripts/build.mjs
+
+Build concluído: editor + 2 catálogos HTML independentes + exemplos JSON + QR local.

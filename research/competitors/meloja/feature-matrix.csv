@@ -1,0 +1,26 @@
+concorrente,criterio,estado,detalhe,url,data_utc,testado_painel
+Meloja,catalogo,D,Modo catálogo no gratuito; 50 produtos e visitas ilimitadas,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,categorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,subcategorias,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,busca,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,filtros,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,variantes,D,Variações no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,imagens,D,Pro anuncia até 15 imagens por produto,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,disponibilidade,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,branding,D,Visual personalizável no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,idiomas,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,restricoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,qr,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,dominio,D,Domínio próprio a partir de Starter,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,whatsapp,D,Pedir produto e botão WhatsApp no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,pedidos,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,pagamento,D,Checkout Pix/cartão/boleto no Starter,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,estoque,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,multiusuario,D,Pro anuncia até 10 administradores e permissões,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,lote,D,Alterações em massa no Pro,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,pdf,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,integracoes,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,analytics,D,Contador de visitas no gratuito,https://www.meloja.com.br/planos,2026-10-23T22:35:45.113042+00:00,não
+Meloja,exportacao,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,offline,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não
+Meloja,rollback,NV,Não verificado nesta sessão; não inferir ausência.,,2026-10-23T22:35:45.113042+00:00,não

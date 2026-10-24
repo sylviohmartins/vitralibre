@@ -1,0 +1,1 @@
+Nenhuma captura persistida neste diretório. Consulte registros textuais sanitizados em ../evidence.md; saídas visuais CUA permaneceram na conversa. Não reutilizar fotos, logotipos ou imagens do fornecedor no produto.
