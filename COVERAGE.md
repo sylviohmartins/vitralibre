@@ -38,3 +38,7 @@ Navegador teve bloqueio automático por limite de uso e cadastros exigem interve
 [Observações práticas adicionais](research/competitors/resume-2026-10-23/practical-observations.md): filtros e variantes combinadas, troca de imagem, carrinho e mínimo de compra de Stoqui; loader LiveMenu; duas demos Goomer 404. Os resultados complementam a baseline de 200 células e não a reclassificam retroativamente. Contas, ativações e logins permanecem zero. A análise estática de três fornecedores está em [REA](research/rea/resume-2026-10-23/README.md).
 
 VitraLibre agora preserva contexto de busca/categoria/disponibilidade/produto na URL e em voltar/avançar. Origem: oportunidade observada no catálogo Stoqui, implementada com código próprio. Dez regressões DOM em tests/public-navigation.test.mjs; revalidação desta alteração no navegador ficou impedida. Galeria por variante, carrinho, pedido mínimo e estoque não foram implementados; não há equivalência declarada.
+
+## Gate solicitado em24/10/2026
+
+Novas funcionalidades suspensas até a revisão de descoberta/escopo. [Plano operacional](research/discovery/PLANO_DESCOBERTA_COMPETITIVA.md) e [controle44 fornecedores](research/discovery/fornecedores.csv) formalizam cadastro/login/jornadas/evidência e inventário expansível, sem limitar a descoberta aos42 critérios legados. Todos os44 permanecem com exploração integral não comprovada; bloqueios não contam como conclusão.
