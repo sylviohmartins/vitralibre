@@ -1,0 +1,56 @@
+# PROPOSTA: copiar para .github/workflows/rea-static-smoke.yml e executar manualmente.
+# Nenhuma execução Actions é declarada por este arquivo fora de .github/workflows/.
+name: VitraLibre REA static smoke
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rea-static:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Prepare fresh report directory
+        id: reports
+        shell: bash
+        run: |
+          directory=$(mktemp -d "${RUNNER_TEMP:?}/vitralibre-rea.XXXXXX")
+          printf 'directory=%s\n' "${directory}" >> "${GITHUB_OUTPUT:?}"
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0; official REA example pin
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0; official REA example pin
+        with:
+          node-version: '24.22.1'
+      - name: Verify tool lock and install isolated REA with no lifecycle scripts
+        env:
+          REPORT_DIR: ${{ steps.reports.outputs.directory }}
+        shell: bash
+        run: |
+          base='research/rea/resume-2026-10-23'
+          node "${base}/verify-tool-pin.mjs"
+          mkdir -p "${RUNNER_TEMP}/rea-tooling"
+          cp "${base}/tooling/package.json" "${base}/tooling/package-lock.json" "${RUNNER_TEMP}/rea-tooling/"
+          npm ci --prefix "${RUNNER_TEMP}/rea-tooling" --ignore-scripts --no-audit --no-fund > "${REPORT_DIR}/npm-install.stdout.txt" 2> "${REPORT_DIR}/npm-install.stderr.txt"
+          node --version > "${REPORT_DIR}/node-version.txt"
+          "${RUNNER_TEMP}/rea-tooling/node_modules/.bin/rea" --version > "${REPORT_DIR}/rea-version.txt"
+          ps --version > "${REPORT_DIR}/ps-version.txt"
+          ps -p $$ -o pid=,ppid=,pgid=,uid=,stat= > "${REPORT_DIR}/ps-self.txt"
+          git rev-parse HEAD > "${REPORT_DIR}/source-commit.txt"
+      - name: Analyze own fixture and app without executing target code
+        env:
+          REPORT_DIR: ${{ steps.reports.outputs.directory }}
+        shell: bash
+        run: |
+          node research/rea/resume-2026-10-23/run-static-smoke.mjs "${RUNNER_TEMP}/rea-tooling/node_modules/.bin/rea" "${REPORT_DIR}" "${GITHUB_WORKSPACE}"
+      - name: Upload original results even on failure
+        if: ${{ always() && steps.reports.outputs.directory != '' }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2; official REA example pin
+        with:
+          name: vitralibre-rea-static-results
+          path: ${{ steps.reports.outputs.directory }}
+          if-no-files-found: error
+          retention-days: 7

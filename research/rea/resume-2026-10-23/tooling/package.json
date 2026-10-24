@@ -1,0 +1,9 @@
+{
+  "name": "vitralibre-rea-static-audit",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Ferramenta isolada de auditoria; não é dependência da aplicação",
+  "license": "MIT",
+  "engines": { "node": ">=24.11.0 <25" },
+  "dependencies": { "rea-agents": "6.7.0" }
+}

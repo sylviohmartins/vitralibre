@@ -1,0 +1,8 @@
+2026-10-24 UTC — verificação local da proposta (não execução Actions)
+node --check run-static-smoke.mjs: exit 0
+node --check verify-tool-pin.mjs: exit 0
+node verify-tool-pin.mjs: exit 0
+REA 6.7.0: URL e integridade do lock conferem com o pacote auditado.
+YAML parse + assertions: exit 0
+Workflow YAML parses; manual trigger, read-only repository permission, six reviewed steps.
+Nenhum novo smoke REA local executado. Nenhum workflow aplicado/disparado por este agente.

@@ -1,0 +1,11 @@
+artifact,timestamp_index_utc,sha256,status
+README.md,2026-10-24T01:31:15.538904+00:00,919f828ff2187d0cab9907cb23da44a07d181d9d371cf423628ac4fbde14fdc4,proposta/documentação
+lock-generation.stderr.txt,2026-10-24T01:31:15.539019+00:00,a2e544258384609a6069ca6cbd92396027f72d25d2d74f28a50035836d61a9b9,proposta/documentação
+lock-generation.stdout.txt,2026-10-24T01:31:15.539066+00:00,bfffcc0bba63f34ed3e3d735a7fb7aaf767f5c85a6e484e954aab917c2806089,proposta/documentação
+ps-current-diagnosis.json,2026-10-24T01:31:15.539101+00:00,2aa39bc127bde79d754f35deb2a39f28d4d164a5444ce148aa9e043353da6d73,observado
+rea-static-smoke.proposed.yml,2026-10-24T01:31:15.539135+00:00,0dfe29532c0ff445ce406c785a4e77eb2fee7497efb9ca5cc34661135ed72df9,proposta/documentação
+run-static-smoke.mjs,2026-10-24T01:31:15.539170+00:00,28aa58ada8610fa55c2d26bce99912c4a40350667af8f13782fcb6a1ee6abce8,proposta/documentação
+tooling/package-lock.json,2026-10-24T01:31:15.539259+00:00,35887d885e63e1736d9fa78301cf35f886ad98178594270c19f04f29bb6efb6b,observado
+tooling/package.json,2026-10-24T01:31:15.539463+00:00,631b0ec8bb39a4d50e79fd0c9813c13e55b220d2225554b1cc5ec1ba11247574,proposta/documentação
+verification.txt,2026-10-24T01:31:15.539510+00:00,87496c480a9544cb14a9b6f736c1c3dd52f638e1fe28bc89cb362eaecc6e2b3f,observado
+verify-tool-pin.mjs,2026-10-24T01:31:15.539547+00:00,3efb321d5826905c230a4833e648e89c0ebba2598a398ed31e147e65e6c82cf6,proposta/documentação
