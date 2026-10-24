@@ -49,6 +49,12 @@ jobs:
         shell: bash
         run: |
           node research/rea/resume-2026-10-23/run-static-smoke.mjs "${RUNNER_TEMP}/rea-tooling/node_modules/.bin/rea" "${REPORT_DIR}" "${GITHUB_WORKSPACE}"
+      - name: Analyze exact public scripts observed in anonymous research
+        env:
+          REPORT_DIR: ${{ steps.reports.outputs.directory }}
+        shell: bash
+        run: |
+          node research/rea/resume-2026-10-23/run-public-bundles.mjs "${RUNNER_TEMP}/rea-tooling/node_modules/.bin/rea" "${REPORT_DIR}/public-metadata"
       - name: Upload original results even on failure
         if: ${{ always() && steps.reports.outputs.directory != '' }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2; official REA example pin
