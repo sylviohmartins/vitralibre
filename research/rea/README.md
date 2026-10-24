@@ -1,6 +1,8 @@
 # VitraLibre — auditoria REA — 23/10/2026
 
-**Resultado: instalação e transporte MCP comprovados; análise de alvo bloqueada pelo ambiente.** Não há resultado de engenharia reversa de concorrente atribuído ao REA.
+**Estado atualizado em 24/10/2026, America/Sao_Paulo:** análise estática REA executada com sucesso no GitHub Actions sobre código próprio e quatro scripts públicos de Kicatálogo, Gopage e Stoqui. [Resultados e limitações](resume-2026-10-23/README.md). Isso é exploração parcial de artefatos públicos; não é engenharia reversa integral dos produtos nem execução de seus painéis.
+
+O registro abaixo preserva a tentativa local anterior, bloqueada pelo ambiente. O guard local não foi modificado.
 
 - [O] `rea-agents@6.7.0`, pacote oficial ligado a `morluto/rea`, instalado em diretório isolado. Licença MIT. Node v24.19.0 / npm 11.9.0.
 - [O] CLI `--version`, `--help` e contratos de comandos executados.

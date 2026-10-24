@@ -38,3 +38,7 @@ Consultadas em 2026-10-23:
 Achados priorizados e estado das correções: `ux-audit.md`. Estado global e evidências: `../../STATUS.md`.
 
 Atualização desta execução: tema próprio claro/escuro do editor, botões de navegação comuns, QR com papel img, textos/contraste e alvos de toque foram refinados. A suíte DOM calcula contraste dos cinco seletores essenciais separadamente do axe. O navegador atingiu limite de uso antes da revalidação visual; não há matriz de viewports completa, leitor de tela real ou conformidade WCAG AA certificada. Consulte STATUS.md.
+
+## Evidência adicional — 24/10/2026
+
+Foram medidas 27 combinações de três superfícies/nove larguras, sem overflow no conteúdo demonstrativo; isso não substitui zoom ou reflow WCAG completo. Escape foi observado fechando detalhe e prévia. Duas regressões específicas verificam contraste do seletor de categoria e disponibilidade em claro/escuro após defeito encontrado em estilos computados no CUA. As últimas correções e o compartilhamento interno ao modal aguardam revalidação nativa; ver `ux-audit.md`. Não há nova nota Lighthouse ou pesquisa com participantes.

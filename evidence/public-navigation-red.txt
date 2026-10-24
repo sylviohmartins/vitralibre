@@ -1,0 +1,160 @@
+✖ link público restaura busca, categoria descendente, disponibilidade e detalhe com variações (135.614343ms)
+✖ parâmetros desconhecidos, IDs inexistentes e texto malformado ficam inertes (26.141142ms)
+✖ digitação substitui contexto no histórico e filtros criam passos navegáveis (19.557842ms)
+✖ voltar e avançar sincronizam filtros e detalhe sem criar novos passos (20.742619ms)
+✖ fechar detalhe vindo de link direto mantém busca e filtro sem sair da página (22.457155ms)
+✖ compartilhar usa URL configurada com contexto atual e preserva parâmetros próprios (17.150279ms)
+✖ URL HTTP real pode ser compartilhada sem endereço configurado (25.637792ms)
+✔ about, file e blob não são anunciados como links públicos (49.761962ms)
+✔ History API bloqueada mantém busca, filtro e fechamento funcionais (20.082723ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 2
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 733.587768
+
+✖ failing tests:
+
+test at tests/public-navigation.test.mjs:22:1
+✖ link público restaura busca, categoria descendente, disponibilidade e detalhe com variações (135.614343ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '' !== 'MACA'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:22:210)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '',
+    expected: 'MACA',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/public-navigation.test.mjs:24:1
+✖ parâmetros desconhecidos, IDs inexistentes e texto malformado ficam inertes (26.141142ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '' !== '�%A'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:24:507)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '',
+    expected: '�%A',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/public-navigation.test.mjs:26:1
+✖ digitação substitui contexto no histórico e filtros criam passos navegáveis (19.557842ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 'maçã'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:26:216)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 'maçã',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/public-navigation.test.mjs:28:1
+✖ voltar e avançar sincronizam filtros e detalhe sem criar novos passos (20.742619ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 'cake'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:28:273)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 'cake',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/public-navigation.test.mjs:30:1
+✖ fechar detalhe vindo de link direto mantém busca e filtro sem sair da página (22.457155ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'cake' !== null
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:30:340)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'cake',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/public-navigation.test.mjs:32:1
+✖ compartilhar usa URL configurada com contexto atual e preserva parâmetros próprios (17.150279ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  null !== 'maca'
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:32:701)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: 'maca',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/public-navigation.test.mjs:34:1
+✖ URL HTTP real pode ser compartilhada sem endereço configurado (25.637792ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(link)
+  
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:34:272)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

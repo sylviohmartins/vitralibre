@@ -11,7 +11,7 @@
 | Login confirmado |0|
 | Fluxos administrativos autenticados concluídos |0|
 | REA instalado/MCP |6.7.0/207 ferramentas reais|
-| Análise concluída por REA |0; bloqueio process-ownership/ps documentado|
+| Análise concluída por REA |GitHub Actions: fixture/src próprios e quatro scripts públicos de Kicatálogo/Gopage/Stoqui; escopo estático parcial, sem painel ou backend|
 | Núcleo VitraLibre |Editor estático, JSON/HTML, pesquisa/categorias/preços/variantes e compartilhamento; limites por capacidade na matriz|
 | Paridade operacional integral |Não verificada para nenhum fornecedor|
 
@@ -32,3 +32,9 @@ Para cada fornecedor e recurso relevante:registrar URL/plano/termos; concluir ca
 Os44 fornecedores incluem SaaS de cardápio, catálogos, e-commerce, CMS/headless, editorial e PIM. Equivalência integral entre essas categorias não é presumida. A solicitação de cobertura completa permanece como pendência explícita; não será substituída por uma afirmação de garantia.
 
 Navegador teve bloqueio automático por limite de uso e cadastros exigem intervenção no fluxo autorizado. Esses impedimentos não foram contornados. Exploração completa autenticada, matriz visual final e paridade continuam pendentes.
+
+## Retomada de 24/10/2026
+
+[Observações práticas adicionais](research/competitors/resume-2026-10-23/practical-observations.md): filtros e variantes combinadas, troca de imagem, carrinho e mínimo de compra de Stoqui; loader LiveMenu; duas demos Goomer 404. Os resultados complementam a baseline de 200 células e não a reclassificam retroativamente. Contas, ativações e logins permanecem zero. A análise estática de três fornecedores está em [REA](research/rea/resume-2026-10-23/README.md).
+
+VitraLibre agora preserva contexto de busca/categoria/disponibilidade/produto na URL e em voltar/avançar. Origem: oportunidade observada no catálogo Stoqui, implementada com código próprio. Dez regressões DOM em tests/public-navigation.test.mjs; revalidação desta alteração no navegador ficou impedida. Galeria por variante, carrinho, pedido mínimo e estoque não foram implementados; não há equivalência declarada.

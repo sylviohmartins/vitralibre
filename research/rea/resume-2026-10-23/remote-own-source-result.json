@@ -1,0 +1,109 @@
+{
+  "run_url": "https://github.com/sylviohmartins/vitralibre/actions/runs/40050399471",
+  "commit": "362d5054f979dbac7752e5151c0b277ba4b1c8ad",
+  "status": "success",
+  "tool": "rea-agents@6.7.0",
+  "records": [
+    {
+      "target": "research/rea/fixture",
+      "start_utc": "2026-10-24T01:34:31.227Z",
+      "end_utc": "2026-10-24T01:34:32.260Z",
+      "command": [
+        "/home/runner/work/_temp/rea-tooling/node_modules/.bin/rea",
+        "analyze-javascript-application",
+        "/home/runner/work/vitralibre/vitralibre/research/rea/fixture",
+        "--json",
+        "--full-output",
+        "--max-heap-mb",
+        "512",
+        "--analysis-timeout-ms",
+        "60000",
+        "--max-semantic-nodes",
+        "25000"
+      ],
+      "exit_code": 0,
+      "signal": null,
+      "startup_error": null,
+      "stdout_sha256": "4849b165d50a807cfdae7c8f6556ae884fe734ada469321f8145204727ef01da",
+      "stderr_sha256": "f47ca94b1cd329a7947e987bf191e972a87bfa8a51f4abe61472a416a89ccf96",
+      "success": true,
+      "summary": {
+        "evidence_id": "ev_ad2487411196cf51661f447b2cb4f1b2ca6d0e3c3c84d67b76057e302528ebe8",
+        "operation": "analyze_javascript_application",
+        "statistics": {
+          "relevant_files": 2,
+          "nested_asar_containers": 0,
+          "text_bytes_read": 798,
+          "invalid_utf8_files": 0,
+          "parsed_javascript_files": 1,
+          "skipped_javascript_files": 0,
+          "visited_ast_nodes": 102,
+          "findings": 3,
+          "modules": 0,
+          "parse_failures": 0
+        },
+        "limitations": [
+          "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+          "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+          "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+          "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+          "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+        ],
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null
+      }
+    },
+    {
+      "target": "src",
+      "start_utc": "2026-10-24T01:34:32.262Z",
+      "end_utc": "2026-10-24T01:34:34.712Z",
+      "command": [
+        "/home/runner/work/_temp/rea-tooling/node_modules/.bin/rea",
+        "analyze-javascript-application",
+        "/home/runner/work/vitralibre/vitralibre/src",
+        "--json",
+        "--full-output",
+        "--max-heap-mb",
+        "512",
+        "--analysis-timeout-ms",
+        "60000",
+        "--max-semantic-nodes",
+        "25000"
+      ],
+      "exit_code": 0,
+      "signal": null,
+      "startup_error": null,
+      "stdout_sha256": "b5c10dedb8ff73319e9d7ef564aaf666f86bac1e8d756aa324ab28227976f038",
+      "stderr_sha256": "460a26a852cc8ef7e1bc8eb9ddd4c6307d5609e542d158f0adf0450ceafdd7f9",
+      "success": true,
+      "summary": {
+        "evidence_id": "ev_72372f33987709453a14175bf4387166b28bdce3b31cf9232f61f968d740e52b",
+        "operation": "analyze_javascript_application",
+        "statistics": {
+          "relevant_files": 4,
+          "nested_asar_containers": 0,
+          "text_bytes_read": 66097,
+          "invalid_utf8_files": 0,
+          "parsed_javascript_files": 4,
+          "skipped_javascript_files": 0,
+          "visited_ast_nodes": 7761,
+          "findings": 70,
+          "modules": 0,
+          "parse_failures": 0
+        },
+        "limitations": [
+          "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+          "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+          "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+          "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+          "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+          "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+        ],
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null
+      }
+    }
+  ]
+}

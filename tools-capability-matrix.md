@@ -5,7 +5,7 @@ Registro:23/10/2026. Valores/fonte das candidatas oficiais em research/rea/tools
 |---|---|---|
 | Node24.19/npm11.9 | build, checkJs, testes e auditoria executados | versão/reprodução em package-lock e evidence |
 | Browser/CUA | navegação pública de concorrentes e editor | novo login/cadastro com intervenção; limite de uso bloqueou QA final |
-| REA6.7.0 | instalação, CLI, MCP207 tools | guard process-ownership/ps impediu análise; pesquisa funcional pública alternativa explicitamente separada |
+| REA6.7.0 | instalação, CLI, MCP207 tools, análise estática real via Actions | guard local preservado; CI concluiu fixture/src e 4 scripts públicos de 3 fornecedores; sem execução/autenticação, cobertura parcial; research/rea/resume-2026-10-23 |
 | Superpowers | skills de plano/TDD/debug/revisão/verificação lidas/aplicadas | autorização autônoma do usuário prevalece sobre confirmações de rotina |
 | OpenSpec | trilha documental principal adotada manualmente (ADR002) | CLI não instalado, não alegar integração Work; Spec Kit não adotado |
 | Playwright MCP | avaliado documentalmente | não conectado; CUA expõe seus próprios locators suportados |

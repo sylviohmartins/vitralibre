@@ -59,3 +59,24 @@ O HTML não depende de módulos, editor, CDN ou servidor. Imagens HTTP/HTTPS for
 `node --test tests/core.test.mjs`: 22 testes, incluindo tipos/limites/referências, preços, filtros sem acento, exclusão protegida, URLs/imagens, escape, JSON, quota/backup, migração legada, XSS no fechamento de script, SVG real com filtros locais e execução do HTML público no JSDOM. O teste DOM verifica busca, filtros, variações e mensagem de compartilhamento sem URL; fornece uma implementação mínima de `showModal`/`close`, pois JSDOM não comprova foco nativo do diálogo ou compartilhamento do sistema.
 
 Logs RED→GREEN iniciais: `evidence/core-red.txt` e `evidence/core-green.txt`; regressões de migração e SVG: `evidence/core-migration-{red,green}.txt`, `evidence/core-svg-{red,green}.txt`; execução DOM: `evidence/core-dom-green.txt`. Revisão final de tamanho agregado/indentação, URL Unicode e licença integral: `evidence/core-final-review-red.txt` (quatro regressões reproduzidas) e `evidence/core-final-review-green.txt` (22 aprovados). A verificação de navegador do projeto cobre layout, teclado, foco e APIs nativas separadamente.
+
+## Adendo: links de contexto no catálogo público
+
+O HTML independente restaura o contexto a partir de quatro parâmetros da URL. A evidência prática de navegação por filtros em catálogo concorrente motivou esta melhoria; não há alteração do schema ou cópia de código/ativos externos.
+
+| Parâmetro | Comportamento |
+| --- | --- |
+| `q` | Preenche a busca por nome/descrição, mantendo a pesquisa sem distinguir acentos. |
+| `category` | Seleciona somente ID presente no próprio catálogo; inclui produtos das categorias descendentes. |
+| `available=1` | Liga o filtro de disponibilidade. Outros valores deixam o filtro desligado. |
+| `product` | Abre o detalhe de um produto existente, incluindo suas variações, mesmo quando outros filtros não o exibem na lista. |
+
+IDs desconhecidos são ignorados. `URLSearchParams` interpreta texto malformado como texto inerte; nada da URL é inserido como HTML. Parâmetros adicionais da URL base e seu fragmento são preservados ao compartilhar; os quatro parâmetros de contexto são atualizados ou removidos conforme os controles atuais.
+
+Digitar na busca usa `replaceState`, evitando um passo de histórico por tecla. Alterar categoria/disponibilidade e abrir produto usa `pushState`. Voltar/avançar restaura controles, resultados e diálogo via `popstate`, sem gravar novos passos. Fechar um detalhe aberto na própria página, pelo botão, fundo ou Escape nativo, retorna ao passo anterior de lista. Fechar um detalhe recebido por link direto remove somente `product` com `replaceState`, conservando busca e filtros sem navegar para fora da vitrine. Diálogos continuam nativos; atualizações de histórico que apenas abrem/fecham detalhe preservam os cartões existentes para permitir a restauração de foco do navegador.
+
+Compartilhar usa primeiro a URL pública configurada, acrescida do contexto atual. Quando não há URL configurada, aceita o endereço HTTP/HTTPS real em que o catálogo público está aberto. `about:`, `file:` e `blob:` não são apresentados como endereço público; o aviso orienta a compartilhar o arquivo HTML. URL configurada continua sendo responsabilidade de quem publica o catálogo, e esta função não cria hospedagem. Compartilhamento nativo, clipboard e link textual usam o mesmo contexto.
+
+Falhas da History API, por exemplo em uma prévia local restrita, não interrompem pesquisa, filtros ou detalhes. Nesses contextos, atualizar a barra de endereço e navegar pelo histórico pode não estar disponível; compartilhar ainda constrói o contexto diretamente dos controles.
+
+Verificação adicional: `tests/public-navigation.test.mjs` executa nove cenários DOM reais sobre o HTML exportado, cobrindo restauração, parâmetros inválidos, tamanho do histórico, voltar/avançar, cancelamento do diálogo, fechamento de link direto, compartilhamento e protocolos locais/History API bloqueada. O limite do JSDOM para foco e teclado nativo permanece: o teste dispara o evento `cancel` que o navegador produz com Escape e usa uma implementação mínima de `showModal`/`close`. Evidências RED→GREEN: `evidence/public-navigation-red.txt` e `evidence/public-navigation-green.txt`; suíte completa em `evidence/public-navigation-suite.txt`.

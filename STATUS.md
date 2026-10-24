@@ -1,34 +1,40 @@
 # VitraLibre — estado verificável
-Data: 23/10/2026, America/Sao_Paulo. Versão 0.1.0 experimental.
 
-## Implementado e verificado
-- Editor local sem conta, CRUD produtos/categorias/subcategorias/variantes, disponibilidade, URL/upload raster, busca e filtros, marca/temas de catálogo, tema claro/escuro do editor, persistência com backup, import/export JSON e HTML independente, URL publicada/QR/compartilhamento.
-- Exemplos originais Casa Flora (restaurante) e Forma Studio (loja), oito produtos cada.
-- Node24: lint estrutural, checkJs núcleo/exportação, 24 testes e build passaram. Registros em evidence/verification-final.txt; execução final de distribuição em evidence/release-verification.txt quando presente.
-- Regressões: integridade de dados, quota, backup, migração de nome legado, XSS, referências e ciclos, limites agregados, normalização Unicode, licença embutida, QR decodificado independentemente, CRUD/tema/validação em DOM, conflito entre abas e contraste de cinco seletores.
-- axe executado em DOM simulado com contraste desativado por limite do JSDOM; testes de contraste separados. Isso não certifica WCAG AA.
-- Browser real antes do bloqueio: editor aberto, screenshot exibido, criação de Café de validação por R$12,90, busca sem acentos e persistência após recarga confirmadas. Não é teste com participante humano.
+Atualização: 24/10/2026, America/Sao_Paulo. Versão 0.1.0 experimental. O projeto está publicado e funcional dentro do núcleo estático, com aceitação integral ainda pendente.
 
-## Pesquisa e ferramentas
-- Anexos integrais lidos; baseline 44 fornecedores/8 abas preservado. Oito dossiês atuais e matriz200 registros:8 observados,67 documentais,125 NV. Sem score arbitrário.
-- Zero contas enviadas, zero ativações/logins confirmados; formulários e demos observados, termos/autenticação exigem intervenção. Meloja bloqueou o navegador após tentativa de recuperação permitida.
-- REA6.7.0 instalado, MCP real inicializado com207 ferramentas; análise JS/HAR e doctor falharam no guard de processos do ambiente. Engenharia reversa com REA NÃO concluída. Logs em research/rea.
-- Impeccable4.7.0 instalado com escopo projeto e sem hooks; contexto executado. Detector inicial1 warning; final0 primários/80 advisories (63 cores/17 raios), sem ocultar avisos. Não há reconhecimento de slash command do Work nem Live Mode alegado. PRODUCT/DESIGN e auditoria em docs/design.
-- Fonte de sistema explícita, contraste/textos/toque/mobile refinados com orientações oficiais; identidade original preservada.
+## Implementado
 
-## Publicação e distribuição
-- Publicação pública confirmada pela resposta nativa: https://vitralibre.milkycalf3.chatgpt.site — status succeeded, versão1, commit96f3f2f9ef276822c86e411d58c0a886e3e7961f. Evidência em evidence/deployment.json. O navegador não foi reaberto para contornar o bloqueio; a verificação de publicação é a confirmação do provedor.
-- Repositório público criado pelo proprietário e confirmado pela integração: https://github.com/sylviohmartins/vitralibre . Código enviado ao main no commit c5561db8349a23bc035237f3ec0c37cf84ee2cd2. Integridade dos323 arquivos conferida por SHA, sem diferenças. CI remota40047480096 concluída com sucesso:24 testes, lint/checkJs/build, Impeccable e auditoria de dependências. Evidência:evidence/github-publication.json.
-- Código licenciado MIT, dependências/avisos preservados e CI configurada. CI GitHub executada com sucesso:https://github.com/sylviohmartins/vitralibre/actions/runs/40047480096 . ZIP pronto para importação quando gerado; não afirmar GitHub/Pages existente.
+Editor local sem conta, CRUD de produtos/categorias/subcategorias/variantes, disponibilidade, URL/upload raster, busca/filtros, identidade e três temas de catálogo, tema claro/escuro próprio do editor, persistência com backup, importação/exportação JSON e HTML independente, prévia isolada, URL pública e QR. Modelos originais Casa Flora e Forma Studio, oito produtos cada.
 
-## Pendências de aceitação
-- Browser após refinamento, viewports320/375/390/768/1024/1440 e intermediários, foco nativo/teclado completo, mobile físico, baixo desempenho/rede lenta, imagens ausentes e catálogos grandes renderizados, antes/depois em arquivos, Lighthouse/Core Web Vitals e acessibilidade integral não concluídos.
-- A revisão automática do navegador rejeitou a última ação porque o ambiente informou limite de uso atingido. Nenhuma superfície alternativa foi usada para contornar o bloqueio. Subagente Impeccable também foi interrompido pelo limite; arquivos já produzidos foram preservados.
-- Prévia inicial falhou corretamente ao rejeitar scripts de live reload que o servidor de desenvolvimento injetou nas imagens SVG. Diagnóstico confirmado pelo console; servidor dev estático próprio sem injeção configurado. Revalidação browser posterior foi bloqueada pelo limite; teste Node da exportação permanece verde.
-- Catálogo independente requer JavaScript para exploração. Imagens próprias/raster incorporadas funcionam sem rede; URLs externas continuam dependentes de rede. Não há service worker/offline instalável nem sincronização/merge de alterações exatamente simultâneas entre abas.
-- P1/P2 backend/multiusuário/pedidos/pagamento/estoque/analytics não implementados. Não há landing separada nem editor drag-and-drop/undo-redo. Busca de marca pública preliminar sem liberação jurídica registral.
+Retomada: links públicos mantêm busca/categoria/disponibilidade/produto, com voltar/avançar e compartilhamento dentro do detalhe. Arquivo local continua utilizável sem History API ou URL hospedada. Seletor de categoria e status de disponibilidade agora usam superfícies/textos semânticos nos dois temas; a falha foi observada em estilos computados reais e reproduzida em testes de contraste.
 
-Próxima ação: reabrir navegador após limite, executar matriz visual/teclado do editor e vitrines nos dois temas, registrar capturas, aprofundar os fluxos autenticados dos fornecedores quando os impedimentos forem resolvidos; homologar somente após os gates pendentes. GitHub e CI já foram concluídos nesta atualização.
+## Validação executada
 
-## Cobertura exigida pelo proprietário
-A garantia de exploração integral de todos os produtos/repositórios e incorporação de suas funções não está atendida. COVERAGE.md e as matrizes44×42 explicitam o estado sem converter anúncios em testes ou recursos planejados em implementados.
+- `npm run verify`: lint estrutural, checkJs do núcleo/exportação, 36 testes e build aprovados. Evidência atual em `evidence/resume-verification.txt` e resumo em `evidence/resume-checks.json`.
+- Regressões de dados, quota/backup, migração, XSS, referências/ciclos, tamanho agregado, Unicode/QR, licença, CRUD, conflito entre abas, navegação/compartilhamento e contraste. Dez testes DOM novos cobrem contexto público e modal. JSDOM adapta dialog; não prova foco nativo/layout.
+- Prévia no browser revalidada na sessão anterior: oito produtos/imagens, pesquisa “limao”, filtro com descendentes, detalhe/variantes e fechamento por Escape. Servidor estático sem injeção de live reload corrigiu a falha anterior de SVG sem enfraquecer sanitizador.
+- Editor e dois catálogos medidos em nove larguras CSS:320/360/375/390/520/768/1024/1280/1440. As 27 medições não mostraram overflow com dados demonstrativos. Iframes em Chromium desktop, sem emulação touch nem dispositivo físico. Transcrição em `evidence/responsive-observations.json`.
+- Impeccable4.7.0 integrado ao projeto; detector repetido:zero alertas primários,80 advisories (63 cores/17 raios), não ocultados. PRODUCT/DESIGN e contratos/auditoria em docs/design. Sem alegação de slash commands nativos ou Live Mode.
+- axe foi executado em DOM simulado, com contraste desativado nessa camada; contraste dos pares cobertos é testado separadamente. Não há certificação WCAG AA nem nota Lighthouse.
+
+## Pesquisa e REA
+
+Anexos lidos integralmente; baseline44 fornecedores/8 abas e42 critérios preservada. Oito dossiês, matriz histórica200 registros (8 observados/67 documentais/125 NV), complementada por `research/competitors/resume-2026-10-23/practical-observations.md`. A retomada explorou filtros, variantes, galeria e carrinho de Stoqui, sem pedido/checkout; demos de Goomer retornaram404 e LiveMenu permaneceu em loader. Não atribuir indisponibilidade geral aos fornecedores.
+
+Zero cadastros enviados, ativações e logins confirmados. Painéis administrativos dos fornecedores não foram explorados integralmente. Meloja teve bloqueio da sessão previamente registrado. Cadastro/autenticação/termos exigem o fluxo e intervenção autorizados; nada foi contornado.
+
+REA6.7.0: instalação/MCP207 ferramentas; guard de processos local preservado. A alternativa oficial via GitHub Actions foi executada: fixture/src próprios, depois quatro scripts públicos observados de Kicatálogo/Gopage/Stoqui, todos parseados com sucesso. Run público:https://github.com/sylviohmartins/vitralibre/actions/runs/40071201126 . Só metadados/hash/grafo/limitações publicados; nenhum código de terceiro redistribuído. Análise estática não prova fluxo de usuário, backend ou paridade. Resultados em `research/rea/resume-2026-10-23/`.
+
+## Publicação
+
+Plataforma pública:https://vitralibre.milkycalf3.chatgpt.site . Código MIT:https://github.com/sylviohmartins/vitralibre . Primeira importação323 arquivos conferida por SHA e CI24 testes aprovada, registrada em `evidence/github-publication.json`. Esta retomada publica um novo checkpoint de código/evidências; os IDs e o resultado da publicação são registrados separadamente após resposta real do provedor.
+
+## Impedimentos e aceitação pendente
+
+A nova reabertura de prévia encontrou conexão recusada; daemon Sites iniciado com sucesso. A tentativa de retomar a aba de erro foi rejeitada pela política de URL do navegador. Nenhuma outra superfície foi usada para contornar a rejeição. As últimas alterações de links/contraste/compartilhamento aguardam revalidação renderizada. Limites de uso também interromperam agentes na sessão anterior; não há revisão independente final alegada.
+
+Faltam capturas antes/depois exportadas, matriz visual integral dos temas/estados, zoom/foco/teclado completo, leitores de tela, rede lenta, imagens quebradas, catálogos grandes renderizados, dispositivos físicos e Lighthouse/Core Web Vitals. As medições de largura e os testes DOM não fecham esses critérios.
+
+Backend/multiusuário, pedidos/pagamento/estoque/analytics, galeria por variante, landing separada e editor drag-and-drop/undo-redo não implementados. HTML exportado requer JavaScript; imagens remotas dependem da rede. Não há service worker ou merge transacional de edições simultâneas. Busca pública de marca é preliminar, sem liberação registral.
+
+**A garantia de exploração integral de todos os produtos/repositórios e incorporação de suas funcionalidades ainda não está atendida.** COVERAGE.md e matrizes44×42 distinguem pesquisa, observação, implementação e homologação. Próximo gate:validar no navegador as alterações atuais, aprofundar painéis autenticados quando o acesso legítimo for possível e implementar os módulos restantes conforme escopo, mantendo evidência por jornada.

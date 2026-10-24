@@ -25,3 +25,19 @@ A busca pública da Gopage e detalhes/variantes do Kicatálogo foram observados;
 
 ## Pessoas e dispositivos
 Personas em specs/personas.md são simulações de cenários, não participantes humanos. Não foram medidos tempos, satisfação, sucesso ou desempenho em smartphone econômico. Nenhum Lighthouse ou Core Web Vitals foi executado. Após o refinamento, o navegador foi bloqueado por revisão automática por limite de uso: sem nova captura, sem matriz 320/375/390/768/1024/1440 executada e sem certificação WCAG AA. Capturas anteriores foram exibidas na sessão, sem arquivo antes/depois salvo. Não fabricar essas evidências.
+
+## Retomada — 24/10/2026, America/Sao_Paulo
+
+O ciclo anterior conseguiu abrir a prévia pública sem erro de SVG, pesquisar “limao” (2 resultados), filtrar pratos com descendentes (2), abrir o Bowl e conferir a opção Com tofu a R$38, base R$32; Escape fechou o detalhe e a prévia. Isso revalida a correção do servidor de preview sem alterar o sanitizador.
+
+Medições CUA em Chromium desktop, usando o harness versionado `tests/fixtures/responsive-harness.html`: editor, Casa Flora e Forma Studio em 320/360/375/390/520/768/1024/1280/1440 CSS px, 27 medições sem overflow horizontal no conteúdo de demonstração. A largura interna foi aferida, compensando a scrollbar do iframe. Registro transcrito em `evidence/responsive-observations.json`. Não é teste em dispositivo físico, emulação touch, zoom ou homologação visual completa.
+
+| Prioridade e achado | Alteração | Evidência e limite |
+|---|---|---|
+| P1 filtro e status escuros com fundo claro fixo | `.select-wrap select` e `.product-status` usam superfície/texto semânticos | CUA encontrou foreground rgb(200,211,189) sobre branco; regressões vermelho→verde em `tests/contrast.test.mjs`, dois temas. Renderização posterior ainda pendente |
+| P2 contexto perdido ao compartilhar/recarregar | URL mantém busca, categoria, disponibilidade e produto; voltar/avançar sincronizam interface | 10 regressões DOM, incluindo contexto direto, histórico indisponível e arquivo offline; browser posterior pendente |
+| P2 compartilhar inacessível com modal aberto | Botão “Compartilhar produto” e feedback dentro do diálogo | Regressão vermelho→verde; padrão `.button`, `role=status`/aria-live; foco nativo ainda pendente |
+
+Detector Impeccable repetido: exit0, zero alertas primários e 80 advisories (63 cores/17 raios), preservados em `research/impeccable/logs/detect-resume.json`. Esses avisos continuam pendentes de consolidação proporcional; não foram ocultados.
+
+Na retomada seguinte, a prévia inicialmente recusou conexão; o daemon foi iniciado com sucesso. A tentativa de retomar a aba em estado de erro foi rejeitada pela política de URL do navegador. Não se usou outra superfície para contornar a rejeição. As últimas alterações não estão homologadas visualmente; Lighthouse, leitor de tela, rede lenta, zoom e capturas antes/depois em arquivos continuam pendentes.

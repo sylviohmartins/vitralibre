@@ -1,0 +1,17 @@
+✔ link público restaura busca, categoria descendente, disponibilidade e detalhe com variações (137.619893ms)
+✔ parâmetros desconhecidos, IDs inexistentes e texto malformado ficam inertes (26.452899ms)
+✔ digitação substitui contexto no histórico e filtros criam passos navegáveis (23.754459ms)
+✔ voltar e avançar sincronizam filtros e detalhe sem criar novos passos (40.817987ms)
+✔ fechar detalhe vindo de link direto mantém busca e filtro sem sair da página (17.093111ms)
+✔ compartilhar usa URL configurada com contexto atual e preserva parâmetros próprios (16.668962ms)
+✔ URL HTTP real pode ser compartilhada sem endereço configurado (16.497723ms)
+✔ about, file e blob não são anunciados como links públicos (49.554664ms)
+✔ History API bloqueada mantém busca, filtro e fechamento funcionais (21.941855ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 717.2136

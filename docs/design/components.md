@@ -13,7 +13,7 @@ Aplicação da disciplina [Impeccable extract](https://impeccable.style/docs/ext
 | `dialogShell` | Produto e categorias | `dialog` modal com título; fechar/Cancelar; Escape e retorno de foco precisam teste real após reconstruir DOM |
 | Preview | Diálogo com iframe do catálogo público | Manter isolamento; conferir público sem conceder acesso ao estado do editor; fechamento sempre alcançável |
 | Mensagens | Aviso local, status de salvamento, toast e erro | Distinguir salvo, falha e recuperado; não inferir sucesso pela ausência de erro visual |
-| Exportação | JSON, HTML e QR | Explicar a diferença; nomes de arquivo úteis; sem token; URL pública obrigatória para QR/share |
+| Exportação | JSON, HTML e QR | Explicar a diferença; nomes de arquivo úteis; sem token; URL pública obrigatória para QR; HTML servido por HTTP(S) pode compartilhar a própria URL |
 | Tema de catálogo | Floresta, terracota, meia-noite | Mudar só aparência; preservar dados; testar cores de todos os estados no HTML final |
 
 ## Extração e tokens
@@ -31,3 +31,9 @@ Conforme [clarify](https://impeccable.style/docs/clarify/), texto de publicaçã
 ## Verificação de mudança visual
 
 Alterar CSS exige conferir os formulários, disponibilidade, preview, categorias, importação/exportação e QR. Não aprovar só a tela inicial. Revisão de estilo não deve trocar centavos por números de ponto flutuante, alterar schema ou remover funcionalidades. Evidências executadas e pendências estão em `ux-audit.md` e `../../STATUS.md`.
+
+## Contexto navegável e controles escuros
+
+O catálogo público restaura `q`, `category`, `available=1` e `product` válidos; parâmetros desconhecidos permanecem inertes. Digitação substitui histórico; filtros/detalhe criam passos; voltar/avançar restauram o contexto. Fechar detalhe vindo da lista retorna ao passo anterior; link direto fecha mantendo filtros. O compartilhamento do produto fica dentro do modal, com feedback anunciado. Arquivos locais sem publicUrl continuam orientando o compartilhamento do HTML.
+
+O seletor de categoria e os badges de disponibilidade do editor devem usar `var(--surface)`/`var(--ink)`, incluindo o tema escuro. Fundos claros literais não devem acompanhar texto que muda para claro no modo escuro. Regra validada por contraste automatizado nos dois temas, sem alegar cobertura de todos os estados.

@@ -1,0 +1,268 @@
+{
+  "schema": "vitralibre-public-rea-summary-v1",
+  "started_utc": "2026-10-24T06:41:55.229Z",
+  "tool": {
+    "name": "rea-agents",
+    "version": "6.7.0"
+  },
+  "policy": {
+    "exact_urls_only": true,
+    "maximum_sources": 4,
+    "bytes_per_source_max": 2097152,
+    "fetch_timeout_ms": 30000,
+    "redirects": false,
+    "retries": 0,
+    "authentication": false,
+    "javascript_executed": false,
+    "browser_used": false,
+    "source_maps_fetched": false,
+    "raw_source_or_analysis_published": false
+  },
+  "results": [
+    {
+      "id": "kicatalogo-template",
+      "source_url": "https://demo2.kicatalogo.com/_core/_cdn/app/js/template.js",
+      "canonical_page": "https://demo2.kicatalogo.com/produto/74",
+      "dom_observed_utc": "2026-10-24T01:36:47.542Z",
+      "source_discovery": "Exact script URL observed in legitimate anonymous CUA DOM session; observation supplied by coordinator.",
+      "fetch_started_utc": "2026-10-24T06:41:55.229Z",
+      "status": "analyzed-static",
+      "successful_parse": true,
+      "http_status": 200,
+      "mime": "application/javascript",
+      "bytes": 5715,
+      "source_sha256": "0742ff252681dae561afa258699fcd423ee222ed6cbdbedf0dbbad4ff9485477",
+      "analysis_exit_code": 0,
+      "analysis_ended_utc": "2026-10-24T06:41:57.090Z",
+      "analysis": {
+        "evidence_id": "ev_c397d57882b60762b25eaadc71d90e3d1ae15c1b3d472df6a6f9c68eff68881c",
+        "operation": "analyze_javascript_application",
+        "statistics": {
+          "relevant_files": 1,
+          "nested_asar_containers": 0,
+          "text_bytes_read": 5715,
+          "invalid_utf8_files": 0,
+          "parsed_javascript_files": 1,
+          "skipped_javascript_files": 0,
+          "visited_ast_nodes": 980,
+          "findings": 0,
+          "modules": 0,
+          "parse_failures": 0
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "limitations": {
+          "evidence_count": 5,
+          "analysis_count": 5,
+          "categories": [
+            "parsing-or-encoding",
+            "runtime-not-established",
+            "unresolved-or-external-dependency"
+          ],
+          "publication_policy": "Original limitation text withheld; may contain source-derived text. Counts do not establish full coverage.",
+          "scope": "Only the explicitly listed observed scripts per target; no imported chunks, source maps, runtime behavior, private endpoints or backend inspected."
+        },
+        "structural_counts": {
+          "nodes": 3,
+          "edges": 2,
+          "node_kinds": {
+            "artifact": 1,
+            "javascript-module": 1,
+            "javascript-asset": 1
+          },
+          "relations": {
+            "contains": 2
+          }
+        },
+        "interpretation": "Counts are static syntax/graph observations, not bugs, vulnerabilities or verified user-facing features."
+      }
+    },
+    {
+      "id": "kicatalogo-lgpd",
+      "source_url": "https://demo2.kicatalogo.com/_core/_cdn/app/js/lgpd.js",
+      "canonical_page": "https://demo2.kicatalogo.com/produto/74",
+      "dom_observed_utc": "2026-10-24T01:36:47.542Z",
+      "source_discovery": "Exact script URL observed in legitimate anonymous CUA DOM session; observation supplied by coordinator.",
+      "fetch_started_utc": "2026-10-24T06:41:57.095Z",
+      "status": "analyzed-static",
+      "successful_parse": true,
+      "http_status": 200,
+      "mime": "application/javascript",
+      "bytes": 2588,
+      "source_sha256": "9173355a6ab9793646846e69dc698665c0767545a08865cafc0bb4bbf0a9dba4",
+      "analysis_exit_code": 0,
+      "analysis_ended_utc": "2026-10-24T06:41:58.697Z",
+      "analysis": {
+        "evidence_id": "ev_fa97c50b2823d80d063079759dad551d3daaf4b84b3a5775a8ae138228c152c3",
+        "operation": "analyze_javascript_application",
+        "statistics": {
+          "relevant_files": 1,
+          "nested_asar_containers": 0,
+          "text_bytes_read": 2588,
+          "invalid_utf8_files": 0,
+          "parsed_javascript_files": 1,
+          "skipped_javascript_files": 0,
+          "visited_ast_nodes": 524,
+          "findings": 0,
+          "modules": 0,
+          "parse_failures": 0
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "limitations": {
+          "evidence_count": 5,
+          "analysis_count": 5,
+          "categories": [
+            "parsing-or-encoding",
+            "runtime-not-established",
+            "unresolved-or-external-dependency"
+          ],
+          "publication_policy": "Original limitation text withheld; may contain source-derived text. Counts do not establish full coverage.",
+          "scope": "Only the explicitly listed observed scripts per target; no imported chunks, source maps, runtime behavior, private endpoints or backend inspected."
+        },
+        "structural_counts": {
+          "nodes": 3,
+          "edges": 2,
+          "node_kinds": {
+            "artifact": 1,
+            "javascript-module": 1,
+            "javascript-asset": 1
+          },
+          "relations": {
+            "contains": 2
+          }
+        },
+        "interpretation": "Counts are static syntax/graph observations, not bugs, vulnerabilities or verified user-facing features."
+      }
+    },
+    {
+      "id": "gopage-app",
+      "source_url": "https://modelodepapelaria.gopage.bio/build/assets/App-OL0Hejxd.js",
+      "canonical_page": "https://modelodepapelaria.gopage.bio/",
+      "dom_observed_utc": "2026-10-24T01:37:32.659Z",
+      "source_discovery": "Exact script URL observed in legitimate anonymous CUA DOM session; observation supplied by coordinator.",
+      "fetch_started_utc": "2026-10-24T06:41:58.699Z",
+      "status": "analyzed-static",
+      "successful_parse": true,
+      "http_status": 200,
+      "mime": "application/javascript",
+      "bytes": 4684,
+      "source_sha256": "b22bbb1067d49cb1e4f94e1e9ba6c8cbb431ddc980bc4d8430914207bf74c9cc",
+      "analysis_exit_code": 0,
+      "analysis_ended_utc": "2026-10-24T06:42:01.106Z",
+      "analysis": {
+        "evidence_id": "ev_f3af16ad241bbbb8dcc08cfba2717b771f4bc4075fea2c130de39cba885d944e",
+        "operation": "analyze_javascript_application",
+        "statistics": {
+          "relevant_files": 1,
+          "nested_asar_containers": 0,
+          "text_bytes_read": 4684,
+          "invalid_utf8_files": 0,
+          "parsed_javascript_files": 1,
+          "skipped_javascript_files": 0,
+          "visited_ast_nodes": 741,
+          "findings": 303,
+          "modules": 0,
+          "parse_failures": 0
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "limitations": {
+          "evidence_count": 5,
+          "analysis_count": 5,
+          "categories": [
+            "parsing-or-encoding",
+            "runtime-not-established",
+            "unresolved-or-external-dependency"
+          ],
+          "publication_policy": "Original limitation text withheld; may contain source-derived text. Counts do not establish full coverage.",
+          "scope": "Only the explicitly listed observed scripts per target; no imported chunks, source maps, runtime behavior, private endpoints or backend inspected."
+        },
+        "structural_counts": {
+          "nodes": 77,
+          "edges": 305,
+          "node_kinds": {
+            "artifact": 1,
+            "javascript-module": 74,
+            "source-map": 1,
+            "javascript-asset": 1
+          },
+          "relations": {
+            "imports": 302,
+            "contains": 2,
+            "maps_to": 1
+          }
+        },
+        "interpretation": "Counts are static syntax/graph observations, not bugs, vulnerabilities or verified user-facing features."
+      }
+    },
+    {
+      "id": "stoqui-catalog-page",
+      "source_url": "https://lilo-kids.stoqui.shop/_next/static/chunks/app/%5Bslug_loja%5D/(main_layout)/page-a2fe436ab9592302.js?dpl=dpl_4GCw4M1KycuXhxijSCZodLvQzUyg",
+      "canonical_page": "https://lilo-kids.stoqui.shop/",
+      "dom_observed_utc": "2026-10-24T01:37:51.551Z",
+      "source_discovery": "Exact script URL observed in legitimate anonymous CUA DOM session; observation supplied by coordinator.",
+      "fetch_started_utc": "2026-10-24T06:42:01.111Z",
+      "status": "analyzed-static",
+      "successful_parse": true,
+      "http_status": 200,
+      "mime": "application/javascript",
+      "bytes": 10187,
+      "source_sha256": "0c3e0caf9cc26119a0dd44f5464495d41ffbb748e773b8bbe9434a5c675a25b8",
+      "analysis_exit_code": 0,
+      "analysis_ended_utc": "2026-10-24T06:42:03.525Z",
+      "analysis": {
+        "evidence_id": "ev_dd51a9577683980669550fd7e41b0273e4d8a98ae5f9f896b95337f973a21c87",
+        "operation": "analyze_javascript_application",
+        "statistics": {
+          "relevant_files": 1,
+          "nested_asar_containers": 0,
+          "text_bytes_read": 10187,
+          "invalid_utf8_files": 0,
+          "parsed_javascript_files": 1,
+          "skipped_javascript_files": 0,
+          "visited_ast_nodes": 3127,
+          "findings": 83,
+          "modules": 11,
+          "parse_failures": 0
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "limitations": {
+          "evidence_count": 6,
+          "analysis_count": 6,
+          "categories": [
+            "bounded-or-partial-coverage",
+            "parsing-or-encoding",
+            "runtime-not-established",
+            "unresolved-or-external-dependency"
+          ],
+          "publication_policy": "Original limitation text withheld; may contain source-derived text. Counts do not establish full coverage.",
+          "scope": "Only the explicitly listed observed scripts per target; no imported chunks, source maps, runtime behavior, private endpoints or backend inspected."
+        },
+        "structural_counts": {
+          "nodes": 50,
+          "edges": 96,
+          "node_kinds": {
+            "javascript-module": 45,
+            "endpoint": 2,
+            "javascript-asset": 1,
+            "javascript-chunk": 1,
+            "artifact": 1
+          },
+          "relations": {
+            "imports": 80,
+            "contains": 14,
+            "calls": 2
+          }
+        },
+        "interpretation": "Counts are static syntax/graph observations, not bugs, vulnerabilities or verified user-facing features."
+      }
+    }
+  ],
+  "ended_utc": "2026-10-24T06:42:03.543Z",
+  "raw_temporary_inputs_deleted": true,
+  "successful_parse_count": 4,
+  "workflow_run_url": "https://github.com/sylviohmartins/vitralibre/actions/runs/40071201126",
+  "source_commit": "10ba8767b5fbdb5acb41c3744cfa2ce744d15fc1"
+}

@@ -1,6 +1,6 @@
 fornecedor,categoria,url,cobertura_real,cadastro_enviado,ativacao_confirmada,login_confirmado,impedimento
-Tagme LiveMenu,A,https://tagme.com.br/produtos/menu-digital,prioritário: documental e/ou interface pública parcial,não,não,não,Rota comercial documentada; teste autônomo não localizado nas fontes consultadas
-Goomer,A/C/D,https://goomer.com.br/planos,prioritário: documental e/ou interface pública parcial,não,não,não,Formulário observado e-mail/senha; termos e contato comercial; browserAuth não cria contas
+Tagme LiveMenu,A,https://tagme.com.br/produtos/menu-digital,prioritário: documental e/ou interface pública parcial,não,não,não,"Rota comercial documentada; teste autônomo não localizado nas fontes consultadas; retomada da demo Outback permaneceu em loader após uma recarga, causa não determinada"
+Goomer,A/C/D,https://goomer.com.br/planos,prioritário: documental e/ou interface pública parcial,não,não,não,Formulário observado e-mail/senha; termos e contato comercial; browserAuth não cria contas; duas demos ligadas pela ajuda oficial retornaram404 na retomada
 Cardápio Web,A/C/D,https://ajuda.cardapioweb.com/boas-vindas/planos-funcionalidades-e-modulos-adicionais,prioritário: documental e/ou interface pública parcial,não,não,não,Formulário de contato documentado com WhatsApp e faturamento; não submetido
 Anota AI,A/C/D,https://anota.ai/home/,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução
 Saipos,A/C,https://saipos.com/,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução
@@ -15,11 +15,11 @@ menumodo,A,https://www.menumodo.com/qr-codes,baseline documental; sem exploraç�
 Flipdish,A/C,https://www.flipdish.com/us/pricing,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução
 cardapily,A/C/D,https://cardapily.com.br/cardapio-digital/guias/quanto-custa-cardapio-digital,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução
 Kyte,B/C/D,https://www.kyteapp.com/pt/planos,prioritário: documental e/ou interface pública parcial,não,não,não,"Signup observado Google/e-mail/Apple, termos; browserAuth não cria contas"
-Gopage,B/C/D,https://gopage.bio/planos,prioritário: documental e/ou interface pública parcial,não,não,não,Formulário observado; WhatsApp/nome/e-mail/senha; aceitação termos no envio; browserAuth não cria contas
-Stoqui,B/C/D/E,https://www.stoqui.com.br/planos,prioritário: documental e/ou interface pública parcial,não,não,não,Onboarding e Pular executados; sem dados cadastrais ou credenciais; browserAuth não cria contas
+Gopage,B/C/D,https://gopage.bio/planos,"documental, jornada pública parcial e REA estático em scripts observados; sem painel autenticado",não,não,não,Formulário observado; WhatsApp/nome/e-mail/senha; aceitação termos no envio; browserAuth não cria contas
+Stoqui,B/C/D/E,https://www.stoqui.com.br/planos,"documental, jornada pública parcial e REA estático em scripts observados; sem painel autenticado",não,não,não,Onboarding e Pular executados; sem dados cadastrais ou credenciais; browserAuth não cria contas
 Meloja,B/C/D/E,https://www.meloja.com.br/,prioritário: documental e/ou interface pública parcial,não,não,não,Cloudflare hard block observado e permaneceu após 1 recarga; não contornado
 LINK Vendas,B/C/D,https://linkvendas.com.br/planos/,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução
-Kicatálogo,B/C/D,https://www.kicatalogo.com/,prioritário: documental e/ou interface pública parcial,não,não,não,Etapa Geral observada com etapa Usuário indicada; nenhum campo enviado; browserAuth não cria contas
+Kicatálogo,B/C/D,https://www.kicatalogo.com/,"documental, jornada pública parcial e REA estático em scripts observados; sem painel autenticado",não,não,não,Etapa Geral observada com etapa Usuário indicada; nenhum campo enviado; browserAuth não cria contas
 Meu Catálogo Digital,B/C/D,https://www.meucatalogodigital.com/,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução
 Categorize,B/C/D,https://categorize.com.br/planos/,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução
 Nuvemshop,E,https://www.nuvemshop.com.br/compare,baseline documental; sem exploração operacional comprovada,não,não,não,Painel/cadastro/jornada não explorados nesta execução

@@ -1,0 +1,207 @@
+{
+  "scope": "Desktop Chromium, same-origin iframe harness; not physical mobile or touch emulation",
+  "observation_session": "2026-10-23 America/Sao_Paulo / 2026-10-24 UTC, previous browser session",
+  "recording": "Transcription of actual CUA measurements retained in conversation; raw REPL arrays did not survive the turn",
+  "surfaces": [
+    "editor",
+    "Casa Flora",
+    "Forma Studio"
+  ],
+  "measurements": [
+    {
+      "surface": "editor",
+      "requested_css_px": 320,
+      "viewport_css_px": 320,
+      "scroll_width_css_px": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 360,
+      "viewport_css_px": 360,
+      "scroll_width_css_px": 360,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 375,
+      "viewport_css_px": 375,
+      "scroll_width_css_px": 375,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 390,
+      "viewport_css_px": 390,
+      "scroll_width_css_px": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 520,
+      "viewport_css_px": 520,
+      "scroll_width_css_px": 520,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 768,
+      "viewport_css_px": 768,
+      "scroll_width_css_px": 768,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 1024,
+      "viewport_css_px": 1024,
+      "scroll_width_css_px": 1024,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 1280,
+      "viewport_css_px": 1280,
+      "scroll_width_css_px": 1280,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "editor",
+      "requested_css_px": 1440,
+      "viewport_css_px": 1440,
+      "scroll_width_css_px": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 320,
+      "viewport_css_px": 320,
+      "scroll_width_css_px": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 360,
+      "viewport_css_px": 360,
+      "scroll_width_css_px": 360,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 375,
+      "viewport_css_px": 375,
+      "scroll_width_css_px": 375,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 390,
+      "viewport_css_px": 390,
+      "scroll_width_css_px": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 520,
+      "viewport_css_px": 520,
+      "scroll_width_css_px": 520,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 768,
+      "viewport_css_px": 768,
+      "scroll_width_css_px": 768,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 1024,
+      "viewport_css_px": 1024,
+      "scroll_width_css_px": 1024,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 1280,
+      "viewport_css_px": 1280,
+      "scroll_width_css_px": 1280,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Casa Flora",
+      "requested_css_px": 1440,
+      "viewport_css_px": 1440,
+      "scroll_width_css_px": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 320,
+      "viewport_css_px": 320,
+      "scroll_width_css_px": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 360,
+      "viewport_css_px": 360,
+      "scroll_width_css_px": 360,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 375,
+      "viewport_css_px": 375,
+      "scroll_width_css_px": 375,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 390,
+      "viewport_css_px": 390,
+      "scroll_width_css_px": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 520,
+      "viewport_css_px": 520,
+      "scroll_width_css_px": 520,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 768,
+      "viewport_css_px": 768,
+      "scroll_width_css_px": 768,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 1024,
+      "viewport_css_px": 1024,
+      "scroll_width_css_px": 1024,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 1280,
+      "viewport_css_px": 1280,
+      "scroll_width_css_px": 1280,
+      "horizontal_overflow": false
+    },
+    {
+      "surface": "Forma Studio",
+      "requested_css_px": 1440,
+      "viewport_css_px": 1440,
+      "scroll_width_css_px": 1440,
+      "horizontal_overflow": false
+    }
+  ],
+  "limitations": [
+    "Only normal demonstration content measured; long text, zoom, broken images and large catalogs not covered",
+    "Not full WCAG, keyboard or visual acceptance",
+    "No exported screenshot files",
+    "Latest URL-context and dark-control CSS changes have not been revalidated in browser"
+  ]
+}

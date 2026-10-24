@@ -60,4 +60,4 @@ GitHub Pages é uma rota para documentação e demonstração fictícia, sujeita
 
 https://vitralibre.milkycalf3.chatgpt.site
 
-Publicação confirmada pelo provedor. Versão experimental: revisão visual final ainda pendente por limite de uso. Os dados de edição permanecem apenas no seu navegador. Repositório público criado pelo proprietário: https://github.com/sylviohmartins/vitralibre . Código publicado e [CI aprovada](https://github.com/sylviohmartins/vitralibre/actions/runs/40047480096). A publicação do código e a CI não homologam paridade funcional com concorrentes.
+Publicação confirmada pelo provedor. Versão experimental: revisão visual final ainda pendente; há medições parciais de layout em nove larguras, descritas em STATUS.md. Os dados de edição permanecem apenas no seu navegador. Repositório público criado pelo proprietário: https://github.com/sylviohmartins/vitralibre . Código publicado e [CI aprovada](https://github.com/sylviohmartins/vitralibre/actions/runs/40047480096). A publicação do código e a CI não homologam paridade funcional com concorrentes.

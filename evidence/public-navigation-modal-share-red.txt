@@ -1,0 +1,38 @@
+✔ link público restaura busca, categoria descendente, disponibilidade e detalhe com variações (145.969008ms)
+✔ parâmetros desconhecidos, IDs inexistentes e texto malformado ficam inertes (29.26568ms)
+✔ digitação substitui contexto no histórico e filtros criam passos navegáveis (26.022177ms)
+✔ voltar e avançar sincronizam filtros e detalhe sem criar novos passos (43.186331ms)
+✔ fechar detalhe vindo de link direto mantém busca e filtro sem sair da página (18.22917ms)
+✔ compartilhar usa URL configurada com contexto atual e preserva parâmetros próprios (16.250957ms)
+✔ URL HTTP real pode ser compartilhada sem endereço configurado (18.971991ms)
+✔ about, file e blob não são anunciados como links públicos (49.630483ms)
+✔ History API bloqueada mantém busca, filtro e fechamento funcionais (22.393963ms)
+✖ produto aberto tem compartilhamento acessível e resposta dentro do diálogo modal (14.333683ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 751.95575
+
+✖ failing tests:
+
+test at tests/public-navigation.test.mjs:40:1
+✖ produto aberto tem compartilhamento acessível e resposta dentro do diálogo modal (14.333683ms)
+  AssertionError [ERR_ASSERTION]: O botão do cabeçalho fica inerte enquanto o diálogo nativo está aberto
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/public-navigation.test.mjs:40:351)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,0 +1,49 @@
+✔ texto essencial do editor tem contraste AA sobre seu fundo claro (315.5223ms)
+✖ filtro de categorias mantém contraste AA nos temas claro e escuro (95.680342ms)
+✖ status de disponibilidade mantém contraste AA nos temas claro e escuro (74.92968ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 1
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 878.172868
+
+✖ failing tests:
+
+test at tests/contrast.test.mjs:15:3
+✖ filtro de categorias mantém contraste AA nos temas claro e escuro (95.680342ms)
+  AssertionError [ERR_ASSERTION]: .select-wrap select/light: rgb(89,99,79) sobre rgba(0, 0, 0, 0), 3.32:1
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/contrast.test.mjs:16:413)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/contrast.test.mjs:15:3
+✖ status de disponibilidade mantém contraste AA nos temas claro e escuro (74.92968ms)
+  AssertionError [ERR_ASSERTION]: .product-status/dark: rgb(200,211,189) sobre rgba(255, 255, 240, 0.933), 1.54:1
+      at TestContext.<anonymous> (file:///workspace/sites/vitrine-aberta/tests/contrast.test.mjs:16:413)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

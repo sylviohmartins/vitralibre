@@ -49,7 +49,9 @@ jobs:
         shell: bash
         run: |
           node research/rea/resume-2026-10-23/run-static-smoke.mjs "${RUNNER_TEMP}/rea-tooling/node_modules/.bin/rea" "${REPORT_DIR}" "${GITHUB_WORKSPACE}"
+      # Third-party analysis is explicit; ordinary app/docs pushes only analyze our code.
       - name: Analyze exact public scripts observed in anonymous research
+        if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[rea-public]') }}
         env:
           REPORT_DIR: ${{ steps.reports.outputs.directory }}
         shell: bash

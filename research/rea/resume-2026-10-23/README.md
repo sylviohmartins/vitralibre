@@ -22,7 +22,14 @@ O nome da pasta preserva a data da tarefa original. Esta retomada começou em **
 
 [O] Verificação local executada: `node --check` nos dois scripts, validação do pin e parse YAML com verificação de gatilho manual/permissões. Resultado: código 0. Evidência em `verification.txt`.
 
-**Estado: proposta pronta; não instalada em `.github/workflows`, não enviada ao GitHub, não disparada e sem resultado de análise Actions.** O responsável pelo repositório pode copiar o YAML proposto para `.github/workflows/rea-static-smoke.yml`, versionar esta pasta e executá-lo manualmente. O checkout deve conter a fixture e o código próprio. Depois, o run/artifact real precisa ser lido para atualizar o status REA; a existência deste YAML não prova execução.
+**Atualização executada:** o workflow real foi instalado em `.github/workflows/rea-static-smoke.yml` e disparado por push. O arquivo `*.proposed.yml` preserva a proposta histórica. O workflow efetivo admite push nos caminhos de pesquisa e execução manual.
+
+- [Run próprio concluído](https://github.com/sylviohmartins/vitralibre/actions/runs/40050399471), commit `362d5054f979dbac7752e5151c0b277ba4b1c8ad`: fixture com 1 JS/102 nós AST; `src` com 4 JS/7.761 nós AST; zero falhas de parse, ambos exit 0. Os 70 findings do código próprio são observações estáticas, não 70 defeitos. Resultado extraído do log original em `remote-own-source-result.json`.
+- [Run público concluído](https://github.com/sylviohmartins/vitralibre/actions/runs/40071201126), commit `10ba8767b5fbdb5acb41c3744cfa2ce744d15fc1`: quatro scripts públicos, três fornecedores, quatro parses bem-sucedidos, zero falhas de parse. `public-bundles.summary.json` preserva hashes, URLs exatas observadas, timestamps, evidências REA, contagens e limites.
+- Downloads de terceiros e resultados brutos ficaram em diretório temporário separado do artefato e foram eliminados ao final; só metadados explicitamente permitidos foram publicados. Sem scripts executados, login, sourcemaps baixados, chunks adicionais ou backend inspecionado.
+- O grafo Gopage inclui referências estáticas de importação; isso não demonstra que os módulos referenciados foram baixados/analisados. A contagem de source-map no grafo não significa que um mapa foi buscado. O grafo Stoqui declara cobertura parcial. Nenhum desses resultados comprova paridade funcional.
+
+Esta execução remota usa o caminho CI documentado, sem modificar guard, PID ou ps local. A revalidação de interface continua na superfície CUA autorizada e não é substituída por esta análise.
 
 ## Confiança e escopo
 

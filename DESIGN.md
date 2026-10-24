@@ -83,3 +83,7 @@ Seções do editor usam navegação de botões comuns enquanto não existir impl
 
 ## Tokens refinados nesta execução
 Texto secundário claro `#59634f`; superfícies `#fffefb` e `#f0f3e8`; tema escuro `#16231e`/`#22372b` com texto `#eaf0e5`/`#c8d3bd`. Espaços 4/8/12/16/24/32 px; movimento 140/200 ms; controles com alvo mínimo 44 px; formulários 16 px; descrição mobile 15 px; produto mobile em uma coluna até 650 px. Teste automatizado calcula contraste nos cinco seletores essenciais; não representa cobertura completa WCAG.
+
+## Refinamento de 24/10/2026
+
+Seletores de categoria e indicadores de disponibilidade do editor herdam superfície/texto semânticos nos dois temas; não usam fundo branco fixo com texto claro do modo escuro. O compartilhamento de produto usa o mesmo botão base e feedback dentro do diálogo. A matriz parcial de nove larguras está em `docs/design/ux-audit.md`; as alterações desta retomada ainda exigem revalidação visual.

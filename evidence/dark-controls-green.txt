@@ -1,0 +1,11 @@
+✔ texto essencial do editor tem contraste AA sobre seu fundo claro (277.117296ms)
+✔ filtro de categorias mantém contraste AA nos temas claro e escuro (123.824703ms)
+✔ status de disponibilidade mantém contraste AA nos temas claro e escuro (71.45897ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 839.334068
