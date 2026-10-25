@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — [1.14/58] limites públicos validados
+
+Mínimo150 bloqueou carrinho107,25; mínimo3 bloqueou2 unidades, ambos com aviso e botão disabled. Configurações originais sem mínimos restauradas e link de checkout revalidado. Cupom Aplicar sem efeito/mensagem confirmado; resgate inconclusivo. Próxima:[1.14/58] continuar descontos/promoções. Total58 inalterado.
+
 ## Continuação25/10 — [1.13/58] revisão documental concluída
 
 Inventário e COVERAGE reconciliados com testes posteriores; Gopage continua parcial. Oito subtarefas1.14–1.21 detalham lacunas existentes; total principal58 inalterado. Próxima:[1.14/58] cupons/promoções/limites no carrinho. Ver remaining-validation.md.

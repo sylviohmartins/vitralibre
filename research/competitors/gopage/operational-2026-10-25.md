@@ -303,3 +303,11 @@ Critérios da subtarefa1.12 validados neste recorte: texto público e regra com 
 Reconciliados14 registros desatualizados no inventário48 linhas, preservando os limites de cada teste e remetendo aos casos posteriores. COVERAGE corrigido: não afirma mais produto não salvo. Histórico do diário preservado; pendências não convertidas em sucesso. Criado remaining-validation.md com8 subtarefas1.14–1.21, detalhando o escopo existente. Total principal58 inalterado; inclusão comunicada ao proprietário.
 
 Revisão documental concluída; Gopage continua com exploração integral não comprovada. Próxima:[1.14/58] promoção/cupom/limites no carrinho, sem envio. Não avançar silenciosamente ao Tagme contrariando prioridade atual.
+
+## [1.14/58] — limites do carrinho; cupom inconclusivo
+
+Carrinho local de avaliação continha2 unidades, total107,25. Link Finalizar compra abriu formulário checkout, sem enviar pedido. Cupom VITRALIBRETESTE10 preenchido e Aplicar acionado uma vez; reinspeção manteve total107,25 sem desconto/mensagem observada. Não declarar resgate bem-sucedido ou cupom inválido; identidade/consumo por uso e requisitos do formulário não determinados. Nenhum dado pessoal preenchido nesse checkout.
+
+Configuração original sem mínimo monetário/quantitativo. Ativado mínimo150 e salvo: carrinho mostrou aviso de mínimo150 e Finalizar compra tornou-se button disabled=true, sem href. Desativado mínimo monetário e ativado quantitativo3, salvo: carrinho2 unidades mostrou aviso mínimo3 e button disabled=true. Desativado mínimo quantitativo e salvo; recarga pública restaurou link de checkout. Configurações originais restauradas, nenhum pedido enviado. Não se testou igualdade da fronteira, bypass por URL direta ou backend; evidência restrita ao bloqueio no carrinho.
+
+Subtarefa1.14 parcialmente validada: limites por valor/quantidade e restauração; cupom e promoções seguem pendentes. Próxima:[1.14/58], continuação de desconto/cupom e promoção. Total58 inalterado, sem novas tarefas.
