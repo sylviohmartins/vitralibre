@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — cliente e orçamento sem persistência
+
+Tentativas com dados mínimos fictícios não criaram cliente/orçamento. Listas confirmaram0; mensagens de validação/erros não observados. Serviço2×10 calculou20 no formulário. Causa de não salvamento indeterminada; não houve envio a terceiros. Próxima tarefa: esclarecer requisitos mínimos e continuar conteúdo/recomendações independentes.
+
 ## Continuação25/10 — lote parcial e SKU repetido
 
 Lote CSV2 linhas retornou1 importado/1 erro e criou somente o válido. Envio com SKU existente criou outro produto, sem atualizar o anterior; lista chegou5 registros de avaliação. Evidências registradas. Próxima tarefa: jornadas persistidas de clientes/orçamento/conteúdo e recomendações, mantendo Gopage prioritária.

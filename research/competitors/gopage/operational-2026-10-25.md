@@ -261,3 +261,11 @@ Enviada uma linha com novo nome/preço9.00 e SKU VITRA-MIX-001 já existente. Re
 Implicação para especificação: declarar importação parcial e tornar o reenvio seguro; permitir escolher criar/atualizar/ignorar com identificação estável e prévia de conflitos. Não presumir que SKU sempre deve ser globalmente único: definir escopo e permitir exceções justificadas. Validar idempotência, duplicação e recuperação após lote misto antes de implementar.
 
 Próxima tarefa: jornadas persistidas de clientes/orçamento/conteúdo e recomendações; completar o quadro de pendências Gopage, sem declarar cobertura integral por contagem de casos.
+
+## Continuação — tentativas de persistência de cliente e orçamento
+
+Cliente fictício apenas com nome e observação de avaliação: Cadastrar Cliente não mudou a tela; retorno à lista mostrou nenhum cadastrado. Inspeções DOM não encontraram inputs nativamente inválidos ou mensagem visível de erro. Isso não estabelece quais campos são exigidos no backend. Não foram inseridos documento, telefone de terceiro ou senha.
+
+Orçamento Rascunho com cliente novo fictício e serviço2×10: total20 conferido, mas Criar Orçamento manteve formulário. Acrescentado email de domínio reservado example.invalid e nova tentativa também sem confirmação. Inspeção de alert/status/form-message/aria-invalid e erros de console retornou vazia. Retorno à lista confirmou0 orçamentos. Não afirmar registro persistido ou notificação enviada; causa permanece indeterminada. Nenhuma tentativa idêntica adicional.
+
+Próxima tarefa: esclarecer requisitos desses cadastros pela ajuda/UI e testar com o conjunto mínimo de dados de avaliação autorizado; continuar conteúdo e recomendações onde independentes. Não inventar CPF/endereço ou atribuir falha ao servidor sem evidência.
