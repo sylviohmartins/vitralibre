@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — [1.15/58] cenário administrativo validado
+
+Pedido fictício #000001 criado com P1×12,50 e contatos sem destinatário real; estoque3→2. Preparando persistiu; Cancelado persistiu e repôs estoque3, conferido publicamente. Pedido mantido cancelado; nenhum comando WhatsApp/pagamento acionado. Pago/Concluído/concorrência não testados. Próxima:[1.16/58] vendedores/comissão/equipe/permissões. Total58 inalterado.
+
 ## Continuação25/10 — [1.14/58] execução encerrada com pendências
 
 Promoção100→80 exibiu-20% publicamente e foi restaurada. Cupom inexistente e cadastrado sem desconto/feedback observado; causa indeterminada, sem homologar resgate/validade/limite. Mínimos já validados/restaurados. Próxima:[1.15/58] pedido administrativo/transições/estoque; lacunas de cupom mantidas para revisão1.21. Total58 inalterado.
