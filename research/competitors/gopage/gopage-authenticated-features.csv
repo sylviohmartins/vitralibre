@@ -19,3 +19,7 @@ GOP-017,Presets de cores,salvo e verificado publicamente,Verde Pinheiro aplicado
 GOP-018,Personalização de catálogo,observado na interface,Identidade; ordenação; moedas; visibilidade; login; atacado Premium,Configurações não alteradas nesta rodada,Agrupar por jornada e explicar dependências
 GOP-019,Banner por upload,observado na interface,Exibição na home; transição; animação; adicionar imagens,Sem upload ou publicação,Descrição alternativa e movimento reduzido
 GOP-020,Arte promocional de produto,seletor aberto,Busca por nome/SKU e modelos de arte observados,Sem seleção ou geração/download,Separar exportação e publicação com prévia
+GOP-021,Pedido administrativo,executado no formulário,Produto Exemplo adicionado; modos de cliente e desconto alternados,Pedido não criado; estoque e notificações não testados,Separar salvar e enviar com resumo financeiro
+GOP-022,Orçamento de produtos e serviços,cálculo frontend verificado,Serviço2×100 menos10% mais frete15 resultou195,Sem persistência/envio; um único caso de cálculo,Aritmética decimal e testes de fronteira
+GOP-023,Filtros de orçamento,observado na interface,Status; período; vendedor; lista vazia,Sem dados para validar filtragem,Contagens e estados vazios contextualizados
+GOP-024,Cadastro e histórico de cliente,observado na interface,Contato/documentos/endereço; senha opcional; pedidos e orçamentos,Nenhum cliente criado ou exportado; login não testado,Dados mínimos e acesso opcional explicado

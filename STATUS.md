@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — pedidos, orçamentos e clientes
+
+Formulários Gopage explorados sem criar registros ou enviar mensagens. Produto Exemplo adicionado somente ao formulário de pedido; desconto avulso alternado. Em orçamento, serviço2×100 com desconto10% e frete15 produziu total195 no frontend. Clientes inspecionado sem cadastro/senha. Próxima tarefa: configurações de orçamento, Estoque e Vendedores. Limites detalhados no diário; sem mudança funcional no VitraLibre.
+
 ## Continuação25/10 — personalização e banners
 
 Gopage: preset Verde Pinheiro salvo e efeito público medido; Black Piano restaurado e confirmado após recarga. Personalização e os dois fluxos de banners inspecionados, sem upload/geração/publicação de arte. Evidências e limites no diário operacional. Próxima tarefa: Pedidos, Orçamentos e Clientes; produtos continuam sem salvamento por falta de arquivo local confirmado. Sem alteração funcional ou redeploy do VitraLibre.

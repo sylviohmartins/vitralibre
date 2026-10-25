@@ -141,3 +141,17 @@ Criar Banner mostrou seleção de produto, modelo Padrão e alternativas Promoç
 - Banners: separar promoção no catálogo de exportação de arte; apresentar tamanhos e descrição alternativa; testar foco/teclado e movimento reduzido. Controles existentes não comprovam suporte a essas práticas.
 
 Próxima tarefa: explorar Pedidos, Orçamentos e Clientes sem enviar pedidos, mensagens ou pagamentos reais. Upload e salvamento dos rascunhos de produto continuam pendentes de arquivo local confirmado. Novas funcionalidades do VitraLibre permanecem suspensas até a consolidação competitiva.
+
+## Continuação — pedidos, orçamentos e clientes
+
+Inspeção autenticada em25/10/2026. Nenhum pedido/orçamento/cliente criado nesta rodada; nenhuma mensagem ou cobrança enviada.
+
+Pedidos: lista inicialmente0 e vendas R$0,00; exportação e filtros de data/status/vendedor observados. Adicionar abriu formulário com cliente existente ou novo. Desativar o switch revelou nome, WhatsApp, email, CPF/CNPJ, inscrição estadual e observações. Selecionado Produto Exemplo no diálogo e adicionado somente ao formulário: total R$100,00. Surgiram controles de cupom e desconto avulso. Ativar o switch de desconto avulso ocultou o seletor de cupom e mostrou tipo Percentual e valor. Pagamentos Pix/crédito/dinheiro/débito/boleto; entrega Delivery/Correios/Retirada/Excursão e endereço observados. Não foi acionado Criar Pedido; persistência, estoque, status, exportação e notificações não testados.
+
+Orçamentos: lista vazia, filtros Todos/Expirando/Rascunho/Enviado/Aprovado/Rejeitado/Expirado, período e vendedor. Formulário em seções expansíveis: emissão/validade/status/vendedor; cliente; itens; desconto/frete/taxa/entrada; descrição de pagamentos; contrato/garantia/observações. Adicionar Serviço inseriu linha sem imagem com descrição, quantidade e preço editáveis. Digitados serviço explicitamente fictício, quantidade2, preço100, desconto10% e frete15: UI mostrou subtotal200, desconto20 e total195, consistente com2×100−20+15. Taxa e entrada ficaram0. Isso valida um caso de cálculo no frontend, não arredondamento, limites, impostos, persistência ou envio/aprovação. Navegou-se para Clientes sem criar o orçamento. Configurações de orçamento ainda não exploradas.
+
+Clientes: lista vazia com baixar/adicionar e filtros Todos/Ativos/Pendentes. Adicionar abriu identificação/contato/documentos/observações/endereço e senha opcional para catálogo que exige login. Seções Pedidos Realizados e Orçamentos Realizados vazias. Nenhum dado inserido, senha criada ou cliente salvo. Exportação, aprovação, autenticação do cliente e vínculo de histórico permanecem pendentes.
+
+Oportunidades: manter resumo financeiro visível e explicar base de desconto/taxa/entrada; validar cálculos monetários com precisão decimal e casos de arredondamento. Distinguir rascunho, salvar e enviar com consequências explícitas; validar ausência de notificação ao salvar. Rotular controles e radios individualmente: a árvore acessível observada no pedido concatenou nomes de alguns pagamentos/entregas, hipótese a confirmar com teclado/leitor de tela, sem concluir falha WCAG automaticamente. Minimizar dados obrigatórios por jornada e explicar acesso opcional do cliente. São propostas para especificação, ainda não implementadas.
+
+Próxima tarefa: configurações de orçamento, Estoque e Vendedores; depois Equipe/Impulsionar/Configurações, respeitando limites de convites, credenciais e serviços externos. Upload e CRUD completo de produto continuam pendentes; cobertura integral dos concorrentes não concluída.
