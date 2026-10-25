@@ -1,5 +1,10 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — envio e importação
+
+Métodos/configurações de envio e instruções CSV Gopage inspecionados. Regras de atributos/variações, preços e categorias registradas em operational-2026-10-25.md. Nenhuma cotação, conexão logística ou importação executada. Próxima tarefa:personalização, cores e banners; retomar testes com arquivo quando disponível.
+
+
 ## Continuação25/10/2026 — combinações e cupom
 
 Gopage:geradas4 combinações de tamanho/cor no formulário; preço/estoque por linha exercitados; remoção/recriação de opção resetou valores das combinações recriadas. Sem produto salvo. Criado cupom percentual10% e presença confirmada após recarga; limite1 digitado, enforcement não testado. Checkout inspecionado sem salvar; Mercado Pago desabilitado no acesso atual. Inventário14 capacidades em research/competitors/gopage/gopage-authenticated-features.csv. Upload continua pendente; pageAssets não inventariou o PNG nessa página GitHub. Próxima tarefa independente:Meios de Envio e importação; concluir CRUD/vitrine de produto quando a imagem for selecionada.

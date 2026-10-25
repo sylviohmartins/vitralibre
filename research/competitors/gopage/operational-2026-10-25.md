@@ -93,3 +93,25 @@ A alternativa pageAssets do Browser foi examinada para a imagem original já pub
 Esses itens são propostas derivadas de observações, não funções entregues no VitraLibre nem evidência de superioridade. Inventário estruturado adicional:gopage-authenticated-features.csv.
 
 Próxima tarefa independente:explorar Meios de Envio e importação por planilha, com regras e limitações. Retomar produto simples/variável com imagem assim que houver arquivo local selecionado; só então validar salvamento, reabertura e vitrine pública. As configurações de checkout permaneceram sem alterações salvas.
+
+## Continuação — envio e contrato CSV observado
+
+Browser/Chrome conectado,25/10/2026. Inspeção autenticada sem salvar configurações, conectar serviços ou contratar frete.
+
+Métodos de Entrega apresentou Excursão, A Combinar, Retirada, Delivery, Correios, Melhor Envio e Super Frete. Texto da interface informa que integrações habilitam dados de endereço no checkout e dependem de CEP origem/destino e peso/dimensões; produto sem esses dados recebe apenas métodos manuais. São regras declaradas na UI, não cotações ou fallback executados. Não foi marcada a concordância do box nem salvo o formulário.
+
+Configurações de Envio mostrou endereço de origem, taxa fixa, embalagem/peso em massa e entrega agendada. Não foram inseridos endereço pessoal, credenciais de transportadora ou dados de compra.
+
+Produtos → Importar Produtos abriu página CSV com botões para baixar modelo e carregar arquivo. O acordeão de instruções foi aberto e revelou o contrato declarado:
+- nome:3–250 caracteres;descricao:3–3000;
+- tipo:simples/variável/externo;preco maior que0, decimal com ponto e não vírgula;
+- sku;gerenciar_estoque sim/não;quantidade_estoque maior que0 quando gerenciado;
+- link_externo para tipo externo;categorias por nome, criadas junto se ausentes;
+- atributos em pares nome=opções, atributos separados por barra;
+- variacoes com chaves iguais aos nomes de atributos, preco e estoque obrigatórios e todas as combinações cobertas, conforme instrução.
+
+Nenhum arquivo foi importado; sucesso, erros, duplicidades, encoding, delimitador do arquivo e atomicidade não foram testados. Não inferir esses pontos do exemplo do acordeão. O formulário manual exigir imagem não prova como a importação trata ausência de imagem:é uma lacuna a testar.
+
+Hipóteses VitraLibre:prévia/mapeamento e validação por linha; mensagens sobre ponto/vírgula; explicitar criação de categorias e combinações faltantes; mostrar fallback de frete antes de publicar. Nenhuma dessas hipóteses foi implementada nesta rodada.
+
+Próxima tarefa:mapear personalização, cores e banners; prosseguir com teste real de importação e produtos assim que houver arquivo local disponível. Envio real/cotações continuam pendentes.
