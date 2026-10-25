@@ -21,3 +21,11 @@ Estado de avaliação: **bloqueado**. Estado de cadastro: **não iniciado** (nen
 | Cartão/pagamento | Não fornecido/executado |
 
 [NV] Prazo contado a partir de ativação e aceitação de e-mail descartável não puderam ser verificados. Nenhuma credencial, endereço de teste, token ou dado pessoal é mantido neste dossiê.
+
+## Retomada operacional — 24/10/2026, America/Sao_Paulo
+
+[O/CUA] Novo acesso autorizado a https://painel.gopage.bio/new/catalog/dados-da-pagina abriu formulário Onboarding - Gopage.bio. A página anuncia7 dias grátis/acesso imediato/sem cartão. Campos visíveis:marca, WhatsApp com paísBR+55, nome, email, senha mínima8 caracteres; Criar meu Catálogo; links de termos/privacidade; aviso reCAPTCHA Enterprise. Nenhum desafio CAPTCHA interativo foi resolvido ou observado nesta etapa. Nenhum campo foi preenchido ou enviado pelo agente; zero conta criada/login.
+
+A capacidade browserAuth foi consultada novamente nesta sessão e mantém a instrução explícita: “Do not use browserAuth to create accounts. If the flow requires new account creation, offer manual handoff so the user can complete signup.” O navegador oferece requestUserTakeover(authentication). Próxima ação concreta:transferir esta aba ao proprietário para cadastro/aceitação dos termos e eventual confirmação de email; depois verificar login por evidência positiva e explorar o painel. Não pedir credenciais no chat. Não afirmar que o proprietário já concluiu a etapa.
+
+O bloqueio anterior de retomada de uma aba de erro local não impediu esta navegação HTTPS distinta. Isso não prova recuperação da prévia local ou do acesso a outros fornecedores.

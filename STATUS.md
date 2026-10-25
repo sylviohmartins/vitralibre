@@ -4,6 +4,8 @@
 
 Em24/10/2026 o proprietário esclareceu que espera cadastro/login, exploração operacional e consolidação abrangente dos concorrentes antes da ampliação funcional. Essa cobertura ainda não existe. Novas funcionalidades estão suspensas; a base publicada é preservada. Plano e gate: [descoberta competitiva](research/discovery/PLANO_DESCOBERTA_COMPETITIVA.md);controle dos44: research/discovery/fornecedores.csv. CSV em andamento foi isolado em feat/csv-import (258bde2), sem merge/deploy, com validação incompleta. A próxima ação passa a ser a descoberta operacional e resolução legítima dos acessos, não retomar CSV.
 
+Retomada de acesso:formulário Gopage reaberto no navegador, campos e oferta de teste observados. Conta/login continuam zero. Cadastro depende de transferência de controle exigida pela capacidade browserAuth; documentação em research/competitors/gopage/account-and-access.md. A pesquisa administrativa ainda não começou.
+
 O registro abaixo descreve o checkpoint publicado anterior e não certifica atendimento à nova condição de descoberta.
 
 Atualização: 24/10/2026, America/Sao_Paulo. Versão 0.1.0 experimental. O projeto está publicado e funcional dentro do núcleo estático, com aceitação integral ainda pendente.
