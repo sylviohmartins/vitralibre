@@ -193,3 +193,17 @@ Próxima tarefa: aprofundar exportação PDF, arte promocional, calendário e ed
 A leitura de estado/navegação subsequente também ficou sem retorno imediato. Não declarar PDF baixado, conteúdo conferido ou defeito Gopage; evidência insuficiente para distinguir geração lenta, aba ocupada e limitação da ferramenta. Arte Promocional, calendário e editores institucionais continuam pendentes de inspeção nesta rodada. Rascunhos de produtos permaneciam listados no momento da recuperação; sem evidência nova de upload ou salvamento.
 
 Próxima ação: recuperar leitura da aba e verificar estado/download antes de repetir qualquer geração; então explorar arte/calendário/editores e consolidar lacunas para seguir Tagme LiveMenu, segundo fornecedor da ordem. O impedimento não altera o gate de descoberta nem autoriza declarar paridade.
+
+## Continuação — retomada, arte, calendário e páginas
+
+A conexão foi recuperada com nova aba e dashboard autenticado. A listagem inicial retornou zero abas controladas: os dois rascunhos anteriores não estavam disponíveis nessa listagem. Não declarar preservação, salvamento ou recuperação automática desses dados. PDF anterior continua sem arquivo confirmado; não houve nova geração.
+
+Arte Promocional: formatos Feed1080×1350 e Stories1080×1920, modelos Padrão/Oferta Dia/Promo/Exclusiva/Hoje/Relâmpago/Super Promo. Selecionado Produto Exemplo no diálogo; prévia exibiu nome e preço100. Não acionado Gerar e baixar; nenhum ativo proprietário exportado ou reutilizado.
+
+Calendário Sazonal abriu nova aba em calendario.gopage.bio. Lista por mês/ano e próximas datas; filtros de segmento/impacto/categoria abertos. Halloween abriu página de detalhe (não diálogo): data, impacto, segmentos, antecedência recomendada e ideias de ações com esforço/investimento; Gerar novas observado mas não acionado. Contagem regressiva exibida não foi validada contra relógio/timezone; datas promocionais e recomendações são conteúdo do fornecedor, não fatos homologados nesta pesquisa.
+
+Quem Somos: textbox editável; texto fictício digitado e valor lido, sem salvar. Navegação para lista e Guia de Tamanhos; este mostrou imagem e checkbox de exibição na página de produto. Editor de Política de Privacidade aberto, com aviso de responsabilidade do lojista; sem alteração ou publicação. Não se verificou persistência de texto não salvo nem conformidade jurídica do modelo. Cursos listou lives e cursos de marketing/catálogo, com aulas/duração/progresso; aulas não executadas. Venda Mais recebeu timeout e leitura subsequente também; destino/conteúdo não confirmado, sem repetição cega.
+
+Oportunidades: arte com prévia de enquadramento e dados de preço; calendário com localidade/timezone e distinção entre feriado e ocasião comercial; guia de medidas também em tabela acessível, além de imagem; aviso claro de alterações não salvas e revisão contextual de páginas. Validar exportação real, leitura por tecnologia assistiva e persistência antes de homologar.
+
+Próxima tarefa: avançar para retomada operacional do Tagme LiveMenu, mantendo lacunas Gopage em aberto. O gate de descoberta continua aberto e não há autorização implícita para declarar todas as funcionalidades testadas.

@@ -35,3 +35,7 @@ GOP-033,Integrações externas,lista inspecionada,ERP; checkout; domínio; analy
 GOP-034,Estatísticas e lucro,painéis inspecionados,Períodos; acessos; vendas; custos; lucro aproximado,Sem validação de instrumentação ou vendas,Definir métricas e timezone
 GOP-035,Páginas institucionais,lista inspecionada,Sobre; entrega; troca; termos; privacidade; tamanhos,Editores/publicação não testados,Modelos claros e revisão contextual
 GOP-036,Exportação de catálogo PDF,tentativa inconclusiva,Capa opcional e categorias observadas; Gerar PDF acionado,Browser expirou sem arquivo/caminho; conteúdo não validado,Progresso e recuperação de geração verificáveis
+GOP-037,Arte promocional social,prévia exercitada,Produto selecionado; nome/preço na prévia; Feed/Stories,Sem geração ou download,Enquadramento e conferência de preço
+GOP-038,Calendário sazonal,lista filtros e detalhe abertos,Segmento/impacto/categoria; antecedência e ideias,Sem geração nova ou validação de datas/timezone,Localidade e critérios explícitos
+GOP-039,Editores institucionais e medidas,formulário exercitado sem salvar,Texto Quem Somos digitado/lido; guia por imagem; privacidade aberto,Sem publicação ou persistência,Tabela acessível e aviso de alterações pendentes
+GOP-040,Conteúdo educacional,lista inspecionada,Cursos com aulas/duração/progresso,Aulas não executadas; Venda Mais inconclusivo,Ajuda contextual por jornada

@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — checkpoint parcial Gopage
+
+Conexão recuperada; prévia de arte com produto, calendário detalhado, editores institucionais e cursos inspecionados. Nenhuma publicação/download validado. Rascunhos anteriores não disponíveis na listagem de abas; PDF permanece inconclusivo. Checkpoint operacional separa evidências e lacunas. Próxima tarefa: retomada operacional Tagme LiveMenu, preservando Gopage em aberto.
+
 ## Continuação25/10 — exportação PDF inconclusiva
 
 Fluxo PDF aberto com capa/categorias; Gerar PDF acionado, mas chamada do navegador expirou sem arquivo/caminho confirmado. Aba continuou listada. Não atribuir falha à Gopage nem declarar download concluído. Arte/calendário/editores seguem pendentes. Próxima ação: recuperar leitura da aba e verificar estado antes de repetir geração; depois consolidar lacunas e avançar ao Tagme LiveMenu.
