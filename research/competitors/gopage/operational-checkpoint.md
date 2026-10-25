@@ -13,6 +13,6 @@
 | Clientes/vendedores/equipe | Cliente de avaliação salvo; vendedores/equipe inspecionados | Histórico/reabertura do cliente confirmados; vendedores, autorização e comissão pendentes |
 | Importação/envio/integrações | CSV real com uma linha importado e reaberto; categoria criada | Lote misto com sucesso parcial e SKU repetido com nova criação confirmados; cotações e integrações pendentes |
 | Exportação/marketing | Prévia de arte; calendário e QR inspecionados | PDF por categoria gerado e inspecionado; Todas/capa/volume e leitura QR pendentes |
-| Conteúdo/métricas | Editores, cursos e painéis lidos | Publicação, acessibilidade e instrumentação |
+| Conteúdo/métricas | Sobre Nós publicado e conferido; recomendação de categoria exercitada publicamente e desativada | Demais políticas, regras isoladas, acessibilidade e instrumentação |
 
 Não confundir número de registros do inventário com percentual de cobertura. Recursos podem exigir novos casos e linhas. O proprietário priorizou finalizar Gopage antes de Tagme. Arquivo local e upload resolvidos após permissão habilitada; criação simples e imagem pública confirmadas. Não ampliar o VitraLibre até a revisão de descoberta definida no plano.

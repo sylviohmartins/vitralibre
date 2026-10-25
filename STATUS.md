@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — [1.12/58] validada no recorte
+
+Sobre Nós publicado com aviso de avaliação e conferido publicamente. Regra de recomendação criada; ativação persistiu e sugestões públicas funcionaram; adicionar item atualizou total e retirou sugestão repetida. Função desativada e ausência pública revalidada. Sem pedido enviado. Próxima:[1.13/58] revisão de lacunas/fechamento verificável Gopage. Total58 inalterado.
+
 ## Continuação25/10 — [1.11/58] validada
 
 Orçamento reaberto com status/cliente/serviço2×10/total20 preservados. Histórico do cliente mostrou1 orçamento com mesmo código e valor. Sem alteração de status ou envio. Próxima tarefa:[1.12/58] conteúdo institucional e recomendações. Total58 inalterado.

@@ -285,3 +285,15 @@ ORC-2026-00001 reaberto pelo controle square-pen. Status Rascunho, cliente de av
 Cliente reaberto pelo controle square-pen: histórico indicou0 pedidos e1 orçamento, código ORC-2026-00001, data25/10/2026 e valor20. Vínculo entre cadastro e orçamento confirmado. Não se testou pedido, transição de estado ou ausência técnica de notificações. Nenhum comando de envio usado.
 
 Subtarefa1.11 concluída para os critérios de reabertura/vínculo previstos. Próxima:[1.12/58] conteúdo institucional e recomendações. Nenhuma nova tarefa principal adicionada; total58 permanece.
+
+## [1.12/58] — conteúdo publicado e recomendação pública
+
+Quem Somos salvo com texto original informando ambiente fictício e não comercialização. Lista moveu para Páginas Ativadas; link público Sobre VitraLibre abriu Sobre Nós com texto integral. Permanece publicado, útil para identificar a avaliação; demais políticas não alteradas.
+
+Criada regra categoria Exemplo Categoria1→Avaliacao CSV. Lista informou1 regra alcançando1 dos5 produtos. Ativação de venda sugestiva executada; check inicialmente reportou estado não alterado, mas reinspeção mostrou aria-checked=true e ATIVA; recarga confirmou. Não se repetiu a ativação.
+
+Carrinho existente exibiu três sugestões CSV7,25/8,50/9. Adicionar o primeiro ao carrinho elevou total100→107,25 e excluiu esse item das sugestões restantes, sem sair da página. Não houve Finalizar compra ou envio. O item antigo do carrinho conservava nome temporário de teste e preço atualizado100, observado sem atribuir causa; investigar reconciliação do snapshot do carrinho em caso próprio.
+
+Função desativada e recarga confirmou false; recarga pública removeu sugestões. Regra permanece cadastrada porém função inativa; carrinho de avaliação contém itens não enviados. Ordenação por margem, limite de preço, exclusão de estoque zero e fallback ainda não isolados. Não chamar esses casos de homologados.
+
+Critérios da subtarefa1.12 validados neste recorte: texto público e regra com efeito público/adicionar/exclusão de item presente/desativação. Próxima:[1.13/58] revisar lacunas e fechamento verificável Gopage, sem certificar exploração integral pendente. Nenhuma tarefa principal adicionada; total58.
