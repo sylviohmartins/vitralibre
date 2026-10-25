@@ -115,3 +115,29 @@ Nenhum arquivo foi importado; sucesso, erros, duplicidades, encoding, delimitado
 Hipóteses VitraLibre:prévia/mapeamento e validação por linha; mensagens sobre ponto/vírgula; explicitar criação de categorias e combinações faltantes; mostrar fallback de frete antes de publicar. Nenhuma dessas hipóteses foi implementada nesta rodada.
 
 Próxima tarefa:mapear personalização, cores e banners; prosseguir com teste real de importação e produtos assim que houver arquivo local disponível. Envio real/cotações continuam pendentes.
+
+## Continuação — personalização, cores e banners
+
+### Tema: alteração pública reversível verificada
+
+Na tela Cores do Catálogo, os presets observados foram Black Piano, Azul Puro, Laranja Shopp, Vermelho Rosso, Luxo Gold, Amarelo Sun, Rosa Lux e Verde Pinheiro. Há controles separados de texto/fundo para cabeçalho, campos, botões, faixa superior, rodapé e painéis, além de fundo sólido/gradiente.
+
+Selecionado Verde Pinheiro e acionado Salvar. Na vitrine de avaliação, a leitura DOM do fundo do banner retornou rgb(3,176,124). Selecionado Black Piano e salvo; após recarregar a vitrine, o fundo retornou rgb(0,0,0). Isso valida preset → persistência → efeito público → restauração, sem afirmar cobertura de todos os controles ou contraste WCAG. Não confundir a vitrine hospedada na Gopage com a aplicação VitraLibre.
+
+### Personalizar: observação sem salvar
+
+Observados logo recomendado512×512, formatos JPEG/JPG/PNG/WebP/HEIC/HEIF; ordem de produtos aleatória/mais vendidos/mais acessados/últimos/alfabética; moedas BRL/USD/EUR/guarani/peso argentino; WhatsApp e botão flutuante; grupo VIP com link/nome/convite e aviso de exibição dependente do link; contatos/endereço; faixa de anúncio; informativos com rolagem horizontal no mobile; suspensão temporária; ocultar sem estoque; ocultar filtros de variação na home; controle+18; exigir login; preços atacado/varejo com indicação Premium; redes sociais e texto institucional. Nenhuma dessas configurações foi alterada nesta rodada.
+
+### Banners: dois fluxos inspecionados
+
+Adicionar Banner mostrou transição de opacidade, exibição na página inicial, animação automática com recomendação de mais de um banner, adicionar imagens, remover última e salvar. Nenhuma imagem enviada ou configuração salva.
+
+Criar Banner mostrou seleção de produto, modelo Padrão e alternativas Promoção incrível, Black Friday, Simples amarelo e Oferta de hoje, com Gerar e baixar. O seletor abriu uma lista pesquisável por nome/SKU com Produto Exemplo, preço e tipo. Nenhum produto selecionado, arte gerada ou download confirmado. O timeout após acionar o seletor foi seguido de reinspeção: o diálogo estava aberto; não se repetiu a ação cegamente.
+
+### Oportunidades e validação futura
+
+- Cores: oferecer prévia e restauração explícita; validar contraste por componente em ambos os temas e persistência após recarga. O efeito do preset foi validado, acessibilidade não.
+- Personalização: agrupar controles por jornada e mostrar dependências de login/estoque/planos antes de salvar; testar compreensão com simulações identificadas como tais e depois participantes reais.
+- Banners: separar promoção no catálogo de exportação de arte; apresentar tamanhos e descrição alternativa; testar foco/teclado e movimento reduzido. Controles existentes não comprovam suporte a essas práticas.
+
+Próxima tarefa: explorar Pedidos, Orçamentos e Clientes sem enviar pedidos, mensagens ou pagamentos reais. Upload e salvamento dos rascunhos de produto continuam pendentes de arquivo local confirmado. Novas funcionalidades do VitraLibre permanecem suspensas até a consolidação competitiva.

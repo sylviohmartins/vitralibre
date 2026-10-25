@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — personalização e banners
+
+Gopage: preset Verde Pinheiro salvo e efeito público medido; Black Piano restaurado e confirmado após recarga. Personalização e os dois fluxos de banners inspecionados, sem upload/geração/publicação de arte. Evidências e limites no diário operacional. Próxima tarefa: Pedidos, Orçamentos e Clientes; produtos continuam sem salvamento por falta de arquivo local confirmado. Sem alteração funcional ou redeploy do VitraLibre.
+
 ## Continuação25/10 — envio e importação
 
 Métodos/configurações de envio e instruções CSV Gopage inspecionados. Regras de atributos/variações, preços e categorias registradas em operational-2026-10-25.md. Nenhuma cotação, conexão logística ou importação executada. Próxima tarefa:personalização, cores e banners; retomar testes com arquivo quando disponível.

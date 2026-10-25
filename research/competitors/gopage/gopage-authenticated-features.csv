@@ -13,3 +13,9 @@ GOP-011,Pedido mínimo,observado na interface,Configuração em valor e quantida
 GOP-012,Orçamento e carrinho,regra declarada na UI,Texto diz orçamento desativa carrinho e sem carrinho permite WhatsApp individual,Não exercitado/salvo,Explicar consequências antes de mudar modo
 GOP-013,Visibilidade de preços,observado na interface,Ocultar preço e desbloquear por senha,Não ativado; sem criação de credencial,Clareza de público e autorização
 GOP-014,PIX e parcelamento,observado na interface,Controles de desconto PIX e parcelas sem juros,Não configurado ou cobrado,Condições visíveis antes da solicitação
+GOP-015,Métodos e regras de envio,declarado na UI,Métodos manuais e integrações com requisitos de CEP/peso/dimensões,Sem cotação ou conexão,Prévia de elegibilidade e fallback
+GOP-016,Importação CSV,instruções inspecionadas,Contrato de campos e combinações documentado no diário,Nenhum arquivo importado,Prévia e erro por linha
+GOP-017,Presets de cores,salvo e verificado publicamente,Verde Pinheiro aplicado; Black Piano restaurado; fundos medidos,Sem auditoria completa de contraste,Prévia e restauração explícita
+GOP-018,Personalização de catálogo,observado na interface,Identidade; ordenação; moedas; visibilidade; login; atacado Premium,Configurações não alteradas nesta rodada,Agrupar por jornada e explicar dependências
+GOP-019,Banner por upload,observado na interface,Exibição na home; transição; animação; adicionar imagens,Sem upload ou publicação,Descrição alternativa e movimento reduzido
+GOP-020,Arte promocional de produto,seletor aberto,Busca por nome/SKU e modelos de arte observados,Sem seleção ou geração/download,Separar exportação e publicação com prévia
