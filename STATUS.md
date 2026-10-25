@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — lote parcial e SKU repetido
+
+Lote CSV2 linhas retornou1 importado/1 erro e criou somente o válido. Envio com SKU existente criou outro produto, sem atualizar o anterior; lista chegou5 registros de avaliação. Evidências registradas. Próxima tarefa: jornadas persistidas de clientes/orçamento/conteúdo e recomendações, mantendo Gopage prioritária.
+
 ## Continuação25/10 — PDF por categoria e erro CSV validados
 
 CSV com preço negativo rejeitado; relatório por linha/coluna e CSV de erros baixados; lista permaneceu3 produtos. PDF somente Exemplo Categoria1 gerado/baixado34305 bytes,1 página, texto e renderização inspecionados. Exportação Todas/capa/volume ainda sem homologação. Próxima tarefa: lote misto/duplicação e jornadas persistidas restantes da Gopage.

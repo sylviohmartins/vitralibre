@@ -251,3 +251,13 @@ CSV fictício de uma linha com preço-1 enviado. UI retornou0 importados/1 erro,
 PDF: selecionada somente Exemplo Categoria1 no diálogo de categorias, sem capa. Gerar PDF produziu arquivo local34305 bytes. Leitura com pypdf confirmou1 página, categoria escolhida, Produto Exemplo/preço100, título e link da vitrine. Renderização Poppler inspecionada mostrou produto/imagem/preço e cabeçalho/rodapé; tipografia com espaçamento irregular e muito vazio nesta amostra. Contatos da conta presentes no PDF não foram transcritos para o repositório; arquivo bruto com imagem do fornecedor não publicado. Esse caso fecha geração/download/conteúdo por categoria; não comprova exportação Todas, capa, grandes catálogos ou variações. Tentativas anteriores sem arquivo continuam históricas/inconclusivas e não têm causa atribuída retroativamente.
 
 Oportunidades: mensagens CSV devem usar rótulo do usuário (preço) e regra inequívoca; permitir correção/reenvio sem duplicação; PDF com formatação monetária pt-BR, tipografia consistente e paginação testada com textos/imagens grandes. Próxima tarefa: importação de lote misto/duplicação e jornadas persistidas de orçamento, clientes e conteúdo, dentro dos limites de autorização. Gopage ainda não integralmente concluída.
+
+## Continuação — lote misto e SKU repetido
+
+Enviado CSV próprio com2 linhas: válida8.50/SKU VITRA-MIX-001 e inválida-2/SKU VITRA-MIX-BAD. Resultado1 importado/1 erro de2, linha3 coluna preco. Lista aumentou3→4, exibindo somente linha válida. Nesse caso a operação é parcial por linha; não há rollback global do lote ao encontrar esse erro de validação. Não generalizar para falhas de infraestrutura ou outros erros.
+
+Enviada uma linha com novo nome/preço9.00 e SKU VITRA-MIX-001 já existente. Resultado1 importado e lista4→5, mantendo ambos os registros com mesmo SKU e preços8.50/9.00. Não ocorreu upsert por SKU nesse caso. Não se testou linha inteiramente idêntica nem identificador de produto externo. Registros explicitamente fictícios permanecem no ambiente de avaliação.
+
+Implicação para especificação: declarar importação parcial e tornar o reenvio seguro; permitir escolher criar/atualizar/ignorar com identificação estável e prévia de conflitos. Não presumir que SKU sempre deve ser globalmente único: definir escopo e permitir exceções justificadas. Validar idempotência, duplicação e recuperação após lote misto antes de implementar.
+
+Próxima tarefa: jornadas persistidas de clientes/orçamento/conteúdo e recomendações; completar o quadro de pendências Gopage, sem declarar cobertura integral por contagem de casos.

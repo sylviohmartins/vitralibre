@@ -45,3 +45,5 @@ GOP-043,Variação persistida e seleção pública,salvo reaberto e exercitado,P
 GOP-044,Importação CSV simples,importado e reaberto,Uma linha UTF-8 sem BOM; nome/preço/SKU/categoria persistidos; sem imagem,Sem duplicados/erros/lote misto/rollback,Prévia de validação e regra de imagem consistente
 GOP-045,Erro de importação por linha,rejeição e relatório verificados,Preço-1 rejeitado;0 importados; CSV de erros baixado/lido,Sem teste zero/duplicado/lote misto,Regra inequívoca e correção sem duplicação
 GOP-046,PDF por categoria,gerado baixado e inspecionado,34305 bytes;1 página; categoria/produto/preço/imagem confirmados,Sem Todas/capa/volume/variantes,Tipografia e moeda local consistentes
+GOP-047,Importação de lote misto,sucesso parcial confirmado,2 linhas:1 criada/1 rejeitada; lista3→4,Caso de validação; sem falha de infraestrutura,Reenvio seguro com resumo de efeitos
+GOP-048,SKU repetido na importação,novo registro confirmado,SKU existente criou produto adicional; anterior mantido; lista4→5,Sem linha inteiramente idêntica ou ID externo,Escolha explícita criar/atualizar/ignorar
