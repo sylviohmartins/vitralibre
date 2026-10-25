@@ -40,3 +40,5 @@ GOP-038,Calendário sazonal,lista filtros e detalhe abertos,Segmento/impacto/cat
 GOP-039,Editores institucionais e medidas,formulário exercitado sem salvar,Texto Quem Somos digitado/lido; guia por imagem; privacidade aberto,Sem publicação ou persistência,Tabela acessível e aviso de alterações pendentes
 GOP-040,Conteúdo educacional,lista inspecionada,Cursos com aulas/duração/progresso,Aulas não executadas; Venda Mais inconclusivo,Ajuda contextual por jornada
 GOP-041,Criação de produto simples com imagem,salvo reaberto e verificado publicamente,Nome/preço/SKU/subcategoria persistidos; imagem640×640 carregada,Um caso; sem exclusão ou variações persistidas,Feedback de upload e revisão antes de publicar
+GOP-042,Estoque simples persistido,salvo e verificado publicamente,3→0 na gestão; recarga confirmou esgotado; público indisponível,Sem pedido/baixa/reserva concorrente,Alterações pendentes e consistência de indicadores
+GOP-043,Variação persistida e seleção pública,salvo reaberto e exercitado,P12.50/3; M15/0; seleção alternou preço/disponibilidade,Um atributo; sem enforcement de pedido ou foto por opção,Mensagens e preço coerentes por combinação

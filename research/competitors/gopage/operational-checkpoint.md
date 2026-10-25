@@ -6,10 +6,10 @@
 |---|---|---|
 | Acesso | Cadastro, email confirmado e sessão autenticada | Novo login independente e papéis |
 | Categorias | Categoria/subcategoria criadas; raiz pública | Reordenação e recuperação |
-| Produtos | Imagem enviada; produto simples criado/reaberto e conferido publicamente; edição existente restaurada | Variações persistidas e exclusão não testadas |
+| Produtos | Imagem enviada; produto simples criado/reaberto e conferido publicamente; edição existente restaurada | P/M com preços/estoques persistidos e seleção pública validada; exclusão não testada |
 | Promoção | Cupom percentual persistido; tema aplicado/restaurado | Resgate, enforcement e validade |
 | Pedidos/orçamentos | Seleção de produto e um cálculo de serviço conferido | Persistência, status, estoque e notificações |
-| Estoque | Filtro sem controle e busca verificados | Quantidades, variações e concorrência |
+| Estoque | Quantidade simples e por variação persistida; zero indisponível publicamente | Concorrência, baixa/reserva por pedido e limites de quantidade |
 | Clientes/vendedores/equipe | Formulários e regras declaradas | Cadastros, autorização e comissão |
 | Importação/envio/integrações | Contratos e opções lidos | Arquivo real, cotações e integrações autorizadas |
 | Exportação/marketing | Prévia de arte; calendário e QR inspecionados | PDF inconclusivo; downloads e leitura QR |

@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — variantes e estoque validados
+
+Estoque simples3→0 salvo/recarregado e indisponibilidade pública confirmada. Produto de teste convertido para variável: P12,50/3 e M15/0 persistidos na reabertura; seleção pública alternou preço/disponibilidade corretamente. Sem pedido ou baixa por venda. Próxima tarefa: exportações/importação e demais lacunas Gopage.
+
 ## Continuação25/10 — upload resolvido
 
 Imagem original enviada com sucesso após permissão habilitada. Produto simples fictício salvo, reaberto e conferido na vitrine/detalhe com preço12,50, SKU, subcategoria e imagem carregada640×640. Produto permanece no ambiente de avaliação. Próxima tarefa: variantes persistidas/estoque e exportações; não declarar Gopage integralmente concluída.

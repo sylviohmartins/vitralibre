@@ -225,3 +225,11 @@ Após o proprietário informar a permissão habilitada, nova sessão listou zero
 Vitrine e detalhe públicos confirmaram produto, preço12,50, SKU, subcategoria e descrição explícita de não comercialização. Imagens correspondentes carregadas, complete=true e dimensões naturais640×640; screenshot de sessão inspecionado mostrou a imagem original da caneca. Upload/criação/reabertura/publicação do produto simples estão validados neste caso; exclusão, variantes persistidas e importação permanecem sem homologação. Não declarar CRUD completo. Produto de teste permanece publicado no ambiente de avaliação Gopage. Sem pedido/mensagem/pagamento enviado.
 
 Próxima tarefa: persistência de variantes e estoque; depois exportações PDF/CSV e demais lacunas do checkpoint. Permissão de upload deixa de ser impedimento ativo.
+
+## Continuação — estoque e variações persistidos
+
+No produto fictício criado, ativado gerenciamento de estoque, quantidade3 e Salvar. Tela Estoque apresentou1 item baixo e3 unidades. Editado para0 na tabela: UI mostrou1 alteração não salva, Descartar e Salvar alterações; após salvar/recarregar,1 esgotado e0 unidades. Detalhe público mostrou indisponível e0 unidades. Não foi enviado pedido; concorrência, reservas e baixa por venda não testadas.
+
+Convertido o mesmo produto de avaliação para Variável, atributo Tamanho=P/M. Gerenciar Estoque e Alterar Valor e Estoque das Variações ativos. P:preço12,50/estoque3; M:preço15/estoque0. Salvar retornou lista com Produto Variável/Estoque3. Reabrir confirmou os quatro valores. Página pública recarregada mostrou seletor P/M. Selecionar M via select nativo atualizou preço15 e estado indisponível/0; selecionar P voltou a12,50 e disponível/3 com botão adicionar. É validação de persistência e apresentação por combinação, sem enforcement de checkout, fotos por opção ou múltiplos atributos persistidos.
+
+Produto permanece variável nessas condições no ambiente de avaliação. Próxima tarefa: exportações e importação, seguidas das demais lacunas operacionais; Gopage ainda sem cobertura integral.
