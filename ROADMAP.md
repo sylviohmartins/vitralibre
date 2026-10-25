@@ -1,5 +1,7 @@
 # Evolução de VitraLibre
 
+**Direção atual:** descoberta operacional antes da ampliação. A [ordem completa dos44 fornecedores e a sequência proposta de implementação](research/discovery/ORDEM_EXPLORACAO_IMPLEMENTACAO.md) detalham a fila e as dependências. As etapas abaixo são a priorização anterior e não autorizam retomar funcionalidades antes da revisão de descoberta.
+
 Este roadmap define prioridade, não conclusão ou prazo contratado. Entregas verificadas e bloqueios estão em [STATUS](STATUS.md); requisitos rastreáveis em [specs/requirements.csv](specs/requirements.csv).
 
 | Etapa | Resultado esperado | Condição para avançar |

@@ -93,3 +93,7 @@ Consultadas em24/10/2026:
 - Nielsen Norman Group, competitive usability testing: https://www.nngroup.com/articles/redesign-competitive-testing/ — comparar tarefas equivalentes, preservar aprendizagens do produto existente e testar padrões em vez de copiá-los.
 
 O plano adapta esses princípios ao VitraLibre; não atribui às fontes a obrigação de testar44 sites nem promete métricas não medidas.
+
+## Ordem explícita de execução
+
+A fila completa1–44 e a sequência de implementação por dependências estão em [ORDEM_EXPLORACAO_IMPLEMENTACAO.md](ORDEM_EXPLORACAO_IMPLEMENTACAO.md). fornecedores.csv ganhou ordem_exploracao, preservando IDs, estados e impedimentos. Reordenação não significa exploração realizada.
