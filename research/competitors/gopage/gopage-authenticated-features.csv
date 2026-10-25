@@ -26,3 +26,11 @@ GOP-024,Cadastro e histórico de cliente,observado na interface,Contato/document
 GOP-025,Padrões de orçamento,observado na interface,Numeração; ano; validade; alertas e textos padrão,Sem salvar; sequência/alertas não executados,Concorrência e notificações explícitas
 GOP-026,Gestão central de estoque,busca e filtro exercitados,Mostrar sem controle revelou ilimitado; busca vazia e retorno confirmados,Sem atualização de quantidade ou variação persistida,Distinguir ilimitado/zero e alterações pendentes
 GOP-027,Cadastro de vendedor,observado na interface,Trial até2; região; comissão e ativo,Sem cadastro; comissão e permissões não testadas,Definir base de comissão e papel do vendedor
+GOP-028,Equipe e acesso,regra declarada na UI,Link próprio; credenciais pelo dono; restrições administrativas,Nenhum acesso criado ou teste de autorização,Papéis e testes negativos; credenciais individuais
+GOP-029,QR promocional,formato e prévia abertos,Cartaz com cor/cupom/texto/WhatsApp,Sem geração/download ou leitura por câmera,Contraste e leitura real
+GOP-030,Calculadora de preço,um caso calculado,Custo120 e margem20% retornaram150; conferido,Sem taxas combinadas/fronteiras,Explicar margem versus markup
+GOP-031,Venda sugestiva,prévia aberta e regras lidas,Regras categoria/produto; margem; exclusões; fallback,Inativa; sem regras ou recomendação pública,Explicar inclusão e exclusão na prévia
+GOP-032,SEO e identidade geral,observado na interface,Metadados; ícone; compartilhamento; link,Sem salvar/publicar,Prévia dos metadados
+GOP-033,Integrações externas,lista inspecionada,ERP; checkout; domínio; analytics; pixels e feeds,Sem conexão ou configuração,Escopos e diagnóstico explícitos
+GOP-034,Estatísticas e lucro,painéis inspecionados,Períodos; acessos; vendas; custos; lucro aproximado,Sem validação de instrumentação ou vendas,Definir métricas e timezone
+GOP-035,Páginas institucionais,lista inspecionada,Sobre; entrega; troca; termos; privacidade; tamanhos,Editores/publicação não testados,Modelos claros e revisão contextual

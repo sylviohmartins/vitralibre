@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — equipe, impulsionamento e configurações
+
+Equipe e restrições declaradas inspecionadas sem criar acesso. QR Cartaz e prévia de venda sugestiva abertos; calculadora120 de custo com margem20% retornou150, caso conferido. Gerais/SEO/integrações/métricas/páginas mapeados sem salvar ou conectar serviços. Próxima tarefa: PDF, arte, calendário e editores institucionais; consolidar lacunas antes de avançar ao próximo concorrente. Sem mudança funcional no VitraLibre.
+
 ## Continuação25/10 — configurações, estoque e vendedores
 
 Configurações de orçamento e formulário de vendedor inspecionados sem salvar. Estoque: mostrar sem controle revelou produto ilimitado; busca inexistente e retorno por nome confirmados após atualização. Sem alteração de quantidade ou criação de vendedor. Próxima tarefa: Equipe, Impulsionar e Configurações. Evidências e lacunas no diário operacional; sem mudança funcional no VitraLibre.
