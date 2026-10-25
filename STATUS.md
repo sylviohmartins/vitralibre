@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — exportação PDF inconclusiva
+
+Fluxo PDF aberto com capa/categorias; Gerar PDF acionado, mas chamada do navegador expirou sem arquivo/caminho confirmado. Aba continuou listada. Não atribuir falha à Gopage nem declarar download concluído. Arte/calendário/editores seguem pendentes. Próxima ação: recuperar leitura da aba e verificar estado antes de repetir geração; depois consolidar lacunas e avançar ao Tagme LiveMenu.
+
 ## Continuação25/10 — equipe, impulsionamento e configurações
 
 Equipe e restrições declaradas inspecionadas sem criar acesso. QR Cartaz e prévia de venda sugestiva abertos; calculadora120 de custo com margem20% retornou150, caso conferido. Gerais/SEO/integrações/métricas/páginas mapeados sem salvar ou conectar serviços. Próxima tarefa: PDF, arte, calendário e editores institucionais; consolidar lacunas antes de avançar ao próximo concorrente. Sem mudança funcional no VitraLibre.

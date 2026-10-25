@@ -185,3 +185,11 @@ Estatísticas: períodos7/30/365 dias, acessos/visitantes/cliques, produtos/cate
 Oportunidades: distinguir margem de markup com fórmula/exemplo e validar soma de taxas; prévia explicável das recomendações (motivos de inclusão/exclusão); modelo de acesso por papéis com testes negativos; preferir convite e definição individual de senha na especificação VitraLibre, sujeito à arquitetura final. QR deve ter contraste, legenda e teste real de leitura. Métricas devem explicar período, timezone e critérios. Integrações precisam indicar escopo e estado antes de autorizar. Propostas ainda não implementadas.
 
 Próxima tarefa: aprofundar exportação PDF, arte promocional, calendário e editores institucionais; revisar lacunas Gopage e passar ao próximo concorrente conforme ordem documentada. Upload/CRUD completo e cobertura integral continuam pendentes.
+
+## Continuação — tentativa de exportação PDF e interrupção do navegador
+
+25/10/2026. Página Gerar Catálogo em PDF aberta. Oferece capa opcional PNG/JPG em1414×2000px (rotulada A4 pela plataforma), categorias Todas ou Selecionar categorias e Gerar PDF. Nenhuma capa enviada. Acionado Gerar PDF com espera de evento de download. A chamada do Browser expirou no transporte MCP; não retornou arquivo ou caminho. Após recuperar a conexão, listagem de abas mostrou a mesma aba em /cliente/pdf-catalog-ad. Isso não prova geração, ausência de geração ou falha da plataforma. Não houve segunda tentativa idêntica de gerar.
+
+A leitura de estado/navegação subsequente também ficou sem retorno imediato. Não declarar PDF baixado, conteúdo conferido ou defeito Gopage; evidência insuficiente para distinguir geração lenta, aba ocupada e limitação da ferramenta. Arte Promocional, calendário e editores institucionais continuam pendentes de inspeção nesta rodada. Rascunhos de produtos permaneciam listados no momento da recuperação; sem evidência nova de upload ou salvamento.
+
+Próxima ação: recuperar leitura da aba e verificar estado/download antes de repetir qualquer geração; então explorar arte/calendário/editores e consolidar lacunas para seguir Tagme LiveMenu, segundo fornecedor da ordem. O impedimento não altera o gate de descoberta nem autoriza declarar paridade.
