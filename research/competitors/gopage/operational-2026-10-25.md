@@ -207,3 +207,13 @@ Quem Somos: textbox editável; texto fictício digitado e valor lido, sem salvar
 Oportunidades: arte com prévia de enquadramento e dados de preço; calendário com localidade/timezone e distinção entre feriado e ocasião comercial; guia de medidas também em tabela acessível, além de imagem; aviso claro de alterações não salvas e revisão contextual de páginas. Validar exportação real, leitura por tecnologia assistiva e persistência antes de homologar.
 
 Próxima tarefa: avançar para retomada operacional do Tagme LiveMenu, mantendo lacunas Gopage em aberto. O gate de descoberta continua aberto e não há autorização implícita para declarar todas as funcionalidades testadas.
+
+## Continuação — resolução técnica de upload e edição pública
+
+Prioridade do proprietário alterada para finalizar Gopage e resolver impedimentos antes de Tagme. Produto Exemplo existente foi editado temporariamente para Avaliação VitraLibre — produto fictício, preço12,50; salvo, reaberto com valor12.5 e visto na vitrine pública. Inclusão no carrinho confirmada, total12,50; nenhum pedido enviado. Nome e preço originais Produto Exemplo/100 foram restaurados e confirmados na lista administrativa. Exclusão e criação de produto novo não cobertas por esse teste. Carrinho local de avaliação não enviado.
+
+Conta Secundária do Remote Desktop Commander disponível no dispositivo autorizado, permitindo colocar a imagem original em Downloads/VitraLibre-Testes. Arquivo4891 bytes, SHA2564fbbd0c9302dafaed8ee431c4261c8880de0de86128aac5ded242b2c6a91da97. Nenhuma conta Principal utilizada. Novo formulário simples preenchido com nome explicitamente fictício, preço12,50, SKU VITRA-TESTE-001 e descrição de não comercialização. Seletor real aberto e setFiles com caminho local confirmado retornou erro explícito: extensão ChatGPT necessita Allow access to file URLs em chrome://extensions. Agora há diagnóstico concreto, diferente das tentativas anteriores sem caminho confirmado. Instrução oficial apresentada ao proprietário; formulário marcado para continuação. Nenhum upload ou produto novo salvo.
+
+Busca somente por PDFs recentes em Downloads com nomes relacionados a catalog/gopage/vitralibre não encontrou arquivo. Isso não exclui download em outra pasta/nome; PDF permanece inconclusivo. Não repetir geração enquanto a condição não mudar.
+
+Próxima ação dependente: proprietário habilitar a permissão indicada na extensão ou selecionar manualmente a imagem original já disponível. Depois confirmar preview/upload, salvar, reabrir e validar produto público. Demais lacunas continuam no checkpoint; integrações financeiras e permissões não são homologadas por inspeção.

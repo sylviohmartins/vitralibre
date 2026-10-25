@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — impedimento de upload diagnosticado
+
+Prioridade voltou a finalizar Gopage. Edição de produto existente salva/reaberta/conferida publicamente e restaurada; carrinho testado sem pedido. Imagem original colocada no computador pela conta Secundária RDC e hash conferido. Upload real bloqueado por permissão Allow access to file URLs da extensão ChatGPT; orientação oficial entregue. Formulário novo pendente. PDF não encontrado na busca restrita por nome recente; continua inconclusivo. Próxima ação: habilitar permissão ou selecionar imagem manualmente, concluir upload/criação e revalidar.
+
 ## Continuação25/10 — checkpoint parcial Gopage
 
 Conexão recuperada; prévia de arte com produto, calendário detalhado, editores institucionais e cursos inspecionados. Nenhuma publicação/download validado. Rascunhos anteriores não disponíveis na listagem de abas; PDF permanece inconclusivo. Checkpoint operacional separa evidências e lacunas. Próxima tarefa: retomada operacional Tagme LiveMenu, preservando Gopage em aberto.
