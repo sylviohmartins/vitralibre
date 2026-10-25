@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — cliente e orçamento persistidos
+
+Cliente cadastrado com contatos de avaliação autorizados; orçamento Rascunho ORC-2026-00001 salvo, cliente vinculado, total20. Sem envio de proposta/mensagem. Numeração inicial58 tarefas principais consolidada sem novo escopo. Próxima tarefa:[1.11/58] reabertura/histórico do orçamento; depois[1.12/58] conteúdo/recomendações. Ver research/discovery/TAREFAS_NUMERADAS.md.
+
 ## Continuação25/10 — cliente e orçamento sem persistência
 
 Tentativas com dados mínimos fictícios não criaram cliente/orçamento. Listas confirmaram0; mensagens de validação/erros não observados. Serviço2×10 calculou20 no formulário. Causa de não salvamento indeterminada; não houve envio a terceiros. Próxima tarefa: esclarecer requisitos mínimos e continuar conteúdo/recomendações independentes.

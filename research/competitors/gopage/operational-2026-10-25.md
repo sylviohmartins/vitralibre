@@ -269,3 +269,11 @@ Cliente fictício apenas com nome e observação de avaliação: Cadastrar Clien
 Orçamento Rascunho com cliente novo fictício e serviço2×10: total20 conferido, mas Criar Orçamento manteve formulário. Acrescentado email de domínio reservado example.invalid e nova tentativa também sem confirmação. Inspeção de alert/status/form-message/aria-invalid e erros de console retornou vazia. Retorno à lista confirmou0 orçamentos. Não afirmar registro persistido ou notificação enviada; causa permanece indeterminada. Nenhuma tentativa idêntica adicional.
 
 Próxima tarefa: esclarecer requisitos desses cadastros pela ajuda/UI e testar com o conjunto mínimo de dados de avaliação autorizado; continuar conteúdo e recomendações onde independentes. Não inventar CPF/endereço ou atribuir falha ao servidor sem evidência.
+
+## Continuação — cliente e orçamento salvos
+
+Utilizados nome de avaliação e contatos previamente fornecidos/autorizados para Gopage, sem documentos/endereço/senha. Cadastro de cliente retornou lista com cliente Ativo e0 pedidos. Contatos não transcritos no repositório. A tentativa mínima anterior não prova regra exata: acrescentaram-se telefone e email juntos, sem teste isolado por campo. Clicar no nome na lista não abriu editor; botões de ação sem rótulo acessível observados, reabertura ainda pendente.
+
+Cliente passou a constar no seletor de orçamento. Selecionado, serviço fictício2×10 e status Rascunho; Criar Orçamento retornou lista com1 registro ORC-2026-00001, total20, cliente vinculado, emissão25/10 e validade01/11/2026. Nenhuma comunicação ou cobrança acionada. Reabrir/histórico e ausência de notificação não foram comprovados pelo simples salvamento.
+
+Proprietário solicitou próxima tarefa com posição/total e aviso de inclusão. Criado TAREFAS_NUMERADAS.md:58 tarefas principais preexistentes,44 referências e14 etapas; subtarefas detalham Gopage. Próxima tarefa:[1.11/58] reabrir orçamento e conferir histórico; continuação:[1.12/58] conteúdo e recomendações.
