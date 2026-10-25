@@ -43,3 +43,5 @@ GOP-041,Criação de produto simples com imagem,salvo reaberto e verificado publ
 GOP-042,Estoque simples persistido,salvo e verificado publicamente,3→0 na gestão; recarga confirmou esgotado; público indisponível,Sem pedido/baixa/reserva concorrente,Alterações pendentes e consistência de indicadores
 GOP-043,Variação persistida e seleção pública,salvo reaberto e exercitado,P12.50/3; M15/0; seleção alternou preço/disponibilidade,Um atributo; sem enforcement de pedido ou foto por opção,Mensagens e preço coerentes por combinação
 GOP-044,Importação CSV simples,importado e reaberto,Uma linha UTF-8 sem BOM; nome/preço/SKU/categoria persistidos; sem imagem,Sem duplicados/erros/lote misto/rollback,Prévia de validação e regra de imagem consistente
+GOP-045,Erro de importação por linha,rejeição e relatório verificados,Preço-1 rejeitado;0 importados; CSV de erros baixado/lido,Sem teste zero/duplicado/lote misto,Regra inequívoca e correção sem duplicação
+GOP-046,PDF por categoria,gerado baixado e inspecionado,34305 bytes;1 página; categoria/produto/preço/imagem confirmados,Sem Todas/capa/volume/variantes,Tipografia e moeda local consistentes

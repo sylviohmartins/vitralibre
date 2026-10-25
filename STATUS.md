@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — PDF por categoria e erro CSV validados
+
+CSV com preço negativo rejeitado; relatório por linha/coluna e CSV de erros baixados; lista permaneceu3 produtos. PDF somente Exemplo Categoria1 gerado/baixado34305 bytes,1 página, texto e renderização inspecionados. Exportação Todas/capa/volume ainda sem homologação. Próxima tarefa: lote misto/duplicação e jornadas persistidas restantes da Gopage.
+
 ## Continuação25/10 — importação CSV validada
 
 Modelo CSV baixado e uma linha fictícia importada. Reabertura confirmou nome/preço7,25/SKU e categoria nova; caminho aceitou produto sem imagem. PDF novamente acionado com inspeção de Downloads e abas, sem arquivo confirmado; causa não determinada. Próxima tarefa: validação negativa de CSV e exportação por categoria, mantendo Gopage prioritária.
