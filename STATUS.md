@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10/2026 — upload pendente
+
+Imagem original de avaliação publicada em research/fixtures/produto-teste.png. Seletor de arquivos Gopage aberto; upload ainda não confirmado e produto não salvo. Desktop Commander atingiu limite mensal; evento de download do navegador expirou sem caminho confirmado. Próxima ação:seleção manual da imagem; depois salvar/reabrir/conferir vitrine e explorar variantes/estoque. Cada encerramento de tarefa deve indicar a próxima ação explicitamente.
+
 ## Atualização25/10/2026 — primeiro acesso autenticado
 
 Gopage:cadastro enviado após autorização dos termos; email temporário confirmado por código recebido; sessão autenticada e dashboard verificados. Criadas categoria/subcategoria, persistidas na lista; categoria vista no catálogo público. Formulário de produto simples explorado; salvar sem imagem foi rejeitado e manteve dados. Produto de teste ainda não salvo. Contagem atual:1 fornecedor com cadastro/ativação/sessão confirmados; exploração integral de todos continua não concluída. Evidência:research/competitors/gopage/operational-2026-10-25.md. A capacidade local da extensão permitiu o fluxo; as restrições cloud anteriores são históricas. A ampliação do VitraLibre continua suspensa para descoberta.

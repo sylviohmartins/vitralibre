@@ -43,3 +43,13 @@ Pedidos, Orçamentos, Estoque, Cores, Personalizar, Checkout, Cupons, Vendedores
 ## Próximas verificações
 
 Imagem original e produto completo; edição e persistência; variável/combinações/preço/estoque; catálogo público/detalhe/filtros; importações; personalização; checkout/pedidos somente em simulação; equipe/permissões; restantes menus e limitações do plano. Não enviar mensagens de suporte, pedidos comerciais, pagamento ou convites a terceiros sem autorização específica.
+
+## Continuação — imagem original e seletor de upload
+
+Foi criada research/fixtures/produto-teste.png,640×640 RGB/4891 bytes, ilustração geométrica original do projeto sob MIT, sem ativos de concorrentes. Publicada no GitHub em f8318bc6715e126837e2bec3da528d556c1c9918 e visualizada no Chrome conectado.
+
+Desktop Commander retornou limite mensal com instrução de não repetir/reconectar; não houve nova tentativa. O botão Download raw file foi acionado pelo navegador, mas waitForEvent(download) expirou após15000ms:download/localização em disco não confirmados. Não atribuir esse resultado a bloqueio de arquivo da extensão.
+
+A tela de produto preservou o nome preenchido. Adicionar Imagens abriu o filechooser real, aceitando múltiplos arquivos. O input informa JPEG/PNG/GIF/WebP/HEIC/HEIF. Como não havia caminho local confirmado no dispositivo, não se inventou path nem se declarou upload concluído. Seletor entregue ao proprietário para selecionar a imagem. Produto de teste ainda não salvo nesta continuação.
+
+Próxima ação imediata:selecionar a imagem original no seletor, confirmar preview/upload e salvar; então reabrir edição e conferir produto/preço/categoria na vitrine pública. Continuação posterior:produto variável, combinações, preços e estoque, com evidências e sem transação comercial. Ao finalizar cada tarefa/checkpoint, informar explicitamente resultado, pendências e próxima tarefa.
