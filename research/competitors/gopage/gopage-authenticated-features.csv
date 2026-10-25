@@ -1,0 +1,15 @@
+id,capacidade,estado_evidencia,observacao,limite,melhoria_proposta
+GOP-001,Combinações de atributos,executado no formulário,Tamanho P/M × Cor Azul/Verde gerou4 linhas,Produto variável não salvo,Mostrar contagem/impacto antes de gerar ou remover
+GOP-002,Preço e estoque por combinação,executado no formulário,Preços25/26/27/28 e estoques3/0/4/5 digitados e lidos,Sem persistência/checkout ou enforcement de estoque,Identidade estável da combinação e erro por linha
+GOP-003,Remoção/recriação de opção,executado no formulário,Remover M preservou P; recriar M trouxe preço/estoque vazios,Não determina intenção de design/bug,Aviso de perda de valores e recuperação explícita
+GOP-004,Galeria por cor,observado na interface,Controles Azul/Verde e instrução de prioridade de imagens,Upload/ordem pública não executados,Prévia coerente com seleção
+GOP-005,Cupom percentual,criado e persistido,Cupom10% presente após recarga,Sem resgate ou pedido; permanece ativo no teste,Resumo de regras e confirmação
+GOP-006,Limite de uso do cupom,configurado na criação,max_uses digitado1,Lista não mostra limite; enforcement não testado,Exibir limite/usos e testar resgate em simulação
+GOP-007,Desconto por categoria,executado no formulário,Troca de modo ocultou código e desmarcou limite,Não salvo nesse modo,Distinguir modos e avisar efeito da troca
+GOP-008,Valor fixo e validade,observado na interface,Opção Valor Fixo e checkbox de validade,Não criados/exercitados,"Especificar moeda, limites e expiração"
+GOP-009,Dados obrigatórios do checkout,observado na interface,Campos selecionáveis de identificação/contato/endereço,Sem alteração salva ou pedido,Dados mínimos por jornada
+GOP-010,Pagamento integrado,restrição observada no acesso atual,Mercado Pago desabilitado com indicação de plano,Sem conexão financeira/execução,Capacidade e requisito do plano explícitos
+GOP-011,Pedido mínimo,observado na interface,Configuração em valor e quantidade,Sem execução de bloqueio no checkout,Explicar quanto falta e testar fronteiras
+GOP-012,Orçamento e carrinho,regra declarada na UI,Texto diz orçamento desativa carrinho e sem carrinho permite WhatsApp individual,Não exercitado/salvo,Explicar consequências antes de mudar modo
+GOP-013,Visibilidade de preços,observado na interface,Ocultar preço e desbloquear por senha,Não ativado; sem criação de credencial,Clareza de público e autorização
+GOP-014,PIX e parcelamento,observado na interface,Controles de desconto PIX e parcelas sem juros,Não configurado ou cobrado,Condições visíveis antes da solicitação

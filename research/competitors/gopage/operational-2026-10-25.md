@@ -53,3 +53,43 @@ Desktop Commander retornou limite mensal com instrução de não repetir/reconec
 A tela de produto preservou o nome preenchido. Adicionar Imagens abriu o filechooser real, aceitando múltiplos arquivos. O input informa JPEG/PNG/GIF/WebP/HEIC/HEIF. Como não havia caminho local confirmado no dispositivo, não se inventou path nem se declarou upload concluído. Seletor entregue ao proprietário para selecionar a imagem. Produto de teste ainda não salvo nesta continuação.
 
 Próxima ação imediata:selecionar a imagem original no seletor, confirmar preview/upload e salvar; então reabrir edição e conferir produto/preço/categoria na vitrine pública. Continuação posterior:produto variável, combinações, preços e estoque, com evidências e sem transação comercial. Ao finalizar cada tarefa/checkpoint, informar explicitamente resultado, pendências e próxima tarefa.
+
+## Continuação — variações, checkout e cupom persistido
+
+O produto simples foi reinspecionado:sem imagem carregada e sem salvamento, campos anteriores preservados. O rascunho ficou separado da exploração de produto variável.
+
+### Variações:execução no formulário, sem persistência
+
+Criados atributos Tamanho(P,M) e Cor(Azul,Verde) na UI. Ativar Alterar Valor e Estoque das Variações gerou4 combinações:P/Azul,P/Verde,M/Azul,M/Verde. Ativar Gerenciar Estoque acrescentou um campo de estoque a cada combinação.
+
+Valores digitados e lidos nos inputs:preços25/26/27/28;estoques3/0/4/5, respectivamente. Ao remover M, sobraram P/Azul e P/Verde, mantendo25/26 e3/0. Ao recriar M, as quatro combinações reapareceram, mas as linhas de M voltaram com preço/estoque vazios. Não foi inspecionado pedido de rede, regra de backend ou persistência desse rascunho; não chamar a semântica de remoção de bug sem investigar intenção/avisos adicionais.
+
+A seção Fotos por cor mostrou controles separados Azul/Verde e texto explicando prioridade dessas fotos na galeria após a seleção do consumidor. Nenhum upload por cor ou comportamento público foi executado. Produto variável não foi salvo.
+
+### Checkout:inspeção, sem salvar alterações
+
+Observados campos obrigatórios selecionáveis para Nome/Email/WhatsApp/CPF-CNPJ/Endereço/Inscrição Estadual;formas manuais de pagamento;PIX/parcelamento;pedido mínimo em valor e quantidade;observações do checkout e mensagem de WhatsApp;ocultar preços;desbloquear preço por senha;modo orçamento;ativar carrinho. Labels explicam orçamento desativa carrinho e carrinho desativado permite pedido individual pelo WhatsApp. Essas regras foram lidas na interface, não exercitadas em pedido real.
+
+Mercado Pago apareceu como checkbox desabilitado acompanhado de disponibilidade em planos com Checkout Mercado Pago. Nenhuma conta financeira foi conectada e nenhum pagamento executado. Não generalizar a restrição para todos os planos.
+
+### Cupons:um cadastro e persistência verificados
+
+Tela inicial sem cupons. Acionar limite de usos exibiu max_uses. Acionar desconto por categoria desmarcou limite de usos e ocultou campo de código, exibindo seleção de categoria; ao desmarcar categoria, o código voltou. A tentativa inicial de check recebeu timeout após o próprio nome acessível mudar; inspeção subsequente mostrou o controle marcado. Não houve reenvio cego dessa ação.
+
+Foi criado um cupom fictício de avaliação com10%, tipo Percentual e limite de uso digitado1. Após Adicionar, o formulário limpou e a lista Cupons Ativos exibiu o código e Desconto de10.00%. Recarregar manteve o cupom. A lista não mostrou o limite de usos, e não foi feito resgate/checkout para validar enforcement. Valor Fixo e validade por data foram observados como opções, ainda não executados. Cupom permanece no ambiente de avaliação; nenhuma venda, mensagem ou pagamento foi enviado. Exclusão não foi testada.
+
+### Limite de imagem mantido
+
+A alternativa pageAssets do Browser foi examinada para a imagem original já publicada no GitHub. O inventário daquela página retornou0 imagens e não incluiu o PNG, embora o elemento img da região do arquivo estivesse no DOM. Não foi inventado assetId nem feito download por endpoints alternativos. Upload continua pendente de arquivo local confirmado/seleção do proprietário. Isso não é diagnóstico de bloqueio de upload da extensão.
+
+### Hipóteses de melhoria, ainda sem implementação
+
+- Ao remover atributos/opções, mostrar combinações afetadas e consequência sobre preços/estoques; avaliar confirmação ou desfazer. Validar recriação por identidade estável de combinação, sem aplicar preço a combinação errada.
+- Distinguir disponibilidade manual, quantidade zero e estoque por combinação na especificação do produto.
+- Diferenciar cupom por código e promoção por categoria; explicar que mudar modo limpa/desativa campos anteriores.
+- Mostrar limite/uso/validade no resumo do cupom, além do desconto, e testar uso único em simulação antes de declarar enforcement.
+- Explicar as consequências entre orçamento/carrinho/pedido individual antes de salvar configuração.
+
+Esses itens são propostas derivadas de observações, não funções entregues no VitraLibre nem evidência de superioridade. Inventário estruturado adicional:gopage-authenticated-features.csv.
+
+Próxima tarefa independente:explorar Meios de Envio e importação por planilha, com regras e limitações. Retomar produto simples/variável com imagem assim que houver arquivo local selecionado; só então validar salvamento, reabertura e vitrine pública. As configurações de checkout permaneceram sem alterações salvas.

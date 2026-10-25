@@ -9,7 +9,7 @@
 | Formulário enviado |1 — Gopage|
 | Conta ativada |1 — Gopage, email confirmado|
 | Login confirmado |1 — sessão autenticada Gopage|
-| Fluxos administrativos autenticados concluídos |1 jornada de categoria/subcategoria na Gopage; exploração geral parcial|
+| Fluxos administrativos autenticados concluídos |2 jornadas parciais na Gopage:categoria/subcategoria e cadastro/persistência de cupom; produto não salvo e aplicação do cupom não testada|
 | REA instalado/MCP |6.7.0/207 ferramentas reais|
 | Análise concluída por REA |GitHub Actions: fixture/src próprios e quatro scripts públicos de Kicatálogo/Gopage/Stoqui; escopo estático parcial, sem painel ou backend|
 | Núcleo VitraLibre |Editor estático, JSON/HTML, pesquisa/categorias/preços/variantes e compartilhamento; limites por capacidade na matriz|
@@ -46,3 +46,5 @@ Novas funcionalidades suspensas até a revisão de descoberta/escopo. [Plano ope
 ## Atualização25/10/2026
 
 Gopage:cadastro, email confirmado e sessão autenticada executados; categorias/subcategoria e publicação parcial verificadas. Produto sem imagem foi rejeitado e não salvo. [Evidência operacional](research/competitors/gopage/operational-2026-10-25.md). Os demais fornecedores continuam sem conta confirmada nesta pesquisa. Referências a zero contas no histórico descrevem o checkpoint anterior. Nenhuma paridade integral foi homologada.
+
+Continuação25/10:combinações de variantes exercitadas somente no formulário; cupom percentual criado e conferido após recarga; checkout apenas inspecionado. Inventário adicional14 capacidades, sem alterar retroativamente o benchmark documental. Nenhuma paridade integral homologada.

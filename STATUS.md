@@ -1,5 +1,11 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10/2026 — combinações e cupom
+
+Gopage:geradas4 combinações de tamanho/cor no formulário; preço/estoque por linha exercitados; remoção/recriação de opção resetou valores das combinações recriadas. Sem produto salvo. Criado cupom percentual10% e presença confirmada após recarga; limite1 digitado, enforcement não testado. Checkout inspecionado sem salvar; Mercado Pago desabilitado no acesso atual. Inventário14 capacidades em research/competitors/gopage/gopage-authenticated-features.csv. Upload continua pendente; pageAssets não inventariou o PNG nessa página GitHub. Próxima tarefa independente:Meios de Envio e importação; concluir CRUD/vitrine de produto quando a imagem for selecionada.
+
+Os checkpoints anteriores abaixo preservam o histórico.
+
 ## Continuação25/10/2026 — upload pendente
 
 Imagem original de avaliação publicada em research/fixtures/produto-teste.png. Seletor de arquivos Gopage aberto; upload ainda não confirmado e produto não salvo. Desktop Commander atingiu limite mensal; evento de download do navegador expirou sem caminho confirmado. Próxima ação:seleção manual da imagem; depois salvar/reabrir/conferir vitrine e explorar variantes/estoque. Cada encerramento de tarefa deve indicar a próxima ação explicitamente.
