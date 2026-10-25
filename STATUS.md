@@ -1,5 +1,11 @@
 # VitraLibre — estado verificável
 
+## Atualização25/10/2026 — primeiro acesso autenticado
+
+Gopage:cadastro enviado após autorização dos termos; email temporário confirmado por código recebido; sessão autenticada e dashboard verificados. Criadas categoria/subcategoria, persistidas na lista; categoria vista no catálogo público. Formulário de produto simples explorado; salvar sem imagem foi rejeitado e manteve dados. Produto de teste ainda não salvo. Contagem atual:1 fornecedor com cadastro/ativação/sessão confirmados; exploração integral de todos continua não concluída. Evidência:research/competitors/gopage/operational-2026-10-25.md. A capacidade local da extensão permitiu o fluxo; as restrições cloud anteriores são históricas. A ampliação do VitraLibre continua suspensa para descoberta.
+
+O registro abaixo preserva checkpoints anteriores.
+
 ## Direção atual — descoberta antes de ampliar
 
 Em24/10/2026 o proprietário esclareceu que espera cadastro/login, exploração operacional e consolidação abrangente dos concorrentes antes da ampliação funcional. Essa cobertura ainda não existe. Novas funcionalidades estão suspensas; a base publicada é preservada. Plano e gate: [descoberta competitiva](research/discovery/PLANO_DESCOBERTA_COMPETITIVA.md);controle dos44: research/discovery/fornecedores.csv. CSV em andamento foi isolado em feat/csv-import (258bde2), sem merge/deploy, com validação incompleta. A próxima ação passa a ser a descoberta operacional e resolução legítima dos acessos, não retomar CSV.

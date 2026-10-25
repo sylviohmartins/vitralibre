@@ -1,5 +1,7 @@
 # Conta e acesso — Gopage
 
+**Atualização25/10/2026:** cadastro enviado com autorização dos termos, email confirmado e sessão autenticada verificada no Chrome conectado. Exploração administrativa parcial iniciada. Registro atual: [operational-2026-10-25.md](operational-2026-10-25.md). Os bloqueios abaixo são históricos da ferramenta cloud usada anteriormente; não impediram este fluxo na extensão conectada. Nenhum segredo foi registrado.
+
 Data: 2026-10-23T22:35:45.113042+00:00. URL: https://painel.gopage.bio/new/catalog/dados-da-pagina
 
 Estado de avaliação: **bloqueado**. Estado de cadastro: **não iniciado** (nenhum formulário enviado).

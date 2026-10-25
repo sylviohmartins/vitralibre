@@ -6,10 +6,10 @@
 |---|---|
 | Inventário documental |44 soluções/8 abas/42 critérios legados|
 | Concorrentes prioritários |8 dossiês com pesquisa atual e observações públicas parciais|
-| Formulário enviado |0|
-| Conta ativada |0|
-| Login confirmado |0|
-| Fluxos administrativos autenticados concluídos |0|
+| Formulário enviado |1 — Gopage|
+| Conta ativada |1 — Gopage, email confirmado|
+| Login confirmado |1 — sessão autenticada Gopage|
+| Fluxos administrativos autenticados concluídos |1 jornada de categoria/subcategoria na Gopage; exploração geral parcial|
 | REA instalado/MCP |6.7.0/207 ferramentas reais|
 | Análise concluída por REA |GitHub Actions: fixture/src próprios e quatro scripts públicos de Kicatálogo/Gopage/Stoqui; escopo estático parcial, sem painel ou backend|
 | Núcleo VitraLibre |Editor estático, JSON/HTML, pesquisa/categorias/preços/variantes e compartilhamento; limites por capacidade na matriz|
@@ -42,3 +42,7 @@ VitraLibre agora preserva contexto de busca/categoria/disponibilidade/produto na
 ## Gate solicitado em24/10/2026
 
 Novas funcionalidades suspensas até a revisão de descoberta/escopo. [Plano operacional](research/discovery/PLANO_DESCOBERTA_COMPETITIVA.md) e [controle44 fornecedores](research/discovery/fornecedores.csv) formalizam cadastro/login/jornadas/evidência e inventário expansível, sem limitar a descoberta aos42 critérios legados. Todos os44 permanecem com exploração integral não comprovada; bloqueios não contam como conclusão.
+
+## Atualização25/10/2026
+
+Gopage:cadastro, email confirmado e sessão autenticada executados; categorias/subcategoria e publicação parcial verificadas. Produto sem imagem foi rejeitado e não salvo. [Evidência operacional](research/competitors/gopage/operational-2026-10-25.md). Os demais fornecedores continuam sem conta confirmada nesta pesquisa. Referências a zero contas no histórico descrevem o checkpoint anterior. Nenhuma paridade integral foi homologada.

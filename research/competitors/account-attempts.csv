@@ -1,6 +1,6 @@
 fornecedor,estado_avaliacao,estado_cadastro,ativacao_confirmada,login_confirmado,url,evidencia_impedimento
 Tagme LiveMenu,não iniciado,não iniciado,não,não,https://tagme.com.br/planos,Rota comercial documentada; teste autônomo não localizado nas fontes consultadas
-Gopage,bloqueado,não iniciado,não,não,https://painel.gopage.bio/new/catalog/dados-da-pagina,Formulário observado; WhatsApp/nome/e-mail/senha; aceitação termos no envio; browserAuth não cria contas
+Gopage,autenticado; exploração parcial,enviado e concluído,sim,sim,https://painel.gopage.bio/new/catalog/dados-da-pagina,25/10: acesso resolvido na extensão Chrome; exploração integral pendente; produto não salvo por imagem obrigatória. Ver operational-2026-10-25.md
 Goomer,bloqueado,não iniciado,não,não,https://cadastro.goomer.com.br/?step=1,Formulário observado e-mail/senha; termos e contato comercial; browserAuth não cria contas
 Meloja,bloqueado,não iniciado,não,não,https://app.meloja.com.br/,Cloudflare hard block observado e permaneceu após 1 recarga; não contornado
 Cardápio Web,não iniciado,não iniciado,não,não,https://cardapioweb.com/,Formulário de contato documentado com WhatsApp e faturamento; não submetido

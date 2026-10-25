@@ -671,48 +671,48 @@ Kyte,Exportação de dados,NV,https://www.kyteapp.com/pt/planos,não,não,não,n
 Kyte,Hospedagem própria,NV,https://www.kyteapp.com/pt/planos,não,não,não,não,implementado e testado no núcleo,scripts/build.mjs; scripts/dev-server.mjs; evidence/deployment.json,Build estático/servidor local e deploy; backend não implementado
 Kyte,Segurança verificada,NV,https://www.kyteapp.com/pt/planos,não,não,não,não,parcial,tests/core.test.mjs; evidence/npm-audit-final.json,Validação/XSS/quotas/dependências; sem pentest ou auditoria completa
 Kyte,Suporte Brasil confirmado,NV,https://www.kyteapp.com/pt/planos,não,não,não,não,não implementado,,Projeto pt-BR sem equipe de suporte/SLA contratado
-Gopage,Catálogo estruturado,D,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs,Schema v1 e catálogo público independente
-Gopage,Categorias,D,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs,Categorias e integridade de referências
-Gopage,Fotos/Galeria,D,https://gopage.bio/planos,não,não,não,não,parcial,tests/core.test.mjs; tests/editor.test.mjs,Uma imagem por produto; galeria múltipla não implementada; upload final browser pendente
-Gopage,Busca/filtros,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs; tests/editor.test.mjs,Texto sem acentos/categoria/descendentes/disponibilidade
-Gopage,Atualização em tempo real,NV,https://gopage.bio/planos,não,não,não,não,parcial,tests/editor.test.mjs,Persistência local; catálogo hospedado exige reexportação/deploy manual
-Gopage,QR Code,D,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/editor.test.mjs; tests/core.test.mjs,QR decodificado por biblioteca independente; câmera física pendente
-Gopage,Idiomas,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Interface pt-BR; multilíngue não disponível
-Gopage,Multiunidade,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Backend/multiunidade planejado
-Gopage,Banners,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem gerenciador de banners
-Gopage,Pedido/contato WhatsApp,D,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem envio de pedido ou integração WhatsApp
-Gopage,Pedidos/carrinho,D,https://gopage.bio/planos,não,não,não,não,não implementado,,Modo catálogo; sem carrinho/pedidos
-Gopage,Pagamento integrado,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem checkout/gateway/transações
-Gopage,Domínio próprio,D,https://gopage.bio/planos,não,não,não,não,parcial,docs/deployment.md,Rota manual documentada; domínio customizado não provisionado/testado
-Gopage,Painel/gestão,D,https://gopage.bio/planos,não,não,não,não,parcial,tests/editor.test.mjs,Editor local; sem conta/permissões/servidor
-Gopage,Importação em massa,D,https://gopage.bio/planos,não,não,não,não,parcial,tests/core.test.mjs,Importação JSON validada; CSV/edição em massa não implementados
-Gopage,Personalização visual,D,https://gopage.bio/planos,não,não,não,não,parcial,tests/editor.test.mjs,Nome/logo/descrição e três temas; sem construtor visual completo
-Gopage,API/integração para desenvolvedor,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem API pública/backend
-Gopage,Conformidade LGPD auditada,NV,https://gopage.bio/planos,não,não,não,não,não homologado,,Sem auditoria jurídica/operacional de LGPD
-Gopage,Subcategorias,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs,Árvore validada; revalidação UI profunda browser pendente
-Gopage,Descrição de produtos,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/editor.test.mjs,Texto escapado e descrição no catálogo
-Gopage,Preços exibidos,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs; tests/editor.test.mjs,Centavos inteiros/BRL e variantes com preço final
-Gopage,Promoções e descontos,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem preço promocional/desconto programado
-Gopage,Produtos relacionados,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem recomendação/relacionados
-Gopage,Responsivo,NV,https://gopage.bio/planos,não,não,não,não,parcial,docs/design/ux-audit.md,CSS adaptativo implementado; matriz de viewports após refinamento não executada
-Gopage,Acesso sem instalar app,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,evidence/deployment.json,Editor navegador/publicação confirmada; sem app nativo
-Gopage,Acessibilidade verificada,NV,https://gopage.bio/planos,não,não,não,não,parcial,tests/editor.test.mjs; tests/contrast.test.mjs,axe DOM e cinco contrastes; sem homologação WCAG completa/leitor de tela real
-Gopage,Cadastro/admin produtos,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/editor.test.mjs,CRUD local; criação/persistência observadas no browser
-Gopage,Disponibilidade/estoque,NV,https://gopage.bio/planos,não,não,não,não,parcial,tests/editor.test.mjs,Disponibilidade manual; sem estoque sincronizado
-Gopage,Múltiplos catálogos,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Um catálogo ativo por origem/navegador; arquivos exportados separados não são gestão múltipla
-Gopage,Permissões de equipe,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem autenticação/RBAC/colaboradores
-Gopage,Marca e cores,NV,https://gopage.bio/planos,não,não,não,não,parcial,tests/editor.test.mjs,Nome/logo e temas fixos; paleta livre não implementada
-Gopage,Templates,NV,https://gopage.bio/planos,não,não,não,não,parcial,src/examples.js,Dois modelos fictícios; não há editor de templates
-Gopage,CSS/customização código,NV,https://gopage.bio/planos,não,não,não,não,parcial,README.md; src/styles.css,Código aberto editável; sem CSS customizado via painel
-Gopage,White-label sem marca,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Footer VitraLibre presente; licença MIT permite alteração respeitando avisos
-Gopage,Cupons e fidelidade,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem cupons/CRM/fidelidade
-Gopage,Analytics e relatórios,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem coleta centralizada/analytics
-Gopage,Webhooks,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Sem webhooks
-Gopage,Documentação API,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Contratos internos documentados; sem API externa
-Gopage,Exportação de dados,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs,JSON roundtrip/HTML; exportação browser pós-refino pendente
-Gopage,Hospedagem própria,NV,https://gopage.bio/planos,não,não,não,não,implementado e testado no núcleo,scripts/build.mjs; scripts/dev-server.mjs; evidence/deployment.json,Build estático/servidor local e deploy; backend não implementado
-Gopage,Segurança verificada,NV,https://gopage.bio/planos,não,não,não,não,parcial,tests/core.test.mjs; evidence/npm-audit-final.json,Validação/XSS/quotas/dependências; sem pentest ou auditoria completa
-Gopage,Suporte Brasil confirmado,NV,https://gopage.bio/planos,não,não,não,não,não implementado,,Projeto pt-BR sem equipe de suporte/SLA contratado
+Gopage,Catálogo estruturado,D,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/core.test.mjs,Schema v1 e catálogo público independente
+Gopage,Categorias,D,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/core.test.mjs,Categorias e integridade de referências
+Gopage,Fotos/Galeria,D,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/core.test.mjs; tests/editor.test.mjs,Uma imagem por produto; galeria múltipla não implementada; upload final browser pendente
+Gopage,Busca/filtros,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/core.test.mjs; tests/editor.test.mjs,Texto sem acentos/categoria/descendentes/disponibilidade
+Gopage,Atualização em tempo real,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/editor.test.mjs,Persistência local; catálogo hospedado exige reexportação/deploy manual
+Gopage,QR Code,D,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/editor.test.mjs; tests/core.test.mjs,QR decodificado por biblioteca independente; câmera física pendente
+Gopage,Idiomas,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Interface pt-BR; multilíngue não disponível
+Gopage,Multiunidade,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Backend/multiunidade planejado
+Gopage,Banners,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem gerenciador de banners
+Gopage,Pedido/contato WhatsApp,D,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem envio de pedido ou integração WhatsApp
+Gopage,Pedidos/carrinho,D,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Modo catálogo; sem carrinho/pedidos
+Gopage,Pagamento integrado,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem checkout/gateway/transações
+Gopage,Domínio próprio,D,https://gopage.bio/planos,sim,sim,sim,não,parcial,docs/deployment.md,Rota manual documentada; domínio customizado não provisionado/testado
+Gopage,Painel/gestão,D,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/editor.test.mjs,Editor local; sem conta/permissões/servidor
+Gopage,Importação em massa,D,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/core.test.mjs,Importação JSON validada; CSV/edição em massa não implementados
+Gopage,Personalização visual,D,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/editor.test.mjs,Nome/logo/descrição e três temas; sem construtor visual completo
+Gopage,API/integração para desenvolvedor,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem API pública/backend
+Gopage,Conformidade LGPD auditada,NV,https://gopage.bio/planos,sim,sim,sim,não,não homologado,,Sem auditoria jurídica/operacional de LGPD
+Gopage,Subcategorias,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/core.test.mjs,Árvore validada; revalidação UI profunda browser pendente
+Gopage,Descrição de produtos,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/editor.test.mjs,Texto escapado e descrição no catálogo
+Gopage,Preços exibidos,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/core.test.mjs; tests/editor.test.mjs,Centavos inteiros/BRL e variantes com preço final
+Gopage,Promoções e descontos,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem preço promocional/desconto programado
+Gopage,Produtos relacionados,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem recomendação/relacionados
+Gopage,Responsivo,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,docs/design/ux-audit.md,CSS adaptativo implementado; matriz de viewports após refinamento não executada
+Gopage,Acesso sem instalar app,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,evidence/deployment.json,Editor navegador/publicação confirmada; sem app nativo
+Gopage,Acessibilidade verificada,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/editor.test.mjs; tests/contrast.test.mjs,axe DOM e cinco contrastes; sem homologação WCAG completa/leitor de tela real
+Gopage,Cadastro/admin produtos,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/editor.test.mjs,CRUD local; criação/persistência observadas no browser
+Gopage,Disponibilidade/estoque,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/editor.test.mjs,Disponibilidade manual; sem estoque sincronizado
+Gopage,Múltiplos catálogos,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Um catálogo ativo por origem/navegador; arquivos exportados separados não são gestão múltipla
+Gopage,Permissões de equipe,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem autenticação/RBAC/colaboradores
+Gopage,Marca e cores,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/editor.test.mjs,Nome/logo e temas fixos; paleta livre não implementada
+Gopage,Templates,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,src/examples.js,Dois modelos fictícios; não há editor de templates
+Gopage,CSS/customização código,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,README.md; src/styles.css,Código aberto editável; sem CSS customizado via painel
+Gopage,White-label sem marca,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Footer VitraLibre presente; licença MIT permite alteração respeitando avisos
+Gopage,Cupons e fidelidade,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem cupons/CRM/fidelidade
+Gopage,Analytics e relatórios,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem coleta centralizada/analytics
+Gopage,Webhooks,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Sem webhooks
+Gopage,Documentação API,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Contratos internos documentados; sem API externa
+Gopage,Exportação de dados,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,tests/core.test.mjs,JSON roundtrip/HTML; exportação browser pós-refino pendente
+Gopage,Hospedagem própria,NV,https://gopage.bio/planos,sim,sim,sim,não,implementado e testado no núcleo,scripts/build.mjs; scripts/dev-server.mjs; evidence/deployment.json,Build estático/servidor local e deploy; backend não implementado
+Gopage,Segurança verificada,NV,https://gopage.bio/planos,sim,sim,sim,não,parcial,tests/core.test.mjs; evidence/npm-audit-final.json,Validação/XSS/quotas/dependências; sem pentest ou auditoria completa
+Gopage,Suporte Brasil confirmado,NV,https://gopage.bio/planos,sim,sim,sim,não,não implementado,,Projeto pt-BR sem equipe de suporte/SLA contratado
 Stoqui,Catálogo estruturado,D,https://www.stoqui.com.br/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs,Schema v1 e catálogo público independente
 Stoqui,Categorias,D,https://www.stoqui.com.br/planos,não,não,não,não,implementado e testado no núcleo,tests/core.test.mjs,Categorias e integridade de referências
 Stoqui,Fotos/Galeria,D,https://www.stoqui.com.br/planos,não,não,não,não,parcial,tests/core.test.mjs; tests/editor.test.mjs,Uma imagem por produto; galeria múltipla não implementada; upload final browser pendente

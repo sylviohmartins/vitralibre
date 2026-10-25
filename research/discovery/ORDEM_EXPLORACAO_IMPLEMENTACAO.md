@@ -59,6 +59,6 @@ A descoberta pode mudar a prioridade relativa ou revelar dependências entre cap
 
 ## Estado e próxima ação
 
-O núcleo experimental já publicado será auditado contra o consolidado, reaproveitando o que estiver correto. Não reiniciar nem refazer componentes sem causa. O próximo trabalho é resolver legitimamente o acesso operacional da Gopage e seguir a fila. O handoff de cadastro não foi confirmado como acessível pelo usuário; cadastro/ativação/login continuam zero. Isso é impedimento de acesso, não pesquisa concluída.
+O núcleo experimental já publicado será auditado contra o consolidado, reaproveitando o que estiver correto. Não reiniciar nem refazer componentes sem causa. Atualização25/10/2026:acesso Gopage resolvido no Chrome conectado; cadastro, email e sessão confirmados. Categoria/subcategoria e publicação parcial executadas. Próximo passo é concluir o produto com imagem original e aprofundar as jornadas administrativas/públicas antes de seguir a fila. Exploração integral e paridade continuam não comprovadas. Registro:research/competitors/gopage/operational-2026-10-25.md.
 
 Fontes internas:PLANO_DESCOBERTA_COMPETITIVA.md, fornecedores.csv, ROADMAP.md, specs/requirements.csv e prompt mestre. Este documento organiza execução; não é uma nova pesquisa de disponibilidade, preços ou funcionalidades.
