@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — [1.11/58] validada
+
+Orçamento reaberto com status/cliente/serviço2×10/total20 preservados. Histórico do cliente mostrou1 orçamento com mesmo código e valor. Sem alteração de status ou envio. Próxima tarefa:[1.12/58] conteúdo institucional e recomendações. Total58 inalterado.
+
 ## Continuação25/10 — cliente e orçamento persistidos
 
 Cliente cadastrado com contatos de avaliação autorizados; orçamento Rascunho ORC-2026-00001 salvo, cliente vinculado, total20. Sem envio de proposta/mensagem. Numeração inicial58 tarefas principais consolidada sem novo escopo. Próxima tarefa:[1.11/58] reabertura/histórico do orçamento; depois[1.12/58] conteúdo/recomendações. Ver research/discovery/TAREFAS_NUMERADAS.md.

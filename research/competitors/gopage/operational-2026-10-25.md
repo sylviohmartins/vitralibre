@@ -277,3 +277,11 @@ Utilizados nome de avaliação e contatos previamente fornecidos/autorizados par
 Cliente passou a constar no seletor de orçamento. Selecionado, serviço fictício2×10 e status Rascunho; Criar Orçamento retornou lista com1 registro ORC-2026-00001, total20, cliente vinculado, emissão25/10 e validade01/11/2026. Nenhuma comunicação ou cobrança acionada. Reabrir/histórico e ausência de notificação não foram comprovados pelo simples salvamento.
 
 Proprietário solicitou próxima tarefa com posição/total e aviso de inclusão. Criado TAREFAS_NUMERADAS.md:58 tarefas principais preexistentes,44 referências e14 etapas; subtarefas detalham Gopage. Próxima tarefa:[1.11/58] reabrir orçamento e conferir histórico; continuação:[1.12/58] conteúdo e recomendações.
+
+## [1.11/58] — reabertura e histórico validados
+
+ORC-2026-00001 reaberto pelo controle square-pen. Status Rascunho, cliente de avaliação selecionado, emissão25/10/2026, validade01/11/2026, descrição do serviço fictício, quantidade2 e preço unitário10 persistidos; total20. Nenhuma atualização/status acionado. O ícone pencil abriu menu de status, inspecionado sem escolher opção; distinção de ícones não substitui rótulos acessíveis.
+
+Cliente reaberto pelo controle square-pen: histórico indicou0 pedidos e1 orçamento, código ORC-2026-00001, data25/10/2026 e valor20. Vínculo entre cadastro e orçamento confirmado. Não se testou pedido, transição de estado ou ausência técnica de notificações. Nenhum comando de envio usado.
+
+Subtarefa1.11 concluída para os critérios de reabertura/vínculo previstos. Próxima:[1.12/58] conteúdo institucional e recomendações. Nenhuma nova tarefa principal adicionada; total58 permanece.
