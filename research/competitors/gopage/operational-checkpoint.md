@@ -11,7 +11,7 @@
 | Pedidos/orçamentos | Seleção de produto e um cálculo de serviço conferido | Persistência, status, estoque e notificações |
 | Estoque | Quantidade simples e por variação persistida; zero indisponível publicamente | Concorrência, baixa/reserva por pedido e limites de quantidade |
 | Clientes/vendedores/equipe | Formulários e regras declaradas | Cadastros, autorização e comissão |
-| Importação/envio/integrações | Contratos e opções lidos | Arquivo real, cotações e integrações autorizadas |
+| Importação/envio/integrações | CSV real com uma linha importado e reaberto; categoria criada | Casos negativos/duplicados/lote misto; cotações e integrações |
 | Exportação/marketing | Prévia de arte; calendário e QR inspecionados | PDF inconclusivo; downloads e leitura QR |
 | Conteúdo/métricas | Editores, cursos e painéis lidos | Publicação, acessibilidade e instrumentação |
 

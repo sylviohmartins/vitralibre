@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — importação CSV validada
+
+Modelo CSV baixado e uma linha fictícia importada. Reabertura confirmou nome/preço7,25/SKU e categoria nova; caminho aceitou produto sem imagem. PDF novamente acionado com inspeção de Downloads e abas, sem arquivo confirmado; causa não determinada. Próxima tarefa: validação negativa de CSV e exportação por categoria, mantendo Gopage prioritária.
+
 ## Continuação25/10 — variantes e estoque validados
 
 Estoque simples3→0 salvo/recarregado e indisponibilidade pública confirmada. Produto de teste convertido para variável: P12,50/3 e M15/0 persistidos na reabertura; seleção pública alternou preço/disponibilidade corretamente. Sem pedido ou baixa por venda. Próxima tarefa: exportações/importação e demais lacunas Gopage.

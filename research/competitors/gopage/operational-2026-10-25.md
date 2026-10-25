@@ -233,3 +233,13 @@ No produto fictício criado, ativado gerenciamento de estoque, quantidade3 e Sal
 Convertido o mesmo produto de avaliação para Variável, atributo Tamanho=P/M. Gerenciar Estoque e Alterar Valor e Estoque das Variações ativos. P:preço12,50/estoque3; M:preço15/estoque0. Salvar retornou lista com Produto Variável/Estoque3. Reabrir confirmou os quatro valores. Página pública recarregada mostrou seletor P/M. Selecionar M via select nativo atualizou preço15 e estado indisponível/0; selecionar P voltou a12,50 e disponível/3 com botão adicionar. É validação de persistência e apresentação por combinação, sem enforcement de checkout, fotos por opção ou múltiplos atributos persistidos.
 
 Produto permanece variável nessas condições no ambiente de avaliação. Próxima tarefa: exportações e importação, seguidas das demais lacunas operacionais; Gopage ainda sem cobertura integral.
+
+## Continuação — importação real e PDF reinspecionado
+
+Baixar formato CSV produziu modelo_importacao_produtos.csv em Downloads,111 bytes. Cabeçalho observado: nome,tipo,preco,sku,gerenciar_estoque,quantidade_estoque,link_externo,categorias,descricao,atributos,variacoes. Criado arquivo próprio UTF-8 sem BOM com vírgulas, uma linha simples fictícia, preço7.25, SKU VITRA-CSV-001, gerenciar_estoque=nao, categoria Avaliacao CSV e descrição de não comercialização. Arquivo257 bytes enviado pelo seletor. Chamada recebeu timeout, mas reinspeção mostrou1 importado de1 registro: não foi reenviado.
+
+Reabrir produto importado confirmou nome Item CSV VitraLibre - nao comercial, preço7.25 e SKU; categoria Avaliacao CSV apareceu selecionada. Nenhuma imagem estava cadastrada. Assim, esse caminho aceitou criação sem imagem, diferente da rejeição no formulário manual anterior. Não generalizar para todos os tipos/regras: duplicação, arquivo inválido, lote misto e rollback ainda não testados. Produto permanece no ambiente de avaliação.
+
+PDF: nova tentativa após mudança de capacidade (RDC e permissão de arquivos disponíveis), sem espera de evento que havia travado a ferramenta. Gerar PDF acionado; página respondeu e voltou ao mesmo estado. Busca por PDFs com modificação nos últimos5 minutos em Downloads retornou vazia; lista de abas sem visualizador novo. Logs capturados continham avisos de título/descrição de diálogos, sem causa demonstrada da geração. Não confundir aviso de acessibilidade com diagnóstico do PDF. Arquivo não confirmado e nenhuma tentativa idêntica adicional executada.
+
+Próxima tarefa: casos negativos da importação e exportação por categoria com verificação de destino; depois demais lacunas do checkpoint. Cobertura Gopage ainda parcial, apesar do avanço em upload/variantes/importação.
