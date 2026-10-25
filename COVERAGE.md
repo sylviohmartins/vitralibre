@@ -9,7 +9,7 @@
 | Formulário enviado |1 — Gopage|
 | Conta ativada |1 — Gopage, email confirmado|
 | Login confirmado |1 — sessão autenticada Gopage|
-| Fluxos administrativos autenticados concluídos |2 jornadas parciais na Gopage:categoria/subcategoria e cadastro/persistência de cupom; produto não salvo e aplicação do cupom não testada|
+| Fluxos administrativos autenticados concluídos |Gopage: categorias, produto com imagem, edição, variantes/estoque, CSV válido/inválido/misto/SKU repetido, PDF por categoria, cliente/orçamento/histórico, Sobre Nós e recomendação pública com evidências; cobertura parcial, sem contagem de jornadas homologadas|
 | REA instalado/MCP |6.7.0/207 ferramentas reais|
 | Análise concluída por REA |GitHub Actions: fixture/src próprios e quatro scripts públicos de Kicatálogo/Gopage/Stoqui; escopo estático parcial, sem painel ou backend|
 | Núcleo VitraLibre |Editor estático, JSON/HTML, pesquisa/categorias/preços/variantes e compartilhamento; limites por capacidade na matriz|

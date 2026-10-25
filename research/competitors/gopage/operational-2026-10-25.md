@@ -297,3 +297,9 @@ Carrinho existente exibiu três sugestões CSV7,25/8,50/9. Adicionar o primeiro 
 Função desativada e recarga confirmou false; recarga pública removeu sugestões. Regra permanece cadastrada porém função inativa; carrinho de avaliação contém itens não enviados. Ordenação por margem, limite de preço, exclusão de estoque zero e fallback ainda não isolados. Não chamar esses casos de homologados.
 
 Critérios da subtarefa1.12 validados neste recorte: texto público e regra com efeito público/adicionar/exclusão de item presente/desativação. Próxima:[1.13/58] revisar lacunas e fechamento verificável Gopage, sem certificar exploração integral pendente. Nenhuma tarefa principal adicionada; total58.
+
+## [1.13/58] — revisão documental e lacunas
+
+Reconciliados14 registros desatualizados no inventário48 linhas, preservando os limites de cada teste e remetendo aos casos posteriores. COVERAGE corrigido: não afirma mais produto não salvo. Histórico do diário preservado; pendências não convertidas em sucesso. Criado remaining-validation.md com8 subtarefas1.14–1.21, detalhando o escopo existente. Total principal58 inalterado; inclusão comunicada ao proprietário.
+
+Revisão documental concluída; Gopage continua com exploração integral não comprovada. Próxima:[1.14/58] promoção/cupom/limites no carrinho, sem envio. Não avançar silenciosamente ao Tagme contrariando prioridade atual.

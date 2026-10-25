@@ -1,6 +1,6 @@
 id,capacidade,estado_evidencia,observacao,limite,melhoria_proposta
-GOP-001,Combinações de atributos,executado no formulário,Tamanho P/M × Cor Azul/Verde gerou4 linhas,Produto variável não salvo,Mostrar contagem/impacto antes de gerar ou remover
-GOP-002,Preço e estoque por combinação,executado no formulário,Preços25/26/27/28 e estoques3/0/4/5 digitados e lidos,Sem persistência/checkout ou enforcement de estoque,Identidade estável da combinação e erro por linha
+GOP-001,Combinações de atributos,executado no formulário; persistência posterior parcial,Quatro combinações Tamanho×Cor no formulário; P/M persistidos em teste posterior,Múltiplos atributos persistidos não testados; ver GOP-043,Mostrar contagem/impacto antes de gerar ou remover
+GOP-002,Preço e estoque por combinação,persistência parcial e apresentação pública verificadas,P12.50/3 e M15/0 reabertos; preço/disponibilidade públicos alternados,Sem pedido/baixa/reserva; teste anterior4 combinações só no formulário,Identidade estável da combinação e erro por linha
 GOP-003,Remoção/recriação de opção,executado no formulário,Remover M preservou P; recriar M trouxe preço/estoque vazios,Não determina intenção de design/bug,Aviso de perda de valores e recuperação explícita
 GOP-004,Galeria por cor,observado na interface,Controles Azul/Verde e instrução de prioridade de imagens,Upload/ordem pública não executados,Prévia coerente com seleção
 GOP-005,Cupom percentual,criado e persistido,Cupom10% presente após recarga,Sem resgate ou pedido; permanece ativo no teste,Resumo de regras e confirmação
@@ -14,36 +14,36 @@ GOP-012,Orçamento e carrinho,regra declarada na UI,Texto diz orçamento desativ
 GOP-013,Visibilidade de preços,observado na interface,Ocultar preço e desbloquear por senha,Não ativado; sem criação de credencial,Clareza de público e autorização
 GOP-014,PIX e parcelamento,observado na interface,Controles de desconto PIX e parcelas sem juros,Não configurado ou cobrado,Condições visíveis antes da solicitação
 GOP-015,Métodos e regras de envio,declarado na UI,Métodos manuais e integrações com requisitos de CEP/peso/dimensões,Sem cotação ou conexão,Prévia de elegibilidade e fallback
-GOP-016,Importação CSV,instruções inspecionadas,Contrato de campos e combinações documentado no diário,Nenhum arquivo importado,Prévia e erro por linha
+GOP-016,Importação CSV,importação e erros exercitados,Modelo e uma linha importados; lote misto parcial e SKU repetido criaram registros,Sem todos os tipos/encoding/fronteiras; ver GOP-044..048,Prévia e erro por linha
 GOP-017,Presets de cores,salvo e verificado publicamente,Verde Pinheiro aplicado; Black Piano restaurado; fundos medidos,Sem auditoria completa de contraste,Prévia e restauração explícita
 GOP-018,Personalização de catálogo,observado na interface,Identidade; ordenação; moedas; visibilidade; login; atacado Premium,Configurações não alteradas nesta rodada,Agrupar por jornada e explicar dependências
 GOP-019,Banner por upload,observado na interface,Exibição na home; transição; animação; adicionar imagens,Sem upload ou publicação,Descrição alternativa e movimento reduzido
-GOP-020,Arte promocional de produto,seletor aberto,Busca por nome/SKU e modelos de arte observados,Sem seleção ou geração/download,Separar exportação e publicação com prévia
+GOP-020,Arte promocional de produto,prévia exercitada,Produto selecionado com nome/preço na arte; modelos observados,Banner exportado/publicado não validado; ver GOP-037,Separar exportação e publicação com prévia
 GOP-021,Pedido administrativo,executado no formulário,Produto Exemplo adicionado; modos de cliente e desconto alternados,Pedido não criado; estoque e notificações não testados,Separar salvar e enviar com resumo financeiro
-GOP-022,Orçamento de produtos e serviços,cálculo frontend verificado,Serviço2×100 menos10% mais frete15 resultou195,Sem persistência/envio; um único caso de cálculo,Aritmética decimal e testes de fronteira
+GOP-022,Orçamento de produtos e serviços,rascunho salvo e reaberto,ORC-2026-00001 total20 com serviço2×10; cálculo195 testado antes no formulário,Sem envio/transições/concorrência,Aritmética decimal e testes de fronteira
 GOP-023,Filtros de orçamento,observado na interface,Status; período; vendedor; lista vazia,Sem dados para validar filtragem,Contagens e estados vazios contextualizados
-GOP-024,Cadastro e histórico de cliente,observado na interface,Contato/documentos/endereço; senha opcional; pedidos e orçamentos,Nenhum cliente criado ou exportado; login não testado,Dados mínimos e acesso opcional explicado
+GOP-024,Cadastro e histórico de cliente,cliente e histórico persistidos,Cliente de avaliação salvo/reaberto; histórico1 orçamento com código/valor20,Sem login cliente/pedidos/exportação,Dados mínimos e acesso opcional explicado
 GOP-025,Padrões de orçamento,observado na interface,Numeração; ano; validade; alertas e textos padrão,Sem salvar; sequência/alertas não executados,Concorrência e notificações explícitas
-GOP-026,Gestão central de estoque,busca e filtro exercitados,Mostrar sem controle revelou ilimitado; busca vazia e retorno confirmados,Sem atualização de quantidade ou variação persistida,Distinguir ilimitado/zero e alterações pendentes
+GOP-026,Gestão central de estoque,quantidade persistida e estado público verificados,3→0 salvo; esgotado público; P/M persistidos depois,Sem baixa por pedido/concorrência; ver GOP-042..043,Distinguir ilimitado/zero e alterações pendentes
 GOP-027,Cadastro de vendedor,observado na interface,Trial até2; região; comissão e ativo,Sem cadastro; comissão e permissões não testadas,Definir base de comissão e papel do vendedor
 GOP-028,Equipe e acesso,regra declarada na UI,Link próprio; credenciais pelo dono; restrições administrativas,Nenhum acesso criado ou teste de autorização,Papéis e testes negativos; credenciais individuais
 GOP-029,QR promocional,formato e prévia abertos,Cartaz com cor/cupom/texto/WhatsApp,Sem geração/download ou leitura por câmera,Contraste e leitura real
 GOP-030,Calculadora de preço,um caso calculado,Custo120 e margem20% retornaram150; conferido,Sem taxas combinadas/fronteiras,Explicar margem versus markup
-GOP-031,Venda sugestiva,prévia aberta e regras lidas,Regras categoria/produto; margem; exclusões; fallback,Inativa; sem regras ou recomendação pública,Explicar inclusão e exclusão na prévia
+GOP-031,Venda sugestiva,regra persistida e carrinho público exercitado,Categoria→categoria criou sugestões; adicionar removeu repetido; função desativada e revalidada,Margem/fallback/limite de preço/zero não isolados,Explicar inclusão e exclusão na prévia
 GOP-032,SEO e identidade geral,observado na interface,Metadados; ícone; compartilhamento; link,Sem salvar/publicar,Prévia dos metadados
 GOP-033,Integrações externas,lista inspecionada,ERP; checkout; domínio; analytics; pixels e feeds,Sem conexão ou configuração,Escopos e diagnóstico explícitos
 GOP-034,Estatísticas e lucro,painéis inspecionados,Períodos; acessos; vendas; custos; lucro aproximado,Sem validação de instrumentação ou vendas,Definir métricas e timezone
-GOP-035,Páginas institucionais,lista inspecionada,Sobre; entrega; troca; termos; privacidade; tamanhos,Editores/publicação não testados,Modelos claros e revisão contextual
-GOP-036,Exportação de catálogo PDF,tentativa inconclusiva,Capa opcional e categorias observadas; Gerar PDF acionado,Browser expirou sem arquivo/caminho; conteúdo não validado,Progresso e recuperação de geração verificáveis
+GOP-035,Páginas institucionais,Sobre Nós publicado e verificado,Texto original de avaliação publicado; demais editores inspecionados,Demais políticas e guia público não publicados/testados,Modelos claros e revisão contextual
+GOP-036,Exportação de catálogo PDF,PDF por categoria confirmado em teste posterior,Uma categoria gerou34305 bytes/1 página; texto e renderização inspecionados,Todas/capa/volume não homologados; tentativas anteriores inconclusivas,Progresso e recuperação de geração verificáveis
 GOP-037,Arte promocional social,prévia exercitada,Produto selecionado; nome/preço na prévia; Feed/Stories,Sem geração ou download,Enquadramento e conferência de preço
 GOP-038,Calendário sazonal,lista filtros e detalhe abertos,Segmento/impacto/categoria; antecedência e ideias,Sem geração nova ou validação de datas/timezone,Localidade e critérios explícitos
-GOP-039,Editores institucionais e medidas,formulário exercitado sem salvar,Texto Quem Somos digitado/lido; guia por imagem; privacidade aberto,Sem publicação ou persistência,Tabela acessível e aviso de alterações pendentes
+GOP-039,Editores institucionais e medidas,texto institucional publicado e verificado,Sobre Nós salvo e público; guia e privacidade inspecionados,Guia imagem/acessibilidade e demais políticas pendentes,Tabela acessível e aviso de alterações pendentes
 GOP-040,Conteúdo educacional,lista inspecionada,Cursos com aulas/duração/progresso,Aulas não executadas; Venda Mais inconclusivo,Ajuda contextual por jornada
-GOP-041,Criação de produto simples com imagem,salvo reaberto e verificado publicamente,Nome/preço/SKU/subcategoria persistidos; imagem640×640 carregada,Um caso; sem exclusão ou variações persistidas,Feedback de upload e revisão antes de publicar
+GOP-041,Criação de produto simples com imagem,criação e reabertura públicas verificadas,Produto simples com imagem persistiu; depois convertido para P/M,Exclusão não testada; variações ver GOP-043,Feedback de upload e revisão antes de publicar
 GOP-042,Estoque simples persistido,salvo e verificado publicamente,3→0 na gestão; recarga confirmou esgotado; público indisponível,Sem pedido/baixa/reserva concorrente,Alterações pendentes e consistência de indicadores
 GOP-043,Variação persistida e seleção pública,salvo reaberto e exercitado,P12.50/3; M15/0; seleção alternou preço/disponibilidade,Um atributo; sem enforcement de pedido ou foto por opção,Mensagens e preço coerentes por combinação
-GOP-044,Importação CSV simples,importado e reaberto,Uma linha UTF-8 sem BOM; nome/preço/SKU/categoria persistidos; sem imagem,Sem duplicados/erros/lote misto/rollback,Prévia de validação e regra de imagem consistente
-GOP-045,Erro de importação por linha,rejeição e relatório verificados,Preço-1 rejeitado;0 importados; CSV de erros baixado/lido,Sem teste zero/duplicado/lote misto,Regra inequívoca e correção sem duplicação
+GOP-044,Importação CSV simples,importado e reaberto; testes adicionais documentados,Uma linha persistiu sem imagem; categoria criada; lote misto e SKU repetido testados depois,Demais tipos/encoding/ID externo pendentes,Prévia de validação e regra de imagem consistente
+GOP-045,Erro de importação por linha,rejeição e relatório verificados,Preço negativo rejeitado; CSV de erros baixado/lido; lote misto testado depois,Fronteira zero e reenvio inteiramente idêntico pendentes,Regra inequívoca e correção sem duplicação
 GOP-046,PDF por categoria,gerado baixado e inspecionado,34305 bytes;1 página; categoria/produto/preço/imagem confirmados,Sem Todas/capa/volume/variantes,Tipografia e moeda local consistentes
 GOP-047,Importação de lote misto,sucesso parcial confirmado,2 linhas:1 criada/1 rejeitada; lista3→4,Caso de validação; sem falha de infraestrutura,Reenvio seguro com resumo de efeitos
 GOP-048,SKU repetido na importação,novo registro confirmado,SKU existente criou produto adicional; anterior mantido; lista4→5,Sem linha inteiramente idêntica ou ID externo,Escolha explícita criar/atualizar/ignorar

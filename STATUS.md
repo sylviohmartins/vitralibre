@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — [1.13/58] revisão documental concluída
+
+Inventário e COVERAGE reconciliados com testes posteriores; Gopage continua parcial. Oito subtarefas1.14–1.21 detalham lacunas existentes; total principal58 inalterado. Próxima:[1.14/58] cupons/promoções/limites no carrinho. Ver remaining-validation.md.
+
 ## Continuação25/10 — [1.12/58] validada no recorte
 
 Sobre Nós publicado com aviso de avaliação e conferido publicamente. Regra de recomendação criada; ativação persistiu e sugestões públicas funcionaram; adicionar item atualizou total e retirou sugestão repetida. Função desativada e ausência pública revalidada. Sem pedido enviado. Próxima:[1.13/58] revisão de lacunas/fechamento verificável Gopage. Total58 inalterado.
