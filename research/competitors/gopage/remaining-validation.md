@@ -15,4 +15,4 @@ Oito subtarefas de detalhamento acrescentadas à lista, dentro do escopo já sol
 |1.20|Envio, integrações, domínio, feeds, metadados e instrumentação|Usar sandbox quando existir; planos/contas externas podem limitar; não simular conexão concluída|
 |1.21|Responsividade/teclado/acessibilidade, textos longos, imagens ausentes, reordenação/categorias, onboarding e fechamento|Registrar larguras e evidências reais; revisão final da matriz e lacunas residuais|
 
-Próxima tarefa:[1.14/58]. A ordem pode ser adaptada por dependência com justificativa. Permanecem fora de execução autônoma ações que exigem confirmação no ato, transações financeiras e envio não autorizado. Isso é limite de teste, não evidência de inexistência do recurso.
+Próxima tarefa:[1.15/58].1.14 executada com mínimos/promoção de produto validados; cupom sem feedback e casos categoria/validade/limite continuam pendentes para revisão1.21. A ordem pode ser adaptada por dependência com justificativa. Permanecem fora de execução autônoma ações que exigem confirmação no ato, transações financeiras e envio não autorizado. Isso é limite de teste, não evidência de inexistência do recurso.

@@ -311,3 +311,11 @@ Carrinho local de avaliação continha2 unidades, total107,25. Link Finalizar co
 Configuração original sem mínimo monetário/quantitativo. Ativado mínimo150 e salvo: carrinho mostrou aviso de mínimo150 e Finalizar compra tornou-se button disabled=true, sem href. Desativado mínimo monetário e ativado quantitativo3, salvo: carrinho2 unidades mostrou aviso mínimo3 e button disabled=true. Desativado mínimo quantitativo e salvo; recarga pública restaurou link de checkout. Configurações originais restauradas, nenhum pedido enviado. Não se testou igualdade da fronteira, bypass por URL direta ou backend; evidência restrita ao bloqueio no carrinho.
 
 Subtarefa1.14 parcialmente validada: limites por valor/quantidade e restauração; cupom e promoções seguem pendentes. Próxima:[1.14/58], continuação de desconto/cupom e promoção. Total58 inalterado, sem novas tarefas.
+
+## [1.14/58] — promoção de produto e cupom sem feedback
+
+Produto Exemplo: habilitado Valor Promocional, sale_price80 mantendo base100, salvo. Página pública mostrou100/80, Valor Promocional e-20%, coerente com(100−80)/100. Desabilitada promoção e salvo; recarga pública voltou somente100. Estado original restaurado.
+
+Controle negativo de cupom: código explicitamente inexistente preenchido e Aplicar acionado, sem alteração de total107,25 ou mensagem observada, semelhante ao cupom cadastrado anterior. Inspeção DOM do botão informou type=button, associado a form, sem campos nativamente inválidos; regiões alert/status vazias. Isso não revela handlers, resposta de rede ou causa. Não concluir que backend aceita/rejeita o código nem que o limite de uso foi consumido. Nenhum pedido enviado e nenhum contato preenchido no checkout.
+
+Subtarefa1.14 encerrada como execução de casos com pendência: mínimos por valor/quantidade e promoção de produto validados/restaurados; aplicação de cupom sem feedback reproduzida e não homologada. Promoção por categoria, validade e consumo de limite também não homologados; ficam explícitos para revisão1.21, sem desaparecer do escopo. Próxima:[1.15/58] pedido administrativo/transições/estoque, avaliando efeitos antes de criação. Sem nova tarefa principal; total58.

@@ -70,3 +70,5 @@ Baseline25/10/2026:58 tarefas principais, derivadas da ordem já existente (44 r
 ## Detalhamento adicionado na revisão1.13
 
 Adicionadas8 subtarefas1.14–1.21 para tornar explícitas lacunas já no escopo. Nenhuma nova tarefa principal:58→58. Lista e condições em ../competitors/gopage/remaining-validation.md.
+
+Atualização1.14: mínimos e promoção de produto validados; cupons sem feedback, promoção por categoria/validade/limite permanecem pendentes na revisão1.21. Próxima:[1.15/58]. Não representa aprovação integral de1.14. Total58 sem alteração.

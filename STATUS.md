@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — [1.14/58] execução encerrada com pendências
+
+Promoção100→80 exibiu-20% publicamente e foi restaurada. Cupom inexistente e cadastrado sem desconto/feedback observado; causa indeterminada, sem homologar resgate/validade/limite. Mínimos já validados/restaurados. Próxima:[1.15/58] pedido administrativo/transições/estoque; lacunas de cupom mantidas para revisão1.21. Total58 inalterado.
+
 ## Continuação25/10 — [1.14/58] limites públicos validados
 
 Mínimo150 bloqueou carrinho107,25; mínimo3 bloqueou2 unidades, ambos com aviso e botão disabled. Configurações originais sem mínimos restauradas e link de checkout revalidado. Cupom Aplicar sem efeito/mensagem confirmado; resgate inconclusivo. Próxima:[1.14/58] continuar descontos/promoções. Total58 inalterado.
