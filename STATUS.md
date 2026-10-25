@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — upload resolvido
+
+Imagem original enviada com sucesso após permissão habilitada. Produto simples fictício salvo, reaberto e conferido na vitrine/detalhe com preço12,50, SKU, subcategoria e imagem carregada640×640. Produto permanece no ambiente de avaliação. Próxima tarefa: variantes persistidas/estoque e exportações; não declarar Gopage integralmente concluída.
+
 ## Continuação25/10 — impedimento de upload diagnosticado
 
 Prioridade voltou a finalizar Gopage. Edição de produto existente salva/reaberta/conferida publicamente e restaurada; carrinho testado sem pedido. Imagem original colocada no computador pela conta Secundária RDC e hash conferido. Upload real bloqueado por permissão Allow access to file URLs da extensão ChatGPT; orientação oficial entregue. Formulário novo pendente. PDF não encontrado na busca restrita por nome recente; continua inconclusivo. Próxima ação: habilitar permissão ou selecionar imagem manualmente, concluir upload/criação e revalidar.

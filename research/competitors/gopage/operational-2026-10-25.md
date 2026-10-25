@@ -217,3 +217,11 @@ Conta Secundária do Remote Desktop Commander disponível no dispositivo autoriz
 Busca somente por PDFs recentes em Downloads com nomes relacionados a catalog/gopage/vitralibre não encontrou arquivo. Isso não exclui download em outra pasta/nome; PDF permanece inconclusivo. Não repetir geração enquanto a condição não mudar.
 
 Próxima ação dependente: proprietário habilitar a permissão indicada na extensão ou selecionar manualmente a imagem original já disponível. Depois confirmar preview/upload, salvar, reabrir e validar produto público. Demais lacunas continuam no checkpoint; integrações financeiras e permissões não são homologadas por inspeção.
+
+## Continuação — upload resolvido e criação pública validada
+
+Após o proprietário informar a permissão habilitada, nova sessão listou zero abas controladas. Formulário simples reaberto e dados fictícios reaplicados. setFiles com imagem original local funcionou; UI mostrou Enviando Imagens e depois botão Imagem do Produto. Selecionada subcategoria Avaliação VitraLibre -> Bebidas de teste. Salvar retornou lista com2 produtos, incluindo Café de avaliação VitraLibre — não comercial,12,50 e SKU VITRA-TESTE-001. Reabrir confirmou nome/preço/SKU persistidos.
+
+Vitrine e detalhe públicos confirmaram produto, preço12,50, SKU, subcategoria e descrição explícita de não comercialização. Imagens correspondentes carregadas, complete=true e dimensões naturais640×640; screenshot de sessão inspecionado mostrou a imagem original da caneca. Upload/criação/reabertura/publicação do produto simples estão validados neste caso; exclusão, variantes persistidas e importação permanecem sem homologação. Não declarar CRUD completo. Produto de teste permanece publicado no ambiente de avaliação Gopage. Sem pedido/mensagem/pagamento enviado.
+
+Próxima tarefa: persistência de variantes e estoque; depois exportações PDF/CSV e demais lacunas do checkpoint. Permissão de upload deixa de ser impedimento ativo.
