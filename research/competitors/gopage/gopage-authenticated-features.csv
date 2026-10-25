@@ -23,3 +23,6 @@ GOP-021,Pedido administrativo,executado no formulário,Produto Exemplo adicionad
 GOP-022,Orçamento de produtos e serviços,cálculo frontend verificado,Serviço2×100 menos10% mais frete15 resultou195,Sem persistência/envio; um único caso de cálculo,Aritmética decimal e testes de fronteira
 GOP-023,Filtros de orçamento,observado na interface,Status; período; vendedor; lista vazia,Sem dados para validar filtragem,Contagens e estados vazios contextualizados
 GOP-024,Cadastro e histórico de cliente,observado na interface,Contato/documentos/endereço; senha opcional; pedidos e orçamentos,Nenhum cliente criado ou exportado; login não testado,Dados mínimos e acesso opcional explicado
+GOP-025,Padrões de orçamento,observado na interface,Numeração; ano; validade; alertas e textos padrão,Sem salvar; sequência/alertas não executados,Concorrência e notificações explícitas
+GOP-026,Gestão central de estoque,busca e filtro exercitados,Mostrar sem controle revelou ilimitado; busca vazia e retorno confirmados,Sem atualização de quantidade ou variação persistida,Distinguir ilimitado/zero e alterações pendentes
+GOP-027,Cadastro de vendedor,observado na interface,Trial até2; região; comissão e ativo,Sem cadastro; comissão e permissões não testadas,Definir base de comissão e papel do vendedor

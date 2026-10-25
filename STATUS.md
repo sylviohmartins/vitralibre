@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação25/10 — configurações, estoque e vendedores
+
+Configurações de orçamento e formulário de vendedor inspecionados sem salvar. Estoque: mostrar sem controle revelou produto ilimitado; busca inexistente e retorno por nome confirmados após atualização. Sem alteração de quantidade ou criação de vendedor. Próxima tarefa: Equipe, Impulsionar e Configurações. Evidências e lacunas no diário operacional; sem mudança funcional no VitraLibre.
+
 ## Continuação25/10 — pedidos, orçamentos e clientes
 
 Formulários Gopage explorados sem criar registros ou enviar mensagens. Produto Exemplo adicionado somente ao formulário de pedido; desconto avulso alternado. Em orçamento, serviço2×100 com desconto10% e frete15 produziu total195 no frontend. Clientes inspecionado sem cadastro/senha. Próxima tarefa: configurações de orçamento, Estoque e Vendedores. Limites detalhados no diário; sem mudança funcional no VitraLibre.
