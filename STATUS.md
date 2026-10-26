@@ -1,8 +1,8 @@
 # VitraLibre — estado verificável
 
-## Estado temporário26/10 — remoção autorizada; controle do navegador bloqueado
+## Restauração confirmada26/10 — principal[1/58] · revisão[21/21]
 
-Promoção de categoria10% criada com data passada surtiu efeito:produto100→90,carrinho107,25→97,25. Categoria e recálculo validados;validade não homologada. Remoção somente dessa regra autorizada explicitamente pelo usuário;cupom anterior será preservado. Tentativa bloqueada por HTTP401 no controle do Browser antes de qualquer exclusão. Aba listada;não inferir falha de login Gopage. Autorização não precisa ser repetida para a mesma ação. Nenhum pedido/mensagem enviado. Próxima:[1/58]·revisão[21/21] de[14/21],restaurar e revalidar preços.
+Regra de categoria10% removida com autorização;ausência confirmada após recarga. Cupom VITRALIBRETESTE10 preservado. Produto100 e carrinho107,25 revalidados publicamente. BloqueioHTTP401 superado;Chrome autenticado acessível. Inventário48IDs reconciliado em30linhas com o diário;isso não é homologação integral. XML21itens,incluindo lote10 e preços,confirmados;intervalo2h não medido. Próxima:revisão21/21,lacunas de clientes e acessibilidade. Total58principais/21filhos Gopage inalterado.
 
 ## Estado atual26/10 — principal[1/58], revisão[21/21]
 

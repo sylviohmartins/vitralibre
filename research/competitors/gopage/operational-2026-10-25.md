@@ -564,3 +564,17 @@ Usuário respondeu explicitamente "autorizado. prossiga!" à remoção somente d
 Browser listou aba193077385 em /cliente/catalogo/coupons. Primeiro domSnapshot retornou Chat API request failed HTTP401. Documentação de troubleshooting consultada. Tentativa de obter handle atual também retornou401;captura pelo handle anterior retornou401. Listagem de abas continuou disponível. Não houve clique na lixeira nem chamada de exclusão. Isso é bloqueio do controle do navegador,não prova de expiração do login Gopage. Não usar outro canal para contornar a sessão sem seguir permissões.
 
 Estado último observado permanece:regra10% cadastrada,produto90,carrinho97,25;valores não reinspecionados nesta tentativa. Não declarar removida ou preços restaurados. Próxima ação após recuperação do controle:inspecionar regra,remover somente ela,conferir ausência/preservação do cupom e produto100/carrinho107,25,capturar resultado. Principal[1/58],revisão[21/21] de[14/21],21filhos diretos,sem novas tarefas. Código da aplicação preservado.
+
+
+## 26/10/2026 — restauração concluída e inventário reconciliado
+
+Controle do Chrome recuperado após reinicialização das ligações da sessão;abrir página autenticada funcionou. Regra10% de Exemplo Categoria1 ainda presente. Sob autorização específica anterior,única lixeira desse registro acionada. Lista passou a mostrar somente VITRALIBRETESTE10. Recarga confirmou0ocorrências da regra de categoria e1do cupom original. Página pública nova mostrou Produto Exemplo100,sem90/promocional. Carrinho preexistente mostrou100+7,25,total107,25. Remoção e restauração verificadas;nome antigo do primeiro item continua,preço foi reconciliado nos dois sentidos. Nenhum pedido,mensagem ou cobrança. Evidência local category-restored-proof.png.
+
+Inventário gopage-authenticated-features.csv reconciliado em30linhas com evidências do diário25–26/10;48IDs estáveis preservados. Isso corrige limites obsoletos como pedido não criado,QR não decodificado ou lote não exercitado. Quantidade de registros não é cobertura/conclusão. Os limites residuais continuam explícitos e Gopage permanece parcial. Principal[1/58],revisão[21/21],21filhos diretos;sem novas tarefas. Próxima:revisão21/21 de20/21,atualização real do feed após lote e demais lacunas independentes.
+
+
+### Revisão20/21 — feed após o lote
+
+Nova navegação para shopping_xml.xml retornou XML exibido no visualizador do Chrome;DOM continha21elementos item. Títulos dos10itens LoteVitraLibre01..10 presentes,preços1.25..10.25BRL. Produto Exemplo100BRL,externo5BRL,matriz10BRL,café12.5BRL,dois registros de preço0BRL. Todos21 com availability in stock;itens variáveis continuam agrupados no produto base,não21combinações. IDs21distintos. Acentos preservados nos títulos do lote;travessões/hífens removidos nos exemplos lidos. Não avaliar conformidade Google Merchant ou indexação externa por essa inspeção.
+
+Atualização de conteúdo após importação comprovada por comparação com recorte anterior10itens e presença efetiva dos novos10. Intervalo exato,agendamento de2h e atualização imediata não medidos;nenhuma alegação deSLA. Nenhuma alteração de configuração nessa navegação;feed permanece ativo.
