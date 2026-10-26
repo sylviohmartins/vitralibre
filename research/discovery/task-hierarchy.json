@@ -157,7 +157,9 @@
         }
       ],
       "status": "em_execucao",
-      "current_child": "1.21"
+      "current_child": "1.21",
+      "review_summary": "26/10:cinco status administrativos no recorte e restauração;busca/filtros clientes;teclado4setas sem movimento. Novo acesso de cliente preparado sem senha/submissão,aguarda confirmação específica.",
+      "review_document": "research/competitors/gopage/fechamento-da-rodada.md"
     },
     {
       "id": "2",

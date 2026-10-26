@@ -104,3 +104,6 @@ Os denominadores são independentes:58 tarefas principais;21 subtarefas da Gopag
 |1.19|19/21|Regras de recomendação e carrinho|
 |1.20|20/21|Envio, integrações, domínio e métricas|
 |1.21|21/21|Responsividade, acessibilidade e revisão final|
+
+
+Revisão26/10 — principal[1/58]·filho[21/21],21filhos diretos:fechamento da rodada e dependências em ../competitors/gopage/fechamento-da-rodada.md. Pago/Concluído/Cancelado persistidos no pedido fictício;estoque e indicadores restaurados. Clientes e teclado ampliados no recorte. Novo acesso de cliente preparado sem senha/submissão,aguarda confirmação específica. Não há conclusão integral do fornecedor,nem tarefa nova.

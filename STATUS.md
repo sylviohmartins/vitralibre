@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Revisão26/10 — dependência para novo acesso de cliente
+
+Pedido fictício Pago/Concluído persistidos;cancelamento restaurou estoque3 e indicadores0/R$0. Busca/filtros de clientes exercitados;arraste por teclado4setas sem mudança no recorte. Novo cadastro fictício com acesso preparado,senha vazia e sem salvar;confirmação específica necessária antes de criar credencial. Fechamento da rodada em research/competitors/gopage/fechamento-da-rodada.md. Gopage continua parcial;58principais/21filhos diretos inalterados.
+
 ## Restauração confirmada26/10 — principal[1/58] · revisão[21/21]
 
 Regra de categoria10% removida com autorização;ausência confirmada após recarga. Cupom VITRALIBRETESTE10 preservado. Produto100 e carrinho107,25 revalidados publicamente. BloqueioHTTP401 superado;Chrome autenticado acessível. Inventário48IDs reconciliado em30linhas com o diário;isso não é homologação integral. XML21itens,incluindo lote10 e preços,confirmados;intervalo2h não medido. Próxima:revisão21/21,lacunas de clientes e acessibilidade. Total58principais/21filhos Gopage inalterado.

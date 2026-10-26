@@ -48,3 +48,8 @@ Novas funcionalidades suspensas até a revisão de descoberta/escopo. [Plano ope
 Gopage:cadastro, email confirmado e sessão autenticada executados; categorias/subcategoria e publicação parcial verificadas. Produto sem imagem foi rejeitado e não salvo. [Evidência operacional](research/competitors/gopage/operational-2026-10-25.md). Os demais fornecedores continuam sem conta confirmada nesta pesquisa. Referências a zero contas no histórico descrevem o checkpoint anterior. Nenhuma paridade integral foi homologada.
 
 Continuação25/10:combinações de variantes exercitadas somente no formulário; cupom percentual criado e conferido após recarga; checkout apenas inspecionado. Inventário adicional14 capacidades, sem alterar retroativamente o benchmark documental. Nenhuma paridade integral homologada.
+
+
+## Revisão Gopage26/10 — limites preservados
+
+Cinco status administrativos do pedido fictício exercitados no recorte;Cancelado restaurou estoque3 e indicadores0/R$0. Busca/filtros clientes e teclado ampliados;novo acesso preparado sem senha/submissão,aguarda confirmação específica. XML21itens conferido. Inventário48IDs mantido;fechamento da rodada e dependências em research/competitors/gopage/fechamento-da-rodada.md. Isso não homologa paridade integral,nem altera as58tarefas principais/21filhos deGopage.

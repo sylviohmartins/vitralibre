@@ -1,7 +1,9 @@
 # Constatações técnicas — Gopage
 
-[D] Endpoints públicos e informações de plano constam em evidence.md. [O] Origem dos dados desta pesquisa: busca web e, quando especificado, navegador CUA.
+Atualizado26/10/2026. Evidência autenticada e pública delimitada em operational-2026-10-25.md. Cadastro/sessão legítimos;arquivos de exportação baixados pelas funções do produto,inspecionados e mantidos fora do repositório quando contêm contatos/ativos do fornecedor. Fixtures próprias estão em research/fixtures.
 
-[NV] Framework, arquitetura de backend, banco de dados, estratégia de cache, isolamento de tenant e APIs privadas não foram auditados. Não se deduz implementação pelo nome comercial ou por página dinâmica. REA não foi usado por este pesquisador nestes alvos; o relatório de REA do projeto é independente e deve ser consultado para qualquer execução comprovada.
+Observações funcionais não revelam arquitetura interna. Framework/backend/banco/cache/isolamento entre lojas/APIs privadas não foram auditados nesta exploração. Não foram extraídos bundles,sourcemaps ou código proprietário para reprodução. Nenhum ativo proprietário incorporado ao VitraLibre.
 
-[NV] Não foram baixados bundles, sourcemaps, código proprietário ou recursos autenticados. Características documentadas não equivalem a teste de segurança, capacidade ou escalabilidade.
+REA:execução estática do projeto registrada separadamente em COVERAGE.md;inclui fixture/src próprios e scripts públicos no recorte descrito. Isso não comprova uso de REA sobre painel autenticado/backend nem teste de segurança. Esta rodada de UI usou controles documentados do navegador,sem sondagem de APIs privadas.
+
+XML público foi lido com21itens,preços e títulos;isso não homologa Google Merchant/refresh2h/serviços externos. CSV foi exercitado com21produtos totais;isso não homologa desempenho em escala. Auditorias axe/Lighthouse/leitor de tela não executadas;nenhuma métrica inventada. Ver remaining-validation.md.
