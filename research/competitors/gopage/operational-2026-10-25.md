@@ -431,3 +431,33 @@ Falhas observadas na página3:grande área reservada para itens sem foto;nome250
 Tentativa auxiliar de instalar renderizador no dispositivo encontrou resets de conexão. Não foi necessária:renderização concluída com ferramentas existentes no executor. Tentativa de encerrar a instalação informou que não havia sessão ativa; não afirmar instalação bem-sucedida. Artefatos de fornecedor/contatos não republicados.
 
 Impedimento atual para banners e demais testes autenticados: ferramenta Browser anteriormente utilizada não está exposta nesta sessão. Busca de integrações não recuperou o conector e não foi assumida equivalência com sessão autenticada em outro navegador. Nenhuma automação de navegador por terminal nem nova credencial utilizada. A inspeção de PDF pôde continuar por leitura dos arquivos já autorizados. Próxima:principal[1/58]·revisão[21/21],banner[17/21] após restabelecer navegador conectado. Nenhuma tarefa adicionada;58principais/21filhos.
+
+## Principal [1/58] · revisão [21/21] de [17/21] — banners
+
+Acesso Browser restabelecido nesta sessão; painel autenticado acessível. Área Banners oferece Adicionar Banner e Criar Novo Banner. Envio só expõe campo de imagem após marcar Exibir Banner na Página Inicial. Controles de opacidade e animação automática inicialmente desligados; recomendação de autoplay apenas com mais de um banner. Upload declara1920×650 e máximo5MB.
+
+Ativo original banner-teste.png criado1920×650,14970bytes,texto VitraLibre/AVALIACAO-DADOS FICTICIOS-SEM VENDAS. Enviado,link do repositório público configurado,salvo. Catálogo público confirmou imagem Banner1 e href do repositório. DOM contém5instâncias da mesma imagem do carrossel,não5uploads. No desktop,imagem1673×568.8125. Em390px efetivos,scrollWidth383,imagem383×130.21875;sem overflow global,screenshot inspecionado mostra banner completo e texto secundário pequeno. Override removido. Não acionado link externo.
+
+Exibir Banner na Página Inicial desmarcado e salvo. Recarga pública confirmou0imagens Banner1. Cadastro/imagem preservados;nenhuma exclusão. Opacidade/autoplay não habilitados. Exibição pública restaurada desligada.
+
+Criar Banner:selecionado produto próprio Café VITRA-TESTE-001. Gerar e baixar sem modelo selecionado não produziu arquivo recente;inspeção mostrou os4radios false. Selecionado Simples amarelo,radio correspondente true;Gerar e baixar criou banner-1920x650.png,848835bytes. Dimensões reais verificadas no dispositivo1774×600, apesar do nome banner-1920x650.png; divergência entre nome e conteúdo. Não publicado no catálogo nem repositório;template do fornecedor não reutilizado no VitraLibre. Inspeção visual do PNG gerado ainda pendente. O fluxo foi executado,não todas as4variantes de template. Sem envio de mensagem,compra ou pedido.
+
+Próxima:principal[1/58]·revisão[21/21],lacunas de cupons[14/21] e acessos[16/21]. Total58principais/21filhos inalterado;nenhuma nova tarefa. Banners deixa de ser inteiramente não explorado,sem declarar homologação integral17/21.
+
+## Principal [1/58] · revisão [21/21] de [14/21] e [16/21] — checkout e campos obrigatórios
+
+Cupom VITRALIBRETESTE10 acionado em checkout novo:total107,25 permaneceu,sem mensagem;logs capturados de erro/warn vazios. Isso não determina causa nem resposta de servidor. Tentativa de avançar dados fictícios reservados example.invalid e telefonezeros retornou CPF/CNPJ é obrigatório. Configuração Checkout tinhaCPF/CNPJ marcado. Desmarcado temporariamente,salvo,checkout recarregado e dados fictícios preenchidos:avanço deixou de apresentar errodeCPF. Retirada selecionada,frete0;sem pagamento selecionado,Avançar exibiu Método de pagamento é obrigatório. SelecionadoDinheiro e Aplicar novamente:total107,25 sem desconto/feedback. Nenhum pedido finalizado,mensagem ou cobrança executada. Não presumir consumo do cupom nem rejeição. ExigênciaCPF/CNPJ restaurada,salva e DOM input.checked=true confirmado. Checkout público recarregado ao concluir.
+
+Vendedores:lista0/2 e trial até2. Inspeção DOM do formulário confirmou required=true em name,phone,email,document,region;commission_rate type number,min0,max100,required=false. Isso identifica restrição nativa de documento em branco nas tentativas anteriores;validação backend/CPF real não testada. Não gerar documento válido fictício que possa identificar terceiro. Comissão e associação vendedor/pedido continuam não homologadas.
+
+Equipe:formulário declara email como identificador,sem envio de email,senha definida pelo dono e link próprio;faturamento/exclusão/gestão de equipe reservados ao dono. Não há seletor de papel visível. Nome Equipe de avaliação VitraLibre e identificador reservado equipe-teste@example.invalid preparados,senhas não preenchidas,não submetido. Criação exige confirmação no ato por conceder novo acesso à loja,conforme política do navegador. Não existe nova conta criada nesta execução. Aba marcada para continuação com aprovação. Próxima:principal[1/58]·filho[16/21],criação de acesso de equipe mediante confirmação específica.58principais/21filhos inalterado.
+
+## Principal [1/58] · [16/21] — acesso Funcionário validado
+
+Após feito.prossiga do usuário,lista de equipe já continha a conta fictícia como Funcionário. Não criada duplicata. Link específico da equipe aberto;login com credenciais de teste autorizadas resultou em dashboard identificado como Equipe de avaliação VitraLibre. Credenciais não registradas.
+
+Menu do Funcionário sem Equipe/Minha Assinatura. Navegação direta às URLs conhecidas de equipe e assinatura redirecionou ao dashboard. Não é teste de todos endpoints nem autorização de escrita privilegiada. Lista10produtos acessível. Descrição do produto externo alterada temporariamente,salva,reaberta e confirmada;texto original restaurado e salvo. Pedidos mostrou registro fictício cancelado e Clientes mostrou2registros de avaliação. Nenhum download,novo pedido,exclusão,cobrança ou mensagem executado pelo Funcionário.
+
+Logout do Funcionário retornou à tela específica de equipe. Aba anterior recarregada foi ao login comum. Login do dono com credenciais existentes bem-sucedido,dashboard João e menuEquipe presente. Sessão final do dono,conta Funcionário permanece cadastrada. Nenhuma senha alterada. Matriz detalhada em team-permissions.md. Novo acesso não criado pelo agente nesta rodada;existência constatada antes de entrar.
+
+16/21 parcialmente validada para login de equipe,edição de produto,leitura de dados e bloqueios de equipe/assinatura por navegação. Vendedores(com documento obrigatório),comissão,login cliente,revogação e isolamento entre lojas continuam pendentes. Próxima:principal[1/58]·revisão[21/21],consolidar lacunas restantes sem declarar cobertura integral. Total58principais/21filhos inalterado.
