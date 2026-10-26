@@ -74,3 +74,33 @@ Adicionadas8 subtarefas1.14–1.21 para tornar explícitas lacunas já no escopo
 Atualização1.14: mínimos e promoção de produto validados; cupons sem feedback, promoção por categoria/validade/limite permanecem pendentes na revisão1.21. Próxima:[1.15/58]. Não representa aprovação integral de1.14. Total58 sem alteração.
 
 Atualização1.15: pedido fictício criado/reaberto; Preparando e Cancelado persistidos; baixa e reposição verificadas. Pago/Concluído/concorrência mantidos na revisão1.21. Próxima:[1.16/58]. Total58 inalterado.
+
+## Contagem hierárquica — formato vigente
+
+Tarefa principal **[1/58] — Gopage** · **21 filhos diretos** (1.1–1.21).
+Formato de atualização: **Tarefa principal [1/58] · Subtarefa [17/21] — 1.17 Exportações**.
+Os denominadores são independentes:58 tarefas principais;21 subtarefas da Gopage. Posição não informa quantas foram concluídas. Estado e evidência são registrados separadamente. Para tarefas ainda não decompostas, informar **filhos: a detalhar**, nunca zero. A fonte estruturada é `task-hierarchy.json`. Novos filhos serão anunciados como contagem anterior→nova, preservando os IDs existentes. Esta mudança organiza a contagem; não acrescenta tarefas.
+
+| ID | Posição entre os filhos de 1 | Subtarefa |
+|---|---|---|
+|1.1|1/21|Acesso|
+|1.2|2/21|Categorias|
+|1.3|3/21|Produto e imagem|
+|1.4|4/21|Edição e publicação|
+|1.5|5/21|Variantes e estoque|
+|1.6|6/21|CSV válido e inválido|
+|1.7|7/21|CSV misto e duplicação|
+|1.8|8/21|PDF por categoria|
+|1.9|9/21|Clientes|
+|1.10|10/21|Orçamento em rascunho|
+|1.11|11/21|Reabertura e histórico|
+|1.12|12/21|Conteúdo e recomendações|
+|1.13|13/21|Revisão de lacunas|
+|1.14|14/21|Cupons, promoções e mínimos|
+|1.15|15/21|Pedidos, status e estoque|
+|1.16|16/21|Vendedores, equipe e permissões|
+|1.17|17/21|QR, arte, banners e exportações|
+|1.18|18/21|CSV avançado e variantes|
+|1.19|19/21|Regras de recomendação e carrinho|
+|1.20|20/21|Envio, integrações, domínio e métricas|
+|1.21|21/21|Responsividade, acessibilidade e revisão final|

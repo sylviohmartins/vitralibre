@@ -329,3 +329,105 @@ Estoque imediatamente depois mostrou2 unidades, contra3 antes. Detalhe do pedido
 Pedido permanece cancelado, não excluído. Estoque restaurado pelo próprio cancelamento. Não foram testados Pago/Concluído, concorrência/reserva entre clientes, excesso de quantidade, reativação de cancelado, repetição idempotente do cancelamento ou autorização por papel; não inferir cobertura total dessas regras.
 
 Subtarefa1.15 concluída no cenário administrativo: criar/reabrir, Aguardando→Preparando→Cancelado, baixa/reposição e apresentação pública. Casos restantes mantidos na revisão1.21. Próxima:[1.16/58] vendedores/comissão/equipe e permissões, com análise antes de criar acessos. Sem novas tarefas principais; total58.
+
+## Continuação1.16–1.20 — exportações e configurações
+
+1.16: formulário de vendedor fictício com região e comissão5 não retornou registro. Nova tentativa com email reservado example.invalid e telefone de zeros também não criou vendedor: lista0/2, sem mensagem explicativa observada. CPF não foi inventado. Comissão e isolamento continuam não homologados; equipe não criada.
+
+1.17: QR em formato Imagem gerado e arquivo qr-889.png baixado,62236bytes,512×512. Decodificação efetiva com zxing-cpp3.1.1 retornou https://vitralibre.catalogo.com.br. Arte de produto próprio gerada e baixada,259224bytes,640×1138; dimensões verificadas, inspeção visual do arquivo ainda pendente. PDF com Todas gerado nesta tentativa:58001bytes,2páginas; extração com pypdf identificou os5 produtos e suas categorias/preços, inclusive os3 itens CSV sem foto. Página2 renderizada com Poppler e inspecionada: itens sem foto deixam grande espaço reservado, títulos quebram em várias linhas e há espaçamento tipográfico irregular. Exportação sem capa validada neste recorte pequeno; capa e volume não testados. Arquivos contêm contato e/ou ativos do fornecedor, não são publicados no repositório.
+
+1.20: painel de integrações apresenta Bling, Mercado Pago, domínio, Analytics, Shopping XML, Tag Manager, Pixel, Instagram Shopping e verificação de domínio Facebook. Shopping XML informa atualização a cada2horas, mas a tela observada não expôs input nem link de feed; Salvar não acionado, feed não homologado. Envio mostra endereço de origem, taxa fixa, peso/embalagem em massa e agendamento; ativação apenas local do controle de agendamento revelou Manhã/Tarde/Noite e foi desfeita sem salvar. Métodos observados: Excursão, A Combinar, Retirada, Delivery, Correios, Melhor Envio e Super Frete. Dependências declaradas: CEP origem/destino, peso e dimensões; falta de dados de produto oferece somente métodos manuais. Esta é regra lida na interface, não teste de cotação. Nenhuma conta externa, domínio ou pagamento conectado.
+
+Contagem solicitada pelo usuário: tarefa principal[1/58],21 filhos diretos. Formato vigente separa posição da tarefa principal e posição entre filhos. Nenhuma tarefa adicionada. Próxima continuação operacional:1.17 exportações restantes e1.18;1.16 permanece parcial.
+
+## Principal[1/58] · filhos[17/21],[18/21],[21/21] — nova execução
+
+1.17: Baixar Clientes gerou clientes.csv,246bytes. Leitura estruturada identificou2 registros e5 colunas:Nome,Celular,Documento,Email,Número de pedidos. Contatos não transcritos para o repositório. Download do orçamento exibiu PDF gerado com sucesso e criou orcamento-ORC-2026-00001.pdf,21660bytes. pypdf confirmou1página e presença do código ORC-2026-00001,validade01/11/2026 e20,00; palavra Rascunho não localizada na extração, sem inferência sobre semântica/erro. Inspeção visual desse PDF ainda pendente. Capa, banner e volume continuam pendentes, portanto1.17 não está integralmente concluída.
+
+1.18: arquivo próprio importacao-zero.csv,223bytes,1linha simples,preco0,SKU VITRA-ZERO-001,sem foto. Importador informou1/1 sucesso. Reenvio do MESMO arquivo voltou a informar1/1 sucesso; listagem passou de5 para7 produtos, com dois registros iguais em nome/SKU/preço0. Catálogo público apresentou ambos com URLs distintas (segundo sufixo-1),preço0 e botão Adicionar. Isso confirma ausência de deduplicação/idempotência nesse recorte, não todas as regras de identidade. Contradição com instrução textual preço maior que0 comprovada; não testado pedido de valor zero. Dois produtos fictícios permanecem cadastrados.
+
+Importacao-variavel.csv próprio,429bytes,UTF8 semBOM,define tipo variável,cor azul/verde,tamanhoP/M,todas4 combinações com preços10/11/12/13 e estoques2/0/1/3. Resultado1/1 sucesso,8produtos totais,painel mostra estoque6 para o novo SKU VITRA-MATRIX-001. Página pública:azul/P10 estoque2;azul/M11 estoque0,Produto indisponível disabled;verde/M13 estoque3;verde/P12 estoque1. Opções sem imagem utilizam placeholder do fornecedor. Seleção alterou preço,estoque e disponibilidade conforme matriz. Quantidade digitada2 com verde/P estoque1 manteve Adicionar habilitado; não acionado adicionar, portanto enforcement no carrinho/backend não concluído. Campo restaurado1. Sem pedido ou mensagem. Fotos por opção,externo,limites e recuperação ainda pendentes.
+
+1.21: detalhe público do produto matriz medido nas larguras320,375,390,520,768,1024,1440,altura900. innerWidth confirmou cada largura; documentElement.scrollWidth e body.scrollWidth foram313,368,383,513,761,1017,1433 respectivamente:sem overflow horizontal global no recorte. Isso não comprova ausência de sobreposição,contraste,teclado ou WCAG. Screenshot desktop inspecionado:placeholder grande à esquerda e controles à direita,preço e estoque legíveis. Primeiro h1 DOM teve largura0 em desktop enquanto screenshot confirmou título visível:há divergência entre nó consultado e título visível, não concluir título ausente. Tentativa de medir admin retornou innerWidth1680 em todas dimensões requisitadas; teste mobile admin NÃO executado com sucesso. Override removido. Não há métricas axe/Lighthouse nem validação WCAG completa.
+
+Próxima continuação:principal[1/58],filho[18/21] CSV externo,fotos/limites; pendências1.17 e demais filhos preservadas. Total58 principais e21 filhos inalterado.
+
+### Continuação18/21 — externo e fotos por opção
+
+CSV externo próprio270bytes,SKU VITRA-EXT-001,tipo externo,preço5,link do repositório público VitraLibre. Importação1/1 sucesso; painel9produtos,registro Produto Externo. Listagem pública exibe Adicionar ao carrinho,mas detalhe substitui quantidade/compra interna por aviso de redirecionamento e link Clique aqui para comprar com href exato do repositório configurado. Link não acionado. A divergência de rótulo é oportunidade de clareza; comportamento do botão da listagem não foi acionado. Tab a partir do link focou compartilhamento Facebook sem aria-label nem texto; inspeção parcial de nome acessível, não auditoria completa.
+
+Produto matriz: edição reaberta confirmou4 combinações e seção Fotos por cor. Foto original produto-teste.png enviada na galeria; selecionada no modal Adicionar fotos de azul. Salvar do modal indicou1foto para azul,verde sem foto e mensagem de fallback para ordem normal. Salvar do produto retornou listagem. Nova navegação pública com azul selecionado trouxe imagem própria primeiro e placeholder segundo; ao selecionar verde,a ordem DOM das imagens inverteu para placeholder primeiro e imagem própria segundo. Confirma persistência/ordenação no DOM; comparação visual das transições ainda pendente. Nenhuma foto excluída. Limites/rejeição de arquivo e recuperação continuam pendentes. Fotos por opção não devem mais constar como inteiramente não exploradas.
+
+## Principal[1/58] · filhos[18/21] e[19/21] — limites,recuperação e recomendações
+
+1.18:CSV próprio com nome252caracteres,SKU VITRA-LIM-001,preço1. Resultado0importados,1erro em1registro;linha2,coluna nome,mensagem O campo nome não pode ser superior a250caracteres. Corrigido MESMO arquivo para250caracteres,recarregado:1/1sucesso. Confirma fronteira superior inclusiva250 e recuperação por correção/reenvio neste caso. Não testados251,min3,descrição3000/3001,tamanho máximo de lote e imagem4MB. Novo produto fictício permanece;total esperado10 apósimportação,contagem não reaberta ainda.
+
+1.19:venda sugestiva originalmenteInativa,limite ao valor do carrinho e fallback de mais vendido ligados. Ativada temporariamente. Carrinho local107,25 comProdutoExemplo(nomeantigo Avaliação VitraLibre — produto fictício) eItemCSV7,25 mostrou6recomendações:doispreçoszero,matrizvariável,externo,lote8,50 eduplicado9. Itemjáno carrinho não reapareceu. Produtoexterno ofereceu Verproduto;variável exigiu cor/tamanho comAdicionar desabilitadoantesseleção. Seleçãoazul/M exibiu11eSemestoque. Não houveadição/pedido. Dadosdecusto ausentes:ordempor margem nãohomologada. Limitepreço/fallback nãohomologadosnestenovoteste.
+
+Tentativa de removerProdutoExemplodo carrinho abriu confirm nativo,provocando timeout emcomandosdapágina. Confirmação foiacionada,masnenhumaremoção ficoucomprovada. Novatabnomesmonavegadorrecuperouleiturae mostroumesmocarrinho107,25. Nãoatribuirfalhaàregra denegócio;limitaçãodeinteração. Nomeantigopersistiuenquantocatálogojárestaurounomeoriginal:norecorte,cartãocarrinhonãoreconciliouonomedoprodutoapósalteração;preçoatualpermanece100,semgeneralizarsobreatualizaçãodepreço.
+
+RestauradoAtivarvendasugestiva=false. Recargapúblicaconfirmouausênciadotítulo Quetallevarjunto?. Regraeoutrosswitchespreservados. Capturasdeantes/depoisnãopublicadascomcontatos. Próxima:principal[1/58]·filho[19/21]margem,limitepreçoe fallback;lacunas18/21preservadas.Total58principais,21filhos,semnovastarefas.
+
+## Principal [1/58] · subtarefas [19/21] e [20/21] — limite de preço, fallback e SEO
+
+### 19/21 — cenários isolados
+
+Painel confirmou 10 produtos. Produto externo VITRA-EXT-001 alterado temporariamente de 5 para 200 e salvo. Venda sugestiva ativada, limite ao valor do carrinho ligado. Carrinho 107,25: título do produto externo ausente nas sugestões (contagem 0). Limite desligado e carrinho recarregado: produto externo presente (contagem 1). Limite religado. Isso comprova o filtro no cenário 200 > 107,25; igualdade e outras fronteiras não testadas.
+
+Regra existente pausada: painel informou 0 regras cobrindo 0 dos 10 produtos. Fallback ligado: carrinho exibiu uma sugestão de produto de preço zero. Fallback desligado e recarga: seção de sugestões ausente (contagem do título 0). Acionamento do fallback comprovado; critério de classificação como mais vendido NÃO comprovado, pois não há corpus de vendas concluídas e o pedido anterior permanece cancelado. Nenhuma venda real ou nova transação criada.
+
+Restaurados: regra ativa, limite ligado, fallback ligado e venda sugestiva global inativa; estados verificados no DOM. Produto externo restaurado para 5 e listado com esse valor. Formulário de custo aberto: preço 5, custo 2 digitado exibiu margem 0% na inspeção imediata. Não houve validação de blur ou persistência do custo; não atribuir causa nem concluir fórmula incorreta. Cálculo e ordenação por margem não homologados. Checkbox desmarcado; edição reaberta apresentou custo vazio ao reativar o campo. Campo novamente limpo, checkbox desmarcado e salvo.
+
+### 20/21 — domínio e metadados
+
+Tela Conectar Domínio apresenta campo para domínio sem protocolo/www e tutorial. Nenhum domínio inserido ou conectado.
+
+SEO inicialmente com campos vazios. Título e descrição fictícios preenchidos e salvos. Integrações passou a listar SEO. Edição pelo botão de lápis confirmou persistência exata dos dois textos. Página pública inicial consultada após navegação e recarga manteve document.title VitraLibre, duas tags og:title com VitraLibre e nenhuma description/og:description encontrada. Propagação pública não homologada; cache, contexto da rota e implementação permanecem hipóteses, sem diagnóstico definitivo. Textos de teste limpos e salvos, mantendo os demais campos vazios. Registro SEO permanece listado; não foi excluído, portanto estado estrutural não é idêntico ao anterior. Nenhuma integração de terceiros conectada.
+
+Próxima continuação: principal [1/58], subtarefa [20/21], feeds/instrumentação e revisão de dependências; depois [21/21]. Pendências anteriores preservadas. Contagem inalterada: 58 principais e 21 filhos de Gopage.
+
+## Principal [1/58] · subtarefas [20/21] e [21/21] — XML e responsividade real
+
+### 20/21 — geração e leitura do feed
+
+Analytics apresenta campo Código do Analytics com placeholder G-XXXXXXXXXX | UA-XXXXXXXXX-X. Tag Manager apresenta Código do TagManager. Nenhum código preenchido/salvo e nenhum serviço externo conectado; envio de eventos não homologado.
+
+Shopping XML: Salvar acionado na tela de ativação. Resultado: Seu XML de produtos está ativo! e endereço https://vitralibre.catalogo.com.br/shopping_xml.xml. Endereço aberto no navegador: documento RSS 2.0, namespace Google base, canal VitraLibre e 10 itens, correspondentes aos 10 produtos. Campos observados: id, title, description, link, image_link, condition, availability, price, brand. Preços em BRL; ambos os produtos de preço zero aparecem com 0 BRL. Café e matriz variável aparecem como um item principal cada, com preço base 12.5 e 10; sem entradas individuais das combinações no documento observado. Todos os itens indicam in stock, apesar de haver combinações individuais zeradas. Isso não equivale a produto inteiro sem estoque nem prova falha de validação externa. Aceitação pelo Google/Meta, refresh de duas horas e atualização incremental não testados.
+
+Feed permanece ativo; não existe switch de desativação observado na tela pós-ativação. Nenhuma exclusão executada. Não atribuir ao registro de feed conexão com marketplace. Arquivo não republicado no repositório por incluir ativos do fornecedor.
+
+### 21/21 — painel e catálogo com texto longo
+
+Nova aba administrativa criada antes de aplicar viewport resolveu a limitação anterior de largura efetiva. Lista de produtos, altura900: innerWidth confirmou 320,375,390,520,768,1024,1440. scrollWidth de documentElement e body:2428,2428,2428,2428,2684,2696,2696 respectivamente. Overflow horizontal comprovado em todas as larguras nesse estado. Na largura390, parágrafo do produto de nome250caracteres mediu2390.5px, com extremidade direita2427.5px. Nome inclui sequência longa sem espaços, permitida pelo importador. Screenshot mobile inspecionado mostra conteúdo cortado horizontalmente e sidebar ocupando parte da tela. Não isolado se outros componentes também contribuem. Nome permanece para reproduzir o caso; nenhum dado removido. Override restaurado.
+
+Listagem pública dos mesmos10produtos:320/390/768/1440 efetivos, scrollWidth313/383/761/1433, sem overflow horizontal global. DOM contém10 h1 (um por produto) e1 main; registrar como oportunidade de hierarquia sem afirmar reprovação WCAG automática. Busca por texto inexistente via campo e Enter mostrou termo pesquisado e Nenhum produto encontrado. Teste real de estado vazio, sem publicação ou pedido. Teclado integral, leitor de tela, contraste e axe/Lighthouse continuam não homologados. Override removido.
+
+Próxima continuação: principal[1/58] · subtarefa[21/21], teclado, categorias e revisão das pendências1.14–1.20. Total58 principais/21filhos inalterado. Gopage permanece parcial.
+
+## Principal [1/58] · subtarefa [21/21] — teclado e categorias
+
+Busca preenchida com Matriz CSV e Enter retornou o produto correspondente. Ver produto acionado por Enter abriu detalhe. No select nativo cor, tecla v selecionou verde e Tab focou tamanho. Detalhe mostrou verde/P,12,estoque1. Isso valida um trecho real de teclado, não jornada integral ou leitor de tela.
+
+Tab a partir do campo de busca focou botão com texto vazio e aria-label ausente; outline computado rgb(16,16,16) auto1px. Não foi calculado nome acessível completo nem contraste, portanto não declarar reprovação automática WCAG; registrar necessidade de rótulo semântico e auditoria.
+
+Categorias: painel confirmou3categorias e1subcategoria. Handles têm aria-describedby apontando para instruções em inglês:Space para iniciar,Arrow para mover,Space para soltar,Escape para cancelar. Space e ArrowDown no primeiro handle produziram status de item movido sobre a mesma área. Escape cancelou e lista manteve Exemplo Categoria1,Avaliação VitraLibre/Bebidas de teste,AvaliacaoCSV. Cancelamento de arraste e anúncio de status confirmados; reordenação persistida NÃO validada. Não repetir como se movimento tivesse sido confirmado. Edição da última categoria abriu formulário com nome Avaliacao CSV preenchido,mas título/breadcrumb Adicionar Categoria/Adicionar. Nenhuma alteração salva. Inconsistência de contexto de edição observada.
+
+Hierarquia estruturada atualizada com estado parcial dos filhos funcionais e concluída_revisão_documental em1.13. Marcar parcial preserva verificações já executadas; não significa que todo teste falhou nem contabiliza homologação. Próxima continuação:principal[1/58]·filho[21/21], revisão das lacunas por dependência. Total21filhos,semnovas tarefas.
+
+## Principal [1/58] · revisão [21/21] da exportação [17/21] — capa PDF
+
+Capa própria de teste criada no dispositivo autorizado,1414×2000 PNG,26388bytes,textos VitraLibre/CATALOGO DE AVALIACAO/Dados ficticios - sem vendas reais. Nenhum template/ativo do concorrente copiado. Arquivo capa-teste.png na pasta VitraLibre-Testes.
+
+Primeiro envio ficou sem retorno. Operação interrompida após espera; nova inspeção confirmou botão Adicionar Imagem ainda presente e nenhuma Imagem Adicionada. Somente então uma nova tentativa foi feita. Segunda tentativa confirmou Imagem Adicionada. Gerar PDF acionado com Todas e capa marcada:download catalogo-1792961277024.pdf,8544214bytes. Inspeção estrutural de bytes no dispositivo:header %PDF-1.3,3marcadores /Type /Page e imagem com Width1414/Height2000. Esses são indícios estruturais coerentes com capa e páginas de catálogo, não inspeção visual integral nem contagem por parser PDF. Arquivo não foi renderizado nesta rodada; capa visual e conteúdo completo ainda não homologados. Não confundir geração bem-sucedida com validação completa. Aumento de tamanho merece análise de compressão, mas não há comparação isolada com mesmo conjunto sem capa nesta rodada.
+
+Dados de contato/ativos do fornecedor no PDF não republicados. Nenhuma integração financeira ou mensagem enviada. Próxima continuação:principal[1/58]·revisão[21/21],inspeção visual do PDF com capa e banner[17/21],seguida das demais lacunas. Total58principais/21filhos,sem novas tarefas.
+
+## Principal [1/58] · revisão [21/21] de [17/21] — PDF renderizado
+
+PDF com capa recuperado do dispositivo autorizado via compressão gzip sem alterar os bytes originais:8544214bytes descomprimidos. Parser pypdf confirmou3páginas,superando a inspeção anterior apenas por marcadores. Poppler renderizou todas as páginas e as três foram inspecionadas visualmente. Página1 mostra a capa própria VitraLibre/CATALOGO DE AVALIACAO/Dados ficticios - sem vendas reais,sem corte observado. Página2 contém Produto Exemplo e Café; página3 contém os8itens da categoria CSV,com preços e SKUs. Nomes/SKUs esperados confirmados também na extração textual. Dez produtos presentes neste lote pequeno; não extrapolar para catálogo grande.
+
+Falhas observadas na página3:grande área reservada para itens sem foto;nome250caracteres sem espaços ocupa muitas linhas,transborda o bloco e se aproxima/sobrepõe à região do preço. Isso confirma a necessidade de limitar/fragmentar texto e evitar sobreposição nas exportações do VitraLibre. Imagens dos produtos importados que estavam sem foto não aparecem nesse PDF; capa está visualmente correta. Arquivo8,54MB comprimiu para61177bytes via gzip;forte compressibilidade do arquivo,sem diagnóstico definitivo do gerador ou comparação controlada com outro formato.
+
+Tentativa auxiliar de instalar renderizador no dispositivo encontrou resets de conexão. Não foi necessária:renderização concluída com ferramentas existentes no executor. Tentativa de encerrar a instalação informou que não havia sessão ativa; não afirmar instalação bem-sucedida. Artefatos de fornecedor/contatos não republicados.
+
+Impedimento atual para banners e demais testes autenticados: ferramenta Browser anteriormente utilizada não está exposta nesta sessão. Busca de integrações não recuperou o conector e não foi assumida equivalência com sessão autenticada em outro navegador. Nenhuma automação de navegador por terminal nem nova credencial utilizada. A inspeção de PDF pôde continuar por leitura dos arquivos já autorizados. Próxima:principal[1/58]·revisão[21/21],banner[17/21] após restabelecer navegador conectado. Nenhuma tarefa adicionada;58principais/21filhos.

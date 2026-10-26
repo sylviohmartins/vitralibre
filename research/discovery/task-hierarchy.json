@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "main_tasks_count": 58,
+  "counting_rule": "Filhos diretos; null significa não detalhado, nunca zero. Posição não é conclusão.",
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Explorar Gopage",
+      "children_count": 21,
+      "children": [
+        {
+          "id": "1.1",
+          "position": 1,
+          "title": "Acesso",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.2",
+          "position": 2,
+          "title": "Categorias",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.3",
+          "position": 3,
+          "title": "Produto e imagem",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.4",
+          "position": 4,
+          "title": "Edição e publicação",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.5",
+          "position": 5,
+          "title": "Variantes e estoque",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.6",
+          "position": 6,
+          "title": "CSV válido e inválido",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.7",
+          "position": 7,
+          "title": "CSV misto e duplicação",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.8",
+          "position": 8,
+          "title": "PDF por categoria",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.9",
+          "position": 9,
+          "title": "Clientes",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.10",
+          "position": 10,
+          "title": "Orçamento em rascunho",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.11",
+          "position": 11,
+          "title": "Reabertura e histórico",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.12",
+          "position": 12,
+          "title": "Conteúdo e recomendações",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.13",
+          "position": 13,
+          "title": "Revisão de lacunas",
+          "status": "concluida_revisao_documental",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.14",
+          "position": 14,
+          "title": "Cupons, promoções e mínimos",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.15",
+          "position": 15,
+          "title": "Pedidos, status e estoque",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.16",
+          "position": 16,
+          "title": "Vendedores, equipe e permissões",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.17",
+          "position": 17,
+          "title": "QR, arte, banners e exportações",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.18",
+          "position": 18,
+          "title": "CSV avançado e variantes",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.19",
+          "position": 19,
+          "title": "Regras de recomendação e carrinho",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.20",
+          "position": 20,
+          "title": "Envio, integrações, domínio e métricas",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        },
+        {
+          "id": "1.21",
+          "position": 21,
+          "title": "Responsividade, acessibilidade e revisão final",
+          "status": "parcial",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+        }
+      ],
+      "status": "em_execucao",
+      "current_child": "1.21"
+    },
+    {
+      "id": "2",
+      "title": "Explorar Tagme LiveMenu",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "3",
+      "title": "Explorar Goomer",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "4",
+      "title": "Explorar Meloja",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "5",
+      "title": "Explorar Cardápio Web",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "6",
+      "title": "Explorar Kyte",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "7",
+      "title": "Explorar Stoqui",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "8",
+      "title": "Explorar Kicatálogo",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "9",
+      "title": "Explorar Meu Catálogo Digital",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "10",
+      "title": "Explorar Categorize",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "11",
+      "title": "Explorar LINK Vendas",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "12",
+      "title": "Explorar MenuDino",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "13",
+      "title": "Explorar OlaClick",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "14",
+      "title": "Explorar Anota AI",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "15",
+      "title": "Explorar Saipos",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "16",
+      "title": "Explorar cardapily",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "17",
+      "title": "Explorar Menu Digital (menudigital.info)",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "18",
+      "title": "Explorar Menu Digital (menudigital.art.br)",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "19",
+      "title": "Explorar UpMenu",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "20",
+      "title": "Explorar Flipdish",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "21",
+      "title": "Explorar Menutech",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "22",
+      "title": "Explorar menumodo",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "23",
+      "title": "Explorar GloriaFood",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "24",
+      "title": "Explorar Nuvemshop",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "25",
+      "title": "Explorar Loja Integrada",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "26",
+      "title": "Explorar Shopify",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "27",
+      "title": "Explorar Squarespace",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "28",
+      "title": "Explorar WooCommerce + modo catálogo",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "29",
+      "title": "Explorar Food Online for WooCommerce",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "30",
+      "title": "Explorar PrestaShop",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "31",
+      "title": "Explorar Flipsnack",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "32",
+      "title": "Explorar iPaper",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "33",
+      "title": "Explorar Catalog Machine",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "34",
+      "title": "Explorar Publitas",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "35",
+      "title": "Explorar Webflow CMS",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "36",
+      "title": "Explorar Strapi",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "37",
+      "title": "Explorar Payload CMS",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "38",
+      "title": "Explorar Ultimate Product Catalog",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "39",
+      "title": "Explorar Medusa",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "40",
+      "title": "Explorar Vendure",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "41",
+      "title": "Explorar Saleor",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "42",
+      "title": "Explorar Solidus",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "43",
+      "title": "Explorar Akeneo PIM",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "44",
+      "title": "Explorar Pimcore PIM",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "45",
+      "title": "Consolidado competitivo e revisão de escopo",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "46",
+      "title": "Arquitetura, contratos, segurança e design system",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "47",
+      "title": "Onboarding e gestão de catálogos",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "48",
+      "title": "Oferta, produtos, variantes e mídia",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "49",
+      "title": "Catálogo público e descoberta",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "50",
+      "title": "Personalização e editor",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "51",
+      "title": "Publicação e portabilidade",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "52",
+      "title": "Administração em escala e importação",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "53",
+      "title": "Serviço opcional multiusuário",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "54",
+      "title": "Estoque, carrinho, orçamentos e pedidos",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "55",
+      "title": "Pagamentos e automações confirmadas",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "56",
+      "title": "Integrações, APIs e extensões",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "57",
+      "title": "Relatórios, idiomas e módulos especializados",
+      "children_count": null,
+      "children": null
+    },
+    {
+      "id": "58",
+      "title": "Homologação integrada, documentação e releases",
+      "children_count": null,
+      "children": null
+    }
+  ]
+}
