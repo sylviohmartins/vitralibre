@@ -6,14 +6,16 @@ Principal **[1/58] — Gopage**, com **21 filhos diretos**. Revisão **[21/21]**
 
 | Filho | Já comprovado no recorte | Falta validar ou impedimento |
 |---|---|---|
-| 1.14 · 14/21 | Mínimos, promoção por produto, modo orçamento e ocultação de preços, com restauração | Cupom sem feedback apesar dos controles já tentados; validade, categoria e consumo por uso não homologados |
+| 1.14 · 14/21 | Mínimos, promoção por produto, modo orçamento e ocultação de preços restaurados;desconto10% por categoria e recálculo do carrinho comprovados | Cupom com código sem feedback;consumo por uso pendente. Regra de categoria com data passada surtiu efeito;validade não homologada. Remoção dessa regra aguarda confirmação específica |
 | 1.15 · 15/21 | Pedido fictício, reabertura, Preparando/Cancelado, baixa/reposição | Pago/Concluído, concorrência e repetição de transições não testados; nenhuma transação financeira real |
 | 1.16 · 16/21 | Login Funcionário, edição e consulta, restrição de Equipe/Assinatura por navegação; bloqueio público por login exigido | Remoção e recusa de novo login confirmadas;revogação de sessão simultânea não testada. Vendedor exige documento. Login real de cliente e isolamento entre lojas pendentes |
 | 1.17 · 17/21 | QR decodificado, PDF categoria/todas/capa renderizado, clientes/orçamento exportados; upload/exibição/mobile/desativação de banner | PNGs de arte e banner inspecionados;catálogo grande e demais modelos não homologados |
 | 1.18 · 18/21 | CSV simples/variável/externo, negativo/zero/misto/repetido, limite de nome e recuperação; duas características, fotos por cor | Descrição3000 aceita/3001 rejeitada e recuperação confirmadas;imagem5,89MB gerou prévia sem salvar,limite efetivo não homologado. Lote controlado10registros UTF8BOM/multilinha validado;limite máximo,carga e demais fronteiras pendentes |
-| 1.19 · 19/21 | Limite de preço, fallback ligado/desligado, variação sem estoque, fórmula após blur e ordem relativa por margem | Ranking por vendas reais e desempates não homologados; nome antigo no carrinho observado |
+| 1.19 · 19/21 | Limite de preço, fallback ligado/desligado, variação sem estoque, fórmula após blur e ordem relativa por margem | Ranking por vendas reais e desempates não homologados; nome antigo no carrinho observado;preço100→90 reconciliado por promoção de categoria |
 | 1.20 · 20/21 | XML gerado/lido com 10 produtos; SEO persistido no editor; telas de integrações/envio inspecionadas | SEO público não refletiu teste; refresh do XML, instrumentação, cotação real, domínio e serviços externos não conectados |
 | 1.21 · 21/21 | Medições de público/admin, busca vazia, ordenação/paginação por teclado, painel mobile e falhas de texto longo | Reordenação por ponteiro persistida/restaurada e contraste de um botão21:1 confirmados. Escape/foco/nomes do painel e campos de preço apresentaram problemas;16+5 itens paginados. Teclado de arraste,leitor de tela,contraste integral/axe/Lighthouse,movimento reduzido,temas e rede pendentes |
+
+Estado temporário26/10:regra10% Exemplo Categoria1 criada com data passada continua aplicando;produto90/carrinho97,25. Remoção aguarda confirmação no ato;demais estados abaixo preservados.
 
 Estado restaurado conhecido: carrinho ligado, orçamento desligado, preços visíveis, login obrigatório desligado, venda sugestiva desligada, banner oculto, custos de teste vazios. Feed XML permanece ativo, registro SEO vazio e dados fictícios permanecem cadastrados. Não afirmar restauração estrutural de todos os registros nem paridade integral.
 
@@ -79,3 +81,5 @@ Atualização21/21:arraste por ponteiro mudou ordem,persistiu na recarga e propa
 Atualização18/21:lote10/10importado,21produtos totais;SKUs01..10confirmados,descrição UTF8/acentos/vírgula/multilinha preservada,busca pública10resultados. Não homologa escala. Fixture original incluída emresearch/fixtures/importacao-lote10.csv.
 
 Atualização21/21:ordenação e página2 por Enter funcionaram;16+5 itens. Escape não fechou menu/painel; foco voltou ao BODY após navegação e ficou no X fora da tela após fechar painel. Botão X sem nome e campos de preço sem labels vinculadas. Evidências no diário;viewport resetado. Próxima revisão21/21:reconciliação funcional e lacunas residuais de14/21–20/21.
+
+Revisão14/21 e19/21:promoção de categoria10% persistida,produto100→90,carrinho107,25→97,25;outroitem7,25 inalterado. Data passada preenchida não impediu aplicação,persistência da data não observável na lista. Remoção da nova regra aguarda confirmação;cupom anterior será preservado.

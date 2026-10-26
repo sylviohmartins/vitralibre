@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Estado temporário26/10 — restauração pendente
+
+Promoção de categoria10% criada com data passada surtiu efeito:produto100→90,carrinho107,25→97,25. Categoria e recálculo validados;validade não homologada. Remover somente essa regra exige confirmação no ato;cupom anterior será preservado. Nenhum pedido/mensagem enviado. Próxima:[1/58]·revisão[21/21] de[14/21],restaurar e revalidar preços.
+
 ## Estado atual26/10 — principal[1/58], revisão[21/21]
 
 Gopage tem21 filhos diretos; pesquisa continua parcial.21produtos fictícios; CSV10/10 UTF8BOM/multilinha confirmado. Ordenação/paginação por teclado16+5 itens; painel390px abriu/fechou via Enter, mas Escape/foco/nomes acessíveis apresentaram problemas. Equipe fictícia removida e login recusado; dono autenticado. Pendências atuais e configurações restauradas em research/competitors/gopage/operational-checkpoint.md e remaining-validation.md. Histórico abaixo preservado; próximas tarefas antigas não substituem este estado. Próxima:revisão21/21 das lacunas funcionais14/21–20/21. Nenhuma tarefa adicionada; total58 principais/21 filhos de Gopage. Código da aplicação preservado.

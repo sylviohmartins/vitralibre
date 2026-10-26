@@ -542,3 +542,16 @@ Principal [1/58], filho [21/21], 21 filhos diretos; nenhuma tarefa acrescentada.
 Requisitos derivados para VitraLibre: campos mínimo/máximo com labels distintos; botão Fechar filtros com nome acessível; Escape fecha painel e menu; foco entra no painel e retorna ao acionador ao fechar; atualização por filtro/ordem/página preserva contexto e anuncia resultado; h1 da página e títulos de produtos subordinados. Validar posteriormente com testes reais de teclado, axe e leitor de tela na implementação original. Não houve alteração do código da aplicação nesta revisão.
 
 Ainda pendentes: jornada integral de teclado, arraste por teclado, leitor de tela, axe/Lighthouse, contraste integral, movimento reduzido, rede, temas, além das lacunas funcionais listadas em remaining-validation.md. Gopage permanece parcial.
+
+
+## 26/10/2026 — revisão1.21 de1.14/1.19: desconto por categoria e data passada
+
+Principal[1/58],revisão[21/21],21filhos diretos;nenhuma tarefa adicionada. Dono autenticado. Formulário Cupons: limite de usos expande campo numérico. Primeiro setChecked retornou erro ao mudar nome acessível,mas reinspeção mostrou marcado;sem repetir. Ativar desconto por categoria desmarcou limite de usos e ocultou código. Seletor de categoria expôs3categorias raiz. Tipo ofereceu Percentual/Valor Fixo. Validade expôs input datetime-local name=valid_until,sem min/max/required nativos.
+
+Teste autorizado com dados de avaliação:categoria Exemplo Categoria1,Percentual10,validade marcada e campo preenchido2026-10-25T12:00 (data passada em relação ao dia26/10/2026). Adicionar criou registro sem código,com descrição10% e categoria;recarga confirmou persistência. A lista Cupons Ativos não exibiu a data nem controle de edição na UI observada. Persistência do valor de validade não pôde ser lida de volta;portanto não concluir causa no backend nem considerar validade homologada.
+
+Página pública nova do Produto Exemplo mostrou100→90,Valor Promocional,-10% e texto de desconto na categoria. Carrinho preexistente mostrou esse item90 e ItemCSV7,25,total97,25(90+7,25),antes107,25. Nome antigo do primeiro item continuou no carrinho,mas preço foi reconciliado. Desconto por categoria e recálculo no carrinho comprovados nesse recorte. Regra com data passada continuou produzindo desconto;contraria expectativa do teste,mas persistência de data/fuso/causa não determinadas. Nenhum pedido ou mensagem enviado;nenhuma cobrança.
+
+Estado temporário IMPORTANTE:regra10% da categoria permanece cadastrada e surtindo efeito. Restauração está pendente de confirmação no ato para exclusão,pois UI observada oferece somente botão de remoção e não mostrou recuperação/pausa/edição. Cupom preexistente VITRALIBRETESTE10 será preservado. Screenshot local category-discount-proof.png com carrinho97,25. Não declarar preço100 restaurado nem concluir fornecedor. Próxima:confirmação específica para remover somente a regra de categoria criada nesta rodada e validar produto100/carrinho107,25.
+
+Requisitos VitraLibre derivados:separar promoção automática e cupom com código;mostrar vigência/fuso/status;validar regra vencida no servidor;permitir desativação reversível;recalcular preço preservando identificação atual do produto;anunciar descontos e total. Implementação continua aguardando pesquisa consolidada.
