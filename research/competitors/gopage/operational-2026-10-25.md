@@ -461,3 +461,41 @@ Menu do Funcionário sem Equipe/Minha Assinatura. Navegação direta às URLs co
 Logout do Funcionário retornou à tela específica de equipe. Aba anterior recarregada foi ao login comum. Login do dono com credenciais existentes bem-sucedido,dashboard João e menuEquipe presente. Sessão final do dono,conta Funcionário permanece cadastrada. Nenhuma senha alterada. Matriz detalhada em team-permissions.md. Novo acesso não criado pelo agente nesta rodada;existência constatada antes de entrar.
 
 16/21 parcialmente validada para login de equipe,edição de produto,leitura de dados e bloqueios de equipe/assinatura por navegação. Vendedores(com documento obrigatório),comissão,login cliente,revogação e isolamento entre lojas continuam pendentes. Próxima:principal[1/58]·revisão[21/21],consolidar lacunas restantes sem declarar cobertura integral. Total58principais/21filhos inalterado.
+
+## Principal [1/58] · revisão [21/21] de [14/21] e [16/21] — modo orçamento e login obrigatório
+
+Execução26/10/2026(America/Sao_Paulo). Modo orçamento inicialmente desligado,carrinho ligado,preços visíveis. Ativar modo orçamento desmarcou automaticamente Ativar o carrinho. Salvo:catálogo passou a oferecer Adicionar ao orçamento. Link de cabeçalho abriu lista Orçamento com os2itens de carrinho anteriores e total107,25. Solicitar orçamento abriu formulário Suas Informações e ação SOLICITAR ORÇAMENTO NO WHATSAPP,sem etapas de entrega/pagamento. Ação final não acionada;nenhum orçamento enviado. Não confundir com orçamento administrativo ORC existente.
+
+Ocultar preços ativado e salvo durante modo orçamento:listagem mostrou Preço sob consulta em todos os10produtos e manteve ações de orçamento. Restaurados preços visíveis,modo orçamento desligado e carrinho ligado,salvos;recarga confirmou0botões Adicionar ao orçamento,8Adicionar ao carrinho e preço100 presente. Dados de carrinho preservados. Captura do estado temporário guardada como evidência,sem publicar ativos do fornecedor.
+
+Cliente existente:edição confirma campo opcional de senha de acesso ao catálogo,mínimo6caracteres;nenhuma senha definida/alterada. Personalizar contém Exigir login de clientes para acessar o catálogo,inicialmente false. Ativado/salvo:início público exibiu Entrar,email,senha e Cadastre-se em vez dos produtos. Link Cadastre-se abriu /registrar com Nome,E-mail,Telefone,CPF/CNPJ,Senha,Confirmar Senha,Cadastrar e linkEntrar. Não preenchido/submetido. O cadastro não tem landmark main nessa captura;tentativa de ler main deu timeout mesmo com navegação concluída. Login obrigatório desmarcado,salvo e input.checked=false confirmado. Navegação pública ao início confirmou10artigos e ausência do headingEntrar. Proteção da página inicial comprovada no recorte;login efetivo de cliente,aprovação/pendência e recuperação não homologados. Nenhuma credencial nova ou conta criada.
+
+Próxima continuação:principal[1/58]·revisão[21/21],demais lacunas e documentação de fechamento. Estados restaurados;total58principais/21filhos,sem novas tarefas.
+
+## Principal [1/58] · revisão [21/21] de [19/21] — margem e ordem das sugestões
+
+26/10/2026. Hipótese explícita:leitura anterior de0% poderia anteceder atualização do campo. Produto externo preço5,custo originalmente vazio,controle de cálculo desligado. Ativado,custo2 digitado e Tab:exibiu60%,coerente com(5−2)/5×100. A leitura antiga de0% não deve ser usada como evidência de erro da fórmula.
+
+Custo2 salvo no externo. Lote misto preço8,50,custo originalmente vazio:ativado,custo8 e Tab exibiu6%,arredondamento de5,88235%. Salvo. Venda sugestiva ativada;cartão107,25 já existente. Lista de sugestões trouxe externo antes de lote. Externo reaberto confirmou custo2 persistido;alterado para4,95 e Tab exibiu1%. Salvo e carrinho recarregado:ordem inverteu,lote antes de externo. Evidência controlada de priorização por margem percentual nesse par,sem extrapolar para desempates,produtos com custos ausentes ou custos zero/negativos. Nenhum pedido,compra ou mensagem.
+
+Restaurados custos vazios e cálculo desmarcado em ambos,salvos. Edições reabertas confirmaram controles desmarcados e custos vazios ao reativar apenas localmente o campo;controles novamente desmarcados sem salvar mudanças extras. Preços permanecem5 e8,50. Venda sugestiva global desativada,aria-checked=false confirmado após atualização;recarga pública sem seção de sugestões. Regra/limite/fallback preservados. Captura do estado intermediário guardada para prova.
+
+19/21 agora tem fórmula após blur e ordenação relativa por margem validadas neste recorte,além de limitepreço/fallback/semestoque prévios. Ranking real de mais vendido ainda não homologado. Próxima:principal[1/58]·revisão[21/21],revogação de equipe e fechamento de lacunas,sem expandir escopo.58principais/21filhos inalterado.
+
+## Principal [1/58] · revisão [21/21] de [16/21] — opções de revogação
+
+26/10/2026. Sessão do dono na página Equipe confirma conta Funcionário fictícia existente. Controles visíveis:Redefinir a senha de Equipe de avaliação VitraLibre e Remover Equipe de avaliação VitraLibre. Nenhum switch de desativação/restauração ou lixeira observado. Não acionados:Redefinir exigiria handoff de credencial;Remover pode ser permanente e exige confirmação no ato. Não inferir revogação concluída por mera presença do botão.
+
+Solicitação concreta preparada:remover somente equipe-teste@example.invalid da loja Gopage VitraLibre e verificar recusa de novo login. Não requer exclusão da loja,produtos,pedidos ou clientes. Conta permanece ativa até confirmação. remaining-validation.md recebeu estado atual no topo para separar pendências vigentes do histórico. Nenhuma nova tarefa:58principais/21filhos.
+
+## Principal [1/58] · revisão [21/21] de [16/21] — revogação autorizada
+
+26/10/2026. Em resposta ao pedido específico de confirmação,usuário disse prossiga. Conta fictícia ainda presente antes da ação. Remover abriu diálogo identificando o nome e declarando perda imediata de acesso mesmo logado. Confirmada remoção exclusivamente dessa conta. Lista passou a Ninguém além de você,por enquanto. Recarga posterior preservou ausência do Funcionário e sessão do dono.
+
+Nova aba no link de equipe,mesmas credenciais antes válidas,tentativa única:mensagem E-mail e/ou senha inválidos. Credenciais não registradas;senha limpa do formulário após captura do erro. Evidência comprova negação de NOVO login após remoção. Não havia sessão Funcionário ativa no momento,portanto invalidação imediata de sessão preexistente não foi testada. Não repetir a declaração do diálogo como teste de segurança concluído. Conta não recriada;loja,produtos,pedidos e clientes preservados. Dono permanece autenticado.
+
+Matriz de permissões e pendências atualizadas. Próxima:principal[1/58]·revisão[21/21],demais lacunas independentes;vendedor comdocumento e login efetivo decliente continuam pendentes. Total58principais/21filhos inalterado.
+
+## Principal [1/58] · revisão [21/21] de [17/21] — imagens geradas inspecionadas
+
+Prévia de leitura dos PNGs já baixados,sem alterar originais,produzida no dispositivo autorizado para inspeção. Banner1774×600,modelo Simples amarelo:template promocional amarelo com imagens do fornecedor nas laterais,produto próprio ao centro,título truncado com reticências e texto a partir de R$12,50. Arte640×1138:template azul Oferta do Dia,imagem própria do café,título quebrado em linhas e preço R$12,50 legíveis. A arte não exibe a partir de embora produto tenha variantes de preços12,50/15;ressalva de precisão comercial,sem inferir outras opções do gerador. Não houve nova geração/upload/publicação nesta inspeção. Ativos do fornecedor não incorporados ao VitraLibre nem ao repositório. Esses dois arquivos deixam de ter inspeção visual inteiramente pendente;demais modelos e volume seguem não homologados.

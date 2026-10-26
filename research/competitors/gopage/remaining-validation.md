@@ -1,5 +1,25 @@
 # Gopage — lacunas para finalização
 
+## Estado atual — revisão de 26/10/2026
+
+Principal **[1/58] — Gopage**, com **21 filhos diretos**. Revisão **[21/21]** em execução. A tabela resume pendências atuais; o histórico abaixo preserva o que foi observado antes e pode conter impedimentos já superados. Nenhuma nova tarefa adicionada.
+
+| Filho | Já comprovado no recorte | Falta validar ou impedimento |
+|---|---|---|
+| 1.14 · 14/21 | Mínimos, promoção por produto, modo orçamento e ocultação de preços, com restauração | Cupom sem feedback apesar dos controles já tentados; validade, categoria e consumo por uso não homologados |
+| 1.15 · 15/21 | Pedido fictício, reabertura, Preparando/Cancelado, baixa/reposição | Pago/Concluído, concorrência e repetição de transições não testados; nenhuma transação financeira real |
+| 1.16 · 16/21 | Login Funcionário, edição e consulta, restrição de Equipe/Assinatura por navegação; bloqueio público por login exigido | Remoção e recusa de novo login confirmadas;revogação de sessão simultânea não testada. Vendedor exige documento. Login real de cliente e isolamento entre lojas pendentes |
+| 1.17 · 17/21 | QR decodificado, PDF categoria/todas/capa renderizado, clientes/orçamento exportados; upload/exibição/mobile/desativação de banner | PNGs de arte e banner inspecionados;catálogo grande e demais modelos não homologados |
+| 1.18 · 18/21 | CSV simples/variável/externo, negativo/zero/misto/repetido, limite de nome e recuperação; duas características, fotos por cor | Limites de imagem/lote, descrição e demais fronteiras não testados |
+| 1.19 · 19/21 | Limite de preço, fallback ligado/desligado, variação sem estoque, fórmula após blur e ordem relativa por margem | Ranking por vendas reais e desempates não homologados; nome antigo no carrinho observado |
+| 1.20 · 20/21 | XML gerado/lido com 10 produtos; SEO persistido no editor; telas de integrações/envio inspecionadas | SEO público não refletiu teste; refresh do XML, instrumentação, cotação real, domínio e serviços externos não conectados |
+| 1.21 · 21/21 | Medições reais de público/admin, busca vazia, trecho de teclado, início/cancelamento de drag, falhas de texto longo | Reordenação persistida, leitor de tela, contraste/axe/Lighthouse, movimento reduzido, temas e condições de rede não homologados |
+
+Estado restaurado conhecido: carrinho ligado, orçamento desligado, preços visíveis, login obrigatório desligado, venda sugestiva desligada, banner oculto, custos de teste vazios. Feed XML permanece ativo, registro SEO vazio e dados fictícios permanecem cadastrados. Não afirmar restauração estrutural de todos os registros nem paridade integral.
+
+Atualização de **[1/58] · [16/21]**:Funcionário fictício removido após confirmação;novo login recusado. Próxima revisão **[21/21]**:demais lacunas independentes. Outras pendências continuam abertas;esta revisão não fecha o fornecedor.
+
+
 Revisão [1.13/58],25/10/2026. Fechamento documental concluído; exploração integral não concluída. O inventário48 registros não é48 funcionalidades homologadas nem percentual de cobertura. Fonte: diário operacional e inventário atualizado.
 
 Oito subtarefas de detalhamento acrescentadas à lista, dentro do escopo já solicitado. Total principal58 inalterado. Nenhum caso abaixo deve ser dado como aprovado por leitura de rótulo.
@@ -43,3 +63,11 @@ Revisão21/21 de17/21:banners envio/link/salvar/exibição pública/mobile390/de
 Revisão14/21:cupom sem feedback mesmo após dados fictícios e Retirada/Dinheiro;pedido não enviado. CPF obrigatório temporariamente desativado para teste e restaurado confirmado.16/21:vendedor exige documento nativamente;cadastro pendente. Conta equipe fictícia preparada apenas nome/email,sem senha/submissão;novo acesso depende de confirmação no ato. Próxima16/21 dentro da principal1/58,21filhos.
 
 Atualização16/21:Funcionário já existente entrou pelo link próprio;leu10produtos,pedido cancelado e2clientes;edição temporária persistiu e texto foi restaurado. URLsEquipe/Assinatura redirecionaram ao dashboard. Logout e login do dono concluídos. team-permissions.md detalha limites. Pendentes vendedor/comissão,logincliente,revogação e isolamento entre lojas. Próxima revisão21/21,dentro da principal1/58,21filhos.
+
+Atualização26/10:14/21 modo orçamento/lista/formulário final sem envio e ocultação de preços testados/restaurados.16/21 login obrigatório bloqueou início,registro público inspecionado sem submissão;exigência restaurada false e10produtos públicos confirmados. Login efetivo de cliente e aprovação/recuperação permanecem pendentes. Próxima revisão21/21.
+
+Atualização19/21:após Tab,custo2/preço5 mostrou60%;custo8/preço8,50 mostrou6%. Ordem das sugestões externo→lote inverteu após margem externa reduzida a1%. Custos vazios e cálculo desligado verificados ao reabrir;venda sugestiva restauradaInativa e seção pública ausente. Leitura antiga0% inconclusiva superada. Próxima revisão21/21.
+
+Atualização16/21:remoção autorizada executada,ausência persistiu após recarga e novo login recusado. Sessão Funcionário preexistente não estava aberta,não testar por inferência. Conta removida e dono autenticado. Próxima revisão21/21.
+
+Atualização17/21:arte e banner anteriormente baixados inspecionados visualmente,sem publicação de ativos. Banner informa a partir de e trunca título;arte mostra preço base sem indicação de variações. Próxima revisão21/21:demais lacunas.
