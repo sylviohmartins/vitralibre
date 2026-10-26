@@ -555,3 +555,12 @@ Página pública nova do Produto Exemplo mostrou100→90,Valor Promocional,-10% 
 Estado temporário IMPORTANTE:regra10% da categoria permanece cadastrada e surtindo efeito. Restauração está pendente de confirmação no ato para exclusão,pois UI observada oferece somente botão de remoção e não mostrou recuperação/pausa/edição. Cupom preexistente VITRALIBRETESTE10 será preservado. Screenshot local category-discount-proof.png com carrinho97,25. Não declarar preço100 restaurado nem concluir fornecedor. Próxima:confirmação específica para remover somente a regra de categoria criada nesta rodada e validar produto100/carrinho107,25.
 
 Requisitos VitraLibre derivados:separar promoção automática e cupom com código;mostrar vigência/fuso/status;validar regra vencida no servidor;permitir desativação reversível;recalcular preço preservando identificação atual do produto;anunciar descontos e total. Implementação continua aguardando pesquisa consolidada.
+
+
+## 26/10/2026 — remoção autorizada, execução bloqueada pelo controle do navegador
+
+Usuário respondeu explicitamente "autorizado. prossiga!" à remoção somente da regra10% Exemplo Categoria1,preservando VITRALIBRETESTE10. Autorização específica recebida;nenhuma nova autorização necessária para a mesma ação dentro desta continuidade.
+
+Browser listou aba193077385 em /cliente/catalogo/coupons. Primeiro domSnapshot retornou Chat API request failed HTTP401. Documentação de troubleshooting consultada. Tentativa de obter handle atual também retornou401;captura pelo handle anterior retornou401. Listagem de abas continuou disponível. Não houve clique na lixeira nem chamada de exclusão. Isso é bloqueio do controle do navegador,não prova de expiração do login Gopage. Não usar outro canal para contornar a sessão sem seguir permissões.
+
+Estado último observado permanece:regra10% cadastrada,produto90,carrinho97,25;valores não reinspecionados nesta tentativa. Não declarar removida ou preços restaurados. Próxima ação após recuperação do controle:inspecionar regra,remover somente ela,conferir ausência/preservação do cupom e produto100/carrinho107,25,capturar resultado. Principal[1/58],revisão[21/21] de[14/21],21filhos diretos,sem novas tarefas. Código da aplicação preservado.

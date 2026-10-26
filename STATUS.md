@@ -1,8 +1,8 @@
 # VitraLibre — estado verificável
 
-## Estado temporário26/10 — restauração pendente
+## Estado temporário26/10 — remoção autorizada; controle do navegador bloqueado
 
-Promoção de categoria10% criada com data passada surtiu efeito:produto100→90,carrinho107,25→97,25. Categoria e recálculo validados;validade não homologada. Remover somente essa regra exige confirmação no ato;cupom anterior será preservado. Nenhum pedido/mensagem enviado. Próxima:[1/58]·revisão[21/21] de[14/21],restaurar e revalidar preços.
+Promoção de categoria10% criada com data passada surtiu efeito:produto100→90,carrinho107,25→97,25. Categoria e recálculo validados;validade não homologada. Remoção somente dessa regra autorizada explicitamente pelo usuário;cupom anterior será preservado. Tentativa bloqueada por HTTP401 no controle do Browser antes de qualquer exclusão. Aba listada;não inferir falha de login Gopage. Autorização não precisa ser repetida para a mesma ação. Nenhum pedido/mensagem enviado. Próxima:[1/58]·revisão[21/21] de[14/21],restaurar e revalidar preços.
 
 ## Estado atual26/10 — principal[1/58], revisão[21/21]
 

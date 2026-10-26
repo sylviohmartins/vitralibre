@@ -6,7 +6,7 @@ Principal **[1/58] — Gopage**, com **21 filhos diretos**. Revisão **[21/21]**
 
 | Filho | Já comprovado no recorte | Falta validar ou impedimento |
 |---|---|---|
-| 1.14 · 14/21 | Mínimos, promoção por produto, modo orçamento e ocultação de preços restaurados;desconto10% por categoria e recálculo do carrinho comprovados | Cupom com código sem feedback;consumo por uso pendente. Regra de categoria com data passada surtiu efeito;validade não homologada. Remoção dessa regra aguarda confirmação específica |
+| 1.14 · 14/21 | Mínimos, promoção por produto, modo orçamento e ocultação de preços restaurados;desconto10% por categoria e recálculo do carrinho comprovados | Cupom com código sem feedback;consumo por uso pendente. Regra de categoria com data passada surtiu efeito;validade não homologada. Remoção dessa regra autorizada;execução bloqueada por HTTP401 do controle do Browser |
 | 1.15 · 15/21 | Pedido fictício, reabertura, Preparando/Cancelado, baixa/reposição | Pago/Concluído, concorrência e repetição de transições não testados; nenhuma transação financeira real |
 | 1.16 · 16/21 | Login Funcionário, edição e consulta, restrição de Equipe/Assinatura por navegação; bloqueio público por login exigido | Remoção e recusa de novo login confirmadas;revogação de sessão simultânea não testada. Vendedor exige documento. Login real de cliente e isolamento entre lojas pendentes |
 | 1.17 · 17/21 | QR decodificado, PDF categoria/todas/capa renderizado, clientes/orçamento exportados; upload/exibição/mobile/desativação de banner | PNGs de arte e banner inspecionados;catálogo grande e demais modelos não homologados |
@@ -15,7 +15,7 @@ Principal **[1/58] — Gopage**, com **21 filhos diretos**. Revisão **[21/21]**
 | 1.20 · 20/21 | XML gerado/lido com 10 produtos; SEO persistido no editor; telas de integrações/envio inspecionadas | SEO público não refletiu teste; refresh do XML, instrumentação, cotação real, domínio e serviços externos não conectados |
 | 1.21 · 21/21 | Medições de público/admin, busca vazia, ordenação/paginação por teclado, painel mobile e falhas de texto longo | Reordenação por ponteiro persistida/restaurada e contraste de um botão21:1 confirmados. Escape/foco/nomes do painel e campos de preço apresentaram problemas;16+5 itens paginados. Teclado de arraste,leitor de tela,contraste integral/axe/Lighthouse,movimento reduzido,temas e rede pendentes |
 
-Estado temporário26/10:regra10% Exemplo Categoria1 criada com data passada continua aplicando;produto90/carrinho97,25. Remoção aguarda confirmação no ato;demais estados abaixo preservados.
+Estado temporário26/10:regra10% Exemplo Categoria1 criada com data passada continua aplicando;produto90/carrinho97,25. Remoção autorizada;controle do Browser retornouHTTP401 antes de qualquer exclusão. Demais estados abaixo preservados.
 
 Estado restaurado conhecido: carrinho ligado, orçamento desligado, preços visíveis, login obrigatório desligado, venda sugestiva desligada, banner oculto, custos de teste vazios. Feed XML permanece ativo, registro SEO vazio e dados fictícios permanecem cadastrados. Não afirmar restauração estrutural de todos os registros nem paridade integral.
 
