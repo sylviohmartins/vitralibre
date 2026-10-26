@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Estado atual26/10 — principal[1/58], revisão[21/21]
+
+Gopage tem21 filhos diretos; pesquisa continua parcial.21produtos fictícios; CSV10/10 UTF8BOM/multilinha confirmado. Ordenação/paginação por teclado16+5 itens; painel390px abriu/fechou via Enter, mas Escape/foco/nomes acessíveis apresentaram problemas. Equipe fictícia removida e login recusado; dono autenticado. Pendências atuais e configurações restauradas em research/competitors/gopage/operational-checkpoint.md e remaining-validation.md. Histórico abaixo preservado; próximas tarefas antigas não substituem este estado. Próxima:revisão21/21 das lacunas funcionais14/21–20/21. Nenhuma tarefa adicionada; total58 principais/21 filhos de Gopage. Código da aplicação preservado.
+
 ## Continuação25/10 — [1.15/58] cenário administrativo validado
 
 Pedido fictício #000001 criado com P1×12,50 e contatos sem destinatário real; estoque3→2. Preparando persistiu; Cancelado persistiu e repôs estoque3, conferido publicamente. Pedido mantido cancelado; nenhum comando WhatsApp/pagamento acionado. Pago/Concluído/concorrência não testados. Próxima:[1.16/58] vendedores/comissão/equipe/permissões. Total58 inalterado.

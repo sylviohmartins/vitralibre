@@ -499,3 +499,46 @@ Matriz de permissões e pendências atualizadas. Próxima:principal[1/58]·revis
 ## Principal [1/58] · revisão [21/21] de [17/21] — imagens geradas inspecionadas
 
 Prévia de leitura dos PNGs já baixados,sem alterar originais,produzida no dispositivo autorizado para inspeção. Banner1774×600,modelo Simples amarelo:template promocional amarelo com imagens do fornecedor nas laterais,produto próprio ao centro,título truncado com reticências e texto a partir de R$12,50. Arte640×1138:template azul Oferta do Dia,imagem própria do café,título quebrado em linhas e preço R$12,50 legíveis. A arte não exibe a partir de embora produto tenha variantes de preços12,50/15;ressalva de precisão comercial,sem inferir outras opções do gerador. Não houve nova geração/upload/publicação nesta inspeção. Ativos do fornecedor não incorporados ao VitraLibre nem ao repositório. Esses dois arquivos deixam de ter inspeção visual inteiramente pendente;demais modelos e volume seguem não homologados.
+
+## Principal [1/58] · revisão [21/21] de [18/21] — descrição e tamanho da imagem
+
+26/10/2026. CSV original de avaliação VITRA-DESC-001,nome Limite descricao VitraLibre - nao comercial,preço1,descrição com3001caracteres. Resultado0importados,1erro em1registro,linha2/coluna descricao:A descrição do produto deve ter no máximo3000caracteres. Mesmo arquivo corrigido para3000caracteres e reenviado:1/1sucesso,listagem11produtos. Edição reaberta confirmou value.length=3000. Novo registro fictício permanece para reprodução;não houve exclusão. Testa fronteira superior e recuperação,não todas as regras de texto.
+
+PNG próprio1400×1400 de ruído gerado para teste,5889703bytes,acima do limite declarado4MB. Escolhido via uploader do produto:apareceu segunda imagem comURL do provedor eestadoProcessando,além do placeholder. Nenhum alert/status de rejeição foi observado nas inspeções capturadas. Não afirmar backend recebeu5889703bytes nem que limite inexiste:processamento/compressão pré-envio pode ocorrer e não foi inspecionado. Salvar do produto NÃO acionado. Navegação à lista e reabertura confirmou somenteplaceholder,sem imagem de teste vinculada ao registro. Não foi excluído arquivo do provedor;eventualupload temporário não rastreado.
+
+Detalhe público do novo produto aberto por busca. Em390px efetivos,documentElement.scrollWidth383;parágrafo de3000caracteres mediu351px,scrollWidth351,overflow-wrap:break-word,word-break:normal. Sequência sem espaços foi quebrada,sem overflow horizontal global nesse recorte. Override removido. Não extrapolar para todas as superfícies:admin e PDF já tiveram problemas com nome longo. Captura do detalhe guardada;contraste/leitor de tela/axe não executados nesta rodada.
+
+Próxima:principal[1/58]·revisão[21/21],acessibilidade e reordenação de categorias.58principais/21filhos inalterado,nenhuma nova tarefa.
+
+## Principal [1/58] · revisão [21/21] — reordenação e inspeção de acessibilidade
+
+26/10/2026. Ordem administrativa inicial:Exemplo Categoria1,Avaliação VitraLibre(com Bebidas de teste),Avaliacao CSV. Arraste por ponteiro do primeiro handle para o último,usando posições medidas do DOM:lista passou a Avaliação VitraLibre,Avaliacao CSV,Exemplo Categoria1. Recarga preservou. Página pública nova exibiu links de categoria nessa mesma ordem. Reordenação persistida e propagação pública confirmadas. Arraste inverso do último para o primeiro:recarga administrativa e pública confirmaram ordem original.3categorias e1subcategoria preservadas. Nenhuma exclusão ou nova categoria. Resultado supera pendência de arraste por ponteiro;não valida operação equivalente por teclado.
+
+Amostra de acessibilidade pública:primeiro botão Adicionar ao carrinho tem color rgb255/255/255 e background rgb0/0/0,contraste21:1 pela fórmula de luminância relativa;fonte12px,retângulo385×32 no viewport atual. Isso é evidência de um componente,não aprovação geral de contraste/WCAG. Inspeção de caixas renderizadas encontrou botão sem texto/aria-label com largura20 e altura46;links de categoria altura19,alguns links de rodapé altura20. Nome acessível completo não calculado;alvos menores que24 em uma dimensão requerem verificação de espaçamento/exceções antes de concluir violação WCAG2.2. Não confundir alvo44px recomendado com mínimo normativo de todo contexto. Leitor de tela,axe/Lighthouse e análise integral de teclado ainda não executados. Captura da ordem restaurada guardada.
+
+Próxima:principal[1/58]·revisão[21/21],demais verificações pendentes de acessibilidade e lote de importação[18/21]. Nenhuma tarefa nova;58principais/21filhos.
+
+## Principal [1/58] · revisão [21/21] de [18/21] — lote controlado
+
+26/10/2026. Fixture própria importacao-lote10.csv,1599bytes,UTF8 comBOM,separadorvírgula,10registros simples,SKUsVITRA-VOL-01..10,preços1,25..10,25,categoriaexistenteAvaliacaoCSV,semfoto. Descrições entreaspas contêm vírgula,acentos;primeira temquebra de linha interna. ParserCSVlocal confirmou10registros e10SKUsúnicos.
+
+Envio único. Primeira leitura pós-upload teve timeout,sem diálogo nativo. Snapshot seguinte revelou10importados de10registros. Nenhum reenvio. Listagem passou11→21produtos. Pesquisa VITRA-VOL-01 mostrou1resultado;indicadoresgerais mantiveram21produtos e297,75deValor emestoque. Valor anterior240,25,diferença57,50,igual à soma dospreçosbase do lote;isso nãohomologa contabilidade de estoque nemquantidades.
+
+Item01reaberto confirmou descrição com vírgula,acentos equebra de linha. Pesquisa porprefixoVITRA-VOL- retornou10resultados eSKUs01..10confirmados noDOM. Busca públicapelo termo LoteVitraLibre retornou10artigos. Snapshot público guardado. Nenhum novo pedido,mensagem ou pagamento. Produtos fictícios permanecem;nenhuma exclusão. Ensaio de lotepequeno,não teste decarga,limitemáximo,paginação extensiva ou catálogo grande.
+
+Próxima:principal[1/58]·revisão[21/21],acessibilidade restante elacunas declientes/cupom.58principais/21filhos inalterado,sem novas tarefas.
+
+
+## 26/10/2026 — revisão 1.21: ordenação, paginação e filtro por teclado
+
+Principal [1/58], filho [21/21], 21 filhos diretos; nenhuma tarefa acrescentada. Testes reais no Chrome conectado, catálogo público com 21 produtos fictícios. Sem pedido, mensagem ou alteração administrativa.
+
+- Ordenar por: Enter abriu opções; Escape não fechou. Tab levou a Mais recentes e outro Tab a Menor preço. Enter selecionou Menor preço; primeira página apresentou 16 itens em ordem crescente de preço, de 0 a 9. Após atualização, activeElement era BODY.
+- Paginação: Enter no botão 2 abriu `?ordem=menor-preco&page=2`, com 5 itens e preços base 9,25; 10; 10,25; 12,50; 100. Junto aos 16 anteriores, 21 itens. Foco novamente no BODY. Isso valida este conjunto pequeno, não carga ou escala.
+- Mobile: viewport solicitado e medido 390px, scrollWidth383. Enter em Filtrar abriu painel lateral; foco permaneceu no acionador. Painel visível por screenshot; nenhum role=dialog encontrado. Escape não o fechou. Tab no acionador chegou ao botão X, sem texto, aria-label ou title. Enter nesse botão fechou o painel (x do botão passou de275,5 a-107,5), mas foco permaneceu no botão que saiu da tela. Não houve restauração ao acionador no instante observado.
+- Semântica: snapshot expôs dois spinbuttons sem nome; inspeção confirmou inputs numéricos sem labels vinculadas/aria-label e placeholder0.00. De/Até estavam como texto genérico. Cada card da listagem tinha h1 após título Produtos h2. Registrar problema de hierarquia/rotulagem; não inferir automaticamente aprovação/reprovação normativa integral.
+- Evidência visual local: keyboard-filter-proof.png, painel aberto390px. Captura não adicionada ao repositório para evitar ativos proprietários. Viewport temporário resetado ao terminar.
+
+Requisitos derivados para VitraLibre: campos mínimo/máximo com labels distintos; botão Fechar filtros com nome acessível; Escape fecha painel e menu; foco entra no painel e retorna ao acionador ao fechar; atualização por filtro/ordem/página preserva contexto e anuncia resultado; h1 da página e títulos de produtos subordinados. Validar posteriormente com testes reais de teclado, axe e leitor de tela na implementação original. Não houve alteração do código da aplicação nesta revisão.
+
+Ainda pendentes: jornada integral de teclado, arraste por teclado, leitor de tela, axe/Lighthouse, contraste integral, movimento reduzido, rede, temas, além das lacunas funcionais listadas em remaining-validation.md. Gopage permanece parcial.
