@@ -107,3 +107,10 @@ Os denominadores são independentes:58 tarefas principais;21 subtarefas da Gopag
 
 
 Revisão26/10 — principal[1/58]·filho[21/21],21filhos diretos:fechamento da rodada e dependências em ../competitors/gopage/fechamento-da-rodada.md. Pago/Concluído/Cancelado persistidos no pedido fictício;estoque e indicadores restaurados. Clientes e teclado ampliados no recorte. Novo acesso de cliente preparado sem senha/submissão,aguarda confirmação específica. Não há conclusão integral do fornecedor,nem tarefa nova.
+
+
+## Correção de apresentação —27/10/2026
+
+Formato canônico:Tarefa **1/58 — Gopage**,com **21filhos diretos**;subtarefa **1.16 (16/21) — Vendedores,equipe e permissões**,status **bloqueada por autenticação**. **1.21 (21/21) — revisão final** é outra filha do mesmo pai,com estado parcial. A expressão revisão21/21 de16/21 misturava duas irmãs e não define sub-subtarefa. Terceiro nível não formalizado;nenhuma contagem inventada. Posição não equivale a quantidade concluída.
+
+Quadro atual:1filha concluída exclusivamente como revisão documental,19parciais e1bloqueada. Dependência atual:login administrativo confirmado para o cliente cuja criação já foi autorizada. Não repetir tentativa idêntica sem nova evidência. Sem novas tarefas;58principais/21filhos mantidos.

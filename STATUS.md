@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Correção do acompanhamento27/10
+
+**Tarefa1/58 — Gopage;21filhos diretos. Subtarefa1.16 (16/21) bloqueada por autenticação. Subtarefa1.21 (21/21) parcial,com testes públicos adicionais. São irmãs;nenhum terceiro nível foi formalizado.** A expressão revisão21/21 de16/21 usada nas mensagens era ambígua e não representa a hierarquia. Posição não é progresso. A criação de cliente já está autorizada;falta sessão administrativa confirmada. Não repetir tentativa idêntica sem mudança dessa pré-condição. Quadro tem1revisão documental concluída,19subtarefas parciais e1bloqueada;isso evidencia que a conclusão operacional do fornecedor não ocorreu. Nenhuma tarefa adicionada ou conclusão retroativa inventada.
+
 ## Continuação27/10 — filtros públicos validados;cliente ainda depende de login
 
 Sessão em nuvem nova retornou login administrativo;nenhum cliente criado. Avanço independente21/21:Azul+P,fronteira10..10,faixa10,01..13,inversão13..10 e zero0..0 exercitados. Limpar filtros removeu atributos e manteve preços;zero retornou2produtos;inversão retornou vazio sem aviso específico. Raiz sem filtros restaurada. Contato público4campos com labels;nenhuma mensagem enviada. Principal1/58 com21filhos inalterados. Próxima dependência16/21:autenticar na sessão em nuvem já aberta.

@@ -117,8 +117,10 @@
           "id": "1.16",
           "position": 16,
           "title": "Vendedores, equipe e permissões",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "bloqueada_por_autenticacao",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "blocker": "Sessão em nuvem retornou login;cliente com credencial ainda não criado. Autorização de criação já recebida. Vendedor também depende de documento de teste legítimo.",
+          "next_action": "Confirmar login administrativo e verificar duplicidade antes de criar o cliente autorizado. Não repetir tentativa sem mudança verificável da pré-condição."
         },
         {
           "id": "1.17",
@@ -156,10 +158,19 @@
           "evidence": "research/competitors/gopage/operational-2026-10-25.md"
         }
       ],
-      "status": "em_execucao",
-      "current_child": "1.21",
-      "review_summary": "26/10:cinco status administrativos no recorte e restauração;busca/filtros clientes;teclado4setas sem movimento. Novo acesso de cliente preparado sem senha/submissão,aguarda confirmação específica.",
-      "review_document": "research/competitors/gopage/fechamento-da-rodada.md"
+      "status": "em_execucao_com_bloqueio",
+      "current_child": "1.16",
+      "review_summary": "27/10:1.16 está bloqueada por autenticação administrativa não confirmada;criação de cliente já autorizada. Testes públicos posteriores pertencem a1.21,que permanece parcial. Nenhum terceiro nível de tarefas foi formalizado.",
+      "review_document": "research/competitors/gopage/fechamento-da-rodada.md",
+      "blocking_children": [
+        "1.16"
+      ],
+      "parallel_review_child": "1.21",
+      "children_status_summary": {
+        "parcial": 19,
+        "concluida_revisao_documental": 1,
+        "bloqueada_por_autenticacao": 1
+      }
     },
     {
       "id": "2",
@@ -503,5 +514,6 @@
       "children_count": null,
       "children": null
     }
-  ]
+  ],
+  "display_rule": "Mostrar identificador estável, posição entre irmãos e status separadamente. Exemplo:Tarefa1/58 Gopage;subtarefa1.16 (16/21),bloqueada. 1.16 e1.21 são irmãs,nunca níveis aninhados. Não apresentar posição como conclusão."
 }
