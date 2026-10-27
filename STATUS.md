@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Retomada27/10 — acesso de cliente autorizado; contexto do navegador indisponível
+
+Usuário respondeu prossiga à confirmação específica do acesso fictício cliente-login-vitralibre@example.invalid. Autorização recebida. Browser recusou operação antes de acessar página:requer conversa aberta no navegador de origem com extensão conectada. Não é evidência de falha de login Gopage,nem oHTTP401 anterior. Nenhuma senha inserida ou cadastro submetido nesta tentativa. Retomar na mesma origem conectada,inspecionar se o cliente já existe e só então criar se ausente,testar login/saída. Principal[1/58]·revisão[21/21] de[16/21],21filhos diretos;sem nova autorização para a mesma ação e sem tarefa adicionada.
+
 ## Revisão26/10 — dependência para novo acesso de cliente
 
 Pedido fictício Pago/Concluído persistidos;cancelamento restaurou estoque3 e indicadores0/R$0. Busca/filtros de clientes exercitados;arraste por teclado4setas sem mudança no recorte. Novo cadastro fictício com acesso preparado,senha vazia e sem salvar;confirmação específica necessária antes de criar credencial. Fechamento da rodada em research/competitors/gopage/fechamento-da-rodada.md. Gopage continua parcial;58principais/21filhos diretos inalterados.
