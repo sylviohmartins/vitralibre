@@ -599,3 +599,27 @@ Resposta direta prossiga à solicitação específica do cliente fictício consi
 ## 27/10/2026 — alternativa em nuvem e autenticação não concluída
 
 Chrome conectado continuou retornando exigência de contexto de origem,inclusive após inicialização documentada,sob contexto de painel lateral anunciado. Não concluir conexão operacional por metadados. Alternativa em nuvem previamente autorizada foi aberta via CUA documentado,com página de clientes redirecionando para /login. Plugin Management não encontrou integração Gopage. BrowserAuth lido;formulário visível email/senha e alternativa Google inspecionados sem valores secretos. Solicitação segura com os dois métodos foi emitida;retornou timeout de ferramenta,sem resultado submitted ou sucesso de login. Não alegar rejeição de senha,bot ou envio concluído. Após espera,referências anteriores indisponíveis e aba original ausente;verificação nova em painel.gopage.bio redirecionou para /login. Não houve acesso ao formulário de cliente nesta alternativa nem submissão de cadastro. Próxima:transferência de controle documentada para autenticar na própria sessão em nuvem;criação de cliente segue autorizada,sem repetir pedido de autorização. Principal[1/58],revisão[21/21] de[16/21],21filhos diretos;sem nova tarefa.
+
+
+## 27/10/2026 — filtros públicos combinados e formulário de contato
+
+Continuação após transferência de controle:referência/aba anterior indisponível. Verificação em página nova de painel.gopage.bio retornou /login. Não há sessão administrativa confirmada nem novo cliente criado. Página de login preservada com markHandoff,sem repetir solicitação de autenticação e sem digitar credenciais por ferramenta visível.
+
+Para avançar no escopo1.* sem depender desse login,catálogo público aberto na sessão em nuvem. Nenhum pedido,mensagem ou configuração administrativa enviados.
+
+| Caso | Resultado observado |
+|---|---|
+|CorAzul|Botão ficou pressed;Limpar filtros(1);somente matrizCSV apresentada. Primeira leitura AX ainda mostrou estado anterior;DOM posterior confirmou o resultado,sem segundo clique.|
+|Azul+P|URL continha variacoes[cor]=azul e variacoes[tamanho]=p;Limpar filtros(2);matriz permaneceu.|
+|Azul+P+min10/max10|URL persistiu os4parâmetros;matriz com preço base10 presente. Fronteira igual inclusiva nesse caso.|
+|Azul+P+min10,01/max13|URL e inputs confirmados;step0.01,min0,validityvalid;Nenhum produto encontrado.|
+|Limpar filtros(2)|Removeu parâmetros cor/tamanho,mas preservou min10.01/max13. Retornou Lote10(preço10,25) e Café(base12,50);matriz não retornou.|
+|Faixa invertida min13/max10|URL refletiu a inversão;resultado vazio,sem aviso específico observado. Validação de servidor não auditada.|
+|Faixa min0/max0|Exatamente2cards de preço0.|
+|Limpeza final|Link da marca abriu raiz sem parâmetros,campos de preço vazios e filtros desmarcados.|
+
+Matriz tem variantes10/11/12/13;ausência com faixa10,01..13 mesmo após remover os atributos é compatível com filtro pelo preço do produto/base,mínimo ou outro índice,e não seleção de qualquer variante. Isso é inferência de comportamento a partir do caso,não prova do algoritmo/backend. Não generalizar para todos os tipos nem confundir filtro com seleção da variante em detalhes.
+
+FaleConosco aberto pelo link público. Formulário4campos Nome/E-mail/Telefone/Mensagem com labels vinculadas. HTMLtypeemail no campo E-mail;requiredfalse e sem minLength/maxLength declarados nos4campos;Enviar é submit habilitado. Não acionar Enviar:sem mensagem autorizada a destinatário. Ausência de required nativo não demonstra ausência de validação no servidor. Conteúdo de instrução mostra endereço de email de modelo junto do WhatsApp configurado;configuração de contato não alterada e contatos não transcritos neste diário.
+
+Principal[1/58],revisão[21/21],21filhos diretos;nenhuma tarefa ou capacidade numerada acrescentada. Próxima dependência[16/21]:login na sessão em nuvem para criação já autorizada do cliente. Fornecedor segue parcial. Evidência desta rodada é o estado DOM/AX lido;nenhuma captura/arquivo de browser retornado ou métrica de performance produzida.

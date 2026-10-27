@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação27/10 — filtros públicos validados;cliente ainda depende de login
+
+Sessão em nuvem nova retornou login administrativo;nenhum cliente criado. Avanço independente21/21:Azul+P,fronteira10..10,faixa10,01..13,inversão13..10 e zero0..0 exercitados. Limpar filtros removeu atributos e manteve preços;zero retornou2produtos;inversão retornou vazio sem aviso específico. Raiz sem filtros restaurada. Contato público4campos com labels;nenhuma mensagem enviada. Principal1/58 com21filhos inalterados. Próxima dependência16/21:autenticar na sessão em nuvem já aberta.
+
 ## Continuação27/10 — alternativa em nuvem chegou ao login
 
 Chrome conectado continuou recusando contexto de origem,apesar de anunciado pelo ambiente. Alternativa em nuvem autorizada abriu Gopage e redirecionou ao login. Busca de plugin Gopage não retornou integração. Autenticação segura browserAuth solicitada;ferramenta terminou por timeout sem resultado de sucesso. Aba anterior não foi preservada;verificação em aba nova abriu login novamente. Nenhum cadastro de cliente executado. Próxima:autenticação na própria sessão em nuvem por transferência de controle;depois conferir duplicidade e executar criação já autorizada. Principal[1/58]·revisão[21/21] de[16/21],21filhos diretos.

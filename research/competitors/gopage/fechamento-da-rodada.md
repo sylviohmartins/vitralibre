@@ -46,3 +46,6 @@ Pedido000001 **Cancelado**,estoque caféP **3**,M **0**,indicadores pedidos **0 
 Capturas locais:order-stock-restored.png e client-access-prepared.png. Não incorporadas ao repositório por conterem interface/ativos do fornecedor e/ou dados do proprietário. Documentação textual não contém senhas/tokens.
 
 A conclusão integral de1.* continua pendente. Próxima ação **[1/58] · revisão[21/21] de[16/21]**:confirmação específica do novo acesso de cliente;depois login e controles de acesso. Esta é dependência operacional,sem nova tarefa ou reinício do projeto.
+
+
+Atualização27/10:criação de cliente autorizada;execução depende de login na sessão em nuvem. Verificação atual voltou ao login. Filtros públicos combinados,preço igual/decimal/zero/invertido e limpeza de atributos exercitados;contato inspecionado sem envio. Total21filhos e estado parcial preservados.
