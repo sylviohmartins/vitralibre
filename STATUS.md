@@ -1,5 +1,9 @@
 # VitraLibre — estado verificável
 
+## Continuação27/10 — alternativa em nuvem chegou ao login
+
+Chrome conectado continuou recusando contexto de origem,apesar de anunciado pelo ambiente. Alternativa em nuvem autorizada abriu Gopage e redirecionou ao login. Busca de plugin Gopage não retornou integração. Autenticação segura browserAuth solicitada;ferramenta terminou por timeout sem resultado de sucesso. Aba anterior não foi preservada;verificação em aba nova abriu login novamente. Nenhum cadastro de cliente executado. Próxima:autenticação na própria sessão em nuvem por transferência de controle;depois conferir duplicidade e executar criação já autorizada. Principal[1/58]·revisão[21/21] de[16/21],21filhos diretos.
+
 ## Retomada27/10 — acesso de cliente autorizado; contexto do navegador indisponível
 
 Usuário respondeu prossiga à confirmação específica do acesso fictício cliente-login-vitralibre@example.invalid. Autorização recebida. Browser recusou operação antes de acessar página:requer conversa aberta no navegador de origem com extensão conectada. Não é evidência de falha de login Gopage,nem oHTTP401 anterior. Nenhuma senha inserida ou cadastro submetido nesta tentativa. Retomar na mesma origem conectada,inspecionar se o cliente já existe e só então criar se ausente,testar login/saída. Principal[1/58]·revisão[21/21] de[16/21],21filhos diretos;sem nova autorização para a mesma ação e sem tarefa adicionada.
