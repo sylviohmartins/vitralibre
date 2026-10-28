@@ -114,3 +114,34 @@ Revisão26/10 — principal[1/58]·filho[21/21],21filhos diretos:fechamento da r
 Formato canônico:Tarefa **1/58 — Gopage**,com **21filhos diretos**;subtarefa **1.16 (16/21) — Vendedores,equipe e permissões**,status **bloqueada por autenticação**. **1.21 (21/21) — revisão final** é outra filha do mesmo pai,com estado parcial. A expressão revisão21/21 de16/21 misturava duas irmãs e não define sub-subtarefa. Terceiro nível não formalizado;nenhuma contagem inventada. Posição não equivale a quantidade concluída.
 
 Quadro atual:1filha concluída exclusivamente como revisão documental,19parciais e1bloqueada. Dependência atual:login administrativo confirmado para o cliente cuja criação já foi autorizada. Não repetir tentativa idêntica sem nova evidência. Sem novas tarefas;58principais/21filhos mantidos.
+
+
+## Terceiro nível formalizado —27/10
+
+58tarefas principais e21filhos diretos deGopage permanecem. Foram formalizadas **71verificações já existentes no escopo**,sem novos recursos. Padrão de apresentação: **Tarefa1/58 — Gopage;subtarefa1.16 (16/21,6verificações);caso1.16.2 (2/6) — bloqueado por autenticação**. Agora o terceiro nível é real e está registrado emtask-hierarchy.json;as notas anteriores sobre ausência de terceiro nível são históricas.
+
+| Subtarefa | Quantidade de verificações | Estado no recorte |
+|---|---:|---|
+| 1.1 | 2 | parcial_com_bloqueios |
+| 1.2 | 2 | encerrada_no_recorte_com_ressalvas |
+| 1.3 | 2 | parcial_com_bloqueios |
+| 1.4 | 3 | parcial_com_bloqueios |
+| 1.5 | 3 | parcial_com_bloqueios |
+| 1.6 | 1 | encerrada_no_recorte |
+| 1.7 | 1 | encerrada_no_recorte |
+| 1.8 | 1 | encerrada_no_recorte |
+| 1.9 | 2 | encerrada_no_recorte |
+| 1.10 | 2 | parcial_com_bloqueios |
+| 1.11 | 4 | parcial_com_bloqueios |
+| 1.12 | 4 | parcial_com_bloqueios |
+| 1.13 | 1 | concluida_revisao_documental |
+| 1.14 | 8 | parcial_com_bloqueios |
+| 1.15 | 4 | parcial_com_bloqueios |
+| 1.16 | 6 | bloqueada_por_autenticacao |
+| 1.17 | 3 | parcial_com_bloqueios |
+| 1.18 | 5 | parcial_com_bloqueios |
+| 1.19 | 3 | parcial_com_bloqueios |
+| 1.20 | 9 | parcial_com_bloqueios |
+| 1.21 | 5 | parcial_com_bloqueios |
+
+Contagem de casos:26verificados,5divergências observadas,2inconclusivos documentados,1documental concluído,37bloqueados. Três casos independentes executados nesta rodada;seis subtarefas encerradas no recorte com evidência anterior ou atual. Não somar71casos às48capacidades nem apresentar34/71como percentual de funcionalidades homologadas. Casos bloqueados só retomam quando a condição registrada mudar.

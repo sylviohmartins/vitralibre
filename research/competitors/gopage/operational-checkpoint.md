@@ -1,5 +1,12 @@
 # Gopage — checkpoint operacional
 
+## Referência vigente —27/10:protocolo finito
+
+A numeração foi corrigida e o terceiro nível formalizado:58tarefas principais,21filhos deGopage e71verificações. **34casos têm resultado registrado e37estão bloqueados**. Resultados não equivalem a34aprovações:26verificados,5divergências,2inconclusivos e1documental. Os casos1.11.4,1.5.3e1.21.2foram executados nesta rodada;nenhum caso pronto restante. Seis filhos encerrados apenas no recorte:1.2/1.6/1.7/1.8/1.9/1.13. Não há conclusão integral do fornecedor.
+
+Fonte atual: [casos](closure-cases.json) e [plano](../../../docs/superpowers/plans/2026-10-27-gopage-fechamento.md). Próximo bloqueado1.16.2(posição2/6de1.16,filha16/21),aguardando autenticação;criação já autorizada,sem pedir confirmação de novo. As tabelas e próximas ações abaixo são histórico da rodada anterior e devem ser lidas com esse estado atual.
+
+
 Atualizado em26/10/2026. Principal **[1/58]**, revisão **[21/21]**, **21 filhos diretos**. Exploração parcial: não é certificação de paridade nem conclusão do fornecedor. Diário: operational-2026-10-25.md. Pendências atuais: remaining-validation.md. O inventário48 registros não equivale a48 recursos homologados.
 
 | Área | Comprovado no recorte | Pendente relevante |

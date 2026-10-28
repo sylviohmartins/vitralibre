@@ -1,5 +1,13 @@
 # VitraLibre — estado verificável
 
+## Quadro vigente — fechamento finito27/10
+
+**Tarefa1/58 — Gopage:21subtarefas diretas,71verificações de terceiro nível.** Foram formalizadas verificações já previstas,sem acrescentar funcionalidades. Contagem:26verificadas,5divergências observadas,2inconclusivas documentadas,1documental concluída e37bloqueadas. Há34resultados registrados,nenhuma verificação pronta restante e nenhuma homologação integral do fornecedor.
+
+Três casos executados nesta rodada:1.11.4(PDFdo orçamento inspecionado),1.5.3(fotoAzul versusVerde),1.21.2(jornada de acionamentos por teclado até carrinho13,depois vazio,com ressalva de foco). Seis filhos encerrados apenas no recorte:1.2,1.6,1.7,1.8,1.9,1.13. Os demais15têm bloqueios explícitos.
+
+Próximo caso bloqueado:**1.16.2 — acesso do cliente**,posição2/6dentro de1.16(posição16/21). Criação já autorizada;aguarda sessão administrativa confirmada. Nenhuma tentativa de login repetida. Plano:docs/superpowers/plans/2026-10-27-gopage-fechamento.md. Fonte canônica:research/discovery/task-hierarchy.json;espelho:research/competitors/gopage/closure-cases.json. Histórico anterior abaixo não substitui este quadro.
+
 ## Correção do acompanhamento27/10
 
 **Tarefa1/58 — Gopage;21filhos diretos. Subtarefa1.16 (16/21) bloqueada por autenticação. Subtarefa1.21 (21/21) parcial,com testes públicos adicionais. São irmãs;nenhum terceiro nível foi formalizado.** A expressão revisão21/21 de16/21 usada nas mensagens era ambígua e não representa a hierarquia. Posição não é progresso. A criação de cliente já está autorizada;falta sessão administrativa confirmada. Não repetir tentativa idêntica sem mudança dessa pré-condição. Quadro tem1revisão documental concluída,19subtarefas parciais e1bloqueada;isso evidencia que a conclusão operacional do fornecedor não ocorreu. Nenhuma tarefa adicionada ou conclusão retroativa inventada.

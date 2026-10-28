@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "main_tasks_count": 58,
-  "counting_rule": "Filhos diretos; null significa não detalhado, nunca zero. Posição não é conclusão.",
+  "counting_rule": "58tarefas principais;Gopage21filhos diretos. Cada filho informa quantos casos de terceiro nível possui. Posição não é conclusão;casos bloqueados não são aprovação.",
   "tasks": [
     {
       "id": "1",
@@ -12,106 +12,837 @@
           "id": "1.1",
           "position": 1,
           "title": "Acesso",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 2,
+          "children": [
+            {
+              "title": "Cadastro, ativação e login do proprietário",
+              "status": "verificado",
+              "criterion": "Encontrar no diário a submissão autorizada, confirmação de email e sinal positivo de sessão do dono. Não exige repetir o login atual para comprovar o teste histórico.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.1.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Recuperação da conta do proprietário",
+              "status": "bloqueado",
+              "criterion": "Identificar fluxo oferecido e validar recuperação somente com caixa de email acessível; mudança de senha deve ser feita pelo usuário. Não enviar solicitação repetidamente.",
+              "dependency": "Caixa de email de teste acessível e intervenção do usuário para qualquer troca de credencial.",
+              "observation": "",
+              "id": "1.1.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.2",
           "position": 2,
           "title": "Categorias",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "encerrada_no_recorte_com_ressalvas",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 2,
+          "children": [
+            {
+              "title": "Categoria, subcategoria e ordem por ponteiro",
+              "status": "verificado",
+              "criterion": "Comprovar criação/reabertura, relação pai-filha e mudança de ordem persistida no painel e no público, com restauração.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.2.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Arraste por teclado",
+              "status": "divergencia_observada",
+              "criterion": "Registrar Space+4setas sem mudança e Escape cancelando; manter ordem original. Encerrar o caso observado sem alegar sucesso do movimento.",
+              "dependency": "",
+              "observation": "O cenário já foi executado; não repetir sem mudança de implementação, instruções ou condição de teste.",
+              "id": "1.2.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "divergencia_observada": 1
+          },
+          "closure_readiness": "revisao_documental_concluida"
         },
         {
           "id": "1.3",
           "position": 3,
           "title": "Produto e imagem",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 2,
+          "children": [
+            {
+              "title": "Produto simples com imagem",
+              "status": "verificado",
+              "criterion": "Comprovar produto salvo, reaberto e publicado com imagem própria; distinguir criação de upload apenas em prévia.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.3.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-041"
+              ]
+            },
+            {
+              "title": "Exclusão de produto isolado",
+              "status": "bloqueado",
+              "criterion": "Preparar um único produto claramente descartável; obter confirmação no ato antes de excluir; conferir ausência no painel e público, preservando os demais produtos.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Confirmação específica de exclusão irreversível, após apresentar o produto exato.",
+              "observation": "",
+              "id": "1.3.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-041"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.4",
           "position": 4,
           "title": "Edição e publicação",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 3,
+          "children": [
+            {
+              "title": "Edição e publicação com restauração",
+              "status": "verificado",
+              "criterion": "Comprovar edição persistida, efeito público e restauração do valor original no produto de avaliação.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.4.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Preset de cores e restauração",
+              "status": "verificado",
+              "criterion": "Conferir Verde Pinheiro aplicado e Black Piano restaurado por evidência pública, sem assumir contraste integral.",
+              "dependency": "",
+              "observation": "",
+              "id": "1.4.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-017"
+              ]
+            },
+            {
+              "title": "Personalização: moeda e ordenação",
+              "status": "bloqueado",
+              "criterion": "Ler valores iniciais; alterar uma opção de moeda e uma de ordem oferecidas; salvar, conferir efeito público e restaurar. Não interpretar troca de símbolo como conversão cambial.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.4.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-018"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 2,
+            "bloqueado": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.5",
           "position": 5,
           "title": "Variantes e estoque",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 3,
+          "children": [
+            {
+              "title": "Combinações, preços, estoque e indisponibilidade",
+              "status": "verificado",
+              "criterion": "Comprovar quatro combinações de dois atributos; P12,50/estoque3 e M15/estoque0; alternância pública e indisponibilidade da opção zerada.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.5.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-001",
+                "GOP-002",
+                "GOP-026",
+                "GOP-042",
+                "GOP-043"
+              ]
+            },
+            {
+              "title": "Remover e recriar opção com persistência",
+              "status": "bloqueado",
+              "criterion": "Em produto isolado, remover/recriar uma opção, salvar/reabrir e comparar os valores das opções restantes e da recriada. Não apagar variação do produto original.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Confirmação no ato se houver perda permanente de dados/opção.",
+              "observation": "",
+              "id": "1.5.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-003"
+              ]
+            },
+            {
+              "title": "Comparação visual da foto por cor",
+              "status": "verificado",
+              "criterion": "Abrir matriz pública; selecionar Azul e Verde com a mesma opção de tamanho; comparar foto principal e fallback. Registrar quais imagens aparecem, sem copiar ativos do fornecedor.",
+              "dependency": "",
+              "observation": "Comparação visual no detalhe:tamanhoP mantido;Azul mostrou xícara própria640px/preço10/estoque2,Verde mostrou placeholder235px/preço12/estoque1. Ambos carregados. Azul restaurado antes da jornada seguinte. Uma tentativa por labelCor falhou;DOM mostrou nomecor minúsculo e seletor foi corrigido,sem atribuir falha ao fornecedor.",
+              "id": "1.5.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": "2026-10-27",
+              "capability_refs": [
+                "GOP-004",
+                "GOP-043"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 2,
+            "bloqueado": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.6",
           "position": 6,
           "title": "CSV válido e inválido",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "encerrada_no_recorte",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 1,
+          "children": [
+            {
+              "title": "CSV válido e rejeição por linha",
+              "status": "verificado",
+              "criterion": "Comprovar registro importado/reaberto e rejeição de preço negativo com relatório por linha; limites avançados pertencem a1.18.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.6.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-016",
+                "GOP-044",
+                "GOP-045"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1
+          },
+          "closure_readiness": "revisao_documental_concluida"
         },
         {
           "id": "1.7",
           "position": 7,
           "title": "CSV misto e duplicação",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "encerrada_no_recorte",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 1,
+          "children": [
+            {
+              "title": "Lote misto e duplicação",
+              "status": "verificado",
+              "criterion": "Comprovar um sucesso/um erro no lote misto e criação adicional para SKU repetido e arquivo idêntico; registrar ausência de upsert demonstrado.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.7.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-016",
+                "GOP-047",
+                "GOP-048"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1
+          },
+          "closure_readiness": "revisao_documental_concluida"
         },
         {
           "id": "1.8",
           "position": 8,
           "title": "PDF por categoria",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "encerrada_no_recorte",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 1,
+          "children": [
+            {
+              "title": "PDF por categoria",
+              "status": "verificado",
+              "criterion": "Comprovar arquivo de uma página renderizado e presença de categoria, produto, preço e imagem.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.8.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-036",
+                "GOP-046"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1
+          },
+          "closure_readiness": "revisao_documental_concluida"
         },
         {
           "id": "1.9",
           "position": 9,
           "title": "Clientes",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "encerrada_no_recorte",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 2,
+          "children": [
+            {
+              "title": "Cadastro e reabertura do cliente",
+              "status": "verificado",
+              "criterion": "Comprovar registro salvo/reaberto, vínculo com orçamento e persistência dos dados fictícios; credencial de cliente pertence a1.16.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.9.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-024"
+              ]
+            },
+            {
+              "title": "Busca, filtros e exportação de clientes",
+              "status": "verificado",
+              "criterion": "Conferir busca positiva/negativa, Ativos, Pendentes vazio e exportação CSV2registros/5colunas; não publicar contatos.",
+              "dependency": "",
+              "observation": "",
+              "id": "1.9.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-024"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 2
+          },
+          "closure_readiness": "revisao_documental_concluida"
         },
         {
           "id": "1.10",
           "position": 10,
           "title": "Orçamento em rascunho",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 2,
+          "children": [
+            {
+              "title": "Orçamento rascunho de serviço",
+              "status": "verificado",
+              "criterion": "Comprovar serviço2×10, total20 e rascunho persistido sem envio de comunicação.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.10.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-022"
+              ]
+            },
+            {
+              "title": "Orçamento misto e aritmética decimal persistidos",
+              "status": "bloqueado",
+              "criterion": "Preparar novo rascunho:produto CSV7,25×1 mais serviço10×2; confirmar total27,25 antes/depois de salvar e no histórico. Não enviar proposta.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.10.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-022"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.11",
           "position": 11,
           "title": "Reabertura e histórico",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 4,
+          "children": [
+            {
+              "title": "Reabertura, histórico e extração de orçamento",
+              "status": "verificado",
+              "criterion": "Comprovar ORC-2026-00001, total20, vínculo no histórico do cliente e texto extraído do PDF. Inspeção visual é caso separado.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.11.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Filtros com orçamento existente",
+              "status": "bloqueado",
+              "criterion": "Usar o rascunho existente; testar status correspondente e status sem registro, além de período que inclui/exclui sua data. Conferir o mesmo código; não mudar status para fabricar resultado.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.11.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-023"
+              ]
+            },
+            {
+              "title": "Padrões de numeração e validade",
+              "status": "bloqueado",
+              "criterion": "Registrar configuração inicial; salvar uma mudança reversível de validade, conferir a prévia de novo rascunho e restaurar. Não reiniciar a sequência nem enviar alertas.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.11.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-025"
+              ]
+            },
+            {
+              "title": "Inspeção visual do PDF do orçamento",
+              "status": "verificado",
+              "criterion": "Renderizar todas as páginas de gopage-quote.pdf; conferir código, tabela2×10/total20, legibilidade e cortes. Não presumir que extração textual comprova layout.",
+              "dependency": "",
+              "observation": "PDF21660bytes,1página;parser confirmou código e20,00;Poppler renderizou a única página e inspeção confirmou tabela2×10/total20,sem cortes observados. Espaçamento tipográfico irregular;Rascunho não consta no texto nem na página. Não foram alterados dados do fornecedor.",
+              "id": "1.11.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": "2026-10-27",
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 2,
+            "bloqueado": 2
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.12",
           "position": 12,
           "title": "Conteúdo e recomendações",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 4,
+          "children": [
+            {
+              "title": "Página institucional e recomendação inicial",
+              "status": "verificado",
+              "criterion": "Comprovar Sobre Nós salvo/publicado e recomendação por categoria exercitada no carrinho, seguida de desativação.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.12.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-035"
+              ]
+            },
+            {
+              "title": "Guia de medidas e demais editores institucionais",
+              "status": "bloqueado",
+              "criterion": "Inspecionar guia/privacidade/termos e prévias com texto de avaliação; verificar salvamento apenas de conteúdo não jurídico de teste, com restauração. Não inventar política legal real.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.12.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-035",
+                "GOP-039"
+              ]
+            },
+            {
+              "title": "Calendário sazonal: filtros e detalhe",
+              "status": "verificado",
+              "criterion": "Conferir registro dos filtros por segmento/impacto/categoria e abertura de detalhe. Exatidão editorial das datas não foi homologada e permanece ressalva.",
+              "dependency": "",
+              "observation": "",
+              "id": "1.12.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-038"
+              ]
+            },
+            {
+              "title": "Conteúdo educacional e Venda Mais",
+              "status": "bloqueado",
+              "criterion": "Abrir uma aula e o recurso Venda Mais; verificar reprodução/progresso ou registrar restrição de acesso. Não assistir todo o acervo nem comprar plano.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.12.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-040"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 2,
+            "bloqueado": 2
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.13",
           "position": 13,
           "title": "Revisão de lacunas",
           "status": "concluida_revisao_documental",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 1,
+          "children": [
+            {
+              "title": "Inventário e lacunas rastreáveis",
+              "status": "concluido_documental",
+              "criterion": "Conferir 48 IDs únicos, fonte de evidência para cada linha, limites explícitos e distinção entre documentação, observação e teste.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.13.1",
+              "position": 1,
+              "source": "research/competitors/gopage/gopage-authenticated-features.csv",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "concluido_documental": 1
+          },
+          "closure_readiness": "revisao_documental_concluida"
         },
         {
           "id": "1.14",
           "position": 14,
           "title": "Cupons, promoções e mínimos",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 8,
+          "children": [
+            {
+              "title": "Mínimos e promoção de produto",
+              "status": "verificado",
+              "criterion": "Comprovar mínimo150 bloqueando107,25, mínimo3 bloqueando2, promoção100→80 e restauração das configurações. ValidaçõesCPF/pagamento observadas no checkout e exigênciaCPF restaurada também constam do diário.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.14.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-009",
+                "GOP-011"
+              ]
+            },
+            {
+              "title": "Promoção de categoria e data passada",
+              "status": "divergencia_observada",
+              "criterion": "Registrar regra10% criada com data passada que ainda aplicou100→90; documentar que a data não pôde ser relida. Conferir remoção autorizada e restauração100/107,25.",
+              "dependency": "",
+              "observation": "Caso já executado; não homologar expiração nem investigar backend por inferência.",
+              "id": "1.14.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-007",
+                "GOP-008"
+              ]
+            },
+            {
+              "title": "Cupom percentual: controle positivo e negativo",
+              "status": "inconclusivo_documentado",
+              "criterion": "Preservar resultados já observados:ambos sem feedback/desconto. Não declarar resgate válido, inválido ou consumo do limite. Nova tentativa só com evidência nova de condição relevante.",
+              "dependency": "",
+              "observation": "Já tentado com dados/entrega/pagamento; repetir Aplicar na mesma condição não é próxima ação.",
+              "id": "1.14.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-005"
+              ]
+            },
+            {
+              "title": "Limite de uso e valor fixo do cupom",
+              "status": "bloqueado",
+              "criterion": "Após resgate observável do cupom, verificar um desconto fixo e a fronteira do limite1 em pedidos fictícios autorizados. Sem envio a destinatário real. Não presumir consumo por clicar Aplicar.",
+              "dependency": "Resgate positivo observável, sessão administrativa e fluxo de pedido de teste sem comunicação externa não autorizada.",
+              "observation": "",
+              "id": "1.14.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-006",
+                "GOP-008"
+              ]
+            },
+            {
+              "title": "Orçamento e ocultação de preços",
+              "status": "verificado",
+              "criterion": "Conferir modos salvos/públicos e restauração:carrinho ligado, orçamento desligado, preços visíveis; não enviar solicitação WhatsApp.",
+              "dependency": "",
+              "observation": "",
+              "id": "1.14.5",
+              "position": 5,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-012",
+                "GOP-013"
+              ]
+            },
+            {
+              "title": "Desconto PIX e parcelamento exibidos",
+              "status": "bloqueado",
+              "criterion": "Ler configuração inicial; testar uma condição PIX e uma de parcelas oferecidas, conferir apresentação pública e restaurar. Não conectar gateway ou efetuar pagamento.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.14.6",
+              "position": 6,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-014"
+              ]
+            },
+            {
+              "title": "Preço protegido por senha",
+              "status": "bloqueado",
+              "criterion": "Preparar configuração sem substituir credencial existente; após confirmação específica, testar senha incorreta/correta e restaurar visibilidade anterior.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Confirmação no ato para novo acesso ou transferência ao usuário se for troca de senha existente.",
+              "observation": "",
+              "id": "1.14.7",
+              "position": 7,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-013"
+              ]
+            },
+            {
+              "title": "Igualdade dos mínimos",
+              "status": "bloqueado",
+              "criterion": "No carrinho local107,25/2unidades, testar mínimo107,25 e mínimo2, conferir liberação na igualdade e restaurar os valores iniciais. Parar antes do pedido final.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Carrinho de avaliação com esses valores confirmado na sessão usada.",
+              "observation": "",
+              "id": "1.14.8",
+              "position": 8,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-011"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 2,
+            "divergencia_observada": 1,
+            "inconclusivo_documentado": 1,
+            "bloqueado": 4
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.15",
           "position": 15,
           "title": "Pedidos, status e estoque",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 4,
+          "children": [
+            {
+              "title": "Ciclo administrativo e estoque",
+              "status": "verificado",
+              "criterion": "Comprovar Aguardando/Preparando/Pago/Concluído/Cancelado no recorte, ciclo3→2→2→3, indicadores1/R$12,50→0/R$0 e estado final Cancelado.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.15.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-002",
+                "GOP-021",
+                "GOP-026",
+                "GOP-034",
+                "GOP-042"
+              ]
+            },
+            {
+              "title": "Repetição de status pela UI",
+              "status": "bloqueado",
+              "criterion": "No pedido fictício, repetir seleção do mesmo status e recarregar; comparar estoque antes/depois, depois restaurar Cancelado/estoque3. Descrever apenas comportamento da UI; não alegar idempotência de API.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.15.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-021"
+              ]
+            },
+            {
+              "title": "Notificações e envio de pedido",
+              "status": "bloqueado",
+              "criterion": "Validar envio apenas com destino de teste legítimo expressamente autorizado e verificar recebimento. Não usar contato do proprietário ou terceiros por conveniência.",
+              "dependency": "Destinatário/canal de teste autorizado; atualmente nenhum envio real foi autorizado.",
+              "observation": "",
+              "id": "1.15.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Concorrência e reserva de estoque",
+              "status": "bloqueado",
+              "criterion": "Em sandbox autorizado,duas sessões tentam a última unidade;registrar quantidades aceitas e estoque final. Não testar carga ou corrida em serviço terceiro sem ambiente apropriado.",
+              "dependency": "Sandbox/autorização do fornecedor e duas sessões legítimas. Não há ambiente fornecido.",
+              "observation": "",
+              "id": "1.15.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 3
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.16",
@@ -120,57 +851,645 @@
           "status": "bloqueada_por_autenticacao",
           "evidence": "research/competitors/gopage/operational-2026-10-25.md",
           "blocker": "Sessão em nuvem retornou login;cliente com credencial ainda não criado. Autorização de criação já recebida. Vendedor também depende de documento de teste legítimo.",
-          "next_action": "Confirmar login administrativo e verificar duplicidade antes de criar o cliente autorizado. Não repetir tentativa sem mudança verificável da pré-condição."
+          "next_action": "Confirmar login administrativo e verificar duplicidade antes de criar o cliente autorizado. Não repetir tentativa sem mudança verificável da pré-condição.",
+          "children_count": 6,
+          "children": [
+            {
+              "title": "Funcionário: acesso, restrições e remoção",
+              "status": "verificado",
+              "criterion": "Comprovar consulta/edição/restauração, restrições por navegação a Equipe/Assinatura, remoção autorizada e recusa de novo login. Não abrange sessão simultânea nem outro tenant.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.16.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-028"
+              ]
+            },
+            {
+              "title": "Cliente: criar acesso, login e saída",
+              "status": "bloqueado",
+              "criterion": "Verificar duplicidade;criar apenas o cliente fictício já autorizado;confirmar persistência, login, dados próprios e saída. Não mudar senha de cliente existente.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Criação já autorizada; autenticação na sessão de trabalho ainda não confirmada.",
+              "observation": "",
+              "id": "1.16.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-024"
+              ]
+            },
+            {
+              "title": "Cliente pendente, aprovação e recuperação",
+              "status": "bloqueado",
+              "criterion": "Obter um registro pendente por fluxo legítimo;validar a aprovação e recuperação usando caixa de teste acessível,sem enviar a pessoas reais. Não declarar aprovado um filtro vazio.",
+              "dependency": "Sessão administrativa,fluxo de cadastro permitido e email de teste acessível;eventuais termos/novos acessos exigem confirmação no ato.",
+              "observation": "",
+              "id": "1.16.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Vendedor e comissão",
+              "status": "bloqueado",
+              "criterion": "Com documento de teste legítimo e fornecido,criar vendedor,verificar comissão em um pedido fictício e papel observado. Registrar base e valor;sem cobrança.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Documento legítimo de teste. Não gerar CPF válido para contornar validação.",
+              "observation": "",
+              "id": "1.16.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-027"
+              ]
+            },
+            {
+              "title": "Revogação de sessão de funcionário já aberta",
+              "status": "bloqueado",
+              "criterion": "Com nova conta de teste autorizada,manter sessão aberta,remover acesso com confirmação no ato e tentar operação protegida na sessão antiga. Separar isso do novo login já recusado.",
+              "dependency": "Sessão administrativa;confirmação específica de criação/remoção;duas sessões documentadas. Não recriar conta removida sem preparar a ação.",
+              "observation": "",
+              "id": "1.16.5",
+              "position": 5,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-028"
+              ]
+            },
+            {
+              "title": "Isolamento entre lojas",
+              "status": "bloqueado",
+              "criterion": "Com duas lojas legítimas autorizadas,comparar acesso aos registros próprios e controles observáveis de troca de loja. Sem adivinhar IDs ou sondar APIs privadas.",
+              "dependency": "Duas lojas/contas de teste acessíveis e autorizadas;nenhuma segunda loja foi fornecida.",
+              "observation": "",
+              "id": "1.16.6",
+              "position": 6,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-028"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 5
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.17",
           "position": 17,
           "title": "QR, arte, banners e exportações",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 3,
+          "children": [
+            {
+              "title": "QR, PDF com capa, arte e banner",
+              "status": "verificado",
+              "criterion": "Comprovar QR decodificado, PDF com capa3páginas/10produtos renderizado, arte e banner inspecionados, upload/exibição390px e ocultação restaurada.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.17.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-019",
+                "GOP-020",
+                "GOP-029",
+                "GOP-036",
+                "GOP-037",
+                "GOP-046"
+              ]
+            },
+            {
+              "title": "PDF de todos os21produtos atuais",
+              "status": "bloqueado",
+              "criterion": "Gerar uma exportação Todas com os21registros atuais;conferir presença,preços e todas as páginas renderizadas. Não chamar21itens de teste de grande escala.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Download do arquivo no ambiente acessível.",
+              "observation": "",
+              "id": "1.17.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-036"
+              ]
+            },
+            {
+              "title": "Uma alternativa de modelo de arte e banner",
+              "status": "bloqueado",
+              "criterion": "Escolher um modelo visível diferente do já testado para cada gerador;exportar uma vez,conferir dimensões,preço e cortes. Registrar nome do modelo. Não homologar todos os modelos por amostra.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.17.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-020",
+                "GOP-037"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 2
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.18",
           "position": 18,
           "title": "CSV avançado e variantes",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 5,
+          "children": [
+            {
+              "title": "CSV avançado e fronteiras conhecidas",
+              "status": "verificado",
+              "criterion": "Comprovar simples/variável/externo, zero/negativo, nome250aceito/252rejeitado, descrição3000aceita/3001rejeitada e lote10 UTF8BOM com vírgula/acentos/multilinha.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.18.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-016",
+                "GOP-044",
+                "GOP-045"
+              ]
+            },
+            {
+              "title": "Encoding alternativo e recuperação",
+              "status": "bloqueado",
+              "criterion": "Usar uma única linha original ISO8859-1 com acentos e SKU isolado;observar importação/erro,então corrigir paraUTF8 sem reenvio cego. Registrar efeitos para evitar duplicação.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.18.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-044"
+              ]
+            },
+            {
+              "title": "Imagem acima do limite anunciado",
+              "status": "inconclusivo_documentado",
+              "criterion": "Preservar o teste5,89MB que gerou prévia sem salvar. Tamanho efetivamente enviado não observável;não inferir ausência de limite nem repetir o mesmo upload.",
+              "dependency": "",
+              "observation": "Nova execução somente se houver diagnóstico documentado que mostre tamanho efetivo/validação relevante.",
+              "id": "1.18.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Modelo CSV e eventual ID externo",
+              "status": "bloqueado",
+              "criterion": "Ler o modelo atual;testar ID externo apenas se houver coluna/controle documentado. Se não exposto,registrar não demonstrado no recorte,sem inventar campo nem concluir inexistência universal.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.18.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Escala e limite máximo",
+              "status": "bloqueado",
+              "criterion": "Executar limite/carga apenas em sandbox e com teto acordado com fornecedor. Conjunto21itens e lote10 não homologam escala nem volume ilimitado.",
+              "dependency": "Ambiente de capacidade/sandbox e limite de teste permitido pelo fornecedor. Não gerar volume massivo no trial.",
+              "observation": "",
+              "id": "1.18.5",
+              "position": 5,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 3,
+            "inconclusivo_documentado": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.19",
           "position": 19,
           "title": "Regras de recomendação e carrinho",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 3,
+          "children": [
+            {
+              "title": "Regras de recomendação e preços no carrinho",
+              "status": "verificado",
+              "criterion": "Comprovar teto de preço, fallback ligado/desligado, opção sem estoque, fórmula/ordem de margem e recálculo de preço100→90→100 no carrinho. Conferir também calculadora custo120/margem20%→preço150,conforme evidência anterior.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.19.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-030",
+                "GOP-031"
+              ]
+            },
+            {
+              "title": "Ranking por vendas e desempate",
+              "status": "bloqueado",
+              "criterion": "Com dois produtos fictícios,registrar quantidades distintas em pedidos administrativos de teste e observar ordem do fallback;cancelar e restaurar depois. Reportar o caso observado,não todo o algoritmo.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Sem comunicação automática real;quantidades/valores controlados e restauração verificável.",
+              "observation": "",
+              "id": "1.19.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-031"
+              ]
+            },
+            {
+              "title": "Nome antigo no carrinho",
+              "status": "divergencia_observada",
+              "criterion": "Preservar nome antigo e preço reconciliado100→90→100 observados no mesmo carrinho. Não confundir nova sessão com a sessão que contém esse carrinho.",
+              "dependency": "",
+              "observation": "Não repetir renomeação sem nova hipótese ou correção do fornecedor.",
+              "id": "1.19.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 1,
+            "divergencia_observada": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.20",
           "position": 20,
           "title": "Envio, integrações, domínio e métricas",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 9,
+          "children": [
+            {
+              "title": "Feed, metadados e superfícies de integração",
+              "status": "verificado",
+              "criterion": "Comprovar XML10→21itens e preços; separar telas/limites de plano inspecionados de contas externas não conectadas. Efeito SEO é caso separado.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.20.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-033"
+              ]
+            },
+            {
+              "title": "Envio: regra manual e uma cotação",
+              "status": "bloqueado",
+              "criterion": "Configurar uma regra manual e uma cotação entre endereços de teste legítimos;conferir efeito no checkout e restaurar. Não conectar serviços ou endereços pessoais sem autorização.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável. Endereço de origem/destino de teste válido e integração elegível.",
+              "observation": "",
+              "id": "1.20.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-015"
+              ]
+            },
+            {
+              "title": "Pagamento integrado em sandbox",
+              "status": "bloqueado",
+              "criterion": "Conectar somente conta sandbox expressamente fornecida e validar retorno de teste documentado. Não efetuar pagamento real ou assinar plano.",
+              "dependency": "Plano elegível e credenciais sandbox do gateway;não disponíveis.",
+              "observation": "",
+              "id": "1.20.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-010",
+                "GOP-033"
+              ]
+            },
+            {
+              "title": "Analytics e Tag Manager",
+              "status": "bloqueado",
+              "criterion": "Com propriedade de teste autorizada,configurar IDs e verificar um evento de página e um evento de produto no destino. Remover configuração de teste ao concluir.",
+              "dependency": "Propriedade/IDs de teste autorizados e acesso de leitura ao destino;não fornecidos.",
+              "observation": "",
+              "id": "1.20.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-033"
+              ]
+            },
+            {
+              "title": "Domínio próprio",
+              "status": "bloqueado",
+              "criterion": "Com domínio de teste autorizado,verificar validação,publicação e acessoHTTPS;registrar rollback. Não alterarDNS de domínio do usuário sem autorização específica.",
+              "dependency": "Domínio e acessoDNS expressamente autorizados;não fornecidos.",
+              "observation": "",
+              "id": "1.20.5",
+              "position": 5,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-033"
+              ]
+            },
+            {
+              "title": "Integração ERP",
+              "status": "bloqueado",
+              "criterion": "Escolher somente um conector realmente exposto e conta sandbox fornecida;sincronizar um produto fictício e verificar resultado. Sem explorar endpoints privados.",
+              "dependency": "Conector elegível,conta sandbox e autorização;não fornecidos.",
+              "observation": "",
+              "id": "1.20.6",
+              "position": 6,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-033"
+              ]
+            },
+            {
+              "title": "Intervalo anunciado de atualização do feed",
+              "status": "bloqueado",
+              "criterion": "Registrar instante de uma alteração isolada e da atualização do XML em observações delimitadas;comparar com anúncio de2h. Atualização10→21 não mede o intervalo.",
+              "dependency": "Sessão administrativa e observação temporal instrumentada;nenhum timestamp pareado existe para o teste anterior.",
+              "observation": "",
+              "id": "1.20.7",
+              "position": 7,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-033"
+              ]
+            },
+            {
+              "title": "Metadados SEO públicos",
+              "status": "divergencia_observada",
+              "criterion": "Registrar texto persistido no editor e não refletido no público,og:title duplicado e limpeza dos textos. Não declarar causa interna.",
+              "dependency": "",
+              "observation": "Nova tentativa só após mudança relevante de condição/documentação ou correção;registroSEO vazio permanece.",
+              "id": "1.20.8",
+              "position": 8,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-032"
+              ]
+            },
+            {
+              "title": "Estatísticas de lucro",
+              "status": "bloqueado",
+              "criterion": "Com um produto de custo conhecido e um pedido fictício,conferir receita,custo e lucro exibidos;cancelar e restaurar. Não extrapolar margem do editor ao painel estatístico.",
+              "dependency": "Sessão administrativa Gopage confirmada. A última verificação retornou login; não repetir sem mudança verificável.",
+              "observation": "",
+              "id": "1.20.9",
+              "position": 9,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": [
+                "GOP-034"
+              ]
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "bloqueado": 7,
+            "divergencia_observada": 1
+          },
+          "closure_readiness": "pendencias_explicitas"
         },
         {
           "id": "1.21",
           "position": 21,
           "title": "Responsividade, acessibilidade e revisão final",
-          "status": "parcial",
-          "evidence": "research/competitors/gopage/operational-2026-10-25.md"
+          "status": "parcial_com_bloqueios",
+          "evidence": "research/competitors/gopage/operational-2026-10-25.md",
+          "children_count": 5,
+          "children": [
+            {
+              "title": "Amostras de UX e filtros públicos",
+              "status": "verificado",
+              "criterion": "Comprovar medições registradas, overflow admin/PDF, descrição3000sem overflow390px, foco/Escape do filtro, contraste amostral21:1 e filtros de atributo/preço. Não equivale a aprovação WCAG.",
+              "dependency": "",
+              "observation": "Evidência anterior reaproveitada; nenhum teste novo foi alegado nesta formalização.",
+              "id": "1.21.1",
+              "position": 1,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Jornada pública contínua por teclado",
+              "status": "divergencia_observada",
+              "criterion": "Partir da raiz:buscar produto,filtrar,abrir detalhe,selecionar variante,adicionar ao carrinho e retornar,registrando foco/nomes/avisos. Não enviar pedido. Remoção de item apenas com recuperação confiável ou confirmação no ato.",
+              "dependency": "",
+              "observation": "Raiz→buscaMatriz→Azul porTab/Enter→detalhe→Verde/M porEnd/Tab→adicionar porTab/Enter→carrinho13→remover→raiz. Carrinho inicial/final vazio nesta sessão em nuvem. Busca e adição deixaram foco noBODY;abertura de produto/carrinho usou locator.press,que foca o controle. Portanto houve acionamentos por teclado e trechos naturais deTab,mas não foi comprovada continuidade integral sem recuperação de foco. Remover gerou confirm nativo;aceito uma vez,sem repetir a tecla. Nenhum pedido final ou mensagem enviado.",
+              "id": "1.21.2",
+              "position": 2,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": "2026-10-27",
+              "execution_date": "2026-10-27",
+              "capability_refs": []
+            },
+            {
+              "title": "axe-core e Lighthouse",
+              "status": "bloqueado",
+              "criterion": "Com ferramenta permitida e documentada,auditar raiz e detalhe público;salvar versão,configuração e resultados reais. Zero métricas se não executar.",
+              "dependency": "Superfície de auditoria compatível disponível. Não injetar scripts ou usar outro controlador como desvio da política do navegador.",
+              "observation": "",
+              "id": "1.21.3",
+              "position": 3,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Leitor de tela",
+              "status": "bloqueado",
+              "criterion": "Em leitor de tela disponível,percorrer busca,categorias,produto,variante e carrinho;registrar anúncios e foco. Simulação por agente não é pesquisa humana.",
+              "dependency": "Leitor de tela e superfície de interação compatíveis;não disponíveis no controle atual.",
+              "observation": "",
+              "id": "1.21.4",
+              "position": 4,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            },
+            {
+              "title": "Rede lenta,preferências de movimento e tema",
+              "status": "bloqueado",
+              "criterion": "Com emulação documentada,testar uma conexão lenta e cada preferência;registrar o ambiente. Não confundir preset de cor com tema de sistema.",
+              "dependency": "Capacidades ambientais documentadas de emulação;não expostas na superfície atual.",
+              "observation": "",
+              "id": "1.21.5",
+              "position": 5,
+              "source": "research/competitors/gopage/operational-2026-10-25.md",
+              "evidence_reviewed_on": null,
+              "execution_date": null,
+              "capability_refs": []
+            }
+          ],
+          "closure_criterion": "Todos os casos deste recorte têm evidência e disposição final; casos bloqueados não contam como aprovação nem são removidos automaticamente.",
+          "case_status_summary": {
+            "verificado": 1,
+            "divergencia_observada": 1,
+            "bloqueado": 3
+          },
+          "closure_readiness": "pendencias_explicitas"
         }
       ],
-      "status": "em_execucao_com_bloqueio",
+      "status": "em_execucao_com_bloqueios",
       "current_child": "1.16",
-      "review_summary": "27/10:1.16 está bloqueada por autenticação administrativa não confirmada;criação de cliente já autorizada. Testes públicos posteriores pertencem a1.21,que permanece parcial. Nenhum terceiro nível de tarefas foi formalizado.",
+      "review_summary": "Plano finito:71casos;34com resultado registrado,37bloqueados. Três casos independentes executados nesta rodada. Seis filhos encerrados no recorte documentalmente revisto,não por paridade integral. Nenhuma tentativa de login repetida;próximo1.16.2depende de sessão administrativa confirmada.",
       "review_document": "research/competitors/gopage/fechamento-da-rodada.md",
       "blocking_children": [
-        "1.16"
+        "1.1",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.14",
+        "1.15",
+        "1.16",
+        "1.17",
+        "1.18",
+        "1.19",
+        "1.20",
+        "1.21"
       ],
-      "parallel_review_child": "1.21",
       "children_status_summary": {
-        "parcial": 19,
+        "parcial_com_bloqueios": 14,
+        "encerrada_no_recorte_com_ressalvas": 1,
+        "encerrada_no_recorte": 4,
         "concluida_revisao_documental": 1,
         "bloqueada_por_autenticacao": 1
-      }
+      },
+      "case_count": 71,
+      "case_status_summary": {
+        "verificado": 26,
+        "bloqueado": 37,
+        "divergencia_observada": 5,
+        "concluido_documental": 1,
+        "inconclusivo_documentado": 2
+      },
+      "next_executable_case": null,
+      "blocked_cases": [
+        "1.1.2",
+        "1.3.2",
+        "1.4.3",
+        "1.5.2",
+        "1.10.2",
+        "1.11.2",
+        "1.11.3",
+        "1.12.2",
+        "1.12.4",
+        "1.14.4",
+        "1.14.6",
+        "1.14.7",
+        "1.14.8",
+        "1.15.2",
+        "1.15.3",
+        "1.15.4",
+        "1.16.2",
+        "1.16.3",
+        "1.16.4",
+        "1.16.5",
+        "1.16.6",
+        "1.17.2",
+        "1.17.3",
+        "1.18.2",
+        "1.18.4",
+        "1.18.5",
+        "1.19.2",
+        "1.20.2",
+        "1.20.3",
+        "1.20.4",
+        "1.20.5",
+        "1.20.6",
+        "1.20.7",
+        "1.20.9",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5"
+      ],
+      "ready_cases": [],
+      "closure_plan": "docs/superpowers/plans/2026-10-27-gopage-fechamento.md",
+      "next_blocked_case": "1.16.2",
+      "closed_in_scope_children": [
+        "1.2",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.13"
+      ],
+      "closure_history_note": "Reclassificação documental de evidências já existentes não é teste novo. Encerrada_no_recorte não significa funcionalidade universalmente homologada ou implementada no VitraLibre."
     },
     {
       "id": "2",
@@ -515,5 +1834,5 @@
       "children": null
     }
   ],
-  "display_rule": "Mostrar identificador estável, posição entre irmãos e status separadamente. Exemplo:Tarefa1/58 Gopage;subtarefa1.16 (16/21),bloqueada. 1.16 e1.21 são irmãs,nunca níveis aninhados. Não apresentar posição como conclusão."
+  "display_rule": "Tarefa1/58 Gopage;subtarefa1.11 (11/21,4casos);caso1.11.4 (4/4),estado separado. Nunca combinar posições de subtarefas irmãs como níveis."
 }
