@@ -68,6 +68,50 @@ duas medidas e unidade explícita (mm, cm ou m), como
 `Crie um cômodo de 4 x 5 metros`. Não existe execução de comandos livres:
 nenhuma frase é repassada diretamente ao MCP.
 
+## Planejamento com IA (opcional e desativado por padrão)
+
+Além do interpretador local gratuito, a extensão suporta um **planejador
+generativo** usando a [OpenAI Responses API](https://platform.openai.com/docs/guides/structured-outputs).
+Ele é **opcional**, não utiliza automaticamente a assinatura do ChatGPT
+e pode gerar custos de API. Não configure credenciais para manter o modo
+inteiramente gratuito.
+
+Para habilitar no **ambiente do processo**, configure as variáveis:
+
+- `OPENAI_API_KEY`: chave criada pelo proprietário no serviço de API,
+  mantida no backend e **nunca** adicionada ao repositório, HTML ou frontend.
+- `CADCRAFT_AI_MODEL`: identificador de um modelo da conta que aceite
+  Structured Outputs no Responses API.
+
+Recomenda-se utilizar o gerenciador de segredos do ambiente. Reinicie o servidor
+após configurar as variáveis. A rota de saúde ativa o botão
+**Planejar com IA (opcional)** apenas se ambas estiverem presentes.
+
+**Fluxo:** o usuário digita o pedido → clica em Planejar com IA →
+o servidor consulta o modelo com schema JSON estrito →
+valida os campos e os limites de 1 a 10.000 mm →
+preenche largura/altura → **aguarda o usuário clicar em Gerar** →
+executa o fluxo MCP determinístico já homologado. A resposta do modelo
+**nunca** é enviada como comando livre ao CADCraft.
+
+Controles adicionais:
+
+- Somente solicitações de retângulos, com duas medidas numéricas e unidade
+  explícita, até 280 caracteres.
+- O modelo não recebe arquivos, catálogos, dados de produtos ou credenciais.
+- Endpoint externo fixo, `store:false`, timeout de 12 segundos e máximo
+  de 400 tokens de saída. A política de retenção do provedor deve ser
+  avaliada separadamente; `store:false` não significa zero retenção.
+- **No máximo seis consultas ao modelo por hora**, por processo do servidor;
+  falhas também podem contar, e reiniciar o serviço reinicia a contagem.
+  Esse limite não substitui controles de gasto e cotas na conta da API.
+- Limites de medidas, lista de ferramentas e política de arquivos continuam
+  validados pelo backend, independentemente do modelo.
+- Sem chamadas de IA durante testes e em uso sem configuração.
+- Testes automatizados simulam o provedor. **Não foi homologada nesta
+  execução uma requisição cobrada a um modelo de produção**, pois não há
+  credenciais de API fornecidas para essa finalidade.
+
 ## Limites e segurança
 
 - Uso **local, mono-usuário e experimental**. Não expor a porta na internet,
@@ -78,10 +122,9 @@ nenhuma frase é repassada diretamente ao MCP.
 - Sem comandos arbitrários, uploads, DWG ou operações sobre arquivos do
   usuário. A origem não pode pedir um caminho arbitrário ao MCP.
 - Os diretórios temporários são removidos ao terminar, inclusive após erro.
-- Sem modelo de linguagem generativo: **MCP é um protocolo de ferramentas, não uma IA**.
-  A interpretação atual é limitada a medidas retangulares e validada antes
-  de executar CAD. Um futuro LLM precisa de chave e orçamento explícitos,
-  ações em lista permitida e testes contra prompt injection.
+- O modelo generativo, quando configurado, **apenas propõe medidas**. A execução
+  continua determinística; sem configuração, nenhuma consulta a IA é feita.
+  MCP é um protocolo de ferramentas, não um modelo de linguagem.
 - Não foi estabelecido que todo desenho exportado será interoperável com o
   AutoCAD. O CADCraft é um projeto em desenvolvimento inicial.
 - Os testes automatizados desta extensão usam um servidor MCP simulado para
@@ -117,8 +160,8 @@ Homologação visual/manual pendente:
 | B — CLI + MCP em serviço local | **Escolhida para a prova de conceito.** Menor mudança no VitraLibre e permite verificar um fluxo CAD real em máquina compatível. |
 | C — Híbrida | Faz sentido apenas se um módulo CAD permanente tiver demanda e infraestrutura operacional justificadas. |
 
-Próxima etapa, somente mediante necessidade comprovada: armazenar anexos DXF
-com esquema versionado, incluir agente generativo com credenciais e limites
-de custo opcionais, validar no navegador real e desenvolver serviço
-multiusuário seguro. Não converter o catálogo estático
+Próximas etapas, mediante necessidade comprovada: homologar o modelo com
+credenciais próprias sob cota reduzida, armazenar anexos DXF em esquema
+versionado, validar o fluxo no navegador real e desenvolver serviço
+multiusuário seguro. O planejador não equivale a um agente CAD geral. Não converter o catálogo estático
 em aplicação dependente de backend.
