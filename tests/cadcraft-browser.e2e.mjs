@@ -45,6 +45,9 @@ test('Chromium real: gerar PNG via CADCraft e aplicar ao produto no VitraLibre',
     await generator.locator('#interpret').click();
     assert.equal(await generator.locator('#width').inputValue(), '600');
     assert.equal(await generator.locator('#height').inputValue(), '400');
+    await generator.locator('#vertical-dividers').fill('2');
+    await generator.locator('#horizontal-dividers').fill('1');
+    await generator.locator('#grid-summary').getByText(/6 compartimentos/).waitFor();
     await generator.locator('#generate').click();
     await generator.locator('#result').waitFor({ state: 'visible', timeout: 30000 });
     const preview = generator.locator('#preview');
