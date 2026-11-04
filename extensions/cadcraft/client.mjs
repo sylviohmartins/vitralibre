@@ -37,7 +37,7 @@ function updateGridSummary() {
   }
   const eachWidth = width / (vertical + 1);
   const eachHeight = height / (horizontal + 1);
-  if (eachWidth < 25 || eachHeight < 25) {
+  if ((vertical > 0 && eachWidth < 25) || (horizontal > 0 && eachHeight < 25)) {
     gridSummary.textContent = 'Cada compartimento precisa medir pelo menos 25 mm em cada dimensão.';
     return;
   }
