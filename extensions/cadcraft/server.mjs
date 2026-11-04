@@ -1,4 +1,4 @@
-import { planSketchWithAI, AiPlanError } from './agent.mjs';
+import { planSketchWithAI, validatePlanInstruction, AiPlanError } from './agent.mjs';
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
@@ -173,6 +173,9 @@ export function createCadcraftServer({
 } = {}) {
   let busy = false;
   let planning = false;
+  let aiWindowStart = Date.now();
+  let aiCallsInWindow = 0;
+  const AI_CALLS_PER_HOUR = 6;
   return createServer(async (req, res) => {
     const host = req.headers.host ?? '';
     const address = req.socket.localAddress;
@@ -245,10 +248,21 @@ export function createCadcraftServer({
             Object.keys(requestBody).join(',') !== 'instruction') {
           return respondJson(res, 400, { error: 'Informe somente o campo instruction.' });
         }
+        const instruction = validatePlanInstruction(requestBody.instruction);
+        const now = Date.now();
+        if (now - aiWindowStart >= 60 * 60 * 1000) {
+          aiWindowStart = now;
+          aiCallsInWindow = 0;
+        }
+        if (aiCallsInWindow >= AI_CALLS_PER_HOUR)
+          return respondJson(res, 429, { error: 'Limite local de 6 planejamentos por hora atingido. Utilize o modo gratuito.' });
         planning = true;
+        aiCallsInWindow++;
         try {
-          const proposal = await plan(requestBody.instruction);
-          const sketch = normalizeSketch(proposal);
+          const proposal = await plan(instruction);
+          let sketch;
+          try { sketch = normalizeSketch(proposal); }
+          catch { throw new AiPlanError('A IA propôs medidas incompatíveis com o CADCraft.', 422); }
           return respondJson(res, 200, {
             shape: 'rectangle',
             widthMm: sketch.widthMm,
