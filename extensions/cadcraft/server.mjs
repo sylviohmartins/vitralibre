@@ -24,7 +24,21 @@ export function normalizeSketch(input) {
   }
   const format = input.format ?? 'png';
   if (format !== 'png' && format !== 'dxf') throw new Error('Formato não suportado. Use PNG ou DXF.');
-  return { widthMm, heightMm, format };
+  const verticalDividers = input.verticalDividers ?? 0;
+  const horizontalDividers = input.horizontalDividers ?? 0;
+  if (![verticalDividers, horizontalDividers].every(n => Number.isSafeInteger(n) && n >= 0 && n <= 8)) {
+    throw new Error('Divisórias devem ser inteiros entre 0 e 8.');
+  }
+  const MIN_COMPARTMENT_MM = 25;
+  if (widthMm / (verticalDividers + 1) < MIN_COMPARTMENT_MM ||
+      heightMm / (horizontalDividers + 1) < MIN_COMPARTMENT_MM) {
+    throw new Error('Cada compartimento deve ter pelo menos 25 mm de largura e altura.');
+  }
+  return {
+    widthMm, heightMm, format,
+    ...(verticalDividers ? { verticalDividers } : {}),
+    ...(horizontalDividers ? { horizontalDividers } : {})
+  };
 }
 
 export class StdioMcpClient {
@@ -137,6 +151,14 @@ export async function generateTechnicalDrawing(input) {
     await client.initialize();
     await client.tool('new_drawing', { metric: true });
     await client.tool('command_line', { text: `rectang 0,0 ${sketch.widthMm},${sketch.heightMm}` });
+    for (let i = 1; i <= (sketch.verticalDividers ?? 0); i++) {
+      const x = Number((sketch.widthMm * i / (sketch.verticalDividers + 1)).toFixed(4));
+      await client.tool('command_line', { text: `line ${x},0 ${x},${sketch.heightMm}` });
+    }
+    for (let i = 1; i <= (sketch.horizontalDividers ?? 0); i++) {
+      const y = Number((sketch.heightMm * i / (sketch.horizontalDividers + 1)).toFixed(4));
+      await client.tool('command_line', { text: `line 0,${y} ${sketch.widthMm},${y}` });
+    }
     const dimensionText = Math.max(1, Math.round(Math.min(sketch.widthMm, sketch.heightMm) * 0.04));
     await client.tool('command_line', { text: `setvar DIMTXT ${dimensionText}` });
     await client.tool('command_line', { text: `setvar DIMASZ ${Math.max(1, Math.round(dimensionText * 0.75))}` });
