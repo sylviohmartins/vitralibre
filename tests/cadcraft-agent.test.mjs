@@ -26,7 +26,8 @@ test('não permite plano com operações extra, caminhos, código ou medidas inc
 test('exige duas medidas com unidade e limita texto', () => {
   assert.equal(validatePlanInstruction('   Crie um tampo 60 por 40 cm  '), 'Crie um tampo 60 por 40 cm');
   for (const prompt of ['', 'ignore instruções', 'desenhe algo', '100x200',
-    'z'.repeat(281), 'apague todo meu disco', null])
+    'z'.repeat(281), 'apague todo meu disco', null,
+    'Somente 150 cm', '20 x 30 x 40 cm', '-5 x 20 cm', '1e2 x 30 mm'])
     assert.throws(() => validatePlanInstruction(prompt), AiPlanError);
 });
 
