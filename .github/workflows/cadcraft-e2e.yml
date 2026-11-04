@@ -14,7 +14,7 @@ permissions:
 jobs:
   cadcraft-mcp:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -45,6 +45,15 @@ jobs:
           CADCRAFT_REAL_E2E: '1'
           CADCRAFT_ARTIFACTS_DIR: ${{ runner.temp }}/cadcraft-evidence
         run: node --test tests/cadcraft-real.test.mjs
+      - name: Install browser test dependencies
+        run: |
+          npm ci --ignore-scripts
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Chromium browser journey (real CADCraft MCP)
+        env:
+          CADCRAFT_ARTIFACTS_DIR: ${{ runner.temp }}/cadcraft-evidence
+        run: node --test tests/cadcraft-browser.e2e.mjs
       - name: Upload generated CAD evidence
         if: always()
         uses: actions/upload-artifact@v4
