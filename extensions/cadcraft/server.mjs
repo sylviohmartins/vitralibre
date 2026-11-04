@@ -3,7 +3,7 @@ import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
 import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { join, resolve } from 'node:path';
+import { join, resolve, sep, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const MAX_BODY = 2048;
@@ -11,6 +11,7 @@ const MAX_OUTPUT = 6 * 1024 * 1024;
 const PORT = Number(process.env.CADCRAFT_PORT || 8765);
 const SELF = fileURLToPath(import.meta.url);
 const ROOT = new URL('./', import.meta.url);
+const DIST_ROOT = resolve(fileURLToPath(new URL('../../dist/', import.meta.url)));
 const PNG_MAGIC = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 
 export function normalizeSketch(input) {
@@ -153,7 +154,7 @@ function respondJson(res, status, body) {
   res.end(JSON.stringify(body));
 }
 
-export function createCadcraftServer({ generate = generateTechnicalDrawing } = {}) {
+export function createCadcraftServer({ generate = generateTechnicalDrawing, staticDir = DIST_ROOT } = {}) {
   let busy = false;
   return createServer(async (req, res) => {
     const host = req.headers.host ?? '';
@@ -167,7 +168,25 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing } = {
     res.setHeader('x-frame-options', 'DENY');
     const route = new URL(req.url ?? '/', 'http://' + host).pathname;
     if (req.method === 'GET' && route === '/') {
-      res.writeHead(302, { location: '/cadcraft/' }); return res.end();
+      res.writeHead(302, { location: '/editor/' }); return res.end();
+    }
+    if (req.method === 'GET' &&
+        (route === '/editor/' || /^\\/editor\\/(?:src|assets|vendor)\\/[A-Za-z0-9._/-]+$/.test(route))) {
+      const local = route === '/editor/' ? 'index.html' : route.slice('/editor/'.length);
+      const root = resolve(staticDir);
+      const target = resolve(root, local);
+      if (!target.startsWith(root + sep)) return respondJson(res, 403, { error: 'Caminho inválido.' });
+      const types = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css',
+        '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.jpg': 'image/jpeg' };
+      try {
+        const bytes = await readFile(target);
+        res.setHeader('content-security-policy', "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: http:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-src 'self' blob:; form-action 'self'");
+        res.setHeader('x-content-type-options', 'nosniff');
+        res.setHeader('content-type', (types[extname(target)] || 'application/octet-stream') + '; charset=utf-8');
+        return res.end(bytes);
+      } catch {
+        return respondJson(res, 404, { error: 'Arquivo estático não encontrado. Execute npm run build antes de iniciar a extensão.' });
+      }
     }
     if (req.method === 'GET' && route === '/cadcraft/') {
       res.setHeader('content-security-policy', "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'");
