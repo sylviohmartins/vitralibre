@@ -107,7 +107,7 @@ test('Chromium real: plano gerativo opcional exige aprovação antes de executar
     await page.locator('#width').fill('11');
     await page.locator('#height').fill('12');
     await planButton.click();
-    await page.getByRole('status').getByText(/Nenhum desenho foi executado/).waitFor();
+    await page.waitForFunction(() => document.getElementById('status')?.textContent?.includes('Nenhum desenho foi executado'));
     assert.equal(await page.locator('#width').inputValue(), '600');
     assert.equal(await page.locator('#height').inputValue(), '400');
     assert.equal(planCalls, 1);
