@@ -154,10 +154,12 @@ export async function generateTechnicalDrawing(input) {
     for (let i = 1; i <= (sketch.verticalDividers ?? 0); i++) {
       const x = Number((sketch.widthMm * i / (sketch.verticalDividers + 1)).toFixed(4));
       await client.tool('command_line', { text: `line ${x},0 ${x},${sketch.heightMm}` });
+      await client.tool('command_line', { text: '' });
     }
     for (let i = 1; i <= (sketch.horizontalDividers ?? 0); i++) {
       const y = Number((sketch.heightMm * i / (sketch.horizontalDividers + 1)).toFixed(4));
       await client.tool('command_line', { text: `line 0,${y} ${sketch.widthMm},${y}` });
+      await client.tool('command_line', { text: '' });
     }
     const dimensionText = Math.max(1, Math.round(Math.min(sketch.widthMm, sketch.heightMm) * 0.04));
     await client.tool('command_line', { text: `setvar DIMTXT ${dimensionText}` });
