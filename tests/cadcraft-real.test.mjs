@@ -17,4 +17,7 @@ test('E2E: CADCraft real gera PNG e DXF via MCP', {
   assert.equal(dxf.contentType, 'application/dxf');
   assert.match(dxf.bytes.toString('utf8'), /SECTION/);
   assert.match(dxf.bytes.toString('utf8'), /ENTITIES/);
+  const entitiesText = dxf.bytes.toString('utf8');
+  const dimensions = entitiesText.match(/\r?\nDIMENSION\r?\n/g) ?? [];
+  assert.ok(dimensions.length >= 2, 'Largura e altura devem ter cotas no DXF exportado');
 });
