@@ -32,7 +32,7 @@ jobs:
           grep -F "  $file" SHA256SUMS.txt | sha256sum --check
           mkdir -p "$RUNNER_TEMP/cadcraft"
           tar -xzf "$file" -C "$RUNNER_TEMP/cadcraft"
-          binary="$(find "$RUNNER_TEMP/cadcraft" -type f -name cadcraft-cli -print -quit)"
+          binary="$(find "$RUNNER_TEMP/cadcraft" -type f -path "*/bin/cadcraft-cli" -print -quit)"
           if [[ -z "$binary" ]]; then
             echo "::error::Release archive does not include cadcraft-cli"
             exit 1
