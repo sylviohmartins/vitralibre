@@ -73,3 +73,50 @@ test('Chromium real: gerar PNG via CADCraft e aplicar ao produto no VitraLibre',
     await new Promise(resolve => server.close(resolve));
   }
 });
+
+test('Chromium real: plano gerativo opcional exige aprovação antes de executar MCP', {
+  timeout: 90000
+}, async () => {
+  let planCalls = 0;
+  let generateCalls = 0;
+  const server = createCadcraftServer({
+    aiEnabled: true,
+    plan: async instruction => {
+      planCalls++;
+      assert.equal(instruction, 'Crie uma placa de 60 x 40 cm');
+      return { shape: 'rectangle', widthMm: 600, heightMm: 400 };
+    },
+    generate: async sketch => {
+      generateCalls++;
+      assert.deepEqual(sketch, { widthMm: 600, heightMm: 400, format: 'png' });
+      return { bytes: Buffer.from([137, 80, 78, 71, 13, 10, 26, 10, ...Array(32).fill(0)]),
+        contentType: 'image/png' };
+    }
+  });
+  server.listen(0, '127.0.0.1');
+  await once(server, 'listening');
+  const base = 'http://127.0.0.1:' + server.address().port;
+  let browser;
+  try {
+    browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+    const page = await browser.newPage();
+    await page.goto(base + '/cadcraft/', { waitUntil: 'networkidle' });
+    const planButton = page.locator('#plan-ai');
+    await planButton.waitFor({ state: 'visible' });
+    await page.locator('#instruction').fill('Crie uma placa de 60 x 40 cm');
+    await page.locator('#width').fill('11');
+    await page.locator('#height').fill('12');
+    await planButton.click();
+    await page.getByRole('status').getByText(/Nenhum desenho foi executado/).waitFor();
+    assert.equal(await page.locator('#width').inputValue(), '600');
+    assert.equal(await page.locator('#height').inputValue(), '400');
+    assert.equal(planCalls, 1);
+    assert.equal(generateCalls, 0);
+    await page.locator('#generate').click();
+    await page.locator('#result').waitFor({ state: 'visible' });
+    assert.equal(generateCalls, 1);
+  } finally {
+    await browser?.close();
+    await new Promise(resolve => server.close(resolve));
+  }
+});
