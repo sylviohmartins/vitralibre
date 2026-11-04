@@ -170,8 +170,8 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing, stat
     if (req.method === 'GET' && route === '/') {
       res.writeHead(302, { location: '/editor/' }); return res.end();
     }
-    if (req.method === 'GET' &&
-        (route === '/editor/' || new RegExp('^/editor/(?:src|assets|vendor)/[A-Za-z0-9._/-]+
+    const staticAsset = ['/editor/src/', '/editor/assets/', '/editor/vendor/'].some(prefix => route.startsWith(prefix));
+    if (req.method === 'GET' && (route === '/editor/' || staticAsset)) {
       const local = route === '/editor/' ? 'index.html' : route.slice('/editor/'.length);
       const root = resolve(staticDir);
       const target = resolve(root, local);
