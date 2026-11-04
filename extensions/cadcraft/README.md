@@ -40,6 +40,29 @@ inspeciona a assinatura do arquivo exportado e destrói o diretório
 temporário. Os comandos recebem apenas números validados e caminhos
 gerados pelo próprio servidor.
 
+### Desenhos de organizadores e divisórias
+
+A extensão agora oferece **divisórias verticais e horizontais igualmente espaçadas**,
+de 0 a 8 em cada direção. O contorno segue sendo um retângulo simples, com as
+cotas externas em milímetros. Uma grade com 2 divisórias verticais e 1 horizontal
+cria 6 compartimentos nominais.
+
+Exemplo: uma placa de 600 × 400 mm, com 2 divisórias verticais e 1 horizontal,
+produz intervalos nominais de 200 × 200 mm e três entidades LINE adicionais
+no espaço de desenho DXF. As dimensões são **nominais** e **não consideram
+espessura das paredes/divisórias, folgas de montagem, tolerâncias, encaixes,
+uniões ou fabricação**. Não utilizar como plano de corte sem revisão técnica.
+
+O backend valida o número de divisórias (0–8), exige inteiros e impede
+compartimentos inferiores a 25 mm no eixo subdividido. Um retângulo puro
+continua válido nas medidas anteriores. Os comandos LINE são sempre
+construídos a partir de números validados e executados em uma sessão MCP
+descartável. Não existe entrada para comandos arbitrários.
+
+A interpretação gratuita e o planejador generativo continuam extraindo
+apenas as **dimensões externas**. O número de divisórias é escolhido por
+controles específicos e **não é inferido pela IA**.
+
 ### Vincular a imagem ao produto
 
 1. Em `/editor/`, abra ou crie um produto de **loja**.
@@ -150,6 +173,8 @@ homologação humana de UX e compatibilidade geométrica ampla.
 **Execuções CI de referência:**
 - [Verificação geral](https://github.com/sylviohmartins/vitralibre/actions/runs/41774420957)
 - [CADCraft real + Chromium](https://github.com/sylviohmartins/vitralibre/actions/runs/41774420975)
+
+O workflow também executa um desenho parametrizado com divisórias e confere as três entidades LINE no espaço de desenho, excluindo os blocos gráficos de cotas.
 
 Validações manuais adicionais pendentes:
 1. Criar retângulo 600 × 400 mm e baixar PNG.
