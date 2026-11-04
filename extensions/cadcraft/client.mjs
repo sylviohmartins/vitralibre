@@ -10,6 +10,11 @@ const apply = document.getElementById('apply');
 const applyHint = document.getElementById('apply-hint');
 const instruction = document.getElementById('instruction');
 const interpret = document.getElementById('interpret');
+const planButton = document.getElementById('plan-ai');
+fetch('/api/cadcraft/health', { cache: 'no-store' })
+  .then(response => response.ok ? response.json() : null)
+  .then(info => { planButton.hidden = info?.aiPlannerEnabled !== true; })
+  .catch(() => { planButton.hidden = true; });
 const token = new URLSearchParams(location.search).get('import');
 const canImport = /^[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}$/i.test(token ?? '') &&
   typeof BroadcastChannel === 'function';
@@ -25,6 +30,33 @@ interpret.addEventListener('click', () => {
     status.textContent = 'Medidas interpretadas: ' + measures.widthMm + ' × ' + measures.heightMm + ' mm. Confira e clique em Gerar.';
   } catch (error) {
     status.textContent = error instanceof Error ? error.message : 'Não foi possível interpretar as medidas.';
+  }
+});
+
+planButton.addEventListener('click', async () => {
+  if (planButton.hidden) return;
+  planButton.disabled = true;
+  status.textContent = 'Consultando IA para planejar o retângulo…';
+  try {
+    const response = await fetch('/api/cadcraft/plan', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-VitraLibre-CAD': '1' },
+      body: JSON.stringify({ instruction: instruction.value }),
+      cache: 'no-store'
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(payload.error || 'Não foi possível planejar o desenho.');
+    if (payload.shape !== 'rectangle' || payload.requiresConfirmation !== true ||
+        ![payload.widthMm, payload.heightMm].every(n => Number.isSafeInteger(n) && n >= 1 && n <= 10000))
+      throw new Error('Plano retornado fora das restrições do desenho.');
+    form.elements.namedItem('widthMm').value = String(payload.widthMm);
+    form.elements.namedItem('heightMm').value = String(payload.heightMm);
+    status.textContent = 'Plano proposto pela IA: ' + payload.widthMm + ' × ' + payload.heightMm +
+      ' mm. Confira as medidas. Nenhum desenho foi executado; clique em Gerar para confirmar.';
+  } catch (error) {
+    status.textContent = error instanceof Error ? error.message : 'Erro ao consultar IA.';
+  } finally {
+    planButton.disabled = false;
   }
 });
 
