@@ -36,8 +36,10 @@ export function validatePlanInstruction(instruction) {
   if (typeof instruction !== 'string' || !instruction.trim() || instruction.length > MAX_INSTRUCTION)
     throw new AiPlanError('Descreva um desenho retangular em até 280 caracteres.');
   const text = instruction.trim();
-  if (!/\d/.test(text) || !/\b(?:mm|cm|m|mil[ií]metros?|cent[ií]metros?|metros?)\b/i.test(text))
-    throw new AiPlanError('Informe duas medidas numéricas e uma unidade (mm, cm ou m).');
+  const measures = text.match(/\d+(?:[.,]\d+)?/g) ?? [];
+  if (measures.length !== 2 || /-\s*\d/.test(text) ||
+      !/\b(?:mm|cm|m|mil[ií]metros?|cent[ií]metros?|metros?)\b/i.test(text))
+    throw new AiPlanError('Informe exatamente duas medidas numéricas não negativas e uma unidade (mm, cm ou m).');
   return text;
 }
 
