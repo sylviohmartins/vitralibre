@@ -3,7 +3,7 @@ import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
 import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const MAX_BODY = 2048;
@@ -15,8 +15,8 @@ const PNG_MAGIC = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 
 export function normalizeSketch(input) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new Error('Informe as medidas do produto.');
-  const widthMm = Number(input.widthMm);
-  const heightMm = Number(input.heightMm);
+  const widthMm = input.widthMm;
+  const heightMm = input.heightMm;
   if (![widthMm, heightMm].every(n => Number.isSafeInteger(n) && n >= 1 && n <= 10000)) {
     throw new Error('Largura e altura devem ser números inteiros entre 1 e 10.000 mm.');
   }
@@ -215,7 +215,7 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing } = {
   });
 }
 
-if (process.argv[1] && fileURLToPath(new URL('file://' + process.argv[1])) === SELF) {
+if (process.argv[1] && resolve(process.argv[1]) === SELF) {
   if (!Number.isInteger(PORT) || PORT < 1024 || PORT > 65535) throw new Error('CADCRAFT_PORT inválida.');
   createCadcraftServer().listen(PORT, '127.0.0.1', () => {
     console.log(`Extensão CADCraft local: http://127.0.0.1:${PORT}/cadcraft/`);
