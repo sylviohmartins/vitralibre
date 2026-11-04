@@ -18,7 +18,7 @@ p{line-height:1.6;color:#4f655b}
 label{font-weight:650;font-size:.9rem}
 input,select{display:block;margin-top:9px;width:100%;font:inherit;padding:13px 11px;border:1px solid #b9cbc0;border-radius:10px;background:white;color:inherit}
 button{font:inherit;border:0;border-radius:12px;background:#24654b;color:white;padding:14px 22px;cursor:pointer;font-weight:750;margin-top:22px}
-button:disabled{opacity:.65;cursor:progress}
+button:disabled{opacity:.65;cursor:progress}textarea{display:block;width:100%;margin-top:9px;min-height:80px;padding:12px;border:1px solid #b9cbc0;border-radius:10px;font:inherit;resize:vertical}#interpret{background:#edf5ef;color:#205741;border:1px solid #b9cbc0;margin:10px 0 12px}#apply{background:#173d32;margin:0 0 12px}
 :focus-visible{outline:3px solid #1e7c59;outline-offset:3px}
 #status{min-height:1.4em;margin:20px 0 0}
 #result{display:none;margin-top:20px;border:1px solid #d9e3dc;border-radius:12px;padding:18px;background:#f8faf8}
@@ -39,6 +39,10 @@ small{display:block;color:#677a6f;line-height:1.6}
 </header>
 <section class="panel" aria-label="Gerador de desenho técnico">
 <form id="cad-form">
+<label for="instruction">Descreva o desenho em português (opcional)
+<textarea id="instruction" maxlength="180" placeholder="Ex.: Desenhe um painel de 60 x 40 cm"></textarea></label>
+<button id="interpret" type="button">Interpretar medidas</button>
+<small>Interpretação local de medidas e unidades, sem modelo de IA. Só aceita retângulos; revise os números antes de gerar.</small>
 <div class="fields">
 <label for="width">Largura (mm)<input id="width" name="widthMm" type="number" min="1" max="10000" step="1" required value="600"></label>
 <label for="height">Altura (mm)<input id="height" name="heightMm" type="number" min="1" max="10000" step="1" required value="400"></label>
@@ -50,10 +54,12 @@ small{display:block;color:#677a6f;line-height:1.6}
 <div id="result" aria-label="Resultado">
 <strong>Arquivo gerado</strong>
 <p><a id="download" download>Baixar desenho</a></p>
+<button id="apply" type="button" hidden>Aplicar imagem ao produto no VitraLibre</button>
+<small id="apply-hint" hidden>O desenho será colocado na prévia do produto; é necessário salvar o produto no editor.</small>
 <img id="preview" alt="Prévia do desenho técnico" hidden>
 </div>
 </section>
-<p><small>Esta ferramenta funciona somente no servidor local opcional. Não há envio para a nuvem nem alteração automática dos dados do VitraLibre. Esta primeira versão não interpreta linguagem natural com IA e não substitui um desenho técnico profissional.</small></p>
+<p><small>Esta ferramenta funciona somente no servidor local opcional. Não há envio para a nuvem. A aplicação da imagem ao formulário exige sua confirmação e não salva o produto automaticamente. A interpretação de texto usa regras restritas, não um agente generativo, e o desenho não substitui documentação técnica profissional.</small></p>
 </main>
 </body>
 </html>
