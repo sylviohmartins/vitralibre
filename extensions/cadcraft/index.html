@@ -40,9 +40,10 @@ small{display:block;color:#677a6f;line-height:1.6}
 <section class="panel" aria-label="Gerador de desenho técnico">
 <form id="cad-form">
 <label for="instruction">Descreva o desenho em português (opcional)
-<textarea id="instruction" maxlength="180" placeholder="Ex.: Desenhe um painel de 60 x 40 cm"></textarea></label>
-<button id="interpret" type="button">Interpretar medidas</button>
-<small>Interpretação local de medidas e unidades, sem modelo de IA. Só aceita retângulos; revise os números antes de gerar.</small>
+<textarea id="instruction" maxlength="280" placeholder="Ex.: Desenhe um painel de 60 x 40 cm"></textarea></label>
+<button id="interpret" type="button">Interpretar medidas (gratuito)</button>
+<button id="plan-ai" type="button" hidden>Planejar com IA (opcional)</button>
+<small>O interpretador local não envia dados a terceiros. Quando configurado, o botão de IA envia apenas sua descrição ao provedor externo, sujeito à cobrança da API. Ambos produzem apenas um plano retangular: revise as medidas antes de clicar em Gerar.</small>
 <div class="fields">
 <label for="width">Largura (mm)<input id="width" name="widthMm" type="number" min="1" max="10000" step="1" required value="600"></label>
 <label for="height">Altura (mm)<input id="height" name="heightMm" type="number" min="1" max="10000" step="1" required value="400"></label>
@@ -59,7 +60,7 @@ small{display:block;color:#677a6f;line-height:1.6}
 <img id="preview" alt="Prévia do desenho técnico" hidden>
 </div>
 </section>
-<p><small>Esta ferramenta funciona somente no servidor local opcional. Não há envio para a nuvem. A aplicação da imagem ao formulário exige sua confirmação e não salva o produto automaticamente. A interpretação de texto usa regras restritas, não um agente generativo, e o desenho não substitui documentação técnica profissional.</small></p>
+<p><small>Esta ferramenta funciona somente no servidor local opcional. Não há envio para a nuvem. A aplicação da imagem ao formulário exige sua confirmação e não salva o produto automaticamente. O modo gratuito usa regras restritas. A IA generativa é opcional e somente planeja medidas; nenhum comando do modelo é executado diretamente. Os desenhos não substituem documentação técnica profissional.</small></p>
 </main>
 </body>
 </html>
