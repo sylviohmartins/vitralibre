@@ -193,6 +193,11 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing, stat
       res.setHeader('content-type', 'text/html; charset=utf-8');
       return res.end(await readFile(new URL('index.html', ROOT)));
     }
+    if (req.method === 'GET' && route === '/cadcraft/intent.mjs') {
+      res.setHeader('x-content-type-options', 'nosniff');
+      res.setHeader('content-type', 'text/javascript; charset=utf-8');
+      return res.end(await readFile(new URL('intent.mjs', ROOT)));
+    }
     if (req.method === 'GET' && route === '/cadcraft/client.mjs') {
       res.setHeader('content-type', 'text/javascript; charset=utf-8');
       return res.end(await readFile(new URL('client.mjs', ROOT)));
