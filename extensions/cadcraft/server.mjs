@@ -171,7 +171,76 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing, stat
       res.writeHead(302, { location: '/editor/' }); return res.end();
     }
     if (req.method === 'GET' &&
-        (route === '/editor/' || new RegExp('^/editor/(?:src|assets|vendor)/[A-Za-z0-9._/-]+$').test(route)) {
+        (route === '/editor/' || new RegExp('^/editor/(?:src|assets|vendor)/[A-Za-z0-9._/-]+
+      const local = route === '/editor/' ? 'index.html' : route.slice('/editor/'.length);
+      const root = resolve(staticDir);
+      const target = resolve(root, local);
+      if (!target.startsWith(root + sep)) return respondJson(res, 403, { error: 'Caminho inválido.' });
+      const types = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css',
+        '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.jpg': 'image/jpeg' };
+      try {
+        const bytes = await readFile(target);
+        res.setHeader('content-security-policy', "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: http:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-src 'self' blob:; form-action 'self'");
+        res.setHeader('x-content-type-options', 'nosniff');
+        res.setHeader('content-type', (types[extname(target)] || 'application/octet-stream') + '; charset=utf-8');
+        return res.end(bytes);
+      } catch {
+        return respondJson(res, 404, { error: 'Arquivo estático não encontrado. Execute npm run build antes de iniciar a extensão.' });
+      }
+    }
+    if (req.method === 'GET' && route === '/cadcraft/') {
+      res.setHeader('content-security-policy', "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'");
+      res.setHeader('content-type', 'text/html; charset=utf-8');
+      return res.end(await readFile(new URL('index.html', ROOT)));
+    }
+    if (req.method === 'GET' && route === '/cadcraft/client.mjs') {
+      res.setHeader('content-type', 'text/javascript; charset=utf-8');
+      return res.end(await readFile(new URL('client.mjs', ROOT)));
+    }
+    if (req.method === 'GET' && route === '/api/cadcraft/health') {
+      return respondJson(res, 200, { status: 'online', cadcraftBinaryVerified: false, mode: 'local-only' });
+    }
+    if (req.method !== 'POST' || route !== '/api/cadcraft/preview') return respondJson(res, 404, { error: 'Rota inexistente.' });
+    if (req.headers.origin !== 'http://' + host || req.headers['x-vitralibre-cad'] !== '1' ||
+        req.headers['content-type']?.split(';')[0].trim() !== 'application/json') {
+      return respondJson(res, 403, { error: 'Origem ou tipo de requisição não autorizado.' });
+    }
+    if (busy) return respondJson(res, 429, { error: 'Outra geração está em andamento.' });
+    let raw = '';
+    try {
+      for await (const chunk of req) {
+        raw += chunk.toString('utf8');
+        if (Buffer.byteLength(raw) > MAX_BODY) return respondJson(res, 413, { error: 'Requisição excedeu o limite.' });
+      }
+      const sketch = normalizeSketch(JSON.parse(raw));
+      busy = true;
+      try {
+        const drawing = await generate(sketch);
+        if (!Buffer.isBuffer(drawing.bytes) || drawing.bytes.length > MAX_OUTPUT) throw new Error('Resposta CAD inválida.');
+        res.writeHead(200, {
+          'content-type': drawing.contentType,
+          'content-disposition': `attachment; filename="desenho-tecnico.${sketch.format}"`,
+          'cache-control': 'no-store',
+          'x-content-type-options': 'nosniff'
+        });
+        res.end(drawing.bytes);
+      } finally { busy = false; }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Erro desconhecido.';
+      const badInput = error instanceof SyntaxError || /Informe|devem|Formato não suportado/.test(message);
+      if (!res.headersSent) respondJson(res, badInput ? 400 : 503, { error: badInput ? message : 'CADCraft indisponível ou falha ao gerar desenho. Consulte os logs locais.' });
+      if (!badInput) console.error('[cadcraft]', message);
+    }
+  });
+}
+
+if (process.argv[1] && resolve(process.argv[1]) === SELF) {
+  if (!Number.isInteger(PORT) || PORT < 1024 || PORT > 65535) throw new Error('CADCRAFT_PORT inválida.');
+  createCadcraftServer().listen(PORT, '127.0.0.1', () => {
+    console.log(`Extensão CADCraft local: http://127.0.0.1:${PORT}/cadcraft/`);
+  });
+}
+).test(route))) {
       const local = route === '/editor/' ? 'index.html' : route.slice('/editor/'.length);
       const root = resolve(staticDir);
       const target = resolve(root, local);
