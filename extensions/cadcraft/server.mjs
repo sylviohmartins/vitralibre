@@ -1,3 +1,4 @@
+import { planSketchWithAI, AiPlanError } from './agent.mjs';
 import { createServer } from 'node:http';
 import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
@@ -164,8 +165,14 @@ function respondJson(res, status, body) {
   res.end(JSON.stringify(body));
 }
 
-export function createCadcraftServer({ generate = generateTechnicalDrawing, staticDir = DIST_ROOT } = {}) {
+export function createCadcraftServer({
+  generate = generateTechnicalDrawing,
+  plan = planSketchWithAI,
+  staticDir = DIST_ROOT,
+  aiEnabled = Boolean(process.env.OPENAI_API_KEY && process.env.CADCRAFT_AI_MODEL)
+} = {}) {
   let busy = false;
+  let planning = false;
   return createServer(async (req, res) => {
     const host = req.headers.host ?? '';
     const address = req.socket.localAddress;
@@ -213,21 +220,45 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing, stat
       return res.end(await readFile(new URL('client.mjs', ROOT)));
     }
     if (req.method === 'GET' && route === '/api/cadcraft/health') {
-      return respondJson(res, 200, { status: 'online', cadcraftBinaryVerified: false, mode: 'local-only' });
+      return respondJson(res, 200, { status: 'online', cadcraftBinaryVerified: false, mode: 'local-only', aiPlannerEnabled: aiEnabled });
     }
-    if (req.method !== 'POST' || route !== '/api/cadcraft/preview') return respondJson(res, 404, { error: 'Rota inexistente.' });
+    if (req.method !== 'POST' ||
+        !['/api/cadcraft/preview', '/api/cadcraft/plan'].includes(route))
+      return respondJson(res, 404, { error: 'Rota inexistente.' });
     if (req.headers.origin !== 'http://' + host || req.headers['x-vitralibre-cad'] !== '1' ||
         req.headers['content-type']?.split(';')[0].trim() !== 'application/json') {
       return respondJson(res, 403, { error: 'Origem ou tipo de requisição não autorizado.' });
     }
-    if (busy) return respondJson(res, 429, { error: 'Outra geração está em andamento.' });
+    const isPlanning = route === '/api/cadcraft/plan';
+    if (isPlanning && !aiEnabled)
+      return respondJson(res, 503, { error: 'IA não configurada. Use o interpretador local gratuito.' });
+    if (busy || planning) return respondJson(res, 429, { error: 'Outra operação CAD está em andamento.' });
     let raw = '';
     try {
       for await (const chunk of req) {
         raw += chunk.toString('utf8');
         if (Buffer.byteLength(raw) > MAX_BODY) return respondJson(res, 413, { error: 'Requisição excedeu o limite.' });
       }
-      const sketch = normalizeSketch(JSON.parse(raw));
+      const requestBody = JSON.parse(raw);
+      if (isPlanning) {
+        if (!requestBody || typeof requestBody !== 'object' || Array.isArray(requestBody) ||
+            Object.keys(requestBody).join(',') !== 'instruction') {
+          return respondJson(res, 400, { error: 'Informe somente o campo instruction.' });
+        }
+        planning = true;
+        try {
+          const proposal = await plan(requestBody.instruction);
+          const sketch = normalizeSketch(proposal);
+          return respondJson(res, 200, {
+            shape: 'rectangle',
+            widthMm: sketch.widthMm,
+            heightMm: sketch.heightMm,
+            summary: 'Retângulo de ' + sketch.widthMm + ' × ' + sketch.heightMm + ' mm',
+            requiresConfirmation: true
+          });
+        } finally { planning = false; }
+      }
+      const sketch = normalizeSketch(requestBody);
       busy = true;
       try {
         const drawing = await generate(sketch);
@@ -243,8 +274,12 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing, stat
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Erro desconhecido.';
       const badInput = error instanceof SyntaxError || /Informe|devem|Formato não suportado/.test(message);
-      if (!res.headersSent) respondJson(res, badInput ? 400 : 503, { error: badInput ? message : 'CADCraft indisponível ou falha ao gerar desenho. Consulte os logs locais.' });
-      if (!badInput) console.error('[cadcraft]', message);
+      const publicAgentError = error instanceof AiPlanError;
+      const status = publicAgentError ? error.status : badInput ? 400 : 503;
+      if (!res.headersSent) respondJson(res, status, {
+        error: publicAgentError || badInput ? message : 'CADCraft indisponível ou falha ao gerar desenho. Consulte os logs locais.'
+      });
+      if (!publicAgentError && !badInput) console.error('[cadcraft]', message);
     }
   });
 }
