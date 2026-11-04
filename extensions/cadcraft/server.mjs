@@ -170,7 +170,7 @@ export function createCadcraftServer({ generate = generateTechnicalDrawing } = {
       res.writeHead(302, { location: '/cadcraft/' }); return res.end();
     }
     if (req.method === 'GET' && route === '/cadcraft/') {
-      res.setHeader('content-security-policy', "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' blob:; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'");
+      res.setHeader('content-security-policy', "default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob:; connect-src 'self'; base-uri 'none'; frame-ancestors 'none'");
       res.setHeader('content-type', 'text/html; charset=utf-8');
       return res.end(await readFile(new URL('index.html', ROOT)));
     }
