@@ -22,12 +22,16 @@ Na raiz do repositório:
 
 ```sh
 cadcraft-cli --help
+npm ci --ignore-scripts
+npm run build
 node extensions/cadcraft/server.mjs
 ```
 
-Abrir `http://127.0.0.1:8765/cadcraft/` no mesmo computador.
+Abrir `http://127.0.0.1:8765/editor/` para usar o editor completo; em um catálogo do segmento **loja**, a edição de produtos oferece um link para `/cadcraft/` quando o serviço está ativo. Também é possível acessar diretamente `http://127.0.0.1:8765/cadcraft/`.
 Opcionalmente definir `CADCRAFT_PORT` de 1024 a 65535, com a sintaxe do
 sistema operacional. O servidor escuta **somente 127.0.0.1**.
+
+O editor continua estático e funciona sem o serviço CAD. A versão pública não mostra a extensão quando `/api/cadcraft/health` está ausente.
 
 Inserir largura e altura (1–10.000 mm), selecionar formato e gerar. A
 extensão cria uma sessão MCP headless descartável, executa
