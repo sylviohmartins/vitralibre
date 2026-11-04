@@ -136,6 +136,9 @@ export async function generateTechnicalDrawing(input) {
     await client.initialize();
     await client.tool('new_drawing', { metric: true });
     await client.tool('command_line', { text: `rectang 0,0 ${sketch.widthMm},${sketch.heightMm}` });
+    const dimensionText = Math.max(1, Math.round(Math.min(sketch.widthMm, sketch.heightMm) * 0.04));
+    await client.tool('command_line', { text: `setvar DIMTXT ${dimensionText}` });
+    await client.tool('command_line', { text: `setvar DIMASZ ${Math.max(1, Math.round(dimensionText * 0.75))}` });
     const dimensionOffset = Math.max(1, Math.round(Math.min(sketch.widthMm, sketch.heightMm) * 0.1));
     await client.tool('command_line', {
       text: `dimlinear 0,0 ${sketch.widthMm},0 ${Math.round(sketch.widthMm / 2)},-${dimensionOffset}`
