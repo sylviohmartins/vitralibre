@@ -30,8 +30,8 @@ export function normalizeSketch(input) {
     throw new Error('Divisórias devem ser inteiros entre 0 e 8.');
   }
   const MIN_COMPARTMENT_MM = 25;
-  if (widthMm / (verticalDividers + 1) < MIN_COMPARTMENT_MM ||
-      heightMm / (horizontalDividers + 1) < MIN_COMPARTMENT_MM) {
+  if ((verticalDividers > 0 && widthMm / (verticalDividers + 1) < MIN_COMPARTMENT_MM) ||
+      (horizontalDividers > 0 && heightMm / (horizontalDividers + 1) < MIN_COMPARTMENT_MM)) {
     throw new Error('Cada compartimento deve ter pelo menos 25 mm de largura e altura.');
   }
   return {
