@@ -21,12 +21,42 @@ const canImport = /^[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}$/i.test(token ??
 const channel = canImport ? new BroadcastChannel('vitralibre-cadcraft-' + token) : null;
 let lastUrl = null;
 let lastBlob = null;
+const gridSummary = document.getElementById('grid-summary');
+const gridControls = ['widthMm', 'heightMm', 'verticalDividers', 'horizontalDividers'];
+function updateGridSummary() {
+  const width = Number(form.elements.namedItem('widthMm').value);
+  const height = Number(form.elements.namedItem('heightMm').value);
+  const vertical = Number(form.elements.namedItem('verticalDividers').value);
+  const horizontal = Number(form.elements.namedItem('horizontalDividers').value);
+  if (![width, height, vertical, horizontal].every(Number.isFinite) ||
+      ![width, height, vertical, horizontal].every(Number.isInteger) ||
+      width < 1 || height < 1 || vertical < 0 || horizontal < 0 ||
+      vertical > 8 || horizontal > 8 || width > 10000 || height > 10000) {
+    gridSummary.textContent = 'Informe medidas inteiras válidas para calcular os compartimentos.';
+    return;
+  }
+  const eachWidth = width / (vertical + 1);
+  const eachHeight = height / (horizontal + 1);
+  if (eachWidth < 25 || eachHeight < 25) {
+    gridSummary.textContent = 'Cada compartimento precisa medir pelo menos 25 mm em cada dimensão.';
+    return;
+  }
+  const count = (vertical + 1) * (horizontal + 1);
+  gridSummary.textContent = count === 1
+    ? 'Sem divisórias: uma área retangular.'
+    : count + ' compartimentos de aproximadamente ' + eachWidth.toFixed(1) +
+      ' × ' + eachHeight.toFixed(1) + ' mm (medidas internas nominais).';
+}
+for (const name of gridControls)
+  form.elements.namedItem(name).addEventListener('input', updateGridSummary);
+updateGridSummary();
 
 interpret.addEventListener('click', () => {
   try {
     const measures = parseSketchInstruction(instruction.value);
     form.elements.namedItem('widthMm').value = String(measures.widthMm);
     form.elements.namedItem('heightMm').value = String(measures.heightMm);
+    updateGridSummary();
     status.textContent = 'Medidas interpretadas: ' + measures.widthMm + ' × ' + measures.heightMm + ' mm. Confira e clique em Gerar.';
   } catch (error) {
     status.textContent = error instanceof Error ? error.message : 'Não foi possível interpretar as medidas.';
@@ -51,6 +81,7 @@ planButton.addEventListener('click', async () => {
       throw new Error('Plano retornado fora das restrições do desenho.');
     form.elements.namedItem('widthMm').value = String(payload.widthMm);
     form.elements.namedItem('heightMm').value = String(payload.heightMm);
+    updateGridSummary();
     status.textContent = 'Plano proposto pela IA: ' + payload.widthMm + ' × ' + payload.heightMm +
       ' mm. Confira as medidas. Nenhum desenho foi executado; clique em Gerar para confirmar.';
   } catch (error) {
@@ -75,6 +106,10 @@ form.addEventListener('submit', async event => {
       heightMm: Number(form.elements.namedItem('heightMm').value),
       format: form.elements.namedItem('format').value
     };
+    const verticalDividers = Number(form.elements.namedItem('verticalDividers').value);
+    const horizontalDividers = Number(form.elements.namedItem('horizontalDividers').value);
+    if (verticalDividers > 0) input.verticalDividers = verticalDividers;
+    if (horizontalDividers > 0) input.horizontalDividers = horizontalDividers;
     const response = await fetch('/api/cadcraft/preview', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'X-VitraLibre-CAD': '1' },
