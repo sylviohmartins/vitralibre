@@ -27,6 +27,10 @@ function shareMarkup(){return catalog.publicUrl?`<div class="configured-share"><
 function drawQr(){const target=$('#qr-code');if(!target||!catalog.publicUrl)return;try{if(typeof globalThis.qrcode==='function'){const qr=globalThis.qrcode(0,'M');qr.addData(catalog.publicUrl);qr.make();target.innerHTML=qr.createSvgTag({cellSize:4,margin:12,scalable:true});}else target.innerHTML='<span>QR indisponível neste navegador. Compartilhe o link abaixo.</span>';}catch{target.innerHTML='<span>Não foi possível gerar o QR para este endereço. Compartilhe o link abaixo.</span>';}}
 function dialogShell(title,subtitle,body,footer=''){const d=$('#editor-dialog');d.innerHTML=`<div class="dialog-heading"><div><span class="section-kicker">${esc(subtitle)}</span><h2 id="dialog-title">${esc(title)}</h2></div><button class="icon-button" data-action="close-dialog" aria-label="Fechar janela">${icon('close')}</button></div>${body}${footer}`;d.showModal();return d;}
 function moneyInput(cents){return (cents/100).toFixed(2).replace('.',',');}
+let cadImageChannel=null;
+function closeCadImageChannel(){
+  if(cadImageChannel){cadImageChannel.close();cadImageChannel=null;}
+}
 async function showOptionalCadTool(dialog){
   const form=dialog.querySelector('#product-form');
   if(!form)return;
@@ -44,9 +48,36 @@ async function showOptionalCadTool(dialog){
     link.target='_blank';
     link.rel='noopener noreferrer';
     link.textContent='Gerar desenho técnico com CADCraft (experimental)';
-    note.append(link,document.createTextNode(' · Baixe o PNG e envie como imagem do produto acima.'));
+    note.append(link,document.createTextNode(' · Gere o PNG e aplique diretamente neste produto. Depois clique em Salvar produto.'));
     intro.after(note);
-  }catch{/* O editor continua independente de backend. */}
+    dialog.addEventListener('close',closeCadImageChannel,{once:true});
+    link.addEventListener('click',()=>{
+      closeCadImageChannel();
+      if(typeof BroadcastChannel!=='function'||typeof globalThis.crypto?.randomUUID!=='function')return;
+      const nonce=globalThis.crypto.randomUUID();
+      const channel=new BroadcastChannel('vitralibre-cadcraft-'+nonce);
+      cadImageChannel=channel;
+      link.href='/cadcraft/?import='+encodeURIComponent(nonce);
+      channel.onmessage=async event=>{
+        if(event.data?.type!=='vitralibre-cadcraft-png'||event.data.nonce!==nonce)return;
+        if(!dialog.open||dialog.querySelector('#product-form')!==form){closeCadImageChannel();return;}
+        try{
+          const blob=event.data.blob;
+          if(!(blob instanceof Blob)||blob.type!=='image/png'||blob.size<32||blob.size>1024*1024)
+            throw Error('A imagem CAD deve ser PNG válido de até 1 MB.');
+          const magic=new Uint8Array(await blob.slice(0,8).arrayBuffer());
+          if(![137,80,78,71,13,10,26,10].every((byte,index)=>magic[index]===byte))
+            throw Error('O arquivo retornado pelo CADCraft não é um PNG válido.');
+          if(!dialog.open||dialog.querySelector('#product-form')!==form){closeCadImageChannel();return;}
+          const target=form.elements.namedItem('image');
+          await uploadImage(new File([blob],'desenho-cadcraft.png',{type:'image/png'}),target);
+          channel.postMessage({type:'vitralibre-cadcraft-applied',nonce});
+          toast('Desenho aplicado à prévia do produto. Clique em Salvar produto para confirmar.');
+          closeCadImageChannel();
+        }catch(error){toast(error instanceof Error?error.message:'Não foi possível aplicar o desenho.',true);}
+      };
+    });
+  }catch{/* O editor continua independente da extensão e funciona sem backend. */}
 }
 function productEditor(id){if(!catalog.categories.length){toast('Crie uma categoria antes de adicionar produtos.');categoryEditor();return;}const p=catalog.products.find(x=>x.id===id)||{id:'',name:'',description:'',categoryId:catalog.categories[0].id,priceCents:0,available:true,image:'',variants:[]};const d=dialogShell(p.id?'Cada detalhe conta.':'Um novo favorito.','PRODUTO',`<form id="product-form" data-id="${esc(p.id)}"><div class="dialog-scroll"><div class="product-form-intro"><div id="image-preview" class="editor-image">${p.image?`<img src="${esc(p.image)}" alt="Prévia do produto">`:icon('box')}</div><div><label class="upload-label compact">${icon('upload')}Enviar uma imagem<input type="file" id="product-image-upload" accept="image/png,image/jpeg,image/webp,image/gif"></label><p class="helper-text">PNG, JPEG, WebP ou GIF.<br>Até 1 MB por imagem.</p></div></div><label>Ou cole uma URL de imagem<input name="image" type="text" placeholder="https://..." value="${esc(p.image)}"></label><label>Nome do produto<input name="name" required maxlength="150" placeholder="Como seu produto se chama?" value="${esc(p.name)}"></label><label>Descrição<textarea name="description" rows="3" maxlength="2000" placeholder="Conte o que torna esse produto especial.">${esc(p.description)}</textarea></label><div class="form-row"><label>Categoria<select name="categoryId">${catalog.categories.map(c=>`<option value="${esc(c.id)}" ${p.categoryId===c.id?'selected':''}>${esc(categoryLabel(c.id))}</option>`).join('')}</select></label><label>Preço · R$<input name="price" required inputmode="decimal" placeholder="0,00" value="${moneyInput(p.priceCents)}"></label></div><label class="checkbox-label"><input type="checkbox" name="available" ${p.available?'checked':''}>Disponível no catálogo</label><div class="variants-header"><div><h3>Opções & variações</h3><p>Tamanhos, sabores ou versões. Informe o preço final de cada opção.</p></div><button type="button" class="icon-button" data-action="add-variant" aria-label="Adicionar variação">${icon('plus')}</button></div><div id="variants">${p.variants.map(variantRow).join('')}</div><div class="form-error" role="alert"></div></div><div class="dialog-footer">${p.id?`<button type="button" class="danger-text" data-action="delete-product" data-id="${esc(p.id)}">Excluir produto</button>`:'<span></span>'}<div><button type="button" class="button secondary" data-action="close-dialog">Cancelar</button><button type="submit" class="button primary">Salvar produto ${icon('check')}</button></div></div></form>`);setTimeout(()=>$('[name="name"]',d)?.focus(),30);if(catalog.segment==='retail')showOptionalCadTool(d);}
 function variantRow(v={name:'',priceCents:0}){return `<div class="variant-row"><label><span class="sr-only">Nome da variação</span><input name="variantName" placeholder="Ex.: Grande" value="${esc(v.name)}" required maxlength="100"></label><label><span class="sr-only">Preço final da variação</span><input name="variantPrice" inputmode="decimal" placeholder="Preço · R$" value="${v.name?moneyInput(v.priceCents):''}" required></label><button type="button" class="icon-button" data-action="remove-variant" aria-label="Remover variação">${icon('close')}</button></div>`;}
