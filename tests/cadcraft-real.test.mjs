@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { resolve, join } from 'node:path';
 import { generateTechnicalDrawing } from '../extensions/cadcraft/server.mjs';
 
 test('E2E: CADCraft real gera PNG e DXF via MCP', {
@@ -10,6 +12,7 @@ test('E2E: CADCraft real gera PNG e DXF via MCP', {
   const png = await generateTechnicalDrawing({ ...sketch, format: 'png' });
   assert.equal(png.contentType, 'image/png');
   assert.ok(png.bytes.length > 32);
+  assert.ok(png.bytes.length <= 1024 * 1024, 'PNG precisa respeitar limite de imagem do VitraLibre de 1 MiB');
   assert.equal(png.bytes.toString('ascii', 12, 16), 'IHDR');
   assert.ok(png.bytes.readUInt32BE(16) > 0);
   assert.ok(png.bytes.readUInt32BE(20) > 0);
@@ -20,4 +23,10 @@ test('E2E: CADCraft real gera PNG e DXF via MCP', {
   const entitiesText = dxf.bytes.toString('utf8');
   const dimensions = entitiesText.match(/\r?\nDIMENSION\r?\n/g) ?? [];
   assert.ok(dimensions.length >= 2, 'Largura e altura devem ter cotas no DXF exportado');
+  if (process.env.CADCRAFT_ARTIFACTS_DIR) {
+    const directory = resolve(process.env.CADCRAFT_ARTIFACTS_DIR);
+    await mkdir(directory, { recursive: true });
+    await writeFile(join(directory, 'painel-600x400.png'), png.bytes);
+    await writeFile(join(directory, 'painel-600x400.dxf'), dxf.bytes);
+  }
 });
