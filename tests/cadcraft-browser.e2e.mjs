@@ -146,11 +146,18 @@ test('Chromium mobile: gerador acessível sem rolagem horizontal, com validaçã
       client: document.documentElement.clientWidth
     }));
     assert.ok(overflow.scroll <= overflow.client + 1, 'Não deve existir rolagem horizontal em 390px');
+    const description = await page.locator('#cad-form > small').boundingBox();
+    const fields = await page.locator('#cad-form .fields').boundingBox();
+    assert.ok(description && fields && fields.y >= description.y + description.height + 8,
+      'Rótulos das medidas não podem sobrepor o texto explicativo em telas pequenas.');
     await page.getByRole('spinbutton', { name: /largura/i }).fill('600');
     await page.getByRole('spinbutton', { name: /altura/i }).fill('400');
     await page.getByRole('spinbutton', { name: /divisórias verticais/i }).fill('2');
     await page.getByRole('spinbutton', { name: /divisórias horizontais/i }).fill('1');
     await page.getByText(/6 compartimentos/).waitFor();
+    const snapshots = resolve(process.env.CADCRAFT_ARTIFACTS_DIR || 'cadcraft-browser-evidence');
+    await mkdir(snapshots, { recursive: true });
+    await page.screenshot({ path: join(snapshots, 'organizador-mobile-390.png'), fullPage: true });
     await page.getByRole('spinbutton', { name: /largura/i }).fill('40');
     await page.getByText(/pelo menos 25 mm/).waitFor();
     assert.equal(await page.getByRole('button', { name: /gerar com cadcraft mcp/i }).isDisabled(), false);
