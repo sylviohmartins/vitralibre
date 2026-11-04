@@ -123,3 +123,40 @@ test('Chromium real: plano gerativo opcional exige aprovação antes de executar
     await new Promise(resolve => server.close(resolve));
   }
 });
+
+test('Chromium mobile: gerador acessível sem rolagem horizontal, com validação da grade', {
+  timeout: 90000
+}, async () => {
+  const server = createCadcraftServer({ aiEnabled: false });
+  server.listen(0, '127.0.0.1');
+  await once(server, 'listening');
+  const root = 'http://127.0.0.1:' + server.address().port;
+  let browser;
+  try {
+    browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+    const page = await browser.newPage({
+      viewport: { width: 390, height: 844 },
+      deviceScaleFactor: 2,
+      isMobile: true,
+      hasTouch: true
+    });
+    await page.goto(root + '/cadcraft/', { waitUntil: 'networkidle' });
+    const overflow = await page.evaluate(() => ({
+      scroll: document.documentElement.scrollWidth,
+      client: document.documentElement.clientWidth
+    }));
+    assert.ok(overflow.scroll <= overflow.client + 1, 'Não deve existir rolagem horizontal em 390px');
+    await page.getByRole('spinbutton', { name: /largura/i }).fill('600');
+    await page.getByRole('spinbutton', { name: /altura/i }).fill('400');
+    await page.getByRole('spinbutton', { name: /divisórias verticais/i }).fill('2');
+    await page.getByRole('spinbutton', { name: /divisórias horizontais/i }).fill('1');
+    await page.getByText(/6 compartimentos/).waitFor();
+    await page.getByRole('spinbutton', { name: /largura/i }).fill('40');
+    await page.getByText(/pelo menos 25 mm/).waitFor();
+    assert.equal(await page.getByRole('button', { name: /gerar com cadcraft mcp/i }).isDisabled(), false);
+    assert.equal(await page.getByRole('button', { name: /planejar com ia/i }).isVisible(), false);
+  } finally {
+    await browser?.close();
+    await new Promise(resolve => server.close(resolve));
+  }
+});
