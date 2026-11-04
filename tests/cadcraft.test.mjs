@@ -3,13 +3,16 @@ import assert from 'node:assert/strict';
 import { once } from 'node:events';
 import { EventEmitter } from 'node:events';
 import { Writable, PassThrough } from 'node:stream';
+import { mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { normalizeSketch, StdioMcpClient, createCadcraftServer } from '../extensions/cadcraft/server.mjs';
 
 const draft = { widthMm: 600, heightMm: 400, format: 'png' };
 const body = input => JSON.stringify(input);
 
-async function withServer(generate, run) {
-  const server = createCadcraftServer({ generate });
+async function withServer(generate, run, options = {}) {
+  const server = createCadcraftServer({ generate, ...options });
   server.listen(0, '127.0.0.1');
   await once(server, 'listening');
   const address = 'http://127.0.0.1:' + server.address().port;
@@ -141,4 +144,27 @@ test('cliente MCP faz handshake e permite apenas ferramentas descobertas', async
     await assert.rejects(() => client.tool('script', { text: 'erase all' }), /não autorizada/);
     assert.deepEqual(calls, ['initialize', 'notifications/initialized', 'tools/list', 'tools/call']);
   } finally { client.close(); }
+});
+
+test('serve editor VitraLibre somente a partir do build selecionado, sem travessia de caminhos', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'vitralibre-static-test-'));
+  try {
+    await mkdir(join(dir, 'src'), { recursive: true });
+    await writeFile(join(dir, 'index.html'), '<!doctype html><title>Editor do VitraLibre</title>');
+    await writeFile(join(dir, 'src', 'app.js'), 'export const nome="VitraLibre";');
+    await withServer(async () => { throw new Error('Não deve chamar CAD'); }, async address => {
+      assert.equal((await fetch(address + '/')).status, 200);
+      const editor = await fetch(address + '/editor/');
+      assert.equal(editor.status, 200);
+      assert.match(await editor.text(), /Editor do VitraLibre/);
+      const script = await fetch(address + '/editor/src/app.js');
+      assert.equal(script.status, 200);
+      assert.match(script.headers.get('content-type'), /javascript/);
+      assert.match(await script.text(), /VitraLibre/);
+      assert.equal((await fetch(address + '/editor/src/nao-existe.js')).status, 404);
+      assert.equal((await fetch(address + '/editor/%2e%2e/secret.txt')).status, 404);
+    }, { staticDir: dir });
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });
