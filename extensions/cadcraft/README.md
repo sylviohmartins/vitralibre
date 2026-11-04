@@ -127,9 +127,9 @@ Controles adicionais:
   MCP é um protocolo de ferramentas, não um modelo de linguagem.
 - Não foi estabelecido que todo desenho exportado será interoperável com o
   AutoCAD. O CADCraft é um projeto em desenvolvimento inicial.
-- Os testes automatizados desta extensão usam um servidor MCP simulado para
-  verificar handshake, contratos HTTP e controles de segurança. A homologação
-  com o binário CADCraft real exige um teste separado no ambiente com CLI.
+- Os testes automatizados verificam contrato MCP simulado, segurança e regras de
+  negócio. O workflow também usa o CADCraft **real** e Chromium headless para
+  comprovar geração e aplicação da imagem ao produto.
 
 ## Validação
 
@@ -140,10 +140,18 @@ npm run verify
 
 **Execução automatizada real:** o workflow `CADCraft MCP E2E (experimental)`
 usa CADCraft 0.17.0 e testa a geração de PNG e DXF por MCP, com verificação
-SHA-256 do artefato de release. Os testes de interface usam jsdom e um
-processador MCP simulado. Ainda falta homologação visual/manual em navegador real.
+SHA-256 do artefato de release. O mesmo workflow inicia o servidor local,
+abre o **Chromium headless**, cria a imagem via MCP real, aplica-a ao produto
+em duas abas e verifica persistência apenas após clicar em salvar. O teste
+registra PNG/DXF e screenshots como artefatos. O ciclo de integração no
+navegador está validado automaticamente, mas permanece pendente a
+homologação humana de UX e compatibilidade geométrica ampla.
 
-Homologação visual/manual pendente:
+**Execuções CI de referência:**
+- [Verificação geral](https://github.com/sylviohmartins/vitralibre/actions/runs/41774420957)
+- [CADCraft real + Chromium](https://github.com/sylviohmartins/vitralibre/actions/runs/41774420975)
+
+Validações manuais adicionais pendentes:
 1. Criar retângulo 600 × 400 mm e baixar PNG.
 2. Confirmar que o PNG abre e mostra a geometria solicitada.
 3. Gerar DXF e reabrir em uma ferramenta CAD independente.
@@ -162,6 +170,6 @@ Homologação visual/manual pendente:
 
 Próximas etapas, mediante necessidade comprovada: homologar o modelo com
 credenciais próprias sob cota reduzida, armazenar anexos DXF em esquema
-versionado, validar o fluxo no navegador real e desenvolver serviço
+versionado, revisar UX/acessibilidade em dispositivos reais e desenvolver serviço
 multiusuário seguro. O planejador não equivale a um agente CAD geral. Não converter o catálogo estático
 em aplicação dependente de backend.
