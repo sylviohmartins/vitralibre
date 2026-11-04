@@ -22,7 +22,7 @@ button:disabled{opacity:.65;cursor:progress}textarea{display:block;width:100%;ma
 :focus-visible{outline:3px solid #1e7c59;outline-offset:3px}
 #status{min-height:1.4em;margin:20px 0 0}
 #result{display:none;margin-top:20px;border:1px solid #d9e3dc;border-radius:12px;padding:18px;background:#f8faf8}
-#result img{display:block;max-width:100%;margin:auto}
+#result img{display:block;max-width:100%;margin:auto}.helper{font-size:.875rem;color:#496454;line-height:1.5;margin:15px 0 0}
 a{color:#175a42}
 small{display:block;color:#677a6f;line-height:1.6}
 @media(max-width:580px){main{margin:30px auto}.fields{grid-template-columns:1fr}button{width:100%}}
@@ -35,7 +35,7 @@ small{display:block;color:#677a6f;line-height:1.6}
 <p><a href="/editor/">Voltar ao editor VitraLibre</a></p>
 <div class="eyebrow">VitraLibre / extensão experimental</div>
 <h1>Desenho técnico de produtos</h1>
-<p>Gere um desenho retangular a partir das medidas de um produto e baixe a imagem PNG para adicionar ao catálogo, ou o arquivo DXF para continuar editando em CAD.</p>
+<p>Gere um desenho retangular com cotas e divisórias igualmente espaçadas para móveis, prateleiras e organizadores. Exporte PNG para o catálogo ou DXF para edição em CAD.</p>
 </header>
 <section class="panel" aria-label="Gerador de desenho técnico">
 <form id="cad-form">
@@ -43,12 +43,15 @@ small{display:block;color:#677a6f;line-height:1.6}
 <textarea id="instruction" maxlength="280" placeholder="Ex.: Desenhe um painel de 60 x 40 cm"></textarea></label>
 <button id="interpret" type="button">Interpretar medidas (gratuito)</button>
 <button id="plan-ai" type="button" hidden>Planejar com IA (opcional)</button>
-<small>O interpretador local não envia dados a terceiros. Quando configurado, o botão de IA envia apenas sua descrição ao provedor externo, sujeito à cobrança da API. Ambos produzem apenas um plano retangular: revise as medidas antes de clicar em Gerar.</small>
+<small>O interpretador local não envia dados a terceiros. Quando configurado, o botão de IA envia apenas sua descrição ao provedor externo, sujeito à cobrança da API. Os planejadores produzem as medidas externas; configure as divisórias abaixo, confira a distribuição e clique em Gerar.</small>
 <div class="fields">
 <label for="width">Largura (mm)<input id="width" name="widthMm" type="number" min="1" max="10000" step="1" required value="600"></label>
 <label for="height">Altura (mm)<input id="height" name="heightMm" type="number" min="1" max="10000" step="1" required value="400"></label>
 <label for="format">Formato<select id="format" name="format"><option value="png">PNG — imagem</option><option value="dxf">DXF — desenho editável</option></select></label>
+<label for="vertical-dividers">Divisórias verticais (iguais)<input id="vertical-dividers" name="verticalDividers" type="number" min="0" max="8" step="1" value="0" required></label>
+<label for="horizontal-dividers">Divisórias horizontais (iguais)<input id="horizontal-dividers" name="horizontalDividers" type="number" min="0" max="8" step="1" value="0" required></label>
 </div>
+<p id="grid-summary" class="helper" aria-live="polite">Sem divisórias: uma área retangular.</p>
 <button id="generate" type="submit">Gerar com CADCraft MCP</button>
 <p id="status" role="status" aria-live="polite"></p>
 </form>
